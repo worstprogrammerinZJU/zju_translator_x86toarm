@@ -1,0 +1,144 @@
+	.arch armv8-a
+	.file	"0013-roman-to-integer.c"
+	.text
+	.align	2
+	.global	value
+	.type	value, %function
+value:
+.LFB0:
+	.cfi_startproc
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	strb	w0, [sp, 15]
+	ldrb	w0, [sp, 15]
+	cmp	w0, 88
+	beq	.L2
+	cmp	w0, 88
+	bgt	.L3
+	cmp	w0, 86
+	beq	.L4
+	cmp	w0, 86
+	bgt	.L3
+	cmp	w0, 77
+	beq	.L5
+	cmp	w0, 77
+	bgt	.L3
+	cmp	w0, 76
+	beq	.L6
+	cmp	w0, 76
+	bgt	.L3
+	cmp	w0, 73
+	beq	.L7
+	cmp	w0, 73
+	bgt	.L3
+	cmp	w0, 67
+	beq	.L8
+	cmp	w0, 68
+	beq	.L9
+	b	.L3
+.L7:
+	mov	w0, 1
+	b	.L10
+.L4:
+	mov	w0, 5
+	b	.L10
+.L2:
+	mov	w0, 10
+	b	.L10
+.L6:
+	mov	w0, 50
+	b	.L10
+.L8:
+	mov	w0, 100
+	b	.L10
+.L9:
+	mov	w0, 500
+	b	.L10
+.L5:
+	mov	w0, 1000
+	b	.L10
+.L3:
+	mov	w0, 0
+.L10:
+	add	sp, sp, 16
+	.cfi_def_cfa_offset 0
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	value, .-value
+	.align	2
+	.global	romanToInt
+	.type	romanToInt, %function
+romanToInt:
+.LFB1:
+	.cfi_startproc
+	stp	x29, x30, [sp, -64]!
+	.cfi_def_cfa_offset 64
+	.cfi_offset 29, -64
+	.cfi_offset 30, -56
+	mov	x29, sp
+	str	x0, [sp, 24]
+	str	wzr, [sp, 48]
+	str	wzr, [sp, 60]
+	ldr	x0, [sp, 24]
+	bl	strlen
+	str	w0, [sp, 48]
+	str	wzr, [sp, 52]
+	b	.L12
+.L17:
+	ldrsw	x0, [sp, 52]
+	ldr	x1, [sp, 24]
+	add	x0, x1, x0
+	ldrb	w0, [x0]
+	bl	value
+	str	w0, [sp, 44]
+	ldr	w0, [sp, 52]
+	add	w0, w0, 1
+	ldr	w1, [sp, 48]
+	cmp	w1, w0
+	ble	.L13
+	ldrsw	x0, [sp, 52]
+	add	x0, x0, 1
+	ldr	x1, [sp, 24]
+	add	x0, x1, x0
+	ldrb	w0, [x0]
+	bl	value
+	str	w0, [sp, 56]
+	b	.L14
+.L13:
+	str	wzr, [sp, 56]
+.L14:
+	ldr	w1, [sp, 56]
+	ldr	w0, [sp, 44]
+	cmp	w1, w0
+	ble	.L15
+	ldr	w1, [sp, 60]
+	ldr	w0, [sp, 44]
+	sub	w0, w1, w0
+	str	w0, [sp, 60]
+	b	.L16
+.L15:
+	ldr	w1, [sp, 60]
+	ldr	w0, [sp, 44]
+	add	w0, w1, w0
+	str	w0, [sp, 60]
+.L16:
+	ldr	w0, [sp, 52]
+	add	w0, w0, 1
+	str	w0, [sp, 52]
+.L12:
+	ldr	w1, [sp, 52]
+	ldr	w0, [sp, 48]
+	cmp	w1, w0
+	blt	.L17
+	ldr	w0, [sp, 60]
+	ldp	x29, x30, [sp], 64
+	.cfi_restore 30
+	.cfi_restore 29
+	.cfi_def_cfa_offset 0
+	ret
+	.cfi_endproc
+.LFE1:
+	.size	romanToInt, .-romanToInt
+	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
+	.section	.note.GNU-stack,"",@progbits

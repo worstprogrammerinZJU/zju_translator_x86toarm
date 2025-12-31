@@ -1,0 +1,72 @@
+	.arch armv8-a
+	.file	"0058-length-of-last-word.c"
+	.text
+	.align	2
+	.global	lengthOfLastWord
+	.type	lengthOfLastWord, %function
+lengthOfLastWord:
+.LFB0:
+	.cfi_startproc
+	stp	x29, x30, [sp, -64]!
+	.cfi_def_cfa_offset 64
+	.cfi_offset 29, -64
+	.cfi_offset 30, -56
+	mov	x29, sp
+	str	x19, [sp, 16]
+	.cfi_offset 19, -48
+	str	x0, [sp, 40]
+	str	wzr, [sp, 60]
+	ldr	x0, [sp, 40]
+	ldrb	w0, [x0]
+	cmp	w0, 32
+	beq	.L2
+	mov	w0, 1
+	str	w0, [sp, 60]
+.L2:
+	mov	w0, 1
+	str	w0, [sp, 56]
+	b	.L3
+.L6:
+	ldrsw	x0, [sp, 56]
+	ldr	x1, [sp, 40]
+	add	x0, x1, x0
+	ldrb	w0, [x0]
+	cmp	w0, 32
+	beq	.L4
+	ldrsw	x0, [sp, 56]
+	sub	x0, x0, #1
+	ldr	x1, [sp, 40]
+	add	x0, x1, x0
+	ldrb	w0, [x0]
+	cmp	w0, 32
+	bne	.L5
+	mov	w0, 1
+	str	w0, [sp, 60]
+	b	.L4
+.L5:
+	ldr	w0, [sp, 60]
+	add	w0, w0, 1
+	str	w0, [sp, 60]
+.L4:
+	ldr	w0, [sp, 56]
+	add	w0, w0, 1
+	str	w0, [sp, 56]
+.L3:
+	ldrsw	x19, [sp, 56]
+	ldr	x0, [sp, 40]
+	bl	strlen
+	cmp	x19, x0
+	bcc	.L6
+	ldr	w0, [sp, 60]
+	ldr	x19, [sp, 16]
+	ldp	x29, x30, [sp], 64
+	.cfi_restore 30
+	.cfi_restore 29
+	.cfi_restore 19
+	.cfi_def_cfa_offset 0
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	lengthOfLastWord, .-lengthOfLastWord
+	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
+	.section	.note.GNU-stack,"",@progbits
