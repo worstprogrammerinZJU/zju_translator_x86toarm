@@ -1,16 +1,5 @@
-	.arch armv8-a
-	.file	"0091-decode-ways.c"
-	.text
-	.align	2
-	.global	numDecodings
-	.type	numDecodings, %function
 numDecodings:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
@@ -25,12 +14,12 @@ numDecodings:
 	cset	w0, ne
 	and	w0, w0, 255
 	b	.L3
-.L2:
 	ldr	w0, [sp, 40]
 	add	w0, w0, 1
 	sxtw	x0, w0
 	lsl	x0, x0, 2
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 32]
 	ldrsw	x0, [sp, 40]
 	lsl	x0, x0, 2
@@ -57,7 +46,6 @@ numDecodings:
 	sub	w0, w0, #2
 	str	w0, [sp, 44]
 	b	.L4
-.L11:
 	ldrsw	x0, [sp, 44]
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
@@ -70,7 +58,6 @@ numDecodings:
 	add	x0, x1, x0
 	str	wzr, [x0]
 	b	.L6
-.L5:
 	ldrsw	x0, [sp, 44]
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
@@ -83,7 +70,6 @@ numDecodings:
 	ldrb	w0, [x0]
 	cmp	w0, 50
 	bne	.L8
-.L7:
 	ldrsw	x0, [sp, 44]
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
@@ -109,7 +95,6 @@ numDecodings:
 	ldr	w1, [x1]
 	str	w1, [x0]
 	b	.L6
-.L9:
 	ldrsw	x0, [sp, 44]
 	add	x0, x0, 1
 	lsl	x0, x0, 2
@@ -129,7 +114,6 @@ numDecodings:
 	add	w1, w2, w1
 	str	w1, [x0]
 	b	.L6
-.L8:
 	ldrsw	x0, [sp, 44]
 	add	x0, x0, 1
 	lsl	x0, x0, 2
@@ -141,24 +125,13 @@ numDecodings:
 	add	x0, x2, x0
 	ldr	w1, [x1]
 	str	w1, [x0]
-.L6:
 	ldr	w0, [sp, 44]
 	sub	w0, w0, #1
 	str	w0, [sp, 44]
-.L4:
 	ldr	w0, [sp, 44]
 	cmp	w0, 0
 	bge	.L11
 	ldr	x0, [sp, 32]
 	ldr	w0, [x0]
-.L3:
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	numDecodings, .-numDecodings
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

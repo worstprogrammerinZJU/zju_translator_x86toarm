@@ -1,14 +1,5 @@
-	.arch armv8-a
-	.file	"0621-task-scheduler.c"
-	.text
-	.align	2
-	.global	leastInterval
-	.type	leastInterval, %function
 leastInterval:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #144
-	.cfi_def_cfa_offset 144
 	str	x0, [sp, 8]
 	str	w1, [sp, 4]
 	str	w2, [sp]
@@ -21,7 +12,6 @@ leastInterval:
 	str	x1, [x0, 96]
 	str	wzr, [sp, 140]
 	b	.L2
-.L3:
 	ldrsw	x0, [sp, 140]
 	ldr	x1, [sp, 8]
 	add	x0, x1, x0
@@ -39,7 +29,6 @@ leastInterval:
 	ldr	w0, [sp, 140]
 	add	w0, w0, 1
 	str	w0, [sp, 140]
-.L2:
 	ldr	w1, [sp, 140]
 	ldr	w0, [sp, 4]
 	cmp	w1, w0
@@ -48,7 +37,6 @@ leastInterval:
 	str	wzr, [sp, 132]
 	str	wzr, [sp, 128]
 	b	.L4
-.L7:
 	ldrsw	x0, [sp, 128]
 	lsl	x0, x0, 2
 	add	x1, sp, 16
@@ -64,7 +52,6 @@ leastInterval:
 	mov	w0, 1
 	str	w0, [sp, 132]
 	b	.L6
-.L5:
 	ldrsw	x0, [sp, 128]
 	lsl	x0, x0, 2
 	add	x1, sp, 16
@@ -75,11 +62,9 @@ leastInterval:
 	ldr	w0, [sp, 132]
 	add	w0, w0, 1
 	str	w0, [sp, 132]
-.L6:
 	ldr	w0, [sp, 128]
 	add	w0, w0, 1
 	str	w0, [sp, 128]
-.L4:
 	ldr	w0, [sp, 128]
 	cmp	w0, 25
 	ble	.L7
@@ -97,10 +82,4 @@ leastInterval:
 	cmp	w2, w0
 	csel	w0, w1, w0, ge
 	add	sp, sp, 144
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	leastInterval, .-leastInterval
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

@@ -1,8 +1,3 @@
-	.file	"1968-array-with-elements-not-equal-to-average-of-neighbors.c"
-	.intel_syntax noprefix
-	.text
-	.globl	cmp
-	.type	cmp, @function
 cmp:
 	endbr64
 	push	rbp
@@ -17,9 +12,6 @@ cmp:
 	sub	eax, ecx
 	pop	rbp
 	ret
-	.size	cmp, .-cmp
-	.globl	rearrangeArray
-	.type	rearrangeArray, @function
 rearrangeArray:
 	endbr64
 	push	rbp
@@ -32,8 +24,10 @@ rearrangeArray:
 	cdqe
 	sal	rax, 2
 	mov	rdi, rax
+	mov	eax, 0
 	call	malloc@PLT
-	mov	QWORD PTR -8[rbp], rax
+	cdqe
+	mov	QWORD PTR -16[rbp], rax
 	mov	rax, QWORD PTR -40[rbp]
 	mov	edx, DWORD PTR -28[rbp]
 	mov	DWORD PTR [rax], edx
@@ -45,68 +39,50 @@ rearrangeArray:
 	mov	rdi, rax
 	mov	eax, 0
 	call	qsort@PLT
-	mov	DWORD PTR -12[rbp], 0
-	mov	DWORD PTR -16[rbp], 1
+	mov	DWORD PTR -8[rbp], 0
+	mov	DWORD PTR -4[rbp], 1
 	jmp	.L4
-.L5:
-	mov	eax, DWORD PTR -12[rbp]
+	mov	eax, DWORD PTR -8[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -24[rbp]
 	add	rax, rdx
-	mov	edx, DWORD PTR -16[rbp]
+	mov	edx, DWORD PTR -4[rbp]
 	movsx	rdx, edx
 	lea	rcx, 0[0+rdx*4]
-	mov	rdx, QWORD PTR -8[rbp]
+	mov	rdx, QWORD PTR -16[rbp]
 	add	rdx, rcx
 	mov	eax, DWORD PTR [rax]
 	mov	DWORD PTR [rdx], eax
-	add	DWORD PTR -12[rbp], 1
-	add	DWORD PTR -16[rbp], 2
-.L4:
-	mov	eax, DWORD PTR -16[rbp]
+	add	DWORD PTR -8[rbp], 1
+	add	DWORD PTR -4[rbp], 2
+	mov	eax, DWORD PTR -4[rbp]
 	cmp	eax, DWORD PTR -28[rbp]
 	jl	.L5
-	mov	DWORD PTR -16[rbp], 0
+	mov	DWORD PTR -4[rbp], 0
 	jmp	.L6
-.L7:
-	mov	eax, DWORD PTR -12[rbp]
+	mov	eax, DWORD PTR -8[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -24[rbp]
 	add	rax, rdx
-	mov	edx, DWORD PTR -16[rbp]
+	mov	edx, DWORD PTR -4[rbp]
 	movsx	rdx, edx
 	lea	rcx, 0[0+rdx*4]
-	mov	rdx, QWORD PTR -8[rbp]
+	mov	rdx, QWORD PTR -16[rbp]
 	add	rdx, rcx
 	mov	eax, DWORD PTR [rax]
 	mov	DWORD PTR [rdx], eax
-	add	DWORD PTR -12[rbp], 1
-	add	DWORD PTR -16[rbp], 2
-.L6:
-	mov	eax, DWORD PTR -16[rbp]
+	add	DWORD PTR -8[rbp], 1
+	add	DWORD PTR -4[rbp], 2
+	mov	eax, DWORD PTR -4[rbp]
 	cmp	eax, DWORD PTR -28[rbp]
 	jl	.L7
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	leave
 	ret
-	.size	rearrangeArray, .-rearrangeArray
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

@@ -1,14 +1,5 @@
-	.arch armv8-a
-	.file	"0075-sort-colors.c"
-	.text
-	.align	2
-	.global	swap
-	.type	swap, %function
 swap:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	x0, [sp, 8]
 	str	w1, [sp, 4]
 	str	w2, [sp]
@@ -36,21 +27,9 @@ swap:
 	str	w1, [x0]
 	nop
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	swap, .-swap
-	.align	2
-	.global	sortColors
-	.type	sortColors, %function
 sortColors:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	w1, [sp, 20]
@@ -60,7 +39,6 @@ sortColors:
 	str	w0, [sp, 40]
 	str	wzr, [sp, 36]
 	b	.L3
-.L6:
 	ldrsw	x0, [sp, 36]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 24]
@@ -76,7 +54,6 @@ sortColors:
 	sub	w0, w0, #1
 	str	w0, [sp, 40]
 	b	.L3
-.L4:
 	ldrsw	x0, [sp, 36]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 24]
@@ -95,14 +72,12 @@ sortColors:
 	add	w0, w0, 1
 	str	w0, [sp, 36]
 	b	.L3
-.L5:
 	ldr	w0, [sp, 44]
 	add	w0, w0, 1
 	str	w0, [sp, 44]
 	ldr	w0, [sp, 36]
 	add	w0, w0, 1
 	str	w0, [sp, 36]
-.L3:
 	ldr	w1, [sp, 36]
 	ldr	w0, [sp, 40]
 	cmp	w1, w0
@@ -110,12 +85,4 @@ sortColors:
 	nop
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	sortColors, .-sortColors
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

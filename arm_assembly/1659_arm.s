@@ -1,50 +1,17 @@
-	.arch armv8-a
-	.file	"1659.c"
-	.text
-	.global	neighbor
-	.bss
-	.align	3
-	.type	neighbor, %object
-	.size	neighbor, 40
 neighbor:
-	.zero	40
-	.global	place
-	.align	3
-	.type	place, %object
-	.size	place, 40
 place:
-	.zero	40
-	.global	lake
-	.align	3
-	.type	lake, %object
-	.size	lake, 400
 lake:
-	.zero	400
-	.global	n
-	.align	2
-	.type	n, %object
-	.size	n, 4
 n:
-	.zero	4
-	.text
-	.align	2
-	.global	sort
-	.type	sort, %function
 sort:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	w0, [sp, 12]
 	ldr	w0, [sp, 12]
 	str	w0, [sp, 28]
 	b	.L2
-.L6:
 	ldr	w0, [sp, 28]
 	add	w0, w0, 1
 	str	w0, [sp, 24]
 	b	.L3
-.L5:
 	adrp	x0, neighbor
 	add	x0, x0, :lo12:neighbor
 	ldrsw	x1, [sp, 28]
@@ -91,11 +58,9 @@ sort:
 	ldrsw	x1, [sp, 24]
 	ldr	w2, [sp, 20]
 	str	w2, [x0, x1, lsl 2]
-.L4:
 	ldr	w0, [sp, 24]
 	add	w0, w0, 1
 	str	w0, [sp, 24]
-.L3:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -105,7 +70,6 @@ sort:
 	ldr	w0, [sp, 28]
 	add	w0, w0, 1
 	str	w0, [sp, 28]
-.L2:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -115,35 +79,9 @@ sort:
 	nop
 	nop
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	sort, .-sort
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%d"
-	.align	3
-.LC1:
-	.string	"YES"
-	.align	3
-.LC2:
-	.string	"%d "
-	.align	3
-.LC3:
-	.string	"NO\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	add	x0, sp, 16
 	mov	x1, x0
@@ -152,7 +90,6 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 28]
 	b	.L8
-.L25:
 	adrp	x0, n
 	add	x1, x0, :lo12:n
 	adrp	x0, .LC0
@@ -160,7 +97,6 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 24]
 	b	.L9
-.L10:
 	ldrsw	x0, [sp, 24]
 	lsl	x1, x0, 2
 	adrp	x0, neighbor
@@ -178,7 +114,6 @@ main:
 	ldr	w0, [sp, 24]
 	add	w0, w0, 1
 	str	w0, [sp, 24]
-.L9:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -187,14 +122,12 @@ main:
 	blt	.L10
 	str	wzr, [sp, 24]
 	b	.L11
-.L18:
 	ldr	w0, [sp, 24]
 	bl	sort
 	ldr	w0, [sp, 24]
 	add	w0, w0, 1
 	str	w0, [sp, 20]
 	b	.L12
-.L15:
 	adrp	x0, neighbor
 	add	x0, x0, :lo12:neighbor
 	ldrsw	x1, [sp, 20]
@@ -257,11 +190,9 @@ main:
 	add	x0, x0, x3
 	mov	w1, 1
 	str	w1, [x2, x0, lsl 2]
-.L13:
 	ldr	w0, [sp, 20]
 	add	w0, w0, 1
 	str	w0, [sp, 20]
-.L12:
 	adrp	x0, neighbor
 	add	x0, x0, :lo12:neighbor
 	ldrsw	x1, [sp, 24]
@@ -274,7 +205,6 @@ main:
 	ldr	w1, [sp, 20]
 	cmp	w1, w0
 	blt	.L15
-.L14:
 	adrp	x0, neighbor
 	add	x0, x0, :lo12:neighbor
 	ldrsw	x1, [sp, 24]
@@ -284,7 +214,6 @@ main:
 	ldr	w0, [sp, 24]
 	add	w0, w0, 1
 	str	w0, [sp, 24]
-.L11:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -292,9 +221,7 @@ main:
 	cmp	w1, w0
 	blt	.L18
 	b	.L17
-.L27:
 	nop
-.L17:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -303,13 +230,11 @@ main:
 	bne	.L19
 	adrp	x0, .LC1
 	add	x0, x0, :lo12:.LC1
-	bl	puts
+	bl	printf
 	str	wzr, [sp, 24]
 	b	.L20
-.L23:
 	str	wzr, [sp, 20]
 	b	.L21
-.L22:
 	adrp	x0, lake
 	add	x2, x0, :lo12:lake
 	ldrsw	x3, [sp, 20]
@@ -327,33 +252,31 @@ main:
 	ldr	w0, [sp, 20]
 	add	w0, w0, 1
 	str	w0, [sp, 20]
-.L21:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
 	ldr	w1, [sp, 20]
 	cmp	w1, w0
 	blt	.L22
-	mov	w0, 10
-	bl	putchar
+	adrp	x0, .LC3
+	add	x0, x0, :lo12:.LC3
+	bl	printf
 	ldr	w0, [sp, 24]
 	add	w0, w0, 1
 	str	w0, [sp, 24]
-.L20:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
 	ldr	w1, [sp, 24]
 	cmp	w1, w0
 	blt	.L23
-	mov	w0, 10
-	bl	putchar
-	b	.L24
-.L19:
 	adrp	x0, .LC3
 	add	x0, x0, :lo12:.LC3
-	bl	puts
-.L24:
+	bl	printf
+	b	.L24
+	adrp	x0, .LC4
+	add	x0, x0, :lo12:.LC4
+	bl	printf
 	mov	x2, 400
 	mov	w1, 0
 	adrp	x0, lake
@@ -362,19 +285,10 @@ main:
 	ldr	w0, [sp, 28]
 	add	w0, w0, 1
 	str	w0, [sp, 28]
-.L8:
 	ldr	w0, [sp, 16]
 	ldr	w1, [sp, 28]
 	cmp	w1, w0
 	blt	.L25
 	mov	w0, 0
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

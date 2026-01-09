@@ -1,28 +1,6 @@
-	.file	"1562.c"
-	.intel_syntax noprefix
-	.text
-	.globl	n
-	.bss
-	.align 4
-	.type	n, @object
-	.size	n, 4
 n:
-	.zero	4
-	.globl	m
-	.align 4
-	.type	m, @object
-	.size	m, 4
 m:
-	.zero	4
-	.globl	t
-	.align 32
-	.type	t, @object
-	.size	t, 10000
 t:
-	.zero	10000
-	.text
-	.globl	dfs
-	.type	dfs, @function
 dfs:
 	endbr64
 	push	rbp
@@ -73,7 +51,6 @@ dfs:
 	mov	esi, edx
 	mov	edi, eax
 	call	dfs
-.L3:
 	mov	eax, DWORD PTR -4[rbp]
 	lea	edx, -1[rax]
 	mov	eax, DWORD PTR -8[rbp]
@@ -97,7 +74,6 @@ dfs:
 	mov	esi, eax
 	mov	edi, edx
 	call	dfs
-.L4:
 	mov	eax, DWORD PTR -8[rbp]
 	lea	edx, 1[rax]
 	mov	eax, DWORD PTR m[rip]
@@ -128,7 +104,6 @@ dfs:
 	mov	esi, edx
 	mov	edi, eax
 	call	dfs
-.L2:
 	cmp	DWORD PTR -8[rbp], 0
 	jle	.L5
 	mov	eax, DWORD PTR -8[rbp]
@@ -154,7 +129,6 @@ dfs:
 	mov	esi, edx
 	mov	edi, eax
 	call	dfs
-.L5:
 	mov	eax, DWORD PTR -8[rbp]
 	lea	edx, 1[rax]
 	mov	eax, DWORD PTR m[rip]
@@ -183,7 +157,6 @@ dfs:
 	mov	esi, edx
 	mov	edi, eax
 	call	dfs
-.L6:
 	mov	eax, DWORD PTR -4[rbp]
 	lea	edx, 1[rax]
 	mov	eax, DWORD PTR n[rip]
@@ -216,7 +189,6 @@ dfs:
 	mov	esi, edx
 	mov	edi, eax
 	call	dfs
-.L8:
 	mov	eax, DWORD PTR -4[rbp]
 	lea	edx, 1[rax]
 	mov	eax, DWORD PTR -8[rbp]
@@ -240,7 +212,6 @@ dfs:
 	mov	esi, eax
 	mov	edi, edx
 	call	dfs
-.L9:
 	mov	eax, DWORD PTR -8[rbp]
 	lea	edx, 1[rax]
 	mov	eax, DWORD PTR m[rip]
@@ -271,21 +242,9 @@ dfs:
 	mov	esi, edx
 	mov	edi, eax
 	call	dfs
-.L10:
 	nop
 	leave
 	ret
-	.size	dfs, .-dfs
-	.section	.rodata
-.LC0:
-	.string	"%d%d"
-.LC1:
-	.string	"%s"
-.LC2:
-	.string	"%d\n"
-	.text
-	.globl	main
-	.type	main, @function
 main:
 	endbr64
 	push	rbp
@@ -300,12 +259,10 @@ main:
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
 	jmp	.L12
-.L20:
-	mov	DWORD PTR -4[rbp], 0
 	mov	DWORD PTR -12[rbp], 0
+	mov	DWORD PTR -4[rbp], 0
 	jmp	.L13
-.L14:
-	mov	eax, DWORD PTR -12[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	movsx	rdx, eax
 	mov	rax, rdx
 	sal	rax, 2
@@ -320,20 +277,17 @@ main:
 	mov	rdi, rax
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
-	add	DWORD PTR -12[rbp], 1
-.L13:
+	add	DWORD PTR -4[rbp], 1
 	mov	eax, DWORD PTR n[rip]
-	cmp	DWORD PTR -12[rbp], eax
+	cmp	DWORD PTR -4[rbp], eax
 	jl	.L14
-	mov	DWORD PTR -12[rbp], 0
+	mov	DWORD PTR -4[rbp], 0
 	jmp	.L15
-.L19:
 	mov	DWORD PTR -8[rbp], 0
 	jmp	.L16
-.L18:
 	mov	eax, DWORD PTR -8[rbp]
 	movsx	rcx, eax
-	mov	eax, DWORD PTR -12[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	movsx	rdx, eax
 	mov	rax, rdx
 	sal	rax, 2
@@ -347,24 +301,21 @@ main:
 	movzx	eax, BYTE PTR [rax]
 	cmp	al, 64
 	jne	.L17
-	add	DWORD PTR -4[rbp], 1
+	add	DWORD PTR -12[rbp], 1
 	mov	edx, DWORD PTR -8[rbp]
-	mov	eax, DWORD PTR -12[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	mov	esi, edx
 	mov	edi, eax
 	call	dfs
-.L17:
 	add	DWORD PTR -8[rbp], 1
-.L16:
 	mov	eax, DWORD PTR m[rip]
 	cmp	DWORD PTR -8[rbp], eax
 	jl	.L18
-	add	DWORD PTR -12[rbp], 1
-.L15:
+	add	DWORD PTR -4[rbp], 1
 	mov	eax, DWORD PTR n[rip]
-	cmp	DWORD PTR -12[rbp], eax
+	cmp	DWORD PTR -4[rbp], eax
 	jl	.L19
-	mov	eax, DWORD PTR -4[rbp]
+	mov	eax, DWORD PTR -12[rbp]
 	mov	esi, eax
 	lea	rax, .LC2[rip]
 	mov	rdi, rax
@@ -378,7 +329,6 @@ main:
 	mov	rdi, rax
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
-.L12:
 	mov	eax, DWORD PTR n[rip]
 	test	eax, eax
 	jne	.L20
@@ -388,22 +338,8 @@ main:
 	mov	eax, 0
 	leave
 	ret
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

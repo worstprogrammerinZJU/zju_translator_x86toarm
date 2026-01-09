@@ -1,82 +1,24 @@
-	.arch armv8-a
-	.file	"I_Lena_and_the_Blocks_Again.cpp"
-	.text
-	.section	.text._ZN9__gnu_cxx5__ops16__iter_less_iterEv,"axG",@progbits,_ZN9__gnu_cxx5__ops16__iter_less_iterEv,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
-	.type	_ZN9__gnu_cxx5__ops16__iter_less_iterEv, %function
-_ZN9__gnu_cxx5__ops16__iter_less_iterEv:
-.LFB440:
-	.cfi_startproc
 	nop
 	ret
-	.cfi_endproc
-.LFE440:
-	.size	_ZN9__gnu_cxx5__ops16__iter_less_iterEv, .-_ZN9__gnu_cxx5__ops16__iter_less_iterEv
-	.section	.text._ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE,"axG",@progbits,_ZN9__gnu_cxx5__ops14_Iter_less_valC5ENS0_15_Iter_less_iterE,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.type	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE, %function
-_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE:
-.LFB442:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	strb	w1, [sp]
 	nop
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE442:
-	.size	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE, .-_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.weak	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE
-	.set	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE,_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.section	.text._ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE,"axG",@progbits,_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
-	.type	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE, %function
-_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE:
-.LFB452:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	strb	w0, [sp, 8]
 	nop
 	mov	w0, w1
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE452:
-	.size	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE, .-_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
-	.section	.text._ZSt17__size_to_integerm,"axG",@progbits,_ZSt17__size_to_integerm,comdat
-	.align	2
-	.weak	_ZSt17__size_to_integerm
-	.type	_ZSt17__size_to_integerm, %function
-_ZSt17__size_to_integerm:
-.LFB531:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE531:
-	.size	_ZSt17__size_to_integerm, .-_ZSt17__size_to_integerm
-	.section	.text._ZSt4__lgl,"axG",@progbits,_ZSt4__lgl,comdat
-	.align	2
-	.weak	_ZSt4__lgl
-	.type	_ZSt4__lgl, %function
 _ZSt4__lgl:
-.LFB564:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	clz	x0, x0
@@ -85,38 +27,15 @@ _ZSt4__lgl:
 	sub	w0, w0, w1
 	sxtw	x0, w0
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE564:
-	.size	_ZSt4__lgl, .-_ZSt4__lgl
-	.section	.text._ZnwmPv,"axG",@progbits,_ZnwmPv,comdat
-	.align	2
-	.weak	_ZnwmPv
-	.type	_ZnwmPv, %function
 _ZnwmPv:
-.LFB999:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE999:
-	.size	_ZnwmPv, .-_ZnwmPv
-	.section	.text._ZSt3minImERKT_S2_S2_,"axG",@progbits,_ZSt3minImERKT_S2_S2_,comdat
-	.align	2
-	.weak	_ZSt3minImERKT_S2_S2_
-	.type	_ZSt3minImERKT_S2_S2_, %function
-_ZSt3minImERKT_S2_S2_:
-.LFB3247:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp]
@@ -127,149 +46,19 @@ _ZSt3minImERKT_S2_S2_:
 	bcs	.L13
 	ldr	x0, [sp]
 	b	.L14
-.L13:
 	ldr	x0, [sp, 8]
-.L14:
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3247:
-	.size	_ZSt3minImERKT_S2_S2_, .-_ZSt3minImERKT_S2_S2_
-	.section	.rodata
-	.align	3
-	.type	_ZN6__pstl9execution2v1L3seqE, %object
-	.size	_ZN6__pstl9execution2v1L3seqE, 1
-_ZN6__pstl9execution2v1L3seqE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L3parE, %object
-	.size	_ZN6__pstl9execution2v1L3parE, 1
-_ZN6__pstl9execution2v1L3parE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L9par_unseqE, %object
-	.size	_ZN6__pstl9execution2v1L9par_unseqE, 1
-_ZN6__pstl9execution2v1L9par_unseqE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L5unseqE, %object
-	.size	_ZN6__pstl9execution2v1L5unseqE, 1
-_ZN6__pstl9execution2v1L5unseqE:
-	.zero	1
-	.local	_ZStL8__ioinit
-	.comm	_ZStL8__ioinit,1,8
-	.align	2
-	.type	_ZN9__gnu_cxxL21__default_lock_policyE, %object
-	.size	_ZN9__gnu_cxxL21__default_lock_policyE, 4
-_ZN9__gnu_cxxL21__default_lock_policyE:
-	.word	2
-	.align	2
-	.type	_ZNSt15regex_constantsL13error_collateE, %object
-	.size	_ZNSt15regex_constantsL13error_collateE, 4
-_ZNSt15regex_constantsL13error_collateE:
-	.zero	4
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_ctypeE, %object
-	.size	_ZNSt15regex_constantsL11error_ctypeE, 4
-_ZNSt15regex_constantsL11error_ctypeE:
-	.word	1
-	.align	2
-	.type	_ZNSt15regex_constantsL12error_escapeE, %object
-	.size	_ZNSt15regex_constantsL12error_escapeE, 4
-_ZNSt15regex_constantsL12error_escapeE:
-	.word	2
-	.align	2
-	.type	_ZNSt15regex_constantsL13error_backrefE, %object
-	.size	_ZNSt15regex_constantsL13error_backrefE, 4
-_ZNSt15regex_constantsL13error_backrefE:
-	.word	3
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_brackE, %object
-	.size	_ZNSt15regex_constantsL11error_brackE, 4
-_ZNSt15regex_constantsL11error_brackE:
-	.word	4
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_parenE, %object
-	.size	_ZNSt15regex_constantsL11error_parenE, 4
-_ZNSt15regex_constantsL11error_parenE:
-	.word	5
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_braceE, %object
-	.size	_ZNSt15regex_constantsL11error_braceE, 4
-_ZNSt15regex_constantsL11error_braceE:
-	.word	6
-	.align	2
-	.type	_ZNSt15regex_constantsL14error_badbraceE, %object
-	.size	_ZNSt15regex_constantsL14error_badbraceE, 4
-_ZNSt15regex_constantsL14error_badbraceE:
-	.word	7
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_rangeE, %object
-	.size	_ZNSt15regex_constantsL11error_rangeE, 4
-_ZNSt15regex_constantsL11error_rangeE:
-	.word	8
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_spaceE, %object
-	.size	_ZNSt15regex_constantsL11error_spaceE, 4
-_ZNSt15regex_constantsL11error_spaceE:
-	.word	9
-	.align	2
-	.type	_ZNSt15regex_constantsL15error_badrepeatE, %object
-	.size	_ZNSt15regex_constantsL15error_badrepeatE, 4
-_ZNSt15regex_constantsL15error_badrepeatE:
-	.word	10
-	.align	2
-	.type	_ZNSt15regex_constantsL16error_complexityE, %object
-	.size	_ZNSt15regex_constantsL16error_complexityE, 4
-_ZNSt15regex_constantsL16error_complexityE:
-	.word	11
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_stackE, %object
-	.size	_ZNSt15regex_constantsL11error_stackE, 4
-_ZNSt15regex_constantsL11error_stackE:
-	.word	12
-	.align	3
-	.type	_ZNSt8__detailL19_S_invalid_state_idE, %object
-	.size	_ZNSt8__detailL19_S_invalid_state_idE, 8
-_ZNSt8__detailL19_S_invalid_state_idE:
-	.xword	-1
-	.align	3
-.LC0:
-	.string	"r"
-	.align	3
-.LC1:
-	.string	"input.txt"
-	.align	3
-.LC2:
-	.string	"w"
-	.align	3
-.LC3:
-	.string	"output.txt"
-	.text
-	.align	2
-	.global	_Z5setupv
-	.type	_Z5setupv, %function
 _Z5setupv:
-.LFB9696:
-	.cfi_startproc
 	stp	x29, x30, [sp, -16]!
-	.cfi_def_cfa_offset 16
-	.cfi_offset 29, -16
-	.cfi_offset 30, -8
 	mov	x29, sp
 	mov	w0, 0
-	bl	_ZNSt8ios_base15sync_with_stdioEb
 	mov	x1, 0
 	adrp	x0, :got:_ZSt3cin
-	ldr	x0, [x0, #:got_lo12:_ZSt3cin]
 	add	x0, x0, 16
-	bl	_ZNSt9basic_iosIcSt11char_traitsIcEE3tieEPSo
 	mov	x1, 0
 	adrp	x0, :got:_ZSt4cout
-	ldr	x0, [x0, #:got_lo12:_ZSt4cout]
 	add	x0, x0, 8
-	bl	_ZNSt9basic_iosIcSt11char_traitsIcEE3tieEPSo
 	adrp	x0, :got:stdin
 	ldr	x0, [x0, #:got_lo12:stdin]
 	ldr	x0, [x0]
@@ -290,115 +79,38 @@ _Z5setupv:
 	bl	freopen
 	nop
 	ldp	x29, x30, [sp], 16
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9696:
-	.size	_Z5setupv, .-_Z5setupv
-	.section	.text._ZNSt12_Vector_baseIiSaIiEE12_Vector_implD2Ev,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD5Ev,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD2Ev
-	.type	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD2Ev, %function
-_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD2Ev:
-.LFB9701:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
 	bl	_ZNSaIiED2Ev
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9701:
-	.size	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD2Ev, .-_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD2Ev
-	.weak	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD1Ev
-	.set	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD1Ev,_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD2Ev
-	.section	.text._ZNSt12_Vector_baseIiSaIiEEC2Ev,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEEC5Ev,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEEC2Ev
-	.type	_ZNSt12_Vector_baseIiSaIiEEC2Ev, %function
-_ZNSt12_Vector_baseIiSaIiEEC2Ev:
-.LFB9703:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
-	bl	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1Ev
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9703:
-	.size	_ZNSt12_Vector_baseIiSaIiEEC2Ev, .-_ZNSt12_Vector_baseIiSaIiEEC2Ev
-	.weak	_ZNSt12_Vector_baseIiSaIiEEC1Ev
-	.set	_ZNSt12_Vector_baseIiSaIiEEC1Ev,_ZNSt12_Vector_baseIiSaIiEEC2Ev
-	.section	.text._ZNSt6vectorIiSaIiEEC2Ev,"axG",@progbits,_ZNSt6vectorIiSaIiEEC5Ev,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEEC2Ev
-	.type	_ZNSt6vectorIiSaIiEEC2Ev, %function
-_ZNSt6vectorIiSaIiEEC2Ev:
-.LFB9705:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
-	bl	_ZNSt12_Vector_baseIiSaIiEEC2Ev
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9705:
-	.size	_ZNSt6vectorIiSaIiEEC2Ev, .-_ZNSt6vectorIiSaIiEEC2Ev
-	.weak	_ZNSt6vectorIiSaIiEEC1Ev
-	.set	_ZNSt6vectorIiSaIiEEC1Ev,_ZNSt6vectorIiSaIiEEC2Ev
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB9697:
-	.cfi_startproc
-	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
-	.cfi_lsda 0x1b,.LLSDA9697
 	stp	x29, x30, [sp, -208]!
-	.cfi_def_cfa_offset 208
-	.cfi_offset 29, -208
-	.cfi_offset 30, -200
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -192
-.LEHB0:
 	bl	_Z5setupv
 	add	x0, sp, 140
 	mov	x1, x0
 	adrp	x0, :got:_ZSt3cin
-	ldr	x0, [x0, #:got_lo12:_ZSt3cin]
 	bl	_ZNSirsERi
-.LEHE0:
 	ldr	w0, [sp, 140]
 	sxtw	x19, w0
 	add	x0, sp, 144
@@ -407,9 +119,6 @@ main:
 	add	x0, sp, 112
 	mov	x2, x1
 	mov	x1, x19
-.LEHB1:
-	bl	_ZNSt6vectorIiSaIiEEC1EmRKS0_
-.LEHE1:
 	add	x0, sp, 144
 	bl	_ZNSaIiED1Ev
 	add	x0, sp, 88
@@ -419,59 +128,44 @@ main:
 	add	x0, sp, 112
 	str	x0, [sp, 192]
 	ldr	x0, [sp, 192]
-	bl	_ZNSt6vectorIiSaIiEE5beginEv
 	str	x0, [sp, 48]
 	ldr	x0, [sp, 192]
 	bl	_ZNSt6vectorIiSaIiEE3endEv
 	str	x0, [sp, 40]
 	b	.L20
-.L21:
 	add	x0, sp, 48
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	x0, [sp, 176]
 	ldr	x1, [sp, 176]
 	adrp	x0, :got:_ZSt3cin
-	ldr	x0, [x0, #:got_lo12:_ZSt3cin]
-.LEHB2:
 	bl	_ZNSirsERi
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
-.L20:
 	add	x1, sp, 40
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
 	bne	.L21
 	add	x0, sp, 112
-	bl	_ZNSt6vectorIiSaIiEE5beginEv
 	mov	x19, x0
 	add	x0, sp, 112
 	bl	_ZNSt6vectorIiSaIiEE3endEv
 	mov	x1, x0
 	mov	x0, x19
-	bl	_ZSt11min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_
 	str	x0, [sp, 152]
 	add	x0, sp, 152
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	ldr	w0, [x0]
 	str	w0, [sp, 188]
 	add	x0, sp, 112
-	bl	_ZNSt6vectorIiSaIiEE5beginEv
 	mov	x19, x0
 	add	x0, sp, 112
 	bl	_ZNSt6vectorIiSaIiEE3endEv
 	mov	x1, x0
 	mov	x0, x19
-	bl	_ZSt11max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_
 	str	x0, [sp, 160]
 	add	x0, sp, 160
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	ldr	w0, [x0]
 	str	w0, [sp, 184]
 	str	wzr, [sp, 36]
 	b	.L22
-.L25:
 	ldr	w0, [sp, 36]
 	sxtw	x1, w0
 	add	x0, sp, 112
@@ -485,8 +179,6 @@ main:
 	beq	.L23
 	add	x1, sp, 36
 	add	x0, sp, 88
-	bl	_ZNSt6vectorIiSaIiEE9push_backERKi
-.L23:
 	ldr	w0, [sp, 36]
 	sxtw	x1, w0
 	add	x0, sp, 112
@@ -500,38 +192,30 @@ main:
 	beq	.L24
 	add	x1, sp, 36
 	add	x0, sp, 64
-	bl	_ZNSt6vectorIiSaIiEE9push_backERKi
-.L24:
 	ldr	w0, [sp, 36]
 	add	w0, w0, 1
 	str	w0, [sp, 36]
-.L22:
 	ldr	w1, [sp, 36]
 	ldr	w0, [sp, 140]
 	cmp	w1, w0
 	blt	.L25
 	add	x0, sp, 64
-	bl	_ZNSt6vectorIiSaIiEE5beginEv
 	mov	x19, x0
 	add	x0, sp, 64
 	bl	_ZNSt6vectorIiSaIiEE3endEv
 	mov	x1, x0
 	mov	x0, x19
-	bl	_ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_
 	add	x0, sp, 88
-	bl	_ZNSt6vectorIiSaIiEE5beginEv
 	mov	x19, x0
 	add	x0, sp, 88
 	bl	_ZNSt6vectorIiSaIiEE3endEv
 	mov	x1, x0
 	mov	x0, x19
-	bl	_ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_
 	str	wzr, [sp, 204]
 	str	wzr, [sp, 200]
 	mov	w0, 2147483647
 	str	w0, [sp, 60]
 	b	.L26
-.L30:
 	ldrsw	x1, [sp, 204]
 	add	x0, sp, 88
 	bl	_ZNSt6vectorIiSaIiEEixEm
@@ -541,8 +225,7 @@ main:
 	bl	_ZNSt6vectorIiSaIiEEixEm
 	ldr	w0, [x0]
 	sub	w0, w19, w0
-	cmp	w0, 0
-	csneg	w0, w0, w0, ge
+	bl	abs
 	str	w0, [sp, 172]
 	add	x1, sp, 172
 	add	x0, sp, 60
@@ -566,36 +249,27 @@ main:
 	add	w0, w0, 1
 	str	w0, [sp, 204]
 	b	.L26
-.L27:
 	ldr	w0, [sp, 200]
 	add	w0, w0, 1
 	str	w0, [sp, 200]
-.L26:
 	ldrsw	x19, [sp, 204]
 	add	x0, sp, 88
-	bl	_ZNKSt6vectorIiSaIiEE4sizeEv
 	cmp	x19, x0
 	bcs	.L28
 	ldrsw	x19, [sp, 200]
 	add	x0, sp, 64
-	bl	_ZNKSt6vectorIiSaIiEE4sizeEv
 	cmp	x19, x0
 	bcs	.L28
 	mov	w0, 1
 	b	.L29
-.L28:
 	mov	w0, 0
-.L29:
 	cmp	w0, 0
 	bne	.L30
 	ldr	w0, [sp, 60]
 	mov	w1, w0
 	adrp	x0, :got:_ZSt4cout
-	ldr	x0, [x0, #:got_lo12:_ZSt4cout]
 	bl	_ZNSolsEi
 	mov	w1, 10
-	bl	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c
-.LEHE2:
 	mov	w19, 0
 	add	x0, sp, 64
 	bl	_ZNSt6vectorIiSaIiEED1Ev
@@ -604,71 +278,10 @@ main:
 	add	x0, sp, 112
 	bl	_ZNSt6vectorIiSaIiEED1Ev
 	mov	w0, w19
-	b	.L36
-.L34:
-	mov	x19, x0
-	add	x0, sp, 144
-	bl	_ZNSaIiED1Ev
-	mov	x0, x19
-.LEHB3:
-	bl	_Unwind_Resume
-.L35:
-	mov	x19, x0
-	add	x0, sp, 64
-	bl	_ZNSt6vectorIiSaIiEED1Ev
-	add	x0, sp, 88
-	bl	_ZNSt6vectorIiSaIiEED1Ev
-	add	x0, sp, 112
-	bl	_ZNSt6vectorIiSaIiEED1Ev
-	mov	x0, x19
-	bl	_Unwind_Resume
-.LEHE3:
-.L36:
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 208
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9697:
-	.global	__gxx_personality_v0
-	.section	.gcc_except_table,"a",@progbits
-.LLSDA9697:
-	.byte	0xff
-	.byte	0xff
-	.byte	0x1
-	.uleb128 .LLSDACSE9697-.LLSDACSB9697
-.LLSDACSB9697:
-	.uleb128 .LEHB0-.LFB9697
-	.uleb128 .LEHE0-.LEHB0
-	.uleb128 0
-	.uleb128 0
-	.uleb128 .LEHB1-.LFB9697
-	.uleb128 .LEHE1-.LEHB1
-	.uleb128 .L34-.LFB9697
-	.uleb128 0
-	.uleb128 .LEHB2-.LFB9697
-	.uleb128 .LEHE2-.LEHB2
-	.uleb128 .L35-.LFB9697
-	.uleb128 0
-	.uleb128 .LEHB3-.LFB9697
-	.uleb128 .LEHE3-.LEHB3
-	.uleb128 0
-	.uleb128 0
-.LLSDACSE9697:
-	.text
-	.size	main, .-main
-	.section	.text._ZSt3maxImERKT_S2_S2_,"axG",@progbits,_ZSt3maxImERKT_S2_S2_,comdat
-	.align	2
-	.weak	_ZSt3maxImERKT_S2_S2_
-	.type	_ZSt3maxImERKT_S2_S2_, %function
-_ZSt3maxImERKT_S2_S2_:
-.LFB10018:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp, 8]
@@ -676,241 +289,73 @@ _ZSt3maxImERKT_S2_S2_:
 	ldr	x0, [sp]
 	ldr	x0, [x0]
 	cmp	x1, x0
-	bcs	.L38
+	bcs	.L33
 	ldr	x0, [sp]
-	b	.L39
-.L38:
+	b	.L34
 	ldr	x0, [sp, 8]
-.L39:
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10018:
-	.size	_ZSt3maxImERKT_S2_S2_, .-_ZSt3maxImERKT_S2_S2_
-	.section	.text._ZNSaIiEC2Ev,"axG",@progbits,_ZNSaIiEC5Ev,comdat
-	.align	2
-	.weak	_ZNSaIiEC2Ev
-	.type	_ZNSaIiEC2Ev, %function
 _ZNSaIiEC2Ev:
-.LFB10396:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
-	bl	_ZN9__gnu_cxx13new_allocatorIiEC2Ev
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10396:
-	.size	_ZNSaIiEC2Ev, .-_ZNSaIiEC2Ev
-	.weak	_ZNSaIiEC1Ev
-	.set	_ZNSaIiEC1Ev,_ZNSaIiEC2Ev
-	.section	.text._ZNSaIiED2Ev,"axG",@progbits,_ZNSaIiED5Ev,comdat
-	.align	2
-	.weak	_ZNSaIiED2Ev
-	.type	_ZNSaIiED2Ev, %function
 _ZNSaIiED2Ev:
-.LFB10399:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
-	bl	_ZN9__gnu_cxx13new_allocatorIiED2Ev
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10399:
-	.size	_ZNSaIiED2Ev, .-_ZNSaIiED2Ev
-	.weak	_ZNSaIiED1Ev
-	.set	_ZNSaIiED1Ev,_ZNSaIiED2Ev
-	.section	.text._ZNSt6vectorIiSaIiEEC2EmRKS0_,"axG",@progbits,_ZNSt6vectorIiSaIiEEC5EmRKS0_,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEEC2EmRKS0_
-	.type	_ZNSt6vectorIiSaIiEEC2EmRKS0_, %function
-_ZNSt6vectorIiSaIiEEC2EmRKS0_:
-.LFB10402:
-	.cfi_startproc
-	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
-	.cfi_lsda 0x1b,.LLSDA10402
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	ldr	x19, [sp, 56]
 	ldr	x1, [sp, 40]
 	ldr	x0, [sp, 48]
-.LEHB4:
-	bl	_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_
 	ldr	x2, [sp, 40]
 	mov	x1, x0
 	mov	x0, x19
-	bl	_ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_
-.LEHE4:
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-.LEHB5:
-	bl	_ZNSt6vectorIiSaIiEE21_M_default_initializeEm
-.LEHE5:
-	b	.L45
-.L44:
-	mov	x19, x0
-	ldr	x0, [sp, 56]
-	bl	_ZNSt12_Vector_baseIiSaIiEED2Ev
-	mov	x0, x19
-.LEHB6:
-	bl	_Unwind_Resume
-.LEHE6:
-.L45:
+	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10402:
-	.section	.gcc_except_table
-.LLSDA10402:
-	.byte	0xff
-	.byte	0xff
-	.byte	0x1
-	.uleb128 .LLSDACSE10402-.LLSDACSB10402
-.LLSDACSB10402:
-	.uleb128 .LEHB4-.LFB10402
-	.uleb128 .LEHE4-.LEHB4
-	.uleb128 0
-	.uleb128 0
-	.uleb128 .LEHB5-.LFB10402
-	.uleb128 .LEHE5-.LEHB5
-	.uleb128 .L44-.LFB10402
-	.uleb128 0
-	.uleb128 .LEHB6-.LFB10402
-	.uleb128 .LEHE6-.LEHB6
-	.uleb128 0
-	.uleb128 0
-.LLSDACSE10402:
-	.section	.text._ZNSt6vectorIiSaIiEEC2EmRKS0_,"axG",@progbits,_ZNSt6vectorIiSaIiEEC5EmRKS0_,comdat
-	.size	_ZNSt6vectorIiSaIiEEC2EmRKS0_, .-_ZNSt6vectorIiSaIiEEC2EmRKS0_
-	.weak	_ZNSt6vectorIiSaIiEEC1EmRKS0_
-	.set	_ZNSt6vectorIiSaIiEEC1EmRKS0_,_ZNSt6vectorIiSaIiEEC2EmRKS0_
-	.section	.text._ZNSt6vectorIiSaIiEED2Ev,"axG",@progbits,_ZNSt6vectorIiSaIiEED5Ev,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEED2Ev
-	.type	_ZNSt6vectorIiSaIiEED2Ev, %function
-_ZNSt6vectorIiSaIiEED2Ev:
-.LFB10405:
-	.cfi_startproc
-	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
-	.cfi_lsda 0x1b,.LLSDA10405
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -32
-	.cfi_offset 20, -24
 	str	x0, [sp, 40]
 	ldr	x0, [sp, 40]
 	ldr	x19, [x0]
 	ldr	x0, [sp, 40]
 	ldr	x20, [x0, 8]
 	ldr	x0, [sp, 40]
-	bl	_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
 	mov	x2, x0
 	mov	x1, x20
 	mov	x0, x19
-	bl	_ZSt8_DestroyIPiiEvT_S1_RSaIT0_E
 	ldr	x0, [sp, 40]
-	bl	_ZNSt12_Vector_baseIiSaIiEED2Ev
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10405:
-	.section	.gcc_except_table
-.LLSDA10405:
-	.byte	0xff
-	.byte	0xff
-	.byte	0x1
-	.uleb128 .LLSDACSE10405-.LLSDACSB10405
-.LLSDACSB10405:
-.LLSDACSE10405:
-	.section	.text._ZNSt6vectorIiSaIiEED2Ev,"axG",@progbits,_ZNSt6vectorIiSaIiEED5Ev,comdat
-	.size	_ZNSt6vectorIiSaIiEED2Ev, .-_ZNSt6vectorIiSaIiEED2Ev
-	.weak	_ZNSt6vectorIiSaIiEED1Ev
-	.set	_ZNSt6vectorIiSaIiEED1Ev,_ZNSt6vectorIiSaIiEED2Ev
-	.section	.text._ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2Ev,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC5Ev,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2Ev
-	.type	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2Ev, %function
-_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2Ev:
-.LFB10408:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
 	bl	_ZNSaIiEC2Ev
 	ldr	x0, [sp, 24]
-	bl	_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10408:
-	.size	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2Ev, .-_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2Ev
-	.weak	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1Ev
-	.set	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1Ev,_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2Ev
-	.section	.text._ZNSt12_Vector_baseIiSaIiEED2Ev,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEED5Ev,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEED2Ev
-	.type	_ZNSt12_Vector_baseIiSaIiEED2Ev, %function
-_ZNSt12_Vector_baseIiSaIiEED2Ev:
-.LFB10411:
-	.cfi_startproc
-	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
-	.cfi_lsda 0x1b,.LLSDA10411
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
@@ -924,124 +369,43 @@ _ZNSt12_Vector_baseIiSaIiEED2Ev:
 	mov	x2, x0
 	mov	x1, x3
 	ldr	x0, [sp, 24]
-	bl	_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim
 	ldr	x0, [sp, 24]
-	bl	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD1Ev
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10411:
-	.section	.gcc_except_table
-.LLSDA10411:
-	.byte	0xff
-	.byte	0xff
-	.byte	0x1
-	.uleb128 .LLSDACSE10411-.LLSDACSB10411
-.LLSDACSB10411:
-.LLSDACSE10411:
-	.section	.text._ZNSt12_Vector_baseIiSaIiEED2Ev,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEED5Ev,comdat
-	.size	_ZNSt12_Vector_baseIiSaIiEED2Ev, .-_ZNSt12_Vector_baseIiSaIiEED2Ev
-	.weak	_ZNSt12_Vector_baseIiSaIiEED1Ev
-	.set	_ZNSt12_Vector_baseIiSaIiEED1Ev,_ZNSt12_Vector_baseIiSaIiEED2Ev
-	.section	.text._ZNSt6vectorIiSaIiEE5beginEv,"axG",@progbits,_ZNSt6vectorIiSaIiEE5beginEv,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE5beginEv
-	.type	_ZNSt6vectorIiSaIiEE5beginEv, %function
-_ZNSt6vectorIiSaIiEE5beginEv:
-.LFB10413:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x1, [sp, 24]
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC1ERKS1_
 	ldr	x0, [sp, 40]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10413:
-	.size	_ZNSt6vectorIiSaIiEE5beginEv, .-_ZNSt6vectorIiSaIiEE5beginEv
-	.section	.text._ZNSt6vectorIiSaIiEE3endEv,"axG",@progbits,_ZNSt6vectorIiSaIiEE3endEv,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE3endEv
-	.type	_ZNSt6vectorIiSaIiEE3endEv, %function
-_ZNSt6vectorIiSaIiEE3endEv:
-.LFB10414:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
 	add	x1, x0, 8
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC1ERKS1_
 	ldr	x0, [sp, 40]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10414:
-	.size	_ZNSt6vectorIiSaIiEE3endEv, .-_ZNSt6vectorIiSaIiEE3endEv
-	.section	.text._ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_,"axG",@progbits,_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
-	.type	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_, %function
-_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_:
-.LFB10415:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x19, [x0]
 	ldr	x0, [sp, 32]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x0, [x0]
 	cmp	x19, x0
 	cset	w0, ne
 	and	w0, w0, 255
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10415:
-	.size	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_, .-_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
-	.section	.text._ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv,"axG",@progbits,_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
-	.type	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv, %function
-_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv:
-.LFB10416:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	ldr	x0, [x0]
@@ -1050,100 +414,36 @@ _ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv:
 	str	x1, [x0]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10416:
-	.size	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv, .-_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
-	.section	.text._ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv,"axG",@progbits,_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	.type	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv, %function
-_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv:
-.LFB10417:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	ldr	x0, [x0]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10417:
-	.size	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv, .-_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	.section	.text._ZSt11min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_,"axG",@progbits,_ZSt11min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_,comdat
-	.align	2
-	.weak	_ZSt11min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_
-	.type	_ZSt11min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_, %function
-_ZSt11min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_:
-.LFB10418:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
-	bl	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
 	mov	w2, w19
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt13__min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10418:
-	.size	_ZSt11min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_, .-_ZSt11min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_
-	.section	.text._ZSt11max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_,"axG",@progbits,_ZSt11max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_,comdat
-	.align	2
-	.weak	_ZSt11max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_
-	.type	_ZSt11max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_, %function
-_ZSt11max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_:
-.LFB10419:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
-	bl	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
 	mov	w2, w19
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt13__max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10419:
-	.size	_ZSt11max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_, .-_ZSt11max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_S7_
-	.section	.text._ZNSt6vectorIiSaIiEEixEm,"axG",@progbits,_ZNSt6vectorIiSaIiEEixEm,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEEixEm
-	.type	_ZNSt6vectorIiSaIiEEixEm, %function
-_ZNSt6vectorIiSaIiEEixEm:
-.LFB10420:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp, 8]
@@ -1152,22 +452,8 @@ _ZNSt6vectorIiSaIiEEixEm:
 	lsl	x0, x0, 2
 	add	x0, x1, x0
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10420:
-	.size	_ZNSt6vectorIiSaIiEEixEm, .-_ZNSt6vectorIiSaIiEEixEm
-	.section	.text._ZNSt6vectorIiSaIiEE9push_backERKi,"axG",@progbits,_ZNSt6vectorIiSaIiEE9push_backERKi,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE9push_backERKi
-	.type	_ZNSt6vectorIiSaIiEE9push_backERKi, %function
-_ZNSt6vectorIiSaIiEE9push_backERKi:
-.LFB10421:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
@@ -1176,78 +462,40 @@ _ZNSt6vectorIiSaIiEE9push_backERKi:
 	ldr	x0, [sp, 24]
 	ldr	x0, [x0, 16]
 	cmp	x1, x0
-	beq	.L66
+	beq	.L58
 	ldr	x3, [sp, 24]
 	ldr	x0, [sp, 24]
 	ldr	x0, [x0, 8]
 	ldr	x2, [sp, 16]
 	mov	x1, x0
 	mov	x0, x3
-	bl	_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_
 	ldr	x0, [sp, 24]
 	ldr	x0, [x0, 8]
 	add	x1, x0, 4
 	ldr	x0, [sp, 24]
 	str	x1, [x0, 8]
-	b	.L68
-.L66:
+	b	.L60
 	ldr	x0, [sp, 24]
 	bl	_ZNSt6vectorIiSaIiEE3endEv
 	ldr	x2, [sp, 16]
 	mov	x1, x0
 	ldr	x0, [sp, 24]
-	bl	_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_
-.L68:
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10421:
-	.size	_ZNSt6vectorIiSaIiEE9push_backERKi, .-_ZNSt6vectorIiSaIiEE9push_backERKi
-	.section	.text._ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_,"axG",@progbits,_ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_,comdat
-	.align	2
-	.weak	_ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_
-	.type	_ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_, %function
-_ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_:
-.LFB10423:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
-	bl	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
 	mov	w2, w19
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10423:
-	.size	_ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_, .-_ZSt4sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEEvT_S7_
-	.section	.text._ZNKSt6vectorIiSaIiEE4sizeEv,"axG",@progbits,_ZNKSt6vectorIiSaIiEE4sizeEv,comdat
-	.align	2
-	.weak	_ZNKSt6vectorIiSaIiEE4sizeEv
-	.type	_ZNKSt6vectorIiSaIiEE4sizeEv, %function
-_ZNKSt6vectorIiSaIiEE4sizeEv:
-.LFB10424:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	ldr	x1, [x0, 8]
@@ -1256,20 +504,8 @@ _ZNKSt6vectorIiSaIiEE4sizeEv:
 	sub	x0, x1, x0
 	asr	x0, x0, 2
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10424:
-	.size	_ZNKSt6vectorIiSaIiEE4sizeEv, .-_ZNKSt6vectorIiSaIiEE4sizeEv
-	.section	.text._ZSt3minIiERKT_S2_S2_,"axG",@progbits,_ZSt3minIiERKT_S2_S2_,comdat
-	.align	2
-	.weak	_ZSt3minIiERKT_S2_S2_
-	.type	_ZSt3minIiERKT_S2_S2_, %function
-_ZSt3minIiERKT_S2_S2_:
-.LFB10425:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp]
@@ -1277,81 +513,31 @@ _ZSt3minIiERKT_S2_S2_:
 	ldr	x0, [sp, 8]
 	ldr	w0, [x0]
 	cmp	w1, w0
-	bge	.L73
+	bge	.L65
 	ldr	x0, [sp]
-	b	.L74
-.L73:
+	b	.L66
 	ldr	x0, [sp, 8]
-.L74:
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10425:
-	.size	_ZSt3minIiERKT_S2_S2_, .-_ZSt3minIiERKT_S2_S2_
-	.section	.text._ZN9__gnu_cxx13new_allocatorIiEC2Ev,"axG",@progbits,_ZN9__gnu_cxx13new_allocatorIiEC5Ev,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx13new_allocatorIiEC2Ev
-	.type	_ZN9__gnu_cxx13new_allocatorIiEC2Ev, %function
-_ZN9__gnu_cxx13new_allocatorIiEC2Ev:
-.LFB10819:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	nop
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10819:
-	.size	_ZN9__gnu_cxx13new_allocatorIiEC2Ev, .-_ZN9__gnu_cxx13new_allocatorIiEC2Ev
-	.weak	_ZN9__gnu_cxx13new_allocatorIiEC1Ev
-	.set	_ZN9__gnu_cxx13new_allocatorIiEC1Ev,_ZN9__gnu_cxx13new_allocatorIiEC2Ev
-	.section	.text._ZN9__gnu_cxx13new_allocatorIiED2Ev,"axG",@progbits,_ZN9__gnu_cxx13new_allocatorIiED5Ev,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx13new_allocatorIiED2Ev
-	.type	_ZN9__gnu_cxx13new_allocatorIiED2Ev, %function
-_ZN9__gnu_cxx13new_allocatorIiED2Ev:
-.LFB10822:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	nop
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10822:
-	.size	_ZN9__gnu_cxx13new_allocatorIiED2Ev, .-_ZN9__gnu_cxx13new_allocatorIiED2Ev
-	.weak	_ZN9__gnu_cxx13new_allocatorIiED1Ev
-	.set	_ZN9__gnu_cxx13new_allocatorIiED1Ev,_ZN9__gnu_cxx13new_allocatorIiED2Ev
-	.section	.rodata
-	.align	3
-.LC4:
-	.string	"cannot create std::vector larger than max_size()"
-	.section	.text._ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_,"axG",@progbits,_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_
-	.type	_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_, %function
-_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_:
-.LFB10824:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	add	x0, sp, 56
 	ldr	x1, [sp, 32]
 	bl	_ZNSaIiEC1ERKS_
 	add	x0, sp, 56
-	bl	_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_
 	mov	x1, x0
 	ldr	x0, [sp, 40]
 	cmp	x0, x1
@@ -1360,154 +546,49 @@ _ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_:
 	add	x0, sp, 56
 	bl	_ZNSaIiED1Ev
 	cmp	w19, 0
-	beq	.L78
+	beq	.L70
 	adrp	x0, .LC4
 	add	x0, x0, :lo12:.LC4
-	bl	_ZSt20__throw_length_errorPKc
-.L78:
 	ldr	x0, [sp, 40]
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10824:
-	.size	_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_, .-_ZNSt6vectorIiSaIiEE17_S_check_init_lenEmRKS0_
-	.section	.text._ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEEC5EmRKS0_,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_
-	.type	_ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_, %function
-_ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_:
-.LFB10826:
-	.cfi_startproc
-	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
-	.cfi_lsda 0x1b,.LLSDA10826
-	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
-	mov	x29, sp
-	str	x19, [sp, 16]
-	.cfi_offset 19, -48
-	str	x0, [sp, 56]
-	str	x1, [sp, 48]
-	str	x2, [sp, 40]
-	ldr	x0, [sp, 56]
-	ldr	x1, [sp, 40]
-	bl	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1ERKS0_
-	ldr	x1, [sp, 48]
-	ldr	x0, [sp, 56]
-.LEHB7:
-	bl	_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm
-.LEHE7:
-	b	.L83
-.L82:
-	mov	x19, x0
-	ldr	x0, [sp, 56]
-	bl	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD1Ev
-	mov	x0, x19
-.LEHB8:
-	bl	_Unwind_Resume
-.LEHE8:
-.L83:
-	ldr	x19, [sp, 16]
-	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
-	ret
-	.cfi_endproc
-.LFE10826:
-	.section	.gcc_except_table
-.LLSDA10826:
-	.byte	0xff
-	.byte	0xff
-	.byte	0x1
-	.uleb128 .LLSDACSE10826-.LLSDACSB10826
-.LLSDACSB10826:
-	.uleb128 .LEHB7-.LFB10826
-	.uleb128 .LEHE7-.LEHB7
-	.uleb128 .L82-.LFB10826
-	.uleb128 0
-	.uleb128 .LEHB8-.LFB10826
-	.uleb128 .LEHE8-.LEHB8
-	.uleb128 0
-	.uleb128 0
-.LLSDACSE10826:
-	.section	.text._ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEEC5EmRKS0_,comdat
-	.size	_ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_, .-_ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_
-	.weak	_ZNSt12_Vector_baseIiSaIiEEC1EmRKS0_
-	.set	_ZNSt12_Vector_baseIiSaIiEEC1EmRKS0_,_ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_
-	.section	.text._ZNSt6vectorIiSaIiEE21_M_default_initializeEm,"axG",@progbits,_ZNSt6vectorIiSaIiEE21_M_default_initializeEm,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE21_M_default_initializeEm
-	.type	_ZNSt6vectorIiSaIiEE21_M_default_initializeEm, %function
-_ZNSt6vectorIiSaIiEE21_M_default_initializeEm:
-.LFB10828:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
+	mov	x29, sp
+	str	x0, [sp, 40]
+	str	x1, [sp, 32]
+	str	x2, [sp, 24]
+	ldr	x0, [sp, 40]
+	ldr	x1, [sp, 24]
+	ldr	x1, [sp, 32]
+	ldr	x0, [sp, 40]
+	nop
+	ldp	x29, x30, [sp], 48
+	ret
+	stp	x29, x30, [sp, -48]!
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	ldr	x0, [sp, 40]
 	ldr	x19, [x0]
 	ldr	x0, [sp, 40]
-	bl	_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
 	mov	x2, x0
 	ldr	x1, [sp, 32]
 	mov	x0, x19
-	bl	_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E
 	mov	x1, x0
 	ldr	x0, [sp, 40]
 	str	x1, [x0, 8]
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10828:
-	.size	_ZNSt6vectorIiSaIiEE21_M_default_initializeEm, .-_ZNSt6vectorIiSaIiEE21_M_default_initializeEm
-	.section	.text._ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
-	.type	_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv, %function
-_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv:
-.LFB10829:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10829:
-	.size	_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv, .-_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
-	.section	.text._ZSt8_DestroyIPiiEvT_S1_RSaIT0_E,"axG",@progbits,_ZSt8_DestroyIPiiEvT_S1_RSaIT0_E,comdat
-	.align	2
-	.weak	_ZSt8_DestroyIPiiEvT_S1_RSaIT0_E
-	.type	_ZSt8_DestroyIPiiEvT_S1_RSaIT0_E, %function
-_ZSt8_DestroyIPiiEvT_S1_RSaIT0_E:
-.LFB10830:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -1517,22 +598,8 @@ _ZSt8_DestroyIPiiEvT_S1_RSaIT0_E:
 	bl	_ZSt8_DestroyIPiEvT_S1_
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10830:
-	.size	_ZSt8_DestroyIPiiEvT_S1_RSaIT0_E, .-_ZSt8_DestroyIPiiEvT_S1_RSaIT0_E
-	.section	.text._ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC5Ev,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev
-	.type	_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev, %function
-_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev:
-.LFB10832:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	str	xzr, [x0]
@@ -1542,54 +609,22 @@ _ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev:
 	str	xzr, [x0, 16]
 	nop
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10832:
-	.size	_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev, .-_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev
-	.weak	_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC1Ev
-	.set	_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC1Ev,_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev
-	.section	.text._ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim
-	.type	_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim, %function
-_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim:
-.LFB10834:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
 	ldr	x0, [sp, 32]
 	cmp	x0, 0
-	beq	.L91
+	beq	.L80
 	ldr	x0, [sp, 40]
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
-	bl	_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim
-.L91:
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10834:
-	.size	_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim, .-_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim
-	.section	.text._ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC2ERKS1_,"axG",@progbits,_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC5ERKS1_,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC2ERKS1_
-	.type	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC2ERKS1_, %function
-_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC2ERKS1_:
-.LFB10836:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp]
@@ -1598,231 +633,111 @@ _ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC2ERKS1_:
 	str	x1, [x0]
 	nop
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10836:
-	.size	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC2ERKS1_, .-_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC2ERKS1_
-	.weak	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC1ERKS1_
-	.set	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC1ERKS1_,_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC2ERKS1_
-	.section	.text._ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv,"axG",@progbits,_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
-	.type	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv, %function
-_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv:
-.LFB10838:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10838:
-	.size	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv, .-_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
-	.section	.text._ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
-	.type	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_, %function
-_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_:
-.LFB10840:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	add	x0, sp, 48
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	ldr	w19, [x0]
 	add	x0, sp, 40
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	ldr	w0, [x0]
 	cmp	w19, w0
 	cset	w0, lt
 	and	w0, w0, 255
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10840:
-	.size	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_, .-_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
-	.section	.text._ZSt13__min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_,"axG",@progbits,_ZSt13__min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt13__min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
-	.type	_ZSt13__min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_, %function
-_ZSt13__min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_:
-.LFB10839:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	strb	w2, [sp, 24]
 	add	x1, sp, 32
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L98
+	beq	.L87
 	ldr	x0, [sp, 40]
-	b	.L102
-.L98:
+	b	.L91
 	ldr	x0, [sp, 40]
 	str	x0, [sp, 56]
-	b	.L100
-.L101:
+	b	.L89
 	add	x0, sp, 24
 	ldr	x2, [sp, 56]
 	ldr	x1, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L100
+	beq	.L89
 	ldr	x0, [sp, 40]
 	str	x0, [sp, 56]
-.L100:
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
 	mov	x2, x0
 	add	x0, sp, 32
 	mov	x1, x0
 	mov	x0, x2
-	bl	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L101
+	bne	.L90
 	ldr	x0, [sp, 56]
-.L102:
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10839:
-	.size	_ZSt13__min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_, .-_ZSt13__min_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
-	.section	.text._ZSt13__max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_,"axG",@progbits,_ZSt13__max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt13__max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
-	.type	_ZSt13__max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_, %function
-_ZSt13__max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_:
-.LFB10841:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	strb	w2, [sp, 24]
 	add	x1, sp, 32
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L104
+	beq	.L93
 	ldr	x0, [sp, 40]
-	b	.L108
-.L104:
+	b	.L97
 	ldr	x0, [sp, 40]
 	str	x0, [sp, 56]
-	b	.L106
-.L107:
+	b	.L95
 	add	x0, sp, 24
 	ldr	x2, [sp, 40]
 	ldr	x1, [sp, 56]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L106
+	beq	.L95
 	ldr	x0, [sp, 40]
 	str	x0, [sp, 56]
-.L106:
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
 	mov	x2, x0
 	add	x0, sp, 32
 	mov	x1, x0
 	mov	x0, x2
-	bl	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L107
+	bne	.L96
 	ldr	x0, [sp, 56]
-.L108:
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10841:
-	.size	_ZSt13__max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_, .-_ZSt13__max_elementIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
-	.section	.text._ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_,"axG",@progbits,_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_,comdat
-	.align	2
-	.weak	_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_
-	.type	_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_, %function
-_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_:
-.LFB10842:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
 	ldr	x0, [sp, 24]
-	bl	_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE
 	mov	x2, x0
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10842:
-	.size	_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_, .-_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_
-	.section	.rodata
-	.align	3
-.LC5:
-	.string	"vector::_M_realloc_insert"
-	.section	.text._ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_,"axG",@progbits,_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_
-	.type	_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_, %function
-_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_:
-.LFB10843:
-	.cfi_startproc
 	stp	x29, x30, [sp, -128]!
-	.cfi_def_cfa_offset 128
-	.cfi_offset 29, -128
-	.cfi_offset 30, -120
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -112
-	.cfi_offset 20, -104
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
@@ -1830,7 +745,6 @@ _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIP
 	add	x2, x0, :lo12:.LC5
 	mov	x1, 1
 	ldr	x0, [sp, 56]
-	bl	_ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc
 	str	x0, [sp, 120]
 	ldr	x0, [sp, 56]
 	ldr	x0, [x0]
@@ -1839,15 +753,12 @@ _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIP
 	ldr	x0, [x0, 8]
 	str	x0, [sp, 104]
 	ldr	x0, [sp, 56]
-	bl	_ZNSt6vectorIiSaIiEE5beginEv
 	str	x0, [sp, 72]
 	add	x1, sp, 72
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	str	x0, [sp, 96]
 	ldr	x0, [sp, 56]
 	ldr	x1, [sp, 120]
-	bl	_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm
 	str	x0, [sp, 88]
 	ldr	x0, [sp, 88]
 	str	x0, [sp, 80]
@@ -1857,36 +768,28 @@ _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIP
 	ldr	x1, [sp, 88]
 	add	x20, x1, x0
 	ldr	x0, [sp, 40]
-	bl	_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE
 	mov	x2, x0
 	mov	x1, x20
 	mov	x0, x19
-	bl	_ZNSt16allocator_traitsISaIiEE9constructIiJRKiEEEvRS0_PT_DpOT0_
 	str	xzr, [sp, 80]
 	add	x0, sp, 48
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x19, [x0]
 	ldr	x0, [sp, 56]
-	bl	_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
 	mov	x3, x0
 	ldr	x2, [sp, 88]
 	mov	x1, x19
 	ldr	x0, [sp, 112]
-	bl	_ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_
 	str	x0, [sp, 80]
 	ldr	x0, [sp, 80]
 	add	x0, x0, 4
 	str	x0, [sp, 80]
 	add	x0, sp, 48
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x19, [x0]
 	ldr	x0, [sp, 56]
-	bl	_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
 	mov	x3, x0
 	ldr	x2, [sp, 80]
 	ldr	x1, [sp, 104]
 	mov	x0, x19
-	bl	_ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_
 	str	x0, [sp, 80]
 	ldr	x3, [sp, 56]
 	ldr	x0, [sp, 56]
@@ -1897,7 +800,6 @@ _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIP
 	mov	x2, x0
 	ldr	x1, [sp, 112]
 	mov	x0, x3
-	bl	_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim
 	ldr	x0, [sp, 56]
 	ldr	x1, [sp, 88]
 	str	x1, [x0]
@@ -1913,135 +815,57 @@ _ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIP
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 128
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10843:
-	.size	_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_, .-_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_
-	.section	.text._ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_,"axG",@progbits,_ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	.type	_ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_, %function
-_ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_:
-.LFB10847:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -48
-	.cfi_offset 20, -40
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	strb	w2, [sp, 40]
 	add	x1, sp, 48
 	add	x0, sp, 56
-	bl	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L113
+	beq	.L102
 	add	x1, sp, 56
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	bl	_ZSt4__lgl
 	lsl	x0, x0, 1
 	mov	w3, w20
 	mov	x2, x0
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_
 	mov	w2, w19
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-.L113:
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE10847:
-	.size	_ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_, .-_ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	.section	.text._ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_,"axG",@progbits,_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_
-	.type	_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_, %function
-_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_:
-.LFB11044:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	mov	x0, 2305843009213693951
 	str	x0, [sp, 40]
 	ldr	x0, [sp, 24]
-	bl	_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_
 	str	x0, [sp, 32]
 	add	x1, sp, 32
 	add	x0, sp, 40
 	bl	_ZSt3minImERKT_S2_S2_
 	ldr	x0, [x0]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11044:
-	.size	_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_, .-_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_
-	.section	.text._ZNSaIiEC2ERKS_,"axG",@progbits,_ZNSaIiEC5ERKS_,comdat
-	.align	2
-	.weak	_ZNSaIiEC2ERKS_
-	.type	_ZNSaIiEC2ERKS_, %function
 _ZNSaIiEC2ERKS_:
-.LFB11046:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11046:
-	.size	_ZNSaIiEC2ERKS_, .-_ZNSaIiEC2ERKS_
-	.weak	_ZNSaIiEC1ERKS_
-	.set	_ZNSaIiEC1ERKS_,_ZNSaIiEC2ERKS_
-	.section	.text._ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC5ERKS0_,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_
-	.type	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_, %function
-_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_:
-.LFB11049:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
@@ -2049,35 +873,15 @@ _ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_:
 	ldr	x0, [sp, 24]
 	bl	_ZNSaIiEC2ERKS_
 	ldr	x0, [sp, 24]
-	bl	_ZNSt12_Vector_baseIiSaIiEE17_Vector_impl_dataC2Ev
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11049:
-	.size	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_, .-_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_
-	.weak	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1ERKS0_
-	.set	_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1ERKS0_,_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_
-	.section	.text._ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm
-	.type	_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm, %function
-_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm:
-.LFB11051:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm
 	mov	x1, x0
 	ldr	x0, [sp, 24]
 	str	x1, [x0]
@@ -2094,76 +898,26 @@ _ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm:
 	str	x1, [x0, 16]
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11051:
-	.size	_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm, .-_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm
-	.section	.text._ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E,"axG",@progbits,_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E,comdat
-	.align	2
-	.weak	_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E
-	.type	_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E, %function
-_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E:
-.LFB11052:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt25__uninitialized_default_nIPimET_S1_T0_
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11052:
-	.size	_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E, .-_ZSt27__uninitialized_default_n_aIPimiET_S1_T0_RSaIT1_E
-	.section	.text._ZSt8_DestroyIPiEvT_S1_,"axG",@progbits,_ZSt8_DestroyIPiEvT_S1_,comdat
-	.align	2
-	.weak	_ZSt8_DestroyIPiEvT_S1_
-	.type	_ZSt8_DestroyIPiEvT_S1_, %function
-_ZSt8_DestroyIPiEvT_S1_:
-.LFB11053:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11053:
-	.size	_ZSt8_DestroyIPiEvT_S1_, .-_ZSt8_DestroyIPiEvT_S1_
-	.section	.text._ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim,"axG",@progbits,_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim,comdat
-	.align	2
-	.weak	_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim
-	.type	_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim, %function
-_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim:
-.LFB11054:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -2171,87 +925,36 @@ _ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim:
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11054:
-	.size	_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim, .-_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim
-	.section	.text._ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_,"axG",@progbits,_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
-	.type	_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_, %function
-_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_:
-.LFB11055:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x19, [x0]
 	ldr	x0, [sp, 32]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x0, [x0]
 	cmp	x19, x0
 	cset	w0, eq
 	and	w0, w0, 255
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11055:
-	.size	_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_, .-_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
-	.section	.text._ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE,"axG",@progbits,_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE,comdat
-	.align	2
-	.weak	_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE
-	.type	_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE, %function
-_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE:
-.LFB11056:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11056:
-	.size	_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE, .-_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE
-	.section	.text._ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_,"axG",@progbits,_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_
-	.type	_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_, %function
-_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_:
-.LFB11057:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	ldr	x0, [sp, 40]
-	bl	_ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE
 	ldr	w19, [x0]
 	ldr	x0, [sp, 48]
 	mov	x1, x0
@@ -2261,51 +964,27 @@ _ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_:
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11057:
-	.size	_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_, .-_ZN9__gnu_cxx13new_allocatorIiE9constructIiJRKiEEEvPT_DpOT0_
-	.section	.text._ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc,"axG",@progbits,_ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc,comdat
-	.align	2
-	.weak	_ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc
-	.type	_ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc, %function
-_ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc:
-.LFB11058:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -64
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	ldr	x0, [sp, 56]
-	bl	_ZNKSt6vectorIiSaIiEE8max_sizeEv
 	mov	x19, x0
 	ldr	x0, [sp, 56]
-	bl	_ZNKSt6vectorIiSaIiEE4sizeEv
 	sub	x1, x19, x0
 	ldr	x0, [sp, 48]
 	cmp	x1, x0
 	cset	w0, cc
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L129
+	beq	.L118
 	ldr	x0, [sp, 40]
-	bl	_ZSt20__throw_length_errorPKc
-.L129:
 	ldr	x0, [sp, 56]
-	bl	_ZNKSt6vectorIiSaIiEE4sizeEv
 	mov	x19, x0
 	ldr	x0, [sp, 56]
-	bl	_ZNKSt6vectorIiSaIiEE4sizeEv
 	str	x0, [sp, 64]
 	add	x1, sp, 48
 	add	x0, sp, 64
@@ -2314,111 +993,49 @@ _ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc:
 	add	x0, x19, x0
 	str	x0, [sp, 72]
 	ldr	x0, [sp, 56]
-	bl	_ZNKSt6vectorIiSaIiEE4sizeEv
 	mov	x1, x0
 	ldr	x0, [sp, 72]
 	cmp	x0, x1
-	bcc	.L130
+	bcc	.L119
 	ldr	x0, [sp, 56]
-	bl	_ZNKSt6vectorIiSaIiEE8max_sizeEv
 	mov	x1, x0
 	ldr	x0, [sp, 72]
 	cmp	x0, x1
-	bls	.L131
-.L130:
+	bls	.L120
 	ldr	x0, [sp, 56]
-	bl	_ZNKSt6vectorIiSaIiEE8max_sizeEv
-	b	.L132
-.L131:
+	b	.L121
 	ldr	x0, [sp, 72]
-.L132:
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11058:
-	.size	_ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc, .-_ZNKSt6vectorIiSaIiEE12_M_check_lenEmPKc
-	.section	.text._ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_,"axG",@progbits,_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
-	.type	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_, %function
-_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_:
-.LFB11059:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x19, [x0]
 	ldr	x0, [sp, 32]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x0, [x0]
 	sub	x0, x19, x0
 	asr	x0, x0, 2
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11059:
-	.size	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_, .-_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
-	.section	.text._ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm,"axG",@progbits,_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm,comdat
-	.align	2
-	.weak	_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm
-	.type	_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm, %function
-_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm:
-.LFB11060:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x0, [sp, 16]
 	cmp	x0, 0
-	beq	.L137
+	beq	.L126
 	ldr	x0, [sp, 24]
 	ldr	x1, [sp, 16]
-	bl	_ZNSt16allocator_traitsISaIiEE8allocateERS0_m
-	b	.L139
-.L137:
+	b	.L128
 	mov	x0, 0
-.L139:
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11060:
-	.size	_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm, .-_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm
-	.section	.text._ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_,"axG",@progbits,_ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_
-	.type	_ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_, %function
-_ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_:
-.LFB11061:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -2428,202 +1045,94 @@ _ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_:
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11061:
-	.size	_ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_, .-_ZNSt6vectorIiSaIiEE11_S_relocateEPiS2_S2_RS0_
-	.section	.text._ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_,"axG",@progbits,_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_,comdat
-	.align	2
-	.weak	_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_
-	.type	_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_, %function
-_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_:
-.LFB11063:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
 	str	x21, [sp, 32]
-	.cfi_offset 19, -80
-	.cfi_offset 20, -72
-	.cfi_offset 21, -64
 	str	x0, [sp, 72]
 	str	x1, [sp, 64]
 	str	x2, [sp, 56]
 	strb	w3, [sp, 48]
-	b	.L143
-.L146:
+	b	.L132
 	ldr	x0, [sp, 56]
 	cmp	x0, 0
-	bne	.L144
+	bne	.L133
 	mov	w3, w21
 	ldr	x2, [sp, 64]
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 72]
-	bl	_ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_
-	b	.L142
-.L144:
+	b	.L131
 	ldr	x0, [sp, 56]
 	sub	x0, x0, #1
 	str	x0, [sp, 56]
 	mov	w2, w20
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 72]
-	bl	_ZSt27__unguarded_partition_pivotIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
 	str	x0, [sp, 88]
 	mov	w3, w19
 	ldr	x2, [sp, 56]
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 88]
-	bl	_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_
 	ldr	x0, [sp, 88]
 	str	x0, [sp, 64]
-.L143:
 	add	x1, sp, 72
 	add	x0, sp, 64
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	cmp	x0, 16
 	cset	w0, gt
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L146
-.L142:
+	bne	.L135
 	ldp	x19, x20, [sp, 16]
 	ldr	x21, [sp, 32]
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 21
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11063:
-	.size	_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_, .-_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_
-	.section	.text._ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_,"axG",@progbits,_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	.type	_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_, %function
-_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_:
-.LFB11064:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
 	str	x21, [sp, 32]
-	.cfi_offset 19, -64
-	.cfi_offset 20, -56
-	.cfi_offset 21, -48
 	str	x0, [sp, 72]
 	str	x1, [sp, 64]
 	strb	w2, [sp, 56]
 	add	x1, sp, 72
 	add	x0, sp, 64
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	cmp	x0, 16
 	cset	w0, gt
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L148
+	beq	.L137
 	add	x0, sp, 72
 	mov	x1, 16
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	mov	w2, w21
 	mov	x1, x0
 	ldr	x0, [sp, 72]
-	bl	_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
 	add	x0, sp, 72
 	mov	x1, 16
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	mov	w2, w20
 	ldr	x1, [sp, 64]
-	bl	_ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	b	.L150
-.L148:
+	b	.L139
 	mov	w2, w19
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 72]
-	bl	_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-.L150:
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldr	x21, [sp, 32]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 21
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11064:
-	.size	_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_, .-_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	.section	.text._ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_,"axG",@progbits,_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_,comdat
-	.align	2
-	.weak	_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_
-	.type	_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_, %function
-_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_:
-.LFB11201:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
-	bl	_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11201:
-	.size	_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_, .-_ZNSt16allocator_traitsISaIiEE8max_sizeERKS0_
-	.section	.text._ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_,"axG",@progbits,_ZN9__gnu_cxx13new_allocatorIiEC5ERKS1_,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_
-	.type	_ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_, %function
-_ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_:
-.LFB11203:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	nop
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11203:
-	.size	_ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_, .-_ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_
-	.weak	_ZN9__gnu_cxx13new_allocatorIiEC1ERKS1_
-	.set	_ZN9__gnu_cxx13new_allocatorIiEC1ERKS1_,_ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_
-	.section	.text._ZSt25__uninitialized_default_nIPimET_S1_T0_,"axG",@progbits,_ZSt25__uninitialized_default_nIPimET_S1_T0_,comdat
-	.align	2
-	.weak	_ZSt25__uninitialized_default_nIPimET_S1_T0_
-	.type	_ZSt25__uninitialized_default_nIPimET_S1_T0_, %function
-_ZSt25__uninitialized_default_nIPimET_S1_T0_:
-.LFB11205:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
@@ -2631,44 +1140,15 @@ _ZSt25__uninitialized_default_nIPimET_S1_T0_:
 	strb	w0, [sp, 47]
 	ldr	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11205:
-	.size	_ZSt25__uninitialized_default_nIPimET_S1_T0_, .-_ZSt25__uninitialized_default_nIPimET_S1_T0_
-	.section	.text._ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_,"axG",@progbits,_ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_,comdat
-	.align	2
-	.weak	_ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_
-	.type	_ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_, %function
-_ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_:
-.LFB11206:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	nop
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11206:
-	.size	_ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_, .-_ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_
-	.section	.text._ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim,"axG",@progbits,_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim
-	.type	_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim, %function
-_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim:
-.LFB11207:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -2679,74 +1159,23 @@ _ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim:
 	ldr	x0, [sp, 32]
 	bl	_ZdlPvm
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11207:
-	.size	_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim, .-_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim
-	.section	.text._ZNKSt6vectorIiSaIiEE8max_sizeEv,"axG",@progbits,_ZNKSt6vectorIiSaIiEE8max_sizeEv,comdat
-	.align	2
-	.weak	_ZNKSt6vectorIiSaIiEE8max_sizeEv
-	.type	_ZNKSt6vectorIiSaIiEE8max_sizeEv, %function
-_ZNKSt6vectorIiSaIiEE8max_sizeEv:
-.LFB11208:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
-	bl	_ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
-	bl	_ZNSt6vectorIiSaIiEE11_S_max_sizeERKS0_
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11208:
-	.size	_ZNKSt6vectorIiSaIiEE8max_sizeEv, .-_ZNKSt6vectorIiSaIiEE8max_sizeEv
-	.section	.text._ZNSt16allocator_traitsISaIiEE8allocateERS0_m,"axG",@progbits,_ZNSt16allocator_traitsISaIiEE8allocateERS0_m,comdat
-	.align	2
-	.weak	_ZNSt16allocator_traitsISaIiEE8allocateERS0_m
-	.type	_ZNSt16allocator_traitsISaIiEE8allocateERS0_m, %function
-_ZNSt16allocator_traitsISaIiEE8allocateERS0_m:
-.LFB11209:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	mov	x2, 0
 	ldr	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11209:
-	.size	_ZNSt16allocator_traitsISaIiEE8allocateERS0_m, .-_ZNSt16allocator_traitsISaIiEE8allocateERS0_m
-	.section	.text._ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE,"axG",@progbits,_ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE,comdat
-	.align	2
-	.weak	_ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE
-	.type	_ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE, %function
-_ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE:
-.LFB11210:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
@@ -2757,26 +1186,9 @@ _ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE:
 	ldr	x2, [sp, 40]
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11210:
-	.size	_ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE, .-_ZNSt6vectorIiSaIiEE14_S_do_relocateEPiS2_S2_RS0_St17integral_constantIbLb1EE
-	.section	.text._ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_,"axG",@progbits,_ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_
-	.type	_ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_, %function
-_ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_:
-.LFB11212:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -2786,95 +1198,48 @@ _ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_
 	add	x0, sp, 16
 	mov	x2, x0
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt11__sort_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11212:
-	.size	_ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_, .-_ZSt14__partial_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_
-	.section	.text._ZSt27__unguarded_partition_pivotIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_,"axG",@progbits,_ZSt27__unguarded_partition_pivotIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt27__unguarded_partition_pivotIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
-	.type	_ZSt27__unguarded_partition_pivotIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_, %function
-_ZSt27__unguarded_partition_pivotIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_:
-.LFB11213:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
 	str	x21, [sp, 32]
-	.cfi_offset 19, -80
-	.cfi_offset 20, -72
-	.cfi_offset 21, -64
 	str	x0, [sp, 72]
 	str	x1, [sp, 64]
 	strb	w2, [sp, 56]
 	add	x1, sp, 72
 	add	x0, sp, 64
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	lsr	x1, x0, 63
 	add	x0, x1, x0
 	asr	x0, x0, 1
 	mov	x1, x0
 	add	x0, sp, 72
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 88]
 	add	x0, sp, 72
 	mov	x1, 1
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	mov	x19, x0
 	add	x0, sp, 64
 	mov	x1, 1
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl
 	mov	w4, w21
 	mov	x3, x0
 	ldr	x2, [sp, 88]
 	mov	x1, x19
 	ldr	x0, [sp, 72]
-	bl	_ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_S9_T0_
 	add	x0, sp, 72
 	mov	x1, 1
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	mov	w3, w20
 	ldr	x2, [sp, 72]
 	ldr	x1, [sp, 64]
-	bl	_ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_S9_T0_
 	ldp	x19, x20, [sp, 16]
 	ldr	x21, [sp, 32]
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 21
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11213:
-	.size	_ZSt27__unguarded_partition_pivotIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_, .-_ZSt27__unguarded_partition_pivotIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_T0_
-	.section	.text._ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl,"axG",@progbits,_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
-	.type	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl, %function
-_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl:
-.LFB11214:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
@@ -2886,218 +1251,104 @@ _ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl:
 	str	x0, [sp, 40]
 	add	x1, sp, 40
 	add	x0, sp, 32
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC1ERKS1_
 	ldr	x0, [sp, 32]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11214:
-	.size	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl, .-_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
-	.section	.text._ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_,"axG",@progbits,_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	.type	_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_, %function
-_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_:
-.LFB11215:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
 	str	x21, [sp, 32]
-	.cfi_offset 19, -80
-	.cfi_offset 20, -72
-	.cfi_offset 21, -64
 	str	x0, [sp, 72]
 	str	x1, [sp, 64]
 	strb	w2, [sp, 56]
 	add	x1, sp, 64
 	add	x0, sp, 72
-	bl	_ZN9__gnu_cxxeqIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L177
+	bne	.L166
 	add	x0, sp, 72
 	mov	x1, 1
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 88]
-	b	.L173
-.L176:
+	b	.L162
 	add	x0, sp, 56
 	ldr	x2, [sp, 72]
 	ldr	x1, [sp, 88]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L174
+	beq	.L163
 	add	x0, sp, 88
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w0, [x0]
 	str	w0, [sp, 84]
 	add	x0, sp, 88
 	mov	x1, 1
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	mov	x2, x0
 	ldr	x1, [sp, 88]
 	ldr	x0, [sp, 72]
-	bl	_ZSt13move_backwardIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET0_T_S8_S7_
 	add	x0, sp, 84
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w19, [x0]
 	add	x0, sp, 72
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	w19, [x0]
-	b	.L175
-.L174:
+	b	.L164
 	mov	w0, w21
-	bl	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
 	mov	w1, w20
 	ldr	x0, [sp, 88]
-	bl	_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_
-.L175:
 	add	x0, sp, 88
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
-.L173:
 	add	x1, sp, 64
 	add	x0, sp, 88
-	bl	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L176
-	b	.L170
-.L177:
+	bne	.L165
+	b	.L159
 	nop
-.L170:
 	ldp	x19, x20, [sp, 16]
 	ldr	x21, [sp, 32]
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 21
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11215:
-	.size	_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_, .-_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	.section	.text._ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_,"axG",@progbits,_ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	.type	_ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_, %function
-_ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_:
-.LFB11216:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -64
-	.cfi_offset 20, -56
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	strb	w2, [sp, 40]
 	ldr	x0, [sp, 56]
 	str	x0, [sp, 72]
-	b	.L179
-.L180:
+	b	.L168
 	mov	w0, w20
-	bl	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
 	mov	w1, w19
 	ldr	x0, [sp, 72]
-	bl	_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_
 	add	x0, sp, 72
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
-.L179:
 	add	x1, sp, 48
 	add	x0, sp, 72
-	bl	_ZN9__gnu_cxxneIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L180
+	bne	.L169
 	nop
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11216:
-	.size	_ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_, .-_ZSt26__unguarded_insertion_sortIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_
-	.section	.text._ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv,"axG",@progbits,_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv
-	.type	_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv, %function
-_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv:
-.LFB11301:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
-	bl	_ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11301:
-	.size	_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv, .-_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv
-	.section	.text._ZSt11__addressofIiEPT_RS0_,"axG",@progbits,_ZSt11__addressofIiEPT_RS0_,comdat
-	.align	2
-	.weak	_ZSt11__addressofIiEPT_RS0_
-	.type	_ZSt11__addressofIiEPT_RS0_, %function
-_ZSt11__addressofIiEPT_RS0_:
-.LFB11303:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11303:
-	.size	_ZSt11__addressofIiEPT_RS0_, .-_ZSt11__addressofIiEPT_RS0_
-	.section	.text._ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_,"axG",@progbits,_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_,comdat
-	.align	2
-	.weak	_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_
-	.type	_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_, %function
-_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_:
-.LFB11302:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x0, [sp, 16]
 	cmp	x0, 0
-	beq	.L186
+	beq	.L175
 	ldr	x0, [sp, 24]
 	bl	_ZSt11__addressofIiEPT_RS0_
 	str	x0, [sp, 40]
 	ldr	x0, [sp, 40]
-	bl	_ZSt10_ConstructIiJEEvPT_DpOT0_
 	ldr	x0, [sp, 24]
 	add	x0, x0, 4
 	str	x0, [sp, 24]
@@ -3106,69 +1357,26 @@ _ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_:
 	ldr	x2, [sp, 40]
 	mov	x1, x0
 	ldr	x0, [sp, 24]
-	bl	_ZSt6fill_nIPimiET_S1_T0_RKT1_
 	str	x0, [sp, 24]
-.L186:
 	ldr	x0, [sp, 24]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11302:
-	.size	_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_, .-_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPimEET_S3_T0_
-	.section	.text._ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv,"axG",@progbits,_ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv,comdat
-	.align	2
-	.weak	_ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
-	.type	_ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv, %function
-_ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv:
-.LFB11304:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11304:
-	.size	_ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv, .-_ZNKSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
-	.section	.text._ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv,"axG",@progbits,_ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv
-	.type	_ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv, %function
-_ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv:
-.LFB11306:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	mov	x0, 2305843009213693951
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11306:
-	.size	_ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv, .-_ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv
-	.section	.text._ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv,"axG",@progbits,_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv
-	.type	_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv, %function
-_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv:
-.LFB11305:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
 	ldr	x0, [sp, 40]
-	bl	_ZNK9__gnu_cxx13new_allocatorIiE11_M_max_sizeEv
 	mov	x1, x0
 	ldr	x0, [sp, 32]
 	cmp	x0, x1
@@ -3179,42 +1387,21 @@ _ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv:
 	cset	w0, ne
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L193
+	beq	.L182
 	ldr	x1, [sp, 32]
 	mov	x0, 4611686018427387903
 	cmp	x1, x0
-	bls	.L194
-	bl	_ZSt28__throw_bad_array_new_lengthv
-.L194:
+	bls	.L183
 	bl	_ZSt17__throw_bad_allocv
-.L193:
 	ldr	x0, [sp, 32]
 	lsl	x0, x0, 2
 	bl	_Znwm
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11305:
-	.size	_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv, .-_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv
-	.section	.text._ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_,"axG",@progbits,_ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_,comdat
-	.align	2
-	.weak	_ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_
-	.type	_ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_, %function
-_ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_:
-.LFB11307:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -48
-	.cfi_offset 20, -40
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
@@ -3231,29 +1418,10 @@ _ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_:
 	mov	x2, x0
 	mov	x1, x20
 	mov	x0, x19
-	bl	_ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11307:
-	.size	_ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_, .-_ZSt12__relocate_aIPiS0_SaIiEET0_T_S3_S2_RT1_
-	.section	.text._ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_,"axG",@progbits,_ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_
-	.type	_ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_, %function
-_ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_:
-.LFB11308:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -3263,98 +1431,53 @@ _ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__o
 	mov	x2, x0
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_
 	ldr	x0, [sp, 32]
 	str	x0, [sp, 56]
-	b	.L199
-.L201:
+	b	.L188
 	add	x0, sp, 16
 	ldr	x2, [sp, 40]
 	ldr	x1, [sp, 56]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L200
+	beq	.L189
 	add	x0, sp, 16
 	mov	x3, x0
 	ldr	x2, [sp, 56]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_
-.L200:
 	add	x0, sp, 56
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
-.L199:
 	add	x1, sp, 24
 	add	x0, sp, 56
-	bl	_ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L201
+	bne	.L190
 	nop
 	nop
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11308:
-	.size	_ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_, .-_ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_T0_
-	.section	.text._ZSt11__sort_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_,"axG",@progbits,_ZSt11__sort_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_,comdat
-	.align	2
-	.weak	_ZSt11__sort_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_
-	.type	_ZSt11__sort_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_, %function
-_ZSt11__sort_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_:
-.LFB11309:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
-	b	.L203
-.L204:
+	b	.L192
 	add	x0, sp, 32
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv
 	ldr	x3, [sp, 24]
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_
-.L203:
 	add	x1, sp, 40
 	add	x0, sp, 32
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	cmp	x0, 1
 	cset	w0, gt
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L204
+	bne	.L193
 	nop
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11309:
-	.size	_ZSt11__sort_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_, .-_ZSt11__sort_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_
-	.section	.text._ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl,"axG",@progbits,_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl
-	.type	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl, %function
-_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl:
-.LFB11310:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
@@ -3367,27 +1490,10 @@ _ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl:
 	str	x0, [sp, 40]
 	add	x1, sp, 40
 	add	x0, sp, 32
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEC1ERKS1_
 	ldr	x0, [sp, 32]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11310:
-	.size	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl, .-_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmiEl
-	.section	.text._ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_S9_T0_,"axG",@progbits,_ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_S9_T0_
-	.type	_ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_S9_T0_, %function
-_ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_S9_T0_:
-.LFB11311:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
@@ -3397,271 +1503,145 @@ _ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE
 	add	x0, sp, 24
 	ldr	x2, [sp, 40]
 	ldr	x1, [sp, 48]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L208
+	beq	.L197
 	add	x0, sp, 24
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L209
+	beq	.L198
 	ldr	x1, [sp, 40]
 	ldr	x0, [sp, 56]
-	bl	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
-	b	.L214
-.L209:
+	b	.L203
 	add	x0, sp, 24
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 48]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L211
+	beq	.L200
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 56]
-	bl	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
-	b	.L214
-.L211:
+	b	.L203
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
-	b	.L214
-.L208:
+	b	.L203
 	add	x0, sp, 24
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 48]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L212
+	beq	.L201
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
-	b	.L214
-.L212:
+	b	.L203
 	add	x0, sp, 24
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L213
+	beq	.L202
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 56]
-	bl	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
-	b	.L214
-.L213:
+	b	.L203
 	ldr	x1, [sp, 40]
 	ldr	x0, [sp, 56]
-	bl	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
-.L214:
 	nop
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11311:
-	.size	_ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_S9_T0_, .-_ZSt22__move_median_to_firstIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_S9_T0_
-	.section	.text._ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_S9_T0_,"axG",@progbits,_ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_S9_T0_,comdat
-	.align	2
-	.weak	_ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_S9_T0_
-	.type	_ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_S9_T0_, %function
-_ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_S9_T0_:
-.LFB11312:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
 	strb	w3, [sp, 16]
-	b	.L216
-.L217:
+	b	.L205
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
-.L216:
 	add	x0, sp, 16
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L217
+	bne	.L206
 	add	x0, sp, 32
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv
-	b	.L218
-.L219:
+	b	.L207
 	add	x0, sp, 32
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv
-.L218:
 	add	x0, sp, 16
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 24]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L219
+	bne	.L208
 	add	x1, sp, 32
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
 	and	w0, w0, 255
 	eor	w0, w0, 1
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L220
+	beq	.L209
 	ldr	x0, [sp, 40]
-	b	.L223
-.L220:
+	b	.L212
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
 	add	x0, sp, 40
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEppEv
-	b	.L216
-.L223:
+	b	.L205
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11312:
-	.size	_ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_S9_T0_, .-_ZSt21__unguarded_partitionIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEET_S9_S9_S9_T0_
-	.section	.text._ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_,"axG",@progbits,_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_,comdat
-	.align	2
-	.weak	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
-	.type	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_, %function
-_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_:
-.LFB11313:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11313:
-	.size	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_, .-_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
-	.section	.text._ZSt13move_backwardIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET0_T_S8_S7_,"axG",@progbits,_ZSt13move_backwardIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET0_T_S8_S7_,comdat
-	.align	2
-	.weak	_ZSt13move_backwardIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET0_T_S8_S7_
-	.type	_ZSt13move_backwardIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET0_T_S8_S7_, %function
-_ZSt13move_backwardIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET0_T_S8_S7_:
-.LFB11314:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	ldr	x0, [sp, 56]
-	bl	_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_
 	mov	x19, x0
 	ldr	x0, [sp, 48]
-	bl	_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_
 	ldr	x2, [sp, 40]
 	mov	x1, x0
 	mov	x0, x19
-	bl	_ZSt22__copy_move_backward_aILb1EN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET1_T0_S8_S7_
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11314:
-	.size	_ZSt13move_backwardIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET0_T_S8_S7_, .-_ZSt13move_backwardIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET0_T_S8_S7_
-	.section	.text._ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_,"axG",@progbits,_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_,comdat
-	.align	2
-	.weak	_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_
-	.type	_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_, %function
-_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_:
-.LFB11315:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 40]
 	strb	w1, [sp, 32]
 	add	x0, sp, 40
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w0, [x0]
 	str	w0, [sp, 60]
 	ldr	x0, [sp, 40]
 	str	x0, [sp, 48]
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv
-	b	.L229
-.L230:
+	b	.L218
 	add	x0, sp, 48
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w19, [x0]
 	add	x0, sp, 40
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	w19, [x0]
 	ldr	x0, [sp, 48]
 	str	x0, [sp, 40]
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv
-.L229:
 	add	x1, sp, 60
 	add	x0, sp, 32
 	ldr	x2, [sp, 48]
-	bl	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiNS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEEEbRT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L230
+	bne	.L219
 	add	x0, sp, 60
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w19, [x0]
 	add	x0, sp, 40
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	w19, [x0]
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11315:
-	.size	_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_, .-_ZSt25__unguarded_linear_insertIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops14_Val_less_iterEEvT_T0_
-	.section	.text._ZSt10_ConstructIiJEEvPT_DpOT0_,"axG",@progbits,_ZSt10_ConstructIiJEEvPT_DpOT0_,comdat
-	.align	2
-	.weak	_ZSt10_ConstructIiJEEvPT_DpOT0_
-	.type	_ZSt10_ConstructIiJEEvPT_DpOT0_, %function
-_ZSt10_ConstructIiJEEvPT_DpOT0_:
-.LFB11421:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
@@ -3671,85 +1651,32 @@ _ZSt10_ConstructIiJEEvPT_DpOT0_:
 	str	wzr, [x0]
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11421:
-	.size	_ZSt10_ConstructIiJEEvPT_DpOT0_, .-_ZSt10_ConstructIiJEEvPT_DpOT0_
-	.section	.text._ZSt6fill_nIPimiET_S1_T0_RKT1_,"axG",@progbits,_ZSt6fill_nIPimiET_S1_T0_RKT1_,comdat
-	.align	2
-	.weak	_ZSt6fill_nIPimiET_S1_T0_RKT1_
-	.type	_ZSt6fill_nIPimiET_S1_T0_RKT1_, %function
-_ZSt6fill_nIPimiET_S1_T0_RKT1_:
-.LFB11422:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
 	str	x21, [sp, 32]
-	.cfi_offset 19, -64
-	.cfi_offset 20, -56
-	.cfi_offset 21, -48
 	str	x0, [sp, 72]
 	str	x1, [sp, 64]
 	str	x2, [sp, 56]
 	ldr	x19, [sp, 72]
 	ldr	x0, [sp, 64]
-	bl	_ZSt17__size_to_integerm
 	mov	x20, x0
 	add	x0, sp, 72
-	bl	_ZSt19__iterator_categoryIPiENSt15iterator_traitsIT_E17iterator_categoryERKS2_
 	mov	w3, w21
 	ldr	x2, [sp, 56]
 	mov	x1, x20
 	mov	x0, x19
-	bl	_ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag
 	ldp	x19, x20, [sp, 16]
 	ldr	x21, [sp, 32]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 21
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11422:
-	.size	_ZSt6fill_nIPimiET_S1_T0_RKT1_, .-_ZSt6fill_nIPimiET_S1_T0_RKT1_
-	.section	.text._ZSt12__niter_baseIPiET_S1_,"axG",@progbits,_ZSt12__niter_baseIPiET_S1_,comdat
-	.align	2
-	.weak	_ZSt12__niter_baseIPiET_S1_
-	.type	_ZSt12__niter_baseIPiET_S1_, %function
-_ZSt12__niter_baseIPiET_S1_:
-.LFB11423:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11423:
-	.size	_ZSt12__niter_baseIPiET_S1_, .-_ZSt12__niter_baseIPiET_S1_
-	.section	.text._ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E,"axG",@progbits,_ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E,comdat
-	.align	2
-	.weak	_ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E
-	.type	_ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E, %function
-_ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E:
-.LFB11424:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -3762,54 +1689,34 @@ _ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5value
 	str	x0, [sp, 56]
 	ldr	x0, [sp, 56]
 	cmp	x0, 0
-	ble	.L237
+	ble	.L226
 	ldr	x0, [sp, 56]
 	lsl	x0, x0, 2
 	mov	x2, x0
 	ldr	x1, [sp, 40]
 	ldr	x0, [sp, 24]
 	bl	memmove
-.L237:
 	ldr	x0, [sp, 56]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11424:
-	.size	_ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E, .-_ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E
-	.section	.text._ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_,"axG",@progbits,_ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_,comdat
-	.align	2
-	.weak	_ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_
-	.type	_ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_, %function
-_ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_:
-.LFB11425:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -80
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	add	x1, sp, 56
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	cmp	x0, 1
 	cset	w0, le
 	and	w0, w0, 255
 	cmp	w0, 0
-	bne	.L244
+	bne	.L233
 	add	x1, sp, 56
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	str	x0, [sp, 80]
 	ldr	x0, [sp, 80]
 	sub	x0, x0, #2
@@ -3817,148 +1724,76 @@ _ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops
 	add	x0, x1, x0
 	asr	x0, x0, 1
 	str	x0, [sp, 88]
-.L243:
 	add	x0, sp, 56
 	ldr	x1, [sp, 88]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 72]
 	add	x0, sp, 72
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w0, [x0]
 	str	w0, [sp, 68]
 	add	x0, sp, 68
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w0, [x0]
 	mov	w4, w19
 	mov	w3, w0
 	ldr	x2, [sp, 80]
 	ldr	x1, [sp, 88]
 	ldr	x0, [sp, 56]
-	bl	_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_
 	ldr	x0, [sp, 88]
 	cmp	x0, 0
-	beq	.L245
+	beq	.L234
 	ldr	x0, [sp, 88]
 	sub	x0, x0, #1
 	str	x0, [sp, 88]
-	b	.L243
-.L244:
+	b	.L232
 	nop
-	b	.L239
-.L245:
+	b	.L228
 	nop
-.L239:
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11425:
-	.size	_ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_, .-_ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_RT0_
-	.section	.text._ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_,"axG",@progbits,_ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
-	.type	_ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_, %function
-_ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_:
-.LFB11426:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x19, [x0]
 	ldr	x0, [sp, 32]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x0, [x0]
 	cmp	x19, x0
 	cset	w0, cc
 	and	w0, w0, 255
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11426:
-	.size	_ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_, .-_ZN9__gnu_cxxltIPiSt6vectorIiSaIiEEEEbRKNS_17__normal_iteratorIT_T0_EESA_
-	.section	.text._ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_,"axG",@progbits,_ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_,comdat
-	.align	2
-	.weak	_ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_
-	.type	_ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_, %function
-_ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_:
-.LFB11427:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -64
-	.cfi_offset 20, -56
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	str	x3, [sp, 32]
 	add	x0, sp, 40
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w0, [x0]
 	str	w0, [sp, 76]
 	add	x0, sp, 56
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w19, [x0]
 	add	x0, sp, 40
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	w19, [x0]
 	add	x1, sp, 56
 	add	x0, sp, 48
-	bl	_ZN9__gnu_cxxmiIPiSt6vectorIiSaIiEEEENS_17__normal_iteratorIT_T0_E15difference_typeERKS8_SB_
 	mov	x19, x0
 	add	x0, sp, 76
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w0, [x0]
 	mov	w4, w20
 	mov	w3, w0
 	mov	x2, x19
 	mov	x1, 0
 	ldr	x0, [sp, 56]
-	bl	_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11427:
-	.size	_ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_, .-_ZSt10__pop_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEENS0_5__ops15_Iter_less_iterEEvT_S9_S9_RT0_
-	.section	.text._ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv,"axG",@progbits,_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv
-	.type	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv, %function
-_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv:
-.LFB11428:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	ldr	x0, [x0]
@@ -3967,170 +1802,67 @@ _ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv:
 	str	x1, [x0]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11428:
-	.size	_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv, .-_ZN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEmmEv
-	.section	.text._ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_,"axG",@progbits,_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_,comdat
-	.align	2
-	.weak	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
-	.type	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_, %function
-_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_:
-.LFB11429:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	add	x0, sp, 40
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	mov	x19, x0
 	add	x0, sp, 32
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	mov	x1, x0
 	mov	x0, x19
-	bl	_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11429:
-	.size	_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_, .-_ZSt9iter_swapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_EvT_T0_
-	.section	.text._ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_,"axG",@progbits,_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_,comdat
-	.align	2
-	.weak	_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_
-	.type	_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_, %function
-_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_:
-.LFB11430:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11430:
-	.size	_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_, .-_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEET_S7_
-	.section	.text._ZSt22__copy_move_backward_aILb1EN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET1_T0_S8_S7_,"axG",@progbits,_ZSt22__copy_move_backward_aILb1EN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET1_T0_S8_S7_,comdat
-	.align	2
-	.weak	_ZSt22__copy_move_backward_aILb1EN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET1_T0_S8_S7_
-	.type	_ZSt22__copy_move_backward_aILb1EN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET1_T0_S8_S7_, %function
-_ZSt22__copy_move_backward_aILb1EN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET1_T0_S8_S7_:
-.LFB11431:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -48
-	.cfi_offset 20, -40
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	ldr	x0, [sp, 56]
-	bl	_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE
 	mov	x19, x0
 	ldr	x0, [sp, 48]
-	bl	_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE
 	mov	x20, x0
 	ldr	x0, [sp, 40]
-	bl	_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE
 	mov	x2, x0
 	mov	x1, x20
 	mov	x0, x19
-	bl	_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_
 	mov	x1, x0
 	ldr	x0, [sp, 40]
-	bl	_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES2_ET_S7_T0_
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11431:
-	.size	_ZSt22__copy_move_backward_aILb1EN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET1_T0_S8_S7_, .-_ZSt22__copy_move_backward_aILb1EN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES6_ET1_T0_S8_S7_
-	.section	.text._ZNK9__gnu_cxx5__ops14_Val_less_iterclIiNS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEEEbRT_T0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiNS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEEEbRT_T0_,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiNS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEEEbRT_T0_
-	.type	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiNS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEEEbRT_T0_, %function
-_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiNS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEEEbRT_T0_:
-.LFB11432:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	ldr	x0, [sp, 48]
 	ldr	w19, [x0]
 	add	x0, sp, 40
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	ldr	w0, [x0]
 	cmp	w19, w0
 	cset	w0, lt
 	and	w0, w0, 255
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11432:
-	.size	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiNS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEEEbRT_T0_, .-_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiNS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEEEbRT_T0_
-	.section	.text._ZSt19__iterator_categoryIPiENSt15iterator_traitsIT_E17iterator_categoryERKS2_,"axG",@progbits,_ZSt19__iterator_categoryIPiENSt15iterator_traitsIT_E17iterator_categoryERKS2_,comdat
-	.align	2
-	.weak	_ZSt19__iterator_categoryIPiENSt15iterator_traitsIT_E17iterator_categoryERKS2_
-	.type	_ZSt19__iterator_categoryIPiENSt15iterator_traitsIT_E17iterator_categoryERKS2_, %function
-_ZSt19__iterator_categoryIPiENSt15iterator_traitsIT_E17iterator_categoryERKS2_:
-.LFB11500:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	mov	w0, w1
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11500:
-	.size	_ZSt19__iterator_categoryIPiENSt15iterator_traitsIT_E17iterator_categoryERKS2_, .-_ZSt19__iterator_categoryIPiENSt15iterator_traitsIT_E17iterator_categoryERKS2_
-	.section	.text._ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag,"axG",@progbits,_ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag,comdat
-	.align	2
-	.weak	_ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag
-	.type	_ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag, %function
-_ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag:
-.LFB11501:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -4138,10 +1870,9 @@ _ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag:
 	strb	w3, [sp, 16]
 	ldr	x0, [sp, 32]
 	cmp	x0, 0
-	bne	.L261
+	bne	.L250
 	ldr	x0, [sp, 40]
-	b	.L262
-.L261:
+	b	.L251
 	ldr	x0, [sp, 32]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 40]
@@ -4149,35 +1880,15 @@ _ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag:
 	ldr	x2, [sp, 24]
 	mov	x1, x0
 	ldr	x0, [sp, 40]
-	bl	_ZSt8__fill_aIPiiEvT_S1_RKT0_
 	ldr	x0, [sp, 32]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 40]
 	add	x0, x1, x0
-.L262:
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11501:
-	.size	_ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag, .-_ZSt10__fill_n_aIPimiET_S1_T0_RKT1_St26random_access_iterator_tag
-	.section	.text._ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_,"axG",@progbits,_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_,comdat
-	.align	2
-	.weak	_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_
-	.type	_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_, %function
-_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_:
-.LFB11502:
-	.cfi_startproc
 	stp	x29, x30, [sp, -128]!
-	.cfi_def_cfa_offset 128
-	.cfi_offset 29, -128
-	.cfi_offset 30, -120
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -112
-	.cfi_offset 20, -104
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
@@ -4187,50 +1898,39 @@ _ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5_
 	str	x0, [sp, 112]
 	ldr	x0, [sp, 48]
 	str	x0, [sp, 120]
-	b	.L264
-.L266:
+	b	.L253
 	ldr	x0, [sp, 120]
 	add	x0, x0, 1
 	lsl	x0, x0, 1
 	str	x0, [sp, 120]
 	add	x0, sp, 56
 	ldr	x1, [sp, 120]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	mov	x19, x0
 	ldr	x0, [sp, 120]
 	sub	x1, x0, #1
 	add	x0, sp, 56
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	mov	x1, x0
 	add	x0, sp, 32
 	mov	x2, x1
 	mov	x1, x19
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEES8_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L265
+	beq	.L254
 	ldr	x0, [sp, 120]
 	sub	x0, x0, #1
 	str	x0, [sp, 120]
-.L265:
 	add	x0, sp, 56
 	ldr	x1, [sp, 120]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 80]
 	add	x0, sp, 80
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w19, [x0]
 	add	x0, sp, 56
 	ldr	x1, [sp, 48]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 88]
 	add	x0, sp, 88
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	w19, [x0]
 	ldr	x0, [sp, 120]
 	str	x0, [sp, 48]
-.L264:
 	ldr	x0, [sp, 40]
 	sub	x0, x0, #1
 	lsr	x1, x0, 63
@@ -4239,11 +1939,11 @@ _ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5_
 	mov	x1, x0
 	ldr	x0, [sp, 120]
 	cmp	x0, x1
-	blt	.L266
+	blt	.L255
 	ldr	x0, [sp, 40]
 	and	x0, x0, 1
 	cmp	x0, 0
-	bne	.L267
+	bne	.L256
 	ldr	x0, [sp, 40]
 	sub	x0, x0, #2
 	lsr	x1, x0, 63
@@ -4252,7 +1952,7 @@ _ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5_
 	mov	x1, x0
 	ldr	x0, [sp, 120]
 	cmp	x0, x1
-	bne	.L267
+	bne	.L256
 	ldr	x0, [sp, 120]
 	add	x0, x0, 1
 	lsl	x0, x0, 1
@@ -4260,30 +1960,21 @@ _ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5_
 	ldr	x0, [sp, 120]
 	sub	x1, x0, #1
 	add	x0, sp, 56
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 96]
 	add	x0, sp, 96
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w19, [x0]
 	add	x0, sp, 56
 	ldr	x1, [sp, 48]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 104]
 	add	x0, sp, 104
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	w19, [x0]
 	ldr	x0, [sp, 120]
 	sub	x0, x0, #1
 	str	x0, [sp, 48]
-.L267:
 	add	x0, sp, 32
-	bl	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
 	add	x0, sp, 72
 	mov	w1, w20
-	bl	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE
 	add	x0, sp, 36
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w0, [x0]
 	add	x1, sp, 72
 	mov	x4, x1
@@ -4291,91 +1982,36 @@ _ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5_
 	ldr	x2, [sp, 112]
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops14_Iter_less_valEEvT_T0_SA_T1_RT2_
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 128
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11502:
-	.size	_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_, .-_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_
-	.section	.text._ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_,"axG",@progbits,_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_,comdat
-	.align	2
-	.weak	_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
-	.type	_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_, %function
-_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_:
-.LFB11503:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w0, [x0]
 	str	w0, [sp, 44]
 	ldr	x0, [sp, 16]
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w1, [x0]
 	ldr	x0, [sp, 24]
 	str	w1, [x0]
 	add	x0, sp, 44
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w1, [x0]
 	ldr	x0, [sp, 16]
 	str	w1, [x0]
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11503:
-	.size	_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_, .-_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
-	.section	.text._ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE,"axG",@progbits,_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE,comdat
-	.align	2
-	.weak	_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE
-	.type	_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE, %function
-_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE:
-.LFB11504:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	add	x0, sp, 24
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEE4baseEv
 	ldr	x0, [x0]
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11504:
-	.size	_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE, .-_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE
-	.section	.text._ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_,"axG",@progbits,_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_,comdat
-	.align	2
-	.weak	_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_
-	.type	_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_, %function
-_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_:
-.LFB11505:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -4383,57 +2019,22 @@ _ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_:
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11505:
-	.size	_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_, .-_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_
-	.section	.text._ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES2_ET_S7_T0_,"axG",@progbits,_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES2_ET_S7_T0_,comdat
-	.align	2
-	.weak	_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES2_ET_S7_T0_
-	.type	_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES2_ET_S7_T0_, %function
-_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES2_ET_S7_T0_:
-.LFB11506:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZSt12__niter_baseIPiSt6vectorIiSaIiEEET_N9__gnu_cxx17__normal_iteratorIS4_T0_EE
 	mov	x1, x0
 	ldr	x0, [sp, 16]
 	sub	x0, x0, x1
 	asr	x0, x0, 2
 	mov	x1, x0
 	add	x0, sp, 24
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11506:
-	.size	_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES2_ET_S7_T0_, .-_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEES2_ET_S7_T0_
-	.section	.text._ZSt8__fill_aIPiiEvT_S1_RKT0_,"axG",@progbits,_ZSt8__fill_aIPiiEvT_S1_RKT0_,comdat
-	.align	2
-	.weak	_ZSt8__fill_aIPiiEvT_S1_RKT0_
-	.type	_ZSt8__fill_aIPiiEvT_S1_RKT0_, %function
-_ZSt8__fill_aIPiiEvT_S1_RKT0_:
-.LFB11536:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -4441,47 +2042,17 @@ _ZSt8__fill_aIPiiEvT_S1_RKT0_:
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt9__fill_a1IPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11536:
-	.size	_ZSt8__fill_aIPiiEvT_S1_RKT0_, .-_ZSt8__fill_aIPiiEvT_S1_RKT0_
-	.section	.text._ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_,"axG",@progbits,_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_,comdat
-	.align	2
-	.weak	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
-	.type	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_, %function
-_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_:
-.LFB11537:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11537:
-	.size	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_, .-_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
-	.section	.text._ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops14_Iter_less_valEEvT_T0_SA_T1_RT2_,"axG",@progbits,_ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops14_Iter_less_valEEvT_T0_SA_T1_RT2_,comdat
-	.align	2
-	.weak	_ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops14_Iter_less_valEEvT_T0_SA_T1_RT2_
-	.type	_ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops14_Iter_less_valEEvT_T0_SA_T1_RT2_, %function
-_ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops14_Iter_less_valEEvT_T0_SA_T1_RT2_:
-.LFB11538:
-	.cfi_startproc
 	stp	x29, x30, [sp, -112]!
-	.cfi_def_cfa_offset 112
-	.cfi_offset 29, -112
-	.cfi_offset 30, -104
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -96
 	str	x0, [sp, 72]
 	str	x1, [sp, 64]
 	str	x2, [sp, 56]
@@ -4493,22 +2064,16 @@ _ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__o
 	add	x0, x1, x0
 	asr	x0, x0, 1
 	str	x0, [sp, 104]
-	b	.L279
-.L282:
+	b	.L268
 	add	x0, sp, 72
 	ldr	x1, [sp, 104]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 80]
 	add	x0, sp, 80
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w19, [x0]
 	add	x0, sp, 72
 	ldr	x1, [sp, 64]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 88]
 	add	x0, sp, 88
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	w19, [x0]
 	ldr	x0, [sp, 104]
 	str	x0, [sp, 64]
@@ -4518,61 +2083,36 @@ _ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__o
 	add	x0, x1, x0
 	asr	x0, x0, 1
 	str	x0, [sp, 104]
-.L279:
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 56]
 	cmp	x1, x0
-	ble	.L280
+	ble	.L269
 	add	x0, sp, 72
 	ldr	x1, [sp, 104]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	mov	x1, x0
 	add	x0, sp, 52
 	mov	x2, x0
 	ldr	x0, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEiEEbT_RT0_
 	and	w0, w0, 255
 	cmp	w0, 0
-	beq	.L280
+	beq	.L269
 	mov	w0, 1
-	b	.L281
-.L280:
+	b	.L270
 	mov	w0, 0
-.L281:
 	cmp	w0, 0
-	bne	.L282
+	bne	.L271
 	add	x0, sp, 52
-	bl	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	ldr	w19, [x0]
 	add	x0, sp, 72
 	ldr	x1, [sp, 64]
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEplEl
 	str	x0, [sp, 96]
 	add	x0, sp, 96
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	str	w19, [x0]
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 112
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11538:
-	.size	_ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops14_Iter_less_valEEvT_T0_SA_T1_RT2_, .-_ZSt11__push_heapIN9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEEliNS0_5__ops14_Iter_less_valEEvT_T0_SA_T1_RT2_
-	.section	.text._ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_,"axG",@progbits,_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_,comdat
-	.align	2
-	.weak	_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_
-	.type	_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_, %function
-_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_:
-.LFB11539:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -4580,68 +2120,36 @@ _ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_:
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11539:
-	.size	_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_, .-_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_
-	.section	.text._ZSt9__fill_a1IPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_,"axG",@progbits,_ZSt9__fill_a1IPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_,comdat
-	.align	2
-	.weak	_ZSt9__fill_a1IPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_
-	.type	_ZSt9__fill_a1IPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_, %function
-_ZSt9__fill_a1IPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_:
-.LFB11543:
-	.cfi_startproc
 	sub	sp, sp, #48
-	.cfi_def_cfa_offset 48
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	str	x2, [sp, 8]
 	ldr	x0, [sp, 8]
 	ldr	w0, [x0]
 	str	w0, [sp, 44]
-	b	.L286
-.L287:
+	b	.L275
 	ldr	x0, [sp, 24]
 	ldr	w1, [sp, 44]
 	str	w1, [x0]
 	ldr	x0, [sp, 24]
 	add	x0, x0, 4
 	str	x0, [sp, 24]
-.L286:
 	ldr	x1, [sp, 24]
 	ldr	x0, [sp, 16]
 	cmp	x1, x0
-	bne	.L287
+	bne	.L276
 	nop
 	nop
 	add	sp, sp, 48
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11543:
-	.size	_ZSt9__fill_a1IPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_, .-_ZSt9__fill_a1IPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_
-	.section	.text._ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEiEEbT_RT0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEiEEbT_RT0_,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEiEEbT_RT0_
-	.type	_ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEiEEbT_RT0_, %function
-_ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEiEEbT_RT0_:
-.LFB11544:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
 	add	x0, sp, 32
-	bl	_ZNK9__gnu_cxx17__normal_iteratorIPiSt6vectorIiSaIiEEEdeEv
 	ldr	w1, [x0]
 	ldr	x0, [sp, 24]
 	ldr	w0, [x0]
@@ -4649,24 +2157,8 @@ _ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiE
 	cset	w0, lt
 	and	w0, w0, 255
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11544:
-	.size	_ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEiEEbT_RT0_, .-_ZNK9__gnu_cxx5__ops14_Iter_less_valclINS_17__normal_iteratorIPiSt6vectorIiSaIiEEEEiEEbT_RT0_
-	.section	.text._ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_,"axG",@progbits,_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_,comdat
-	.align	2
-	.weak	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_
-	.type	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_, %function
-_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_:
-.LFB11545:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -4678,7 +2170,7 @@ _ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move
 	str	x0, [sp, 56]
 	ldr	x0, [sp, 56]
 	cmp	x0, 0
-	beq	.L291
+	beq	.L280
 	ldr	x0, [sp, 56]
 	lsl	x0, x0, 2
 	neg	x0, x0
@@ -4690,92 +2182,34 @@ _ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move
 	ldr	x1, [sp, 40]
 	mov	x0, x3
 	bl	memmove
-.L291:
 	ldr	x0, [sp, 56]
 	lsl	x0, x0, 2
 	neg	x0, x0
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11545:
-	.size	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_, .-_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_
-	.text
-	.align	2
-	.type	_Z41__static_initialization_and_destruction_0ii, %function
-_Z41__static_initialization_and_destruction_0ii:
-.LFB11595:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	w0, [sp, 28]
 	str	w1, [sp, 24]
 	ldr	w0, [sp, 28]
 	cmp	w0, 1
-	bne	.L295
+	bne	.L284
 	ldr	w1, [sp, 24]
 	mov	w0, 65535
 	cmp	w1, w0
-	bne	.L295
+	bne	.L284
 	adrp	x0, _ZStL8__ioinit
-	add	x0, x0, :lo12:_ZStL8__ioinit
 	bl	_ZNSt8ios_base4InitC1Ev
-	adrp	x0, __dso_handle
-	add	x2, x0, :lo12:__dso_handle
 	adrp	x0, _ZStL8__ioinit
-	add	x1, x0, :lo12:_ZStL8__ioinit
-	adrp	x0, :got:_ZNSt8ios_base4InitD1Ev
-	ldr	x0, [x0, #:got_lo12:_ZNSt8ios_base4InitD1Ev]
 	bl	__cxa_atexit
-.L295:
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11595:
-	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
-	.align	2
-	.type	_GLOBAL__sub_I__Z5setupv, %function
-_GLOBAL__sub_I__Z5setupv:
-.LFB11618:
-	.cfi_startproc
 	stp	x29, x30, [sp, -16]!
-	.cfi_def_cfa_offset 16
-	.cfi_offset 29, -16
-	.cfi_offset 30, -8
 	mov	x29, sp
 	mov	w1, 65535
 	mov	w0, 1
-	bl	_Z41__static_initialization_and_destruction_0ii
 	ldp	x29, x30, [sp], 16
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11618:
-	.size	_GLOBAL__sub_I__Z5setupv, .-_GLOBAL__sub_I__Z5setupv
-	.section	.init_array,"aw",%init_array
-	.align	3
-	.xword	_GLOBAL__sub_I__Z5setupv
-	.hidden	DW.ref.__gxx_personality_v0
-	.weak	DW.ref.__gxx_personality_v0
-	.section	.data.rel.local.DW.ref.__gxx_personality_v0,"awG",@progbits,DW.ref.__gxx_personality_v0,comdat
-	.align	3
-	.type	DW.ref.__gxx_personality_v0, %object
-	.size	DW.ref.__gxx_personality_v0, 8
-DW.ref.__gxx_personality_v0:
-	.xword	__gxx_personality_v0
-	.hidden	__dso_handle
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

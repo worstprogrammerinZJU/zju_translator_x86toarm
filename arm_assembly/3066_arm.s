@@ -1,70 +1,14 @@
-	.arch armv8-a
-	.file	"3066.c"
-	.text
-	.global	A
-	.bss
-	.align	3
-	.type	A, %object
-	.size	A, 8
 A:
-	.zero	8
-	.global	B
-	.align	3
-	.type	B, %object
-	.size	B, 8
 B:
-	.zero	8
-	.global	re
-	.align	3
-	.type	re, %object
-	.size	re, 8
 re:
-	.zero	8
-	.global	su
-	.align	3
-	.type	su, %object
-	.size	su, 8
 su:
-	.zero	8
-	.global	lt
-	.align	3
-	.type	lt, %object
-	.size	lt, 8
 lt:
-	.zero	8
-	.global	r
-	.align	3
-	.type	r, %object
-	.size	r, 8
 r:
-	.zero	8
-	.global	s
-	.align	3
-	.type	s, %object
-	.size	s, 8
 s:
-	.zero	8
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%.0lf\n"
-	.align	3
-.LC1:
-	.string	"%d%d%d%d"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	b	.L2
-.L5:
 	ldr	w0, [sp, 28]
 	lsr	w1, w0, 31
 	add	w0, w1, w0
@@ -149,7 +93,6 @@ main:
 	mov	w0, 1
 	str	w0, [sp, 44]
 	b	.L3
-.L4:
 	adrp	x0, re
 	add	x0, x0, :lo12:re
 	ldr	d1, [x0]
@@ -183,7 +126,6 @@ main:
 	ldr	w0, [sp, 44]
 	add	w0, w0, 1
 	str	w0, [sp, 44]
-.L3:
 	ldr	w0, [sp, 28]
 	ldr	w1, [sp, 44]
 	cmp	w1, w0
@@ -214,7 +156,6 @@ main:
 	adrp	x0, .LC0
 	add	x0, x0, :lo12:.LC0
 	bl	printf
-.L2:
 	add	x3, sp, 20
 	add	x2, sp, 24
 	add	x1, sp, 28
@@ -230,12 +171,4 @@ main:
 	bne	.L5
 	mov	w0, 0
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

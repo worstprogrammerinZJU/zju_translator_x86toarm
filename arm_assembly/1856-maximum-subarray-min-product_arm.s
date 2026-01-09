@@ -1,14 +1,5 @@
-	.arch armv8-a
-	.file	"1856-maximum-subarray-min-product.c"
-	.text
-	.align	2
-	.global	max
-	.type	max, %function
 max:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp, 8]
@@ -17,26 +8,12 @@ max:
 	cmp	x2, x0
 	csel	x0, x1, x0, ge
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	max, .-max
-	.align	2
-	.global	maxSumMinProduct
-	.type	maxSumMinProduct, %function
 maxSumMinProduct:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -112]!
-	.cfi_def_cfa_offset 112
-	.cfi_offset 29, -112
-	.cfi_offset 30, -104
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	str	x19, [sp, 16]
 	sub	sp, sp, #16
-	.cfi_offset 19, -96
 	str	x0, [x29, 40]
 	str	w1, [x29, 36]
 	mov	x0, sp
@@ -68,13 +45,11 @@ maxSumMinProduct:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L4:
 	cmp	sp, x1
 	beq	.L5
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L4
-.L5:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -82,7 +57,6 @@ maxSumMinProduct:
 	cmp	x0, 1024
 	bcc	.L6
 	str	xzr, [sp, 1024]
-.L6:
 	add	x0, sp, 16
 	add	x0, x0, 7
 	lsr	x0, x0, 3
@@ -114,13 +88,11 @@ maxSumMinProduct:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L7:
 	cmp	sp, x1
 	beq	.L8
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L7
-.L8:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -128,7 +100,6 @@ maxSumMinProduct:
 	cmp	x0, 1024
 	bcc	.L9
 	str	xzr, [sp, 1024]
-.L9:
 	add	x0, sp, 16
 	add	x0, x0, 7
 	lsr	x0, x0, 3
@@ -138,7 +109,6 @@ maxSumMinProduct:
 	str	xzr, [x0]
 	str	wzr, [x29, 100]
 	b	.L10
-.L11:
 	ldr	x0, [x29, 72]
 	ldrsw	x1, [x29, 100]
 	ldr	x1, [x0, x1, lsl 3]
@@ -157,7 +127,6 @@ maxSumMinProduct:
 	ldr	w0, [x29, 100]
 	add	w0, w0, 1
 	str	w0, [x29, 100]
-.L10:
 	ldr	w1, [x29, 100]
 	ldr	w0, [x29, 36]
 	cmp	w1, w0
@@ -166,7 +135,6 @@ maxSumMinProduct:
 	str	w0, [x29, 96]
 	str	wzr, [x29, 92]
 	b	.L12
-.L17:
 	ldr	w0, [x29, 96]
 	sub	w1, w0, #1
 	str	w1, [x29, 96]
@@ -191,9 +159,7 @@ maxSumMinProduct:
 	ldr	x0, [x0, x3, lsl 3]
 	add	x0, x0, 1
 	b	.L15
-.L14:
 	mov	x0, 0
-.L15:
 	ldr	x3, [x29, 72]
 	ldr	x0, [x3, x0, lsl 3]
 	sub	x0, x2, x0
@@ -202,7 +168,6 @@ maxSumMinProduct:
 	ldr	x0, [x29, 104]
 	bl	max
 	str	x0, [x29, 104]
-.L13:
 	ldr	w0, [x29, 96]
 	cmp	w0, 0
 	blt	.L16
@@ -224,7 +189,6 @@ maxSumMinProduct:
 	ldr	w0, [x0]
 	cmp	w1, w0
 	bgt	.L17
-.L16:
 	ldr	w0, [x29, 96]
 	add	w0, w0, 1
 	str	w0, [x29, 96]
@@ -235,7 +199,6 @@ maxSumMinProduct:
 	ldr	w0, [x29, 92]
 	add	w0, w0, 1
 	str	w0, [x29, 92]
-.L12:
 	ldr	w1, [x29, 92]
 	ldr	w0, [x29, 36]
 	cmp	w1, w0
@@ -259,13 +222,4 @@ maxSumMinProduct:
 	mov	sp, x29
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 112
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	maxSumMinProduct, .-maxSumMinProduct
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

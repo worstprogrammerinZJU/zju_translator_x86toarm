@@ -1,43 +1,8 @@
-	.arch armv8-a
-	.file	"1804.c"
-	.text
-	.global	x
-	.bss
-	.align	3
-	.type	x, %object
-	.size	x, 4000
 x:
-	.zero	4000
-	.global	z
-	.align	3
-	.type	z, %object
-	.size	z, 4000
 z:
-	.zero	4000
-	.global	reverse
-	.align	2
-	.type	reverse, %object
-	.size	reverse, 4
 reverse:
-	.zero	4
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%d"
-	.align	3
-.LC1:
-	.string	"Scenario #%d:\n%d\n\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	add	x0, sp, 20
 	mov	x1, x0
@@ -47,7 +12,6 @@ main:
 	mov	w0, 1
 	str	w0, [sp, 28]
 	b	.L2
-.L5:
 	add	x0, sp, 16
 	mov	x1, x0
 	adrp	x0, .LC0
@@ -55,7 +19,6 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 24]
 	b	.L3
-.L4:
 	ldrsw	x0, [sp, 24]
 	lsl	x1, x0, 2
 	adrp	x0, x
@@ -68,7 +31,6 @@ main:
 	ldr	w0, [sp, 24]
 	add	w0, w0, 1
 	str	w0, [sp, 24]
-.L3:
 	ldr	w0, [sp, 16]
 	ldr	w1, [sp, 24]
 	cmp	w1, w0
@@ -92,28 +54,15 @@ main:
 	ldr	w0, [sp, 28]
 	add	w0, w0, 1
 	str	w0, [sp, 28]
-.L2:
 	ldr	w0, [sp, 20]
 	ldr	w1, [sp, 28]
 	cmp	w1, w0
 	ble	.L5
 	mov	w0, 0
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.align	2
-	.global	merge
-	.type	merge, %function
 merge:
-.LFB1:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	w0, [sp, 12]
 	str	w1, [sp, 8]
 	str	w2, [sp, 4]
@@ -124,7 +73,6 @@ merge:
 	str	w0, [sp, 24]
 	str	wzr, [sp, 20]
 	b	.L8
-.L11:
 	adrp	x0, x
 	add	x0, x0, :lo12:x
 	ldrsw	x1, [sp, 28]
@@ -150,7 +98,6 @@ merge:
 	sxtw	x0, w0
 	str	w2, [x1, x0, lsl 2]
 	b	.L8
-.L9:
 	ldr	w1, [sp, 24]
 	add	w0, w1, 1
 	str	w0, [sp, 24]
@@ -176,7 +123,6 @@ merge:
 	adrp	x0, reverse
 	add	x0, x0, :lo12:reverse
 	str	w1, [x0]
-.L8:
 	ldr	w1, [sp, 28]
 	ldr	w0, [sp, 8]
 	cmp	w1, w0
@@ -186,7 +132,6 @@ merge:
 	cmp	w1, w0
 	ble	.L11
 	b	.L12
-.L13:
 	ldr	w1, [sp, 28]
 	add	w0, w1, 1
 	str	w0, [sp, 28]
@@ -201,13 +146,11 @@ merge:
 	add	x1, x1, :lo12:z
 	sxtw	x0, w0
 	str	w2, [x1, x0, lsl 2]
-.L12:
 	ldr	w1, [sp, 28]
 	ldr	w0, [sp, 8]
 	cmp	w1, w0
 	ble	.L13
 	b	.L14
-.L15:
 	ldr	w1, [sp, 24]
 	add	w0, w1, 1
 	str	w0, [sp, 24]
@@ -222,14 +165,12 @@ merge:
 	add	x1, x1, :lo12:z
 	sxtw	x0, w0
 	str	w2, [x1, x0, lsl 2]
-.L14:
 	ldr	w1, [sp, 24]
 	ldr	w0, [sp, 4]
 	cmp	w1, w0
 	ble	.L15
 	str	wzr, [sp, 28]
 	b	.L16
-.L17:
 	ldr	w1, [sp, 12]
 	ldr	w0, [sp, 28]
 	add	w3, w1, w0
@@ -244,7 +185,6 @@ merge:
 	ldr	w0, [sp, 28]
 	add	w0, w0, 1
 	str	w0, [sp, 28]
-.L16:
 	ldr	w1, [sp, 28]
 	ldr	w0, [sp, 20]
 	cmp	w1, w0
@@ -252,21 +192,9 @@ merge:
 	nop
 	nop
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	merge, .-merge
-	.align	2
-	.global	mergesort
-	.type	mergesort, %function
 mergesort:
-.LFB2:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	w0, [sp, 28]
 	str	w1, [sp, 24]
@@ -292,15 +220,6 @@ mergesort:
 	ldr	w1, [sp, 44]
 	ldr	w0, [sp, 28]
 	bl	merge
-.L20:
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE2:
-	.size	mergesort, .-mergesort
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

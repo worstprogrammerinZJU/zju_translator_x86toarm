@@ -1,14 +1,5 @@
-	.arch armv8-a
-	.file	"0312-burst-balloons.c"
-	.text
-	.align	2
-	.global	max
-	.type	max, %function
 max:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	w0, [sp, 12]
 	str	w1, [sp, 8]
 	ldr	w0, [sp, 12]
@@ -17,39 +8,16 @@ max:
 	cmp	w2, w0
 	csel	w0, w1, w0, ge
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	max, .-max
-	.align	2
-	.global	maxCoins
-	.type	maxCoins, %function
 maxCoins:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -208]!
-	.cfi_def_cfa_offset 208
-	.cfi_offset 29, -208
-	.cfi_offset 30, -200
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	stp	x19, x20, [sp, 16]
 	stp	x21, x22, [sp, 32]
 	stp	x23, x24, [sp, 48]
 	stp	x25, x26, [sp, 64]
 	stp	x27, x28, [sp, 80]
 	sub	sp, sp, #16
-	.cfi_offset 19, -192
-	.cfi_offset 20, -184
-	.cfi_offset 21, -176
-	.cfi_offset 22, -168
-	.cfi_offset 23, -160
-	.cfi_offset 24, -152
-	.cfi_offset 25, -144
-	.cfi_offset 26, -136
-	.cfi_offset 27, -128
-	.cfi_offset 28, -120
 	str	x0, [x29, 120]
 	str	w1, [x29, 116]
 	mov	x0, sp
@@ -85,13 +53,11 @@ maxCoins:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L4:
 	cmp	sp, x1
 	beq	.L5
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L4
-.L5:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -99,7 +65,6 @@ maxCoins:
 	cmp	x0, 1024
 	bcc	.L6
 	str	xzr, [sp, 1024]
-.L6:
 	add	x0, sp, 16
 	add	x0, x0, 3
 	lsr	x0, x0, 2
@@ -119,7 +84,6 @@ maxCoins:
 	mov	w0, 1
 	str	w0, [x29, 204]
 	b	.L7
-.L8:
 	ldrsw	x0, [x29, 204]
 	lsl	x0, x0, 2
 	sub	x0, x0, #4
@@ -132,7 +96,6 @@ maxCoins:
 	ldr	w0, [x29, 204]
 	add	w0, w0, 1
 	str	w0, [x29, 204]
-.L7:
 	ldr	w0, [x29, 188]
 	sub	w0, w0, #1
 	ldr	w1, [x29, 204]
@@ -196,13 +159,11 @@ maxCoins:
 	lsl	x0, x0, 4
 	and	x3, x0, -65536
 	sub	x3, sp, x3
-.L9:
 	cmp	sp, x3
 	beq	.L10
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L9
-.L10:
 	and	x3, x0, 65535
 	sub	sp, sp, x3
 	str	xzr, [sp]
@@ -210,7 +171,6 @@ maxCoins:
 	cmp	x0, 1024
 	bcc	.L11
 	str	xzr, [sp, 1024]
-.L11:
 	add	x0, sp, 16
 	add	x0, x0, 3
 	lsr	x0, x0, 2
@@ -227,10 +187,8 @@ maxCoins:
 	mov	w0, 2
 	str	w0, [x29, 200]
 	b	.L12
-.L17:
 	str	wzr, [x29, 196]
 	b	.L13
-.L16:
 	ldr	w1, [x29, 196]
 	ldr	w0, [x29, 200]
 	add	w0, w1, w0
@@ -239,7 +197,6 @@ maxCoins:
 	add	w0, w0, 1
 	str	w0, [x29, 192]
 	b	.L14
-.L15:
 	lsr	x1, x19, 2
 	ldr	x0, [x29, 144]
 	ldrsw	x2, [x29, 140]
@@ -288,7 +245,6 @@ maxCoins:
 	ldr	w0, [x29, 192]
 	add	w0, w0, 1
 	str	w0, [x29, 192]
-.L14:
 	ldr	w1, [x29, 192]
 	ldr	w0, [x29, 140]
 	cmp	w1, w0
@@ -296,7 +252,6 @@ maxCoins:
 	ldr	w0, [x29, 196]
 	add	w0, w0, 1
 	str	w0, [x29, 196]
-.L13:
 	ldr	w1, [x29, 188]
 	ldr	w0, [x29, 200]
 	sub	w0, w1, w0
@@ -306,7 +261,6 @@ maxCoins:
 	ldr	w0, [x29, 200]
 	add	w0, w0, 1
 	str	w0, [x29, 200]
-.L12:
 	ldr	w1, [x29, 200]
 	ldr	w0, [x29, 188]
 	cmp	w1, w0
@@ -324,22 +278,4 @@ maxCoins:
 	ldp	x25, x26, [sp, 64]
 	ldp	x27, x28, [sp, 80]
 	ldp	x29, x30, [sp], 208
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 27
-	.cfi_restore 28
-	.cfi_restore 25
-	.cfi_restore 26
-	.cfi_restore 23
-	.cfi_restore 24
-	.cfi_restore 21
-	.cfi_restore 22
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	maxCoins, .-maxCoins
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

@@ -1,65 +1,19 @@
-	.arch armv8-a
-	.file	"443A.cpp"
-	.text
-	.section	.text._ZN9__gnu_cxx5__ops16__iter_less_iterEv,"axG",@progbits,_ZN9__gnu_cxx5__ops16__iter_less_iterEv,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
-	.type	_ZN9__gnu_cxx5__ops16__iter_less_iterEv, %function
-_ZN9__gnu_cxx5__ops16__iter_less_iterEv:
-.LFB280:
-	.cfi_startproc
 	nop
 	ret
-	.cfi_endproc
-.LFE280:
-	.size	_ZN9__gnu_cxx5__ops16__iter_less_iterEv, .-_ZN9__gnu_cxx5__ops16__iter_less_iterEv
-	.section	.text._ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE,"axG",@progbits,_ZN9__gnu_cxx5__ops14_Iter_less_valC5ENS0_15_Iter_less_iterE,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.type	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE, %function
-_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE:
-.LFB282:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	strb	w1, [sp]
 	nop
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE282:
-	.size	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE, .-_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.weak	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE
-	.set	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE,_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.section	.text._ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE,"axG",@progbits,_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE,comdat
-	.align	2
-	.weak	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
-	.type	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE, %function
-_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE:
-.LFB292:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	strb	w0, [sp, 8]
 	nop
 	mov	w0, w1
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE292:
-	.size	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE, .-_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
-	.section	.text._ZSt4__lgl,"axG",@progbits,_ZSt4__lgl,comdat
-	.align	2
-	.weak	_ZSt4__lgl
-	.type	_ZSt4__lgl, %function
 _ZSt4__lgl:
-.LFB404:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	clz	x0, x0
@@ -68,57 +22,18 @@ _ZSt4__lgl:
 	sub	w0, w0, w1
 	sxtw	x0, w0
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE404:
-	.size	_ZSt4__lgl, .-_ZSt4__lgl
-	.local	_ZStL8__ioinit
-	.comm	_ZStL8__ioinit,1,8
-	.section	.rodata
-	.align	3
-	.type	_ZN6__pstl9execution2v1L3seqE, %object
-	.size	_ZN6__pstl9execution2v1L3seqE, 1
-_ZN6__pstl9execution2v1L3seqE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L3parE, %object
-	.size	_ZN6__pstl9execution2v1L3parE, 1
-_ZN6__pstl9execution2v1L3parE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L9par_unseqE, %object
-	.size	_ZN6__pstl9execution2v1L9par_unseqE, 1
-_ZN6__pstl9execution2v1L9par_unseqE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L5unseqE, %object
-	.size	_ZN6__pstl9execution2v1L5unseqE, 1
-_ZN6__pstl9execution2v1L5unseqE:
-	.zero	1
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB3184:
-	.cfi_startproc
 	sub	sp, sp, #1040
-	.cfi_def_cfa_offset 1040
 	stp	x29, x30, [sp]
-	.cfi_offset 29, -1040
-	.cfi_offset 30, -1032
 	mov	x29, sp
 	mov	w0, 1000
 	str	w0, [sp, 1020]
 	str	wzr, [sp, 1036]
 	b	.L9
-.L10:
 	add	x0, sp, 1019
 	mov	x1, x0
 	adrp	x0, :got:_ZSt3cin
-	ldr	x0, [x0, #:got_lo12:_ZSt3cin]
-	bl	_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_RS3_
 	ldrb	w0, [sp, 1019]
 	cmp	w0, 96
 	bls	.L9
@@ -132,7 +47,6 @@ main:
 	ldr	w0, [sp, 1036]
 	add	w0, w0, 1
 	str	w0, [sp, 1036]
-.L9:
 	ldrb	w0, [sp, 1019]
 	cmp	w0, 125
 	bne	.L10
@@ -149,7 +63,6 @@ main:
 	str	wzr, [sp, 1028]
 	str	wzr, [sp, 1024]
 	b	.L11
-.L13:
 	ldrsw	x0, [sp, 1024]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
@@ -163,76 +76,36 @@ main:
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
 	strb	w0, [sp, 1035]
-.L12:
 	ldr	w0, [sp, 1024]
 	add	w0, w0, 1
 	str	w0, [sp, 1024]
-.L11:
 	ldr	w1, [sp, 1024]
 	ldr	w0, [sp, 1036]
 	cmp	w1, w0
 	blt	.L13
 	ldr	w1, [sp, 1028]
 	adrp	x0, :got:_ZSt4cout
-	ldr	x0, [x0, #:got_lo12:_ZSt4cout]
 	bl	_ZNSolsEi
 	mov	w0, 0
 	ldp	x29, x30, [sp]
 	add	sp, sp, 1040
-	.cfi_restore 29
-	.cfi_restore 30
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3184:
-	.size	main, .-main
-	.section	.text._ZSt4sortIPcEvT_S1_,"axG",@progbits,_ZSt4sortIPcEvT_S1_,comdat
-	.align	2
-	.weak	_ZSt4sortIPcEvT_S1_
-	.type	_ZSt4sortIPcEvT_S1_, %function
 _ZSt4sortIPcEvT_S1_:
-.LFB3453:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -32
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
-	bl	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
 	mov	w2, w19
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3453:
-	.size	_ZSt4sortIPcEvT_S1_, .-_ZSt4sortIPcEvT_S1_
-	.section	.text._ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,"axG",@progbits,_ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.type	_ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, %function
-_ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
-.LFB3533:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -48
-	.cfi_offset 20, -40
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	strb	w2, [sp, 40]
@@ -249,47 +122,22 @@ _ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
 	mov	x2, x0
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_
 	mov	w2, w19
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-.L18:
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3533:
-	.size	_ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, .-_ZSt6__sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.section	.text._ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_,"axG",@progbits,_ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_,comdat
-	.align	2
-	.weak	_ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_
-	.type	_ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_, %function
-_ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_:
-.LFB3568:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
 	str	x21, [sp, 32]
-	.cfi_offset 19, -80
-	.cfi_offset 20, -72
-	.cfi_offset 21, -64
 	str	x0, [sp, 72]
 	str	x1, [sp, 64]
 	str	x2, [sp, 56]
 	strb	w3, [sp, 48]
 	b	.L20
-.L23:
 	ldr	x0, [sp, 56]
 	cmp	x0, 0
 	bne	.L21
@@ -297,58 +145,32 @@ _ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_:
 	ldr	x2, [sp, 64]
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 72]
-	bl	_ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
 	b	.L19
-.L21:
 	ldr	x0, [sp, 56]
 	sub	x0, x0, #1
 	str	x0, [sp, 56]
 	mov	w2, w20
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 72]
-	bl	_ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_
 	str	x0, [sp, 88]
 	mov	w3, w19
 	ldr	x2, [sp, 56]
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 88]
-	bl	_ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_
 	ldr	x0, [sp, 88]
 	str	x0, [sp, 64]
-.L20:
 	ldr	x1, [sp, 64]
 	ldr	x0, [sp, 72]
 	sub	x0, x1, x0
 	cmp	x0, 16
 	bgt	.L23
-.L19:
 	ldp	x19, x20, [sp, 16]
 	ldr	x21, [sp, 32]
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 21
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3568:
-	.size	_ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_, .-_ZSt16__introsort_loopIPclN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_
-	.section	.text._ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,"axG",@progbits,_ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.type	_ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, %function
-_ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
-.LFB3569:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	strb	w2, [sp, 40]
@@ -362,41 +184,19 @@ _ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
 	mov	w2, w4
 	mov	x1, x0
 	ldr	x0, [sp, 56]
-	bl	_ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
 	ldr	x0, [sp, 56]
 	add	x0, x0, 16
 	mov	w2, w19
 	ldr	x1, [sp, 48]
-	bl	_ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
 	b	.L27
-.L25:
 	mov	w2, w3
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-.L27:
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3569:
-	.size	_ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, .-_ZSt22__final_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.section	.text._ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_,"axG",@progbits,_ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	.type	_ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_, %function
-_ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
-.LFB3611:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -406,35 +206,16 @@ _ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
 	add	x0, sp, 16
 	mov	x2, x0
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3611:
-	.size	_ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_, .-_ZSt14__partial_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	.section	.text._ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_,"axG",@progbits,_ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_
-	.type	_ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_, %function
-_ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_:
-.LFB3612:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -64
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	strb	w2, [sp, 40]
@@ -456,38 +237,17 @@ _ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_
 	mov	x3, x0
 	ldr	x2, [sp, 72]
 	ldr	x0, [sp, 56]
-	bl	_ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_
 	ldr	x0, [sp, 56]
 	add	x0, x0, 1
 	mov	w3, w19
 	ldr	x2, [sp, 56]
 	ldr	x1, [sp, 48]
-	bl	_ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3612:
-	.size	_ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_, .-_ZSt27__unguarded_partition_pivotIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_
-	.section	.text._ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,"axG",@progbits,_ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.type	_ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, %function
-_ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
-.LFB3613:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -64
-	.cfi_offset 20, -56
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	strb	w2, [sp, 40]
@@ -499,16 +259,13 @@ _ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
 	add	x0, x0, 1
 	str	x0, [sp, 72]
 	b	.L34
-.L37:
 	add	x0, sp, 40
 	ldr	x2, [sp, 56]
 	ldr	x1, [sp, 72]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L35
 	ldr	x0, [sp, 72]
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w0, [x0]
 	strb	w0, [sp, 71]
 	ldr	x0, [sp, 72]
@@ -516,74 +273,41 @@ _ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
 	mov	x2, x0
 	ldr	x1, [sp, 72]
 	ldr	x0, [sp, 56]
-	bl	_ZSt13move_backwardIPcS0_ET0_T_S2_S1_
 	add	x0, sp, 71
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w1, [x0]
 	ldr	x0, [sp, 56]
 	strb	w1, [x0]
 	b	.L36
-.L35:
 	mov	w0, w20
-	bl	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
 	mov	w1, w19
 	ldr	x0, [sp, 72]
-	bl	_ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_
-.L36:
 	ldr	x0, [sp, 72]
 	add	x0, x0, 1
 	str	x0, [sp, 72]
-.L34:
 	ldr	x1, [sp, 72]
 	ldr	x0, [sp, 48]
 	cmp	x1, x0
 	bne	.L37
 	b	.L31
-.L38:
 	nop
-.L31:
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3613:
-	.size	_ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, .-_ZSt16__insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.section	.text._ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,"axG",@progbits,_ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.type	_ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, %function
-_ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
-.LFB3614:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -64
-	.cfi_offset 20, -56
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	strb	w2, [sp, 40]
 	ldr	x0, [sp, 56]
 	str	x0, [sp, 72]
 	b	.L40
-.L41:
 	mov	w0, w20
-	bl	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
 	mov	w1, w19
 	ldr	x0, [sp, 72]
-	bl	_ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_
 	ldr	x0, [sp, 72]
 	add	x0, x0, 1
 	str	x0, [sp, 72]
-.L40:
 	ldr	x1, [sp, 72]
 	ldr	x0, [sp, 48]
 	cmp	x1, x0
@@ -592,26 +316,8 @@ _ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3614:
-	.size	_ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, .-_ZSt26__unguarded_insertion_sortIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.section	.text._ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_,"axG",@progbits,_ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	.type	_ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_, %function
-_ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
-.LFB3659:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -621,15 +327,12 @@ _ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
 	mov	x2, x0
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
 	ldr	x0, [sp, 32]
 	str	x0, [sp, 56]
 	b	.L43
-.L45:
 	add	x0, sp, 16
 	ldr	x2, [sp, 40]
 	ldr	x1, [sp, 56]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L44
@@ -638,12 +341,9 @@ _ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
 	ldr	x2, [sp, 56]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_
-.L44:
 	ldr	x0, [sp, 56]
 	add	x0, x0, 1
 	str	x0, [sp, 56]
-.L43:
 	ldr	x1, [sp, 56]
 	ldr	x0, [sp, 24]
 	cmp	x1, x0
@@ -651,30 +351,13 @@ _ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
 	nop
 	nop
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3659:
-	.size	_ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_, .-_ZSt13__heap_selectIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	.section	.text._ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_,"axG",@progbits,_ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_,comdat
-	.align	2
-	.weak	_ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
-	.type	_ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_, %function
-_ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
-.LFB3660:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
 	b	.L47
-.L48:
 	ldr	x0, [sp, 32]
 	sub	x0, x0, #1
 	str	x0, [sp, 32]
@@ -682,8 +365,6 @@ _ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_
-.L47:
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
 	sub	x0, x1, x0
@@ -692,22 +373,8 @@ _ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
 	nop
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3660:
-	.size	_ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_, .-_ZSt11__sort_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
-	.section	.text._ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
-	.type	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_, %function
-_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_:
-.LFB3662:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	str	x2, [sp, 8]
@@ -719,22 +386,8 @@ _ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_:
 	cset	w0, cc
 	and	w0, w0, 255
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3662:
-	.size	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_, .-_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
-	.section	.text._ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_,"axG",@progbits,_ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_
-	.type	_ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_, %function
-_ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_:
-.LFB3661:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
@@ -744,14 +397,12 @@ _ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T
 	add	x0, sp, 24
 	ldr	x2, [sp, 40]
 	ldr	x1, [sp, 48]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L52
 	add	x0, sp, 24
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L53
@@ -759,11 +410,9 @@ _ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T
 	ldr	x0, [sp, 56]
 	bl	_ZSt9iter_swapIPcS0_EvT_T0_
 	b	.L58
-.L53:
 	add	x0, sp, 24
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 48]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L55
@@ -771,16 +420,13 @@ _ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T
 	ldr	x0, [sp, 56]
 	bl	_ZSt9iter_swapIPcS0_EvT_T0_
 	b	.L58
-.L55:
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
 	bl	_ZSt9iter_swapIPcS0_EvT_T0_
 	b	.L58
-.L52:
 	add	x0, sp, 24
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 48]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L56
@@ -788,11 +434,9 @@ _ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T
 	ldr	x0, [sp, 56]
 	bl	_ZSt9iter_swapIPcS0_EvT_T0_
 	b	.L58
-.L56:
 	add	x0, sp, 24
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L57
@@ -800,46 +444,25 @@ _ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T
 	ldr	x0, [sp, 56]
 	bl	_ZSt9iter_swapIPcS0_EvT_T0_
 	b	.L58
-.L57:
 	ldr	x1, [sp, 40]
 	ldr	x0, [sp, 56]
 	bl	_ZSt9iter_swapIPcS0_EvT_T0_
-.L58:
 	nop
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3661:
-	.size	_ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_, .-_ZSt22__move_median_to_firstIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_
-	.section	.text._ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_,"axG",@progbits,_ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_,comdat
-	.align	2
-	.weak	_ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
-	.type	_ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_, %function
-_ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_:
-.LFB3663:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
 	str	x2, [sp, 24]
 	strb	w3, [sp, 16]
 	b	.L60
-.L61:
 	ldr	x0, [sp, 40]
 	add	x0, x0, 1
 	str	x0, [sp, 40]
-.L60:
 	add	x0, sp, 16
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	bne	.L61
@@ -847,15 +470,12 @@ _ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
 	sub	x0, x0, #1
 	str	x0, [sp, 32]
 	b	.L62
-.L63:
 	ldr	x0, [sp, 32]
 	sub	x0, x0, #1
 	str	x0, [sp, 32]
-.L62:
 	add	x0, sp, 16
 	ldr	x2, [sp, 32]
 	ldr	x1, [sp, 24]
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	bne	.L63
@@ -865,7 +485,6 @@ _ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
 	bcc	.L64
 	ldr	x0, [sp, 40]
 	b	.L67
-.L64:
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
 	bl	_ZSt9iter_swapIPcS0_EvT_T0_
@@ -873,46 +492,16 @@ _ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
 	add	x0, x0, 1
 	str	x0, [sp, 40]
 	b	.L60
-.L67:
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3663:
-	.size	_ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_, .-_ZSt21__unguarded_partitionIPcN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
-	.section	.text._ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_,"axG",@progbits,_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_,comdat
-	.align	2
-	.weak	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
-	.type	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_, %function
-_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_:
-.LFB3664:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3664:
-	.size	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_, .-_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
-	.section	.text._ZSt13move_backwardIPcS0_ET0_T_S2_S1_,"axG",@progbits,_ZSt13move_backwardIPcS0_ET0_T_S2_S1_,comdat
-	.align	2
-	.weak	_ZSt13move_backwardIPcS0_ET0_T_S2_S1_
-	.type	_ZSt13move_backwardIPcS0_ET0_T_S2_S1_, %function
-_ZSt13move_backwardIPcS0_ET0_T_S2_S1_:
-.LFB3665:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -48
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
@@ -924,33 +513,14 @@ _ZSt13move_backwardIPcS0_ET0_T_S2_S1_:
 	ldr	x2, [sp, 40]
 	mov	x1, x0
 	mov	x0, x19
-	bl	_ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3665:
-	.size	_ZSt13move_backwardIPcS0_ET0_T_S2_S1_, .-_ZSt13move_backwardIPcS0_ET0_T_S2_S1_
-	.section	.text._ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_,"axG",@progbits,_ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_,comdat
-	.align	2
-	.weak	_ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_
-	.type	_ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_, %function
-_ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_:
-.LFB3666:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	strb	w1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w0, [x0]
 	strb	w0, [sp, 39]
 	ldr	x0, [sp, 24]
@@ -959,9 +529,7 @@ _ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_:
 	sub	x0, x0, #1
 	str	x0, [sp, 40]
 	b	.L73
-.L74:
 	ldr	x0, [sp, 40]
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w1, [x0]
 	ldr	x0, [sp, 24]
 	strb	w1, [x0]
@@ -970,42 +538,22 @@ _ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_:
 	ldr	x0, [sp, 40]
 	sub	x0, x0, #1
 	str	x0, [sp, 40]
-.L73:
 	add	x1, sp, 39
 	add	x0, sp, 16
 	ldr	x2, [sp, 40]
-	bl	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	bne	.L74
 	add	x0, sp, 39
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w1, [x0]
 	ldr	x0, [sp, 24]
 	strb	w1, [x0]
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3666:
-	.size	_ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_, .-_ZSt25__unguarded_linear_insertIPcN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_
-	.section	.text._ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_,"axG",@progbits,_ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_,comdat
-	.align	2
-	.weak	_ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
-	.type	_ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_, %function
-_ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
-.LFB3691:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -80
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
@@ -1024,22 +572,18 @@ _ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
 	add	x0, x1, x0
 	asr	x0, x0, 1
 	str	x0, [sp, 88]
-.L79:
 	ldr	x0, [sp, 88]
 	ldr	x1, [sp, 56]
 	add	x0, x1, x0
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w0, [x0]
 	strb	w0, [sp, 79]
 	add	x0, sp, 79
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w0, [x0]
 	mov	w4, w19
 	mov	w3, w0
 	ldr	x2, [sp, 80]
 	ldr	x1, [sp, 88]
 	ldr	x0, [sp, 56]
-	bl	_ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_
 	ldr	x0, [sp, 88]
 	cmp	x0, 0
 	beq	.L81
@@ -1047,47 +591,23 @@ _ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
 	sub	x0, x0, #1
 	str	x0, [sp, 88]
 	b	.L79
-.L80:
 	nop
 	b	.L75
-.L81:
 	nop
-.L75:
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3691:
-	.size	_ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_, .-_ZSt11__make_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
-	.section	.text._ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_,"axG",@progbits,_ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_,comdat
-	.align	2
-	.weak	_ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_
-	.type	_ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_, %function
-_ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_:
-.LFB3692:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -64
-	.cfi_offset 20, -56
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
 	str	x3, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w0, [x0]
 	strb	w0, [sp, 79]
 	ldr	x0, [sp, 56]
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w1, [x0]
 	ldr	x0, [sp, 40]
 	strb	w1, [x0]
@@ -1095,84 +615,33 @@ _ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_:
 	ldr	x0, [sp, 56]
 	sub	x19, x1, x0
 	add	x0, sp, 79
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w0, [x0]
 	mov	w4, w20
 	mov	w3, w0
 	mov	x2, x19
 	mov	x1, 0
 	ldr	x0, [sp, 56]
-	bl	_ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_
 	nop
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3692:
-	.size	_ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_, .-_ZSt10__pop_heapIPcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_
-	.section	.text._ZSt9iter_swapIPcS0_EvT_T0_,"axG",@progbits,_ZSt9iter_swapIPcS0_EvT_T0_,comdat
-	.align	2
-	.weak	_ZSt9iter_swapIPcS0_EvT_T0_
-	.type	_ZSt9iter_swapIPcS0_EvT_T0_, %function
-_ZSt9iter_swapIPcS0_EvT_T0_:
-.LFB3693:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3693:
-	.size	_ZSt9iter_swapIPcS0_EvT_T0_, .-_ZSt9iter_swapIPcS0_EvT_T0_
-	.section	.text._ZSt12__miter_baseIPcET_S1_,"axG",@progbits,_ZSt12__miter_baseIPcET_S1_,comdat
-	.align	2
-	.weak	_ZSt12__miter_baseIPcET_S1_
-	.type	_ZSt12__miter_baseIPcET_S1_, %function
-_ZSt12__miter_baseIPcET_S1_:
-.LFB3694:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3694:
-	.size	_ZSt12__miter_baseIPcET_S1_, .-_ZSt12__miter_baseIPcET_S1_
-	.section	.text._ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_,"axG",@progbits,_ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_,comdat
-	.align	2
-	.weak	_ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_
-	.type	_ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_, %function
-_ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_:
-.LFB3695:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	stp	x19, x20, [sp, 16]
-	.cfi_offset 19, -48
-	.cfi_offset 20, -40
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
@@ -1187,30 +656,12 @@ _ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_:
 	mov	x2, x0
 	mov	x1, x20
 	mov	x0, x19
-	bl	_ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_
 	mov	x1, x0
 	add	x0, sp, 40
-	bl	_ZSt12__niter_wrapIPcET_RKS1_S1_
 	ldp	x19, x20, [sp, 16]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3695:
-	.size	_ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_, .-_ZSt22__copy_move_backward_aILb1EPcS0_ET1_T0_S2_S1_
-	.section	.text._ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_
-	.type	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_, %function
-_ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_:
-.LFB3697:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	str	x2, [sp, 8]
@@ -1222,25 +673,10 @@ _ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_:
 	cset	w0, cc
 	and	w0, w0, 255
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3697:
-	.size	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_, .-_ZNK9__gnu_cxx5__ops14_Val_less_iterclIcPcEEbRT_T0_
-	.section	.text._ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_,"axG",@progbits,_ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_,comdat
-	.align	2
-	.weak	_ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_
-	.type	_ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_, %function
-_ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_:
-.LFB3710:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -80
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
@@ -1251,7 +687,6 @@ _ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_:
 	ldr	x0, [sp, 48]
 	str	x0, [sp, 88]
 	b	.L91
-.L93:
 	ldr	x0, [sp, 88]
 	add	x0, x0, 1
 	lsl	x0, x0, 1
@@ -1266,18 +701,15 @@ _ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_:
 	add	x0, sp, 32
 	mov	x2, x1
 	mov	x1, x3
-	bl	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPcS3_EEbT_T0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L92
 	ldr	x0, [sp, 88]
 	sub	x0, x0, #1
 	str	x0, [sp, 88]
-.L92:
 	ldr	x0, [sp, 88]
 	ldr	x1, [sp, 56]
 	add	x0, x1, x0
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	mov	x2, x0
 	ldr	x0, [sp, 48]
 	ldr	x1, [sp, 56]
@@ -1286,7 +718,6 @@ _ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_:
 	strb	w1, [x0]
 	ldr	x0, [sp, 88]
 	str	x0, [sp, 48]
-.L91:
 	ldr	x0, [sp, 40]
 	sub	x0, x0, #1
 	lsr	x1, x0, 63
@@ -1317,7 +748,6 @@ _ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_:
 	sub	x0, x0, #1
 	ldr	x1, [sp, 56]
 	add	x0, x1, x0
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	mov	x2, x0
 	ldr	x0, [sp, 48]
 	ldr	x1, [sp, 56]
@@ -1327,14 +757,10 @@ _ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_:
 	ldr	x0, [sp, 88]
 	sub	x0, x0, #1
 	str	x0, [sp, 48]
-.L94:
 	add	x0, sp, 32
-	bl	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
 	add	x0, sp, 72
 	mov	w1, w19
-	bl	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE
 	add	x0, sp, 39
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w1, [x0]
 	add	x0, sp, 72
 	mov	x4, x0
@@ -1342,83 +768,34 @@ _ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_:
 	ldr	x2, [sp, 80]
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 56]
-	bl	_ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_
 	nop
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3710:
-	.size	_ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_, .-_ZSt13__adjust_heapIPclcN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_
-	.section	.text._ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_,"axG",@progbits,_ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_,comdat
-	.align	2
-	.weak	_ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
-	.type	_ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_, %function
-_ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_:
-.LFB3711:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	ldr	x0, [sp, 24]
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w0, [x0]
 	strb	w0, [sp, 47]
 	ldr	x0, [sp, 16]
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w1, [x0]
 	ldr	x0, [sp, 24]
 	strb	w1, [x0]
 	add	x0, sp, 47
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	ldrb	w1, [x0]
 	ldr	x0, [sp, 16]
 	strb	w1, [x0]
 	nop
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3711:
-	.size	_ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_, .-_ZSt4swapIcENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
-	.section	.text._ZSt12__niter_baseIPcET_S1_,"axG",@progbits,_ZSt12__niter_baseIPcET_S1_,comdat
-	.align	2
-	.weak	_ZSt12__niter_baseIPcET_S1_
-	.type	_ZSt12__niter_baseIPcET_S1_, %function
-_ZSt12__niter_baseIPcET_S1_:
-.LFB3712:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3712:
-	.size	_ZSt12__niter_baseIPcET_S1_, .-_ZSt12__niter_baseIPcET_S1_
-	.section	.text._ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_,"axG",@progbits,_ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_,comdat
-	.align	2
-	.weak	_ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_
-	.type	_ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_, %function
-_ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_:
-.LFB3713:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -1426,61 +803,20 @@ _ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_:
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3713:
-	.size	_ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_, .-_ZSt23__copy_move_backward_a1ILb1EPcS0_ET1_T0_S2_S1_
-	.section	.text._ZSt12__niter_wrapIPcET_RKS1_S1_,"axG",@progbits,_ZSt12__niter_wrapIPcET_RKS1_S1_,comdat
-	.align	2
-	.weak	_ZSt12__niter_wrapIPcET_RKS1_S1_
-	.type	_ZSt12__niter_wrapIPcET_RKS1_S1_, %function
-_ZSt12__niter_wrapIPcET_RKS1_S1_:
-.LFB3714:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3714:
-	.size	_ZSt12__niter_wrapIPcET_RKS1_S1_, .-_ZSt12__niter_wrapIPcET_RKS1_S1_
-	.section	.text._ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_,"axG",@progbits,_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_,comdat
-	.align	2
-	.weak	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
-	.type	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_, %function
-_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_:
-.LFB3717:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3717:
-	.size	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_, .-_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
-	.section	.text._ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_,"axG",@progbits,_ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_,comdat
-	.align	2
-	.weak	_ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_
-	.type	_ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_, %function
-_ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
-.LFB3718:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
@@ -1494,11 +830,9 @@ _ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
 	asr	x0, x0, 1
 	str	x0, [sp, 72]
 	b	.L105
-.L108:
 	ldr	x0, [sp, 72]
 	ldr	x1, [sp, 56]
 	add	x0, x1, x0
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	mov	x2, x0
 	ldr	x0, [sp, 48]
 	ldr	x1, [sp, 56]
@@ -1513,7 +847,6 @@ _ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
 	add	x0, x1, x0
 	asr	x0, x0, 1
 	str	x0, [sp, 72]
-.L105:
 	ldr	x1, [sp, 48]
 	ldr	x0, [sp, 40]
 	cmp	x1, x0
@@ -1525,19 +858,15 @@ _ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
 	mov	x2, x1
 	mov	x1, x0
 	ldr	x0, [sp, 24]
-	bl	_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_
 	and	w0, w0, 255
 	cmp	w0, 0
 	beq	.L106
 	mov	w0, 1
 	b	.L107
-.L106:
 	mov	w0, 0
-.L107:
 	cmp	w0, 0
 	bne	.L108
 	add	x0, sp, 39
-	bl	_ZSt4moveIRcEONSt16remove_referenceIT_E4typeEOS2_
 	mov	x2, x0
 	ldr	x0, [sp, 48]
 	ldr	x1, [sp, 56]
@@ -1546,24 +875,8 @@ _ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
 	strb	w1, [x0]
 	nop
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3718:
-	.size	_ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_, .-_ZSt11__push_heapIPclcN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_
-	.section	.text._ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_,"axG",@progbits,_ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_,comdat
-	.align	2
-	.weak	_ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_
-	.type	_ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_, %function
-_ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_:
-.LFB3719:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -1571,24 +884,9 @@ _ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_:
 	ldr	x2, [sp, 24]
 	ldr	x1, [sp, 32]
 	ldr	x0, [sp, 40]
-	bl	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIcEEPT_PKS3_S6_S4_
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3719:
-	.size	_ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_, .-_ZSt23__copy_move_backward_a2ILb1EPcS0_ET1_T0_S2_S1_
-	.section	.text._ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_,comdat
-	.align	2
-	.weak	_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_
-	.type	_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_, %function
-_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_:
-.LFB3720:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
 	str	x2, [sp, 8]
@@ -1600,22 +898,8 @@ _ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_:
 	cset	w0, cc
 	and	w0, w0, 255
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3720:
-	.size	_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_, .-_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPccEEbT_RT0_
-	.section	.text._ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIcEEPT_PKS3_S6_S4_,"axG",@progbits,_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIcEEPT_PKS3_S6_S4_,comdat
-	.align	2
-	.weak	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIcEEPT_PKS3_S6_S4_
-	.type	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIcEEPT_PKS3_S6_S4_, %function
-_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIcEEPT_PKS3_S6_S4_:
-.LFB3721:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -1635,29 +919,13 @@ _ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move
 	mov	x2, x1
 	ldr	x1, [sp, 40]
 	bl	memmove
-.L114:
 	ldr	x0, [sp, 56]
 	neg	x0, x0
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3721:
-	.size	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIcEEPT_PKS3_S6_S4_, .-_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIcEEPT_PKS3_S6_S4_
-	.text
-	.align	2
-	.type	_Z41__static_initialization_and_destruction_0ii, %function
-_Z41__static_initialization_and_destruction_0ii:
-.LFB3722:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	w0, [sp, 28]
 	str	w1, [sp, 24]
@@ -1669,49 +937,15 @@ _Z41__static_initialization_and_destruction_0ii:
 	cmp	w1, w0
 	bne	.L118
 	adrp	x0, _ZStL8__ioinit
-	add	x0, x0, :lo12:_ZStL8__ioinit
 	bl	_ZNSt8ios_base4InitC1Ev
-	adrp	x0, __dso_handle
-	add	x2, x0, :lo12:__dso_handle
 	adrp	x0, _ZStL8__ioinit
-	add	x1, x0, :lo12:_ZStL8__ioinit
-	adrp	x0, :got:_ZNSt8ios_base4InitD1Ev
-	ldr	x0, [x0, #:got_lo12:_ZNSt8ios_base4InitD1Ev]
 	bl	__cxa_atexit
-.L118:
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3722:
-	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
-	.align	2
-	.type	_GLOBAL__sub_I_main, %function
-_GLOBAL__sub_I_main:
-.LFB3723:
-	.cfi_startproc
 	stp	x29, x30, [sp, -16]!
-	.cfi_def_cfa_offset 16
-	.cfi_offset 29, -16
-	.cfi_offset 30, -8
 	mov	x29, sp
 	mov	w1, 65535
 	mov	w0, 1
-	bl	_Z41__static_initialization_and_destruction_0ii
 	ldp	x29, x30, [sp], 16
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE3723:
-	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
-	.section	.init_array,"aw",%init_array
-	.align	3
-	.xword	_GLOBAL__sub_I_main
-	.hidden	__dso_handle
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

@@ -1,27 +1,5 @@
-	.arch armv8-a
-	.file	"2498.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC1:
-	.string	"%d"
-	.align	3
-.LC2:
-	.string	"%s"
-	.align	3
-.LC3:
-	.string	"Scenario #%d:\n%s\n\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	adrp	x0, .LC0
 	add	x1, x0, :lo12:.LC0
@@ -38,7 +16,6 @@ main:
 	mov	w0, 1
 	str	w0, [sp, 60]
 	b	.L2
-.L14:
 	str	wzr, [sp, 48]
 	add	x0, sp, 16
 	mov	x1, x0
@@ -47,11 +24,9 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 56]
 	b	.L3
-.L4:
 	ldr	w0, [sp, 56]
 	add	w0, w0, 1
 	str	w0, [sp, 56]
-.L3:
 	ldrsw	x0, [sp, 56]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
@@ -62,7 +37,6 @@ main:
 	str	w0, [sp, 56]
 	str	wzr, [sp, 52]
 	b	.L5
-.L9:
 	ldrsw	x0, [sp, 56]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
@@ -75,7 +49,6 @@ main:
 	str	w1, [sp, 52]
 	str	w0, [sp, 40]
 	b	.L7
-.L6:
 	ldrsw	x0, [sp, 56]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
@@ -91,16 +64,13 @@ main:
 	ldr	w1, [sp, 48]
 	add	w0, w1, w0
 	str	w0, [sp, 48]
-.L7:
 	ldr	w0, [sp, 52]
 	cmp	w0, 3
 	bne	.L8
 	str	wzr, [sp, 52]
-.L8:
 	ldr	w0, [sp, 56]
 	sub	w0, w0, #1
 	str	w0, [sp, 56]
-.L5:
 	ldr	w0, [sp, 56]
 	cmp	w0, 0
 	bge	.L9
@@ -126,17 +96,14 @@ main:
 	mov	w2, 48
 	strb	w2, [x1, x0]
 	b	.L11
-.L10:
 	mov	w1, 10
 	ldr	w0, [sp, 48]
 	sub	w0, w1, w0
 	str	w0, [sp, 48]
 	b	.L12
-.L13:
 	ldr	w0, [sp, 48]
 	add	w0, w0, 10
 	str	w0, [sp, 48]
-.L12:
 	ldrsw	x0, [sp, 40]
 	lsl	x0, x0, 2
 	add	x1, sp, 24
@@ -159,7 +126,6 @@ main:
 	ldrsw	x0, [sp, 44]
 	add	x1, sp, 16
 	strb	w2, [x1, x0]
-.L11:
 	add	x0, sp, 16
 	mov	x2, x0
 	ldr	w1, [sp, 60]
@@ -169,26 +135,10 @@ main:
 	ldr	w0, [sp, 60]
 	add	w0, w0, 1
 	str	w0, [sp, 60]
-.L2:
 	ldr	w0, [sp, 36]
 	ldr	w1, [sp, 60]
 	cmp	w1, w0
 	ble	.L14
 	mov	w0, 0
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.section	.rodata
-	.align	3
-.LC0:
-	.word	9
-	.word	3
-	.word	7
-	.text
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

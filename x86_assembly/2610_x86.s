@@ -1,46 +1,9 @@
-	.file	"2610.c"
-	.intel_syntax noprefix
-	.text
-	.globl	gx
-	.bss
-	.align 8
-	.type	gx, @object
-	.size	gx, 8
 gx:
-	.zero	8
-	.globl	gy
-	.align 8
-	.type	gy, @object
-	.size	gy, 8
 gy:
-	.zero	8
-	.globl	dx
-	.align 8
-	.type	dx, @object
-	.size	dx, 8
 dx:
-	.zero	8
-	.globl	dy
-	.align 8
-	.type	dy, @object
-	.size	dy, 8
 dy:
-	.zero	8
-	.globl	x
-	.align 8
-	.type	x, @object
-	.size	x, 8
 x:
-	.zero	8
-	.globl	y
-	.align 8
-	.type	y, @object
-	.size	y, 8
 y:
-	.zero	8
-	.text
-	.globl	dist
-	.type	dist, @function
 dist:
 	endbr64
 	push	rbp
@@ -66,26 +29,12 @@ dist:
 	movq	xmm0, rax
 	pop	rbp
 	ret
-	.size	dist, .-dist
-	.section	.rodata
-.LC0:
-	.string	"%lf%lf%lf%lf"
-.LC3:
-	.string	"%lf%lf"
-.LC4:
-	.string	"The gopher cannot escape."
-	.align 8
-.LC5:
-	.string	"The gopher can escape through the hole at (%.3lf,%.3lf).\n"
-	.text
-	.globl	main
-	.type	main, @function
 main:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
 	sub	rsp, 32
-	mov	DWORD PTR -20[rbp], 0
+	mov	DWORD PTR -4[rbp], 0
 	lea	r8, dy[rip]
 	lea	rax, dx[rip]
 	mov	rcx, rax
@@ -98,8 +47,7 @@ main:
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
 	jmp	.L4
-.L6:
-	cmp	DWORD PTR -20[rbp], 0
+	cmp	DWORD PTR -4[rbp], 0
 	jne	.L4
 	movsd	xmm2, QWORD PTR gy[rip]
 	movsd	xmm1, QWORD PTR gx[rip]
@@ -123,20 +71,18 @@ main:
 	movq	xmm0, rax
 	call	dist
 	movq	rax, xmm0
-	mov	QWORD PTR -8[rbp], rax
-	movsd	xmm1, QWORD PTR -8[rbp]
+	mov	QWORD PTR -24[rbp], rax
+	movsd	xmm1, QWORD PTR -24[rbp]
 	movsd	xmm0, QWORD PTR .LC2[rip]
 	addsd	xmm0, xmm1
 	comisd	xmm0, QWORD PTR -16[rbp]
 	ja	.L10
 	jmp	.L4
-.L10:
-	mov	DWORD PTR -20[rbp], 1
+	mov	DWORD PTR -4[rbp], 1
 	movsd	xmm0, QWORD PTR x[rip]
 	movsd	QWORD PTR -16[rbp], xmm0
 	movsd	xmm0, QWORD PTR y[rip]
-	movsd	QWORD PTR -8[rbp], xmm0
-.L4:
+	movsd	QWORD PTR -24[rbp], xmm0
 	lea	rax, y[rip]
 	mov	rdx, rax
 	lea	rax, x[rip]
@@ -147,14 +93,14 @@ main:
 	call	__isoc99_scanf@PLT
 	cmp	eax, -1
 	jne	.L6
-	cmp	DWORD PTR -20[rbp], 0
+	cmp	DWORD PTR -4[rbp], 0
 	jne	.L7
 	lea	rax, .LC4[rip]
 	mov	rdi, rax
-	call	puts@PLT
+	mov	eax, 0
+	call	printf@PLT
 	jmp	.L8
-.L7:
-	movsd	xmm0, QWORD PTR -8[rbp]
+	movsd	xmm0, QWORD PTR -24[rbp]
 	mov	rax, QWORD PTR -16[rbp]
 	movapd	xmm1, xmm0
 	movq	xmm0, rax
@@ -162,35 +108,11 @@ main:
 	mov	rdi, rax
 	mov	eax, 2
 	call	printf@PLT
-.L8:
 	mov	eax, 0
 	leave
 	ret
-	.size	main, .-main
-	.section	.rodata
-	.align 8
-.LC1:
-	.long	0
-	.long	1074790400
-	.align 8
-.LC2:
-	.long	-1698910392
-	.long	1048238066
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

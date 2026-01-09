@@ -1,18 +1,6 @@
-	.arch armv8-a
-	.file	"0837-new-21-game.c"
-	.text
-	.align	2
-	.global	new21Game
-	.type	new21Game, %function
 new21Game:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	sub	sp, sp, #16
 	str	w0, [x29, 28]
 	str	w1, [x29, 24]
@@ -28,10 +16,8 @@ new21Game:
 	ldr	w1, [x29, 28]
 	cmp	w1, w0
 	blt	.L3
-.L2:
 	fmov	d0, 1.0e+0
 	b	.L4
-.L3:
 	fmov	d0, 1.0e+0
 	str	d0, [x29, 72]
 	str	xzr, [x29, 64]
@@ -61,13 +47,11 @@ new21Game:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L5:
 	cmp	sp, x1
 	beq	.L6
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L5
-.L6:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -75,7 +59,6 @@ new21Game:
 	cmp	x0, 1024
 	bcc	.L7
 	str	xzr, [sp, 1024]
-.L7:
 	add	x0, sp, 16
 	add	x0, x0, 7
 	lsr	x0, x0, 3
@@ -87,7 +70,6 @@ new21Game:
 	mov	w0, 1
 	str	w0, [x29, 60]
 	b	.L8
-.L12:
 	ldr	w0, [x29, 20]
 	scvtf	d0, w0
 	ldr	d1, [x29, 72]
@@ -106,14 +88,12 @@ new21Game:
 	fadd	d0, d1, d0
 	str	d0, [x29, 72]
 	b	.L10
-.L9:
 	ldr	x0, [x29, 40]
 	ldrsw	x1, [x29, 60]
 	ldr	d0, [x0, x1, lsl 3]
 	ldr	d1, [x29, 64]
 	fadd	d0, d1, d0
 	str	d0, [x29, 64]
-.L10:
 	ldr	w1, [x29, 60]
 	ldr	w0, [x29, 20]
 	cmp	w1, w0
@@ -127,26 +107,15 @@ new21Game:
 	ldr	d1, [x29, 72]
 	fsub	d0, d1, d0
 	str	d0, [x29, 72]
-.L11:
 	ldr	w0, [x29, 60]
 	add	w0, w0, 1
 	str	w0, [x29, 60]
-.L8:
 	ldr	w1, [x29, 60]
 	ldr	w0, [x29, 28]
 	cmp	w1, w0
 	ble	.L12
 	ldr	d0, [x29, 64]
-.L4:
 	mov	sp, x2
 	mov	sp, x29
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	new21Game, .-new21Game
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

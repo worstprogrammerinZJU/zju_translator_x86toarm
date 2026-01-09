@@ -1,26 +1,15 @@
-	.arch armv8-a
-	.file	"0135-candy.c"
-	.text
-	.align	2
-	.global	candy
-	.type	candy, %function
 candy:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	w1, [sp, 20]
 	ldrsw	x0, [sp, 20]
 	lsl	x0, x0, 2
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 32]
 	str	wzr, [sp, 60]
 	b	.L2
-.L3:
 	ldrsw	x0, [sp, 60]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 32]
@@ -30,7 +19,6 @@ candy:
 	ldr	w0, [sp, 60]
 	add	w0, w0, 1
 	str	w0, [sp, 60]
-.L2:
 	ldr	w1, [sp, 60]
 	ldr	w0, [sp, 20]
 	cmp	w1, w0
@@ -38,7 +26,6 @@ candy:
 	mov	w0, 1
 	str	w0, [sp, 56]
 	b	.L4
-.L6:
 	ldrsw	x0, [sp, 56]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 24]
@@ -64,11 +51,9 @@ candy:
 	add	x0, x2, x0
 	add	w1, w1, 1
 	str	w1, [x0]
-.L5:
 	ldr	w0, [sp, 56]
 	add	w0, w0, 1
 	str	w0, [sp, 56]
-.L4:
 	ldr	w1, [sp, 56]
 	ldr	w0, [sp, 20]
 	cmp	w1, w0
@@ -77,7 +62,6 @@ candy:
 	sub	w0, w0, #2
 	str	w0, [sp, 52]
 	b	.L7
-.L9:
 	ldrsw	x0, [sp, 52]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 24]
@@ -116,18 +100,15 @@ candy:
 	add	x0, x2, x0
 	add	w1, w1, 1
 	str	w1, [x0]
-.L8:
 	ldr	w0, [sp, 52]
 	sub	w0, w0, #1
 	str	w0, [sp, 52]
-.L7:
 	ldr	w0, [sp, 52]
 	cmp	w0, 0
 	bge	.L9
 	str	wzr, [sp, 48]
 	str	wzr, [sp, 44]
 	b	.L10
-.L11:
 	ldrsw	x0, [sp, 44]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 32]
@@ -139,7 +120,6 @@ candy:
 	ldr	w0, [sp, 44]
 	add	w0, w0, 1
 	str	w0, [sp, 44]
-.L10:
 	ldr	w1, [sp, 44]
 	ldr	w0, [sp, 20]
 	cmp	w1, w0
@@ -148,12 +128,4 @@ candy:
 	bl	free
 	ldr	w0, [sp, 48]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	candy, .-candy
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

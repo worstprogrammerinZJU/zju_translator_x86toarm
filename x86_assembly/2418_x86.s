@@ -1,56 +1,15 @@
-	.file	"2418.c"
-	.intel_syntax noprefix
-	.text
-	.globl	link
-	.bss
-	.align 32
-	.type	link, @object
-	.size	link, 80056
 link:
-	.zero	80056
-	.globl	num
-	.align 32
-	.type	num, @object
-	.size	num, 40000
 num:
-	.zero	40000
-	.globl	posi
-	.align 32
-	.type	posi, @object
-	.size	posi, 40000
 posi:
-	.zero	40000
-	.globl	n
-	.align 4
-	.type	n, @object
-	.size	n, 4
 n:
-	.zero	4
-	.globl	m
-	.align 4
-	.type	m, @object
-	.size	m, 4
 m:
-	.zero	4
-	.globl	tree
-	.align 32
-	.type	tree, @object
-	.size	tree, 310000
 tree:
-	.zero	310000
-	.section	.rodata
-.LC1:
-	.string	"%s %.4lf\n"
-	.text
-	.globl	main
-	.type	main, @function
 main:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
-	sub	rsp, 16
+	sub	rsp, 32
 	jmp	.L2
-.L9:
 	mov	eax, DWORD PTR n[rip]
 	movsx	rdx, eax
 	mov	rax, rdx
@@ -60,16 +19,15 @@ main:
 	add	rax, rdx
 	mov	rdi, rax
 	call	ELFhash
-	mov	DWORD PTR -12[rbp], eax
-	mov	eax, DWORD PTR -12[rbp]
+	mov	DWORD PTR -20[rbp], eax
+	mov	eax, DWORD PTR -20[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*8]
 	lea	rax, link[rip]
 	mov	rax, QWORD PTR [rdx+rax]
-	mov	QWORD PTR -8[rbp], rax
+	mov	QWORD PTR -16[rbp], rax
 	jmp	.L3
-.L6:
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	mov	eax, DWORD PTR [rax]
 	movsx	rdx, eax
 	mov	rax, rdx
@@ -89,36 +47,33 @@ main:
 	call	strcmp@PLT
 	test	eax, eax
 	je	.L13
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	mov	rax, QWORD PTR 8[rax]
-	mov	QWORD PTR -8[rbp], rax
-.L3:
-	cmp	QWORD PTR -8[rbp], 0
+	mov	QWORD PTR -16[rbp], rax
+	cmp	QWORD PTR -16[rbp], 0
 	jne	.L6
 	jmp	.L5
-.L13:
 	nop
-.L5:
-	cmp	QWORD PTR -8[rbp], 0
+	cmp	QWORD PTR -16[rbp], 0
 	jne	.L7
 	mov	edi, 16
 	call	malloc@PLT
-	mov	QWORD PTR -8[rbp], rax
+	mov	QWORD PTR -16[rbp], rax
 	mov	edx, DWORD PTR n[rip]
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	mov	DWORD PTR [rax], edx
-	mov	eax, DWORD PTR -12[rbp]
+	mov	eax, DWORD PTR -20[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*8]
 	lea	rax, link[rip]
 	mov	rdx, QWORD PTR [rdx+rax]
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	mov	QWORD PTR 8[rax], rdx
-	mov	eax, DWORD PTR -12[rbp]
+	mov	eax, DWORD PTR -20[rbp]
 	cdqe
 	lea	rcx, 0[0+rax*8]
 	lea	rdx, link[rip]
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	mov	QWORD PTR [rcx+rdx], rax
 	mov	eax, DWORD PTR n[rip]
 	cdqe
@@ -135,8 +90,7 @@ main:
 	add	eax, 1
 	mov	DWORD PTR n[rip], eax
 	jmp	.L8
-.L7:
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	mov	eax, DWORD PTR [rax]
 	movsx	rdx, eax
 	lea	rcx, 0[0+rdx*4]
@@ -147,11 +101,9 @@ main:
 	lea	rdx, 0[0+rax*4]
 	lea	rax, num[rip]
 	mov	DWORD PTR [rdx+rax], ecx
-.L8:
 	mov	eax, DWORD PTR m[rip]
 	add	eax, 1
 	mov	DWORD PTR m[rip], eax
-.L2:
 	mov	eax, DWORD PTR n[rip]
 	movsx	rdx, eax
 	mov	rax, rdx
@@ -173,10 +125,9 @@ main:
 	lea	rax, posi[rip]
 	mov	rdi, rax
 	call	qsort@PLT
-	mov	DWORD PTR -16[rbp], 0
+	mov	DWORD PTR -4[rbp], 0
 	jmp	.L10
-.L11:
-	mov	eax, DWORD PTR -16[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*4]
 	lea	rax, posi[rip]
@@ -194,7 +145,7 @@ main:
 	cvtsi2sd	xmm1, eax
 	divsd	xmm0, xmm1
 	movq	rdx, xmm0
-	mov	eax, DWORD PTR -16[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	lea	rcx, 0[0+rax*4]
 	lea	rax, posi[rip]
@@ -211,26 +162,21 @@ main:
 	mov	rdi, rax
 	mov	eax, 1
 	call	printf@PLT
-	add	DWORD PTR -16[rbp], 1
-.L10:
+	add	DWORD PTR -4[rbp], 1
 	mov	eax, DWORD PTR n[rip]
-	cmp	DWORD PTR -16[rbp], eax
+	cmp	DWORD PTR -4[rbp], eax
 	jl	.L11
 	mov	eax, 0
 	leave
 	ret
-	.size	main, .-main
-	.globl	ELFhash
-	.type	ELFhash, @function
 ELFhash:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
 	mov	QWORD PTR -24[rbp], rdi
-	mov	QWORD PTR -16[rbp], 0
+	mov	QWORD PTR -8[rbp], 0
 	jmp	.L15
-.L17:
-	mov	rax, QWORD PTR -16[rbp]
+	mov	rax, QWORD PTR -8[rbp]
 	sal	rax, 4
 	mov	rcx, rax
 	mov	rax, QWORD PTR -24[rbp]
@@ -239,25 +185,23 @@ ELFhash:
 	movzx	eax, BYTE PTR [rax]
 	movsx	rax, al
 	add	rax, rcx
-	mov	QWORD PTR -16[rbp], rax
-	mov	rax, QWORD PTR -16[rbp]
-	and	eax, 4026531840
 	mov	QWORD PTR -8[rbp], rax
-	cmp	QWORD PTR -8[rbp], 0
+	mov	rax, QWORD PTR -8[rbp]
+	and	eax, 4026531840
+	mov	QWORD PTR -16[rbp], rax
+	cmp	QWORD PTR -16[rbp], 0
 	je	.L16
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	shr	rax, 24
-	xor	QWORD PTR -16[rbp], rax
-.L16:
-	mov	rax, QWORD PTR -8[rbp]
+	xor	QWORD PTR -8[rbp], rax
+	mov	rax, QWORD PTR -16[rbp]
 	not	rax
-	and	QWORD PTR -16[rbp], rax
-.L15:
+	and	QWORD PTR -8[rbp], rax
 	mov	rax, QWORD PTR -24[rbp]
 	movzx	eax, BYTE PTR [rax]
 	test	al, al
 	jne	.L17
-	mov	rcx, QWORD PTR -16[rbp]
+	mov	rcx, QWORD PTR -8[rbp]
 	movabs	rdx, -6691484059914626997
 	mov	rax, rcx
 	mul	rdx
@@ -271,9 +215,6 @@ ELFhash:
 	sub	rax, rdx
 	pop	rbp
 	ret
-	.size	ELFhash, .-ELFhash
-	.globl	cmp
-	.type	cmp, @function
 cmp:
 	endbr64
 	push	rbp
@@ -283,18 +224,18 @@ cmp:
 	mov	QWORD PTR -32[rbp], rsi
 	mov	rax, QWORD PTR -24[rbp]
 	mov	eax, DWORD PTR [rax]
-	mov	DWORD PTR -8[rbp], eax
+	mov	DWORD PTR -4[rbp], eax
 	mov	rax, QWORD PTR -32[rbp]
 	mov	eax, DWORD PTR [rax]
-	mov	DWORD PTR -4[rbp], eax
-	mov	eax, DWORD PTR -4[rbp]
+	mov	DWORD PTR -8[rbp], eax
+	mov	eax, DWORD PTR -8[rbp]
 	movsx	rdx, eax
 	mov	rax, rdx
 	sal	rax, 5
 	sub	rax, rdx
 	lea	rdx, tree[rip]
 	add	rdx, rax
-	mov	eax, DWORD PTR -8[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	movsx	rcx, eax
 	mov	rax, rcx
 	sal	rax, 5
@@ -306,27 +247,8 @@ cmp:
 	call	strcmp@PLT
 	leave
 	ret
-	.size	cmp, .-cmp
-	.section	.rodata
-	.align 8
-.LC0:
-	.long	0
-	.long	1079574528
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

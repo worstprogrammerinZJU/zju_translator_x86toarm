@@ -1,18 +1,6 @@
-	.arch armv8-a
-	.file	"1137-n-th-tribonacci-number.c"
-	.text
-	.align	2
-	.global	tribonacci
-	.type	tribonacci, %function
 tribonacci:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	sub	sp, sp, #16
 	str	w0, [x29, 28]
 	mov	x0, sp
@@ -22,17 +10,14 @@ tribonacci:
 	bne	.L2
 	mov	w0, 0
 	b	.L3
-.L2:
 	ldr	w0, [x29, 28]
 	cmp	w0, 1
 	beq	.L4
 	ldr	w0, [x29, 28]
 	cmp	w0, 2
 	bne	.L5
-.L4:
 	mov	w0, 1
 	b	.L3
-.L5:
 	ldr	w0, [x29, 28]
 	add	w0, w0, 1
 	sxtw	x1, w0
@@ -59,13 +44,11 @@ tribonacci:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L6:
 	cmp	sp, x1
 	beq	.L7
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L6
-.L7:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -73,7 +56,6 @@ tribonacci:
 	cmp	x0, 1024
 	bcc	.L8
 	str	xzr, [sp, 1024]
-.L8:
 	add	x0, sp, 16
 	add	x0, x0, 3
 	lsr	x0, x0, 2
@@ -90,7 +72,6 @@ tribonacci:
 	mov	w0, 3
 	str	w0, [x29, 60]
 	b	.L9
-.L10:
 	ldr	w0, [x29, 60]
 	sub	w1, w0, #1
 	ldr	x0, [x29, 40]
@@ -114,7 +95,6 @@ tribonacci:
 	ldr	w0, [x29, 60]
 	add	w0, w0, 1
 	str	w0, [x29, 60]
-.L9:
 	ldr	w1, [x29, 60]
 	ldr	w0, [x29, 28]
 	cmp	w1, w0
@@ -122,16 +102,7 @@ tribonacci:
 	ldr	x0, [x29, 40]
 	ldrsw	x1, [x29, 28]
 	ldr	w0, [x0, x1, lsl 2]
-.L3:
 	mov	sp, x10
 	mov	sp, x29
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	tribonacci, .-tribonacci
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

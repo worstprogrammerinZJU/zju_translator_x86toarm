@@ -1,27 +1,7 @@
-	.arch armv8-a
-	.file	"2242.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%.2lf\n"
-	.align	3
-.LC1:
-	.string	"%lf%lf%lf%lf%lf%lf"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	b	.L2
-.L3:
 	ldr	d1, [sp, 24]
 	ldr	d0, [sp, 40]
 	fsub	d1, d1, d0
@@ -113,7 +93,6 @@ main:
 	adrp	x0, .LC0
 	add	x0, x0, :lo12:.LC0
 	bl	printf
-.L2:
 	add	x5, sp, 16
 	add	x4, sp, 24
 	add	x3, sp, 32
@@ -133,17 +112,4 @@ main:
 	bne	.L3
 	mov	w0, 0
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.section	.rodata
-	.align	3
-.LC2:
-	.word	1413754136
-	.word	1074340347
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

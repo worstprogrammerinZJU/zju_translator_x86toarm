@@ -1,28 +1,6 @@
-	.arch armv8-a
-	.file	"1664.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%d"
-	.align	3
-.LC1:
-	.string	"%d%d"
-	.align	3
-.LC2:
-	.string	"%d\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #528
-	.cfi_def_cfa_offset 528
 	stp	x29, x30, [sp]
-	.cfi_offset 29, -528
-	.cfi_offset 30, -520
 	mov	x29, sp
 	add	x0, sp, 24
 	mov	x1, 484
@@ -31,7 +9,6 @@ main:
 	bl	memset
 	str	wzr, [sp, 524]
 	b	.L2
-.L3:
 	ldrsw	x0, [sp, 524]
 	lsl	x0, x0, 2
 	add	x1, sp, 24
@@ -66,18 +43,15 @@ main:
 	ldr	w0, [sp, 524]
 	add	w0, w0, 1
 	str	w0, [sp, 524]
-.L2:
 	ldr	w0, [sp, 524]
 	cmp	w0, 10
 	ble	.L3
 	mov	w0, 2
 	str	w0, [sp, 524]
 	b	.L4
-.L9:
 	mov	w0, 2
 	str	w0, [sp, 520]
 	b	.L5
-.L8:
 	ldr	w1, [sp, 520]
 	ldr	w0, [sp, 524]
 	cmp	w1, w0
@@ -101,7 +75,6 @@ main:
 	add	x1, sp, 24
 	str	w2, [x1, x0]
 	b	.L7
-.L6:
 	ldr	w0, [sp, 520]
 	sub	w0, w0, #1
 	sxtw	x2, w0
@@ -141,18 +114,15 @@ main:
 	lsl	x0, x0, 2
 	add	x1, sp, 24
 	str	w2, [x1, x0]
-.L7:
 	ldr	w0, [sp, 520]
 	add	w0, w0, 1
 	str	w0, [sp, 520]
-.L5:
 	ldr	w0, [sp, 520]
 	cmp	w0, 10
 	ble	.L8
 	ldr	w0, [sp, 524]
 	add	w0, w0, 1
 	str	w0, [sp, 524]
-.L4:
 	ldr	w0, [sp, 524]
 	cmp	w0, 10
 	ble	.L9
@@ -163,7 +133,6 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 524]
 	b	.L10
-.L11:
 	add	x1, sp, 508
 	add	x0, sp, 512
 	mov	x2, x1
@@ -191,7 +160,6 @@ main:
 	ldr	w0, [sp, 524]
 	add	w0, w0, 1
 	str	w0, [sp, 524]
-.L10:
 	ldr	w0, [sp, 516]
 	ldr	w1, [sp, 524]
 	cmp	w1, w0
@@ -199,12 +167,4 @@ main:
 	mov	w0, 0
 	ldp	x29, x30, [sp]
 	add	sp, sp, 528
-	.cfi_restore 29
-	.cfi_restore 30
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

@@ -1,8 +1,3 @@
-	.file	"0332-reconstruct-itinerary.c"
-	.intel_syntax noprefix
-	.text
-	.globl	cmp
-	.type	cmp, @function
 cmp:
 	endbr64
 	push	rbp
@@ -12,38 +7,35 @@ cmp:
 	mov	QWORD PTR -48[rbp], rsi
 	mov	rax, QWORD PTR -40[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR -16[rbp], rax
+	mov	QWORD PTR -8[rbp], rax
 	mov	rax, QWORD PTR -48[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR -8[rbp], rax
-	mov	rax, QWORD PTR -8[rbp]
-	mov	rdx, QWORD PTR [rax]
+	mov	QWORD PTR -16[rbp], rax
 	mov	rax, QWORD PTR -16[rbp]
+	mov	rdx, QWORD PTR [rax]
+	mov	rax, QWORD PTR -8[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rsi, rdx
 	mov	rdi, rax
+	mov	eax, 0
 	call	strcmp@PLT
 	mov	DWORD PTR -20[rbp], eax
 	cmp	DWORD PTR -20[rbp], 0
 	je	.L2
 	mov	eax, DWORD PTR -20[rbp]
 	jmp	.L3
-.L2:
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -16[rbp]
 	add	rax, 8
 	mov	rdx, QWORD PTR [rax]
-	mov	rax, QWORD PTR -16[rbp]
+	mov	rax, QWORD PTR -8[rbp]
 	add	rax, 8
 	mov	rax, QWORD PTR [rax]
 	mov	rsi, rdx
 	mov	rdi, rax
+	mov	eax, 0
 	call	strcmp@PLT
-.L3:
 	leave
 	ret
-	.size	cmp, .-cmp
-	.globl	dfs
-	.type	dfs, @function
 dfs:
 	endbr64
 	push	rbp
@@ -73,10 +65,8 @@ dfs:
 	mov	QWORD PTR [rdx], rax
 	mov	eax, 1
 	jmp	.L6
-.L5:
 	mov	DWORD PTR -4[rbp], 0
 	jmp	.L7
-.L10:
 	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*4]
@@ -102,6 +92,7 @@ dfs:
 	mov	rax, QWORD PTR [rax]
 	mov	rsi, rdx
 	mov	rdi, rax
+	mov	eax, 0
 	call	strcmp@PLT
 	test	eax, eax
 	jne	.L8
@@ -139,30 +130,19 @@ dfs:
 	je	.L9
 	mov	eax, 1
 	jmp	.L6
-.L9:
 	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -24[rbp]
 	add	rax, rdx
 	mov	DWORD PTR [rax], 0
-.L8:
 	add	DWORD PTR -4[rbp], 1
-.L7:
 	mov	eax, DWORD PTR -4[rbp]
 	cmp	eax, DWORD PTR -36[rbp]
 	jl	.L10
 	mov	eax, 0
-.L6:
 	leave
 	ret
-	.size	dfs, .-dfs
-	.section	.rodata
-.LC0:
-	.string	"JFK"
-	.text
-	.globl	findItinerary
-	.type	findItinerary, @function
 findItinerary:
 	endbr64
 	push	rbp
@@ -185,19 +165,21 @@ findItinerary:
 	cdqe
 	sal	rax, 3
 	mov	rdi, rax
+	mov	eax, 0
 	call	malloc@PLT
+	cdqe
 	mov	QWORD PTR -16[rbp], rax
 	mov	eax, DWORD PTR -44[rbp]
-	cdqe
 	mov	esi, 4
-	mov	rdi, rax
+	mov	edi, eax
+	mov	eax, 0
 	call	calloc@PLT
-	mov	QWORD PTR -8[rbp], rax
-	mov	DWORD PTR -20[rbp], 0
-	mov	DWORD PTR -24[rbp], 0
+	cdqe
+	mov	QWORD PTR -24[rbp], rax
+	mov	DWORD PTR -8[rbp], 0
+	mov	DWORD PTR -4[rbp], 0
 	jmp	.L12
-.L15:
-	mov	eax, DWORD PTR -24[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*8]
 	mov	rax, QWORD PTR -40[rbp]
@@ -207,16 +189,17 @@ findItinerary:
 	lea	rdx, .LC0[rip]
 	mov	rsi, rdx
 	mov	rdi, rax
+	mov	eax, 0
 	call	strcmp@PLT
 	test	eax, eax
 	jne	.L13
-	mov	eax, DWORD PTR -24[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*4]
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -24[rbp]
 	add	rax, rdx
 	mov	DWORD PTR [rax], 1
-	mov	eax, DWORD PTR -24[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*8]
 	mov	rax, QWORD PTR -40[rbp]
@@ -225,57 +208,41 @@ findItinerary:
 	mov	rdx, QWORD PTR [rax]
 	mov	rax, QWORD PTR -16[rbp]
 	mov	QWORD PTR [rax], rdx
-	mov	edi, DWORD PTR -24[rbp]
+	mov	edi, DWORD PTR -4[rbp]
 	mov	rcx, QWORD PTR -16[rbp]
 	mov	edx, DWORD PTR -44[rbp]
 	mov	rsi, QWORD PTR -40[rbp]
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -24[rbp]
 	mov	r9d, 1
 	mov	r8d, edi
 	mov	rdi, rax
 	call	dfs
-	mov	DWORD PTR -20[rbp], eax
-	mov	eax, DWORD PTR -24[rbp]
+	mov	DWORD PTR -8[rbp], eax
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*4]
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -24[rbp]
 	add	rax, rdx
 	mov	DWORD PTR [rax], 0
-.L13:
-	add	DWORD PTR -24[rbp], 1
-.L12:
-	cmp	DWORD PTR -20[rbp], 0
+	add	DWORD PTR -4[rbp], 1
+	cmp	DWORD PTR -8[rbp], 0
 	jne	.L14
-	mov	eax, DWORD PTR -24[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	cmp	eax, DWORD PTR -44[rbp]
 	jl	.L15
-.L14:
 	mov	eax, DWORD PTR -44[rbp]
 	lea	edx, 1[rax]
 	mov	rax, QWORD PTR -56[rbp]
 	mov	DWORD PTR [rax], edx
-	mov	rax, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
+	mov	eax, 0
 	call	free@PLT
 	mov	rax, QWORD PTR -16[rbp]
 	leave
 	ret
-	.size	findItinerary, .-findItinerary
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

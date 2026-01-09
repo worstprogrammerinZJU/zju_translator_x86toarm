@@ -1,25 +1,6 @@
-	.arch armv8-a
-	.file	"2533.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%d"
-	.align	3
-.LC1:
-	.string	"%d\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #4048
-	.cfi_def_cfa_offset 4048
 	stp	x29, x30, [sp]
-	.cfi_offset 29, -4048
-	.cfi_offset 30, -4040
 	mov	x29, sp
 	str	wzr, [sp, 4036]
 	add	x0, sp, 28
@@ -29,7 +10,6 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 4044]
 	b	.L2
-.L6:
 	ldrsw	x0, [sp, 4044]
 	lsl	x0, x0, 2
 	add	x1, sp, 32
@@ -42,11 +22,9 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 4040]
 	b	.L3
-.L4:
 	ldr	w0, [sp, 4040]
 	add	w0, w0, 1
 	str	w0, [sp, 4040]
-.L3:
 	ldrsw	x0, [sp, 4040]
 	lsl	x0, x0, 2
 	add	x1, sp, 32
@@ -66,11 +44,9 @@ main:
 	ldr	w0, [sp, 4040]
 	add	w0, w0, 1
 	str	w0, [sp, 4036]
-.L5:
 	ldr	w0, [sp, 4044]
 	add	w0, w0, 1
 	str	w0, [sp, 4044]
-.L2:
 	ldr	w0, [sp, 28]
 	ldr	w1, [sp, 4044]
 	cmp	w1, w0
@@ -82,12 +58,4 @@ main:
 	mov	w0, 0
 	ldp	x29, x30, [sp]
 	add	sp, sp, 4048
-	.cfi_restore 29
-	.cfi_restore 30
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

@@ -1,13 +1,5 @@
-	.arch armv8-a
-	.file	"0347-top-k-frequent-elements.c"
-	.text
-	.align	2
-	.type	compareHeap, %function
 compareHeap:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp]
@@ -16,26 +8,13 @@ compareHeap:
 	ldr	w0, [x0, 4]
 	sub	w0, w1, w0
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	compareHeap, .-compareHeap
-	.align	2
-	.global	topKFrequent
-	.type	topKFrequent, %function
 topKFrequent:
-.LFB1:
-	.cfi_startproc
 	sub	sp, sp, #65536
-	.cfi_def_cfa_offset 65536
 	str	xzr, [sp, 1024]
 	mov	x12, 14544
 	sub	sp, sp, x12
-	.cfi_def_cfa_offset 80080
 	stp	x29, x30, [sp]
-	.cfi_offset 29, -80080
-	.cfi_offset 30, -80072
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	w1, [sp, 36]
@@ -52,7 +31,6 @@ topKFrequent:
 	add	x0, sp, 65536
 	str	wzr, [x0, 14540]
 	b	.L4
-.L6:
 	add	x0, sp, 65536
 	ldrsw	x0, [x0, 14540]
 	lsl	x0, x0, 2
@@ -89,13 +67,11 @@ topKFrequent:
 	add	w0, w0, 1
 	add	x1, sp, 65536
 	str	w0, [x1, 14536]
-.L5:
 	add	x0, sp, 65536
 	ldr	w0, [x0, 14540]
 	add	w0, w0, 1
 	add	x1, sp, 65536
 	str	w0, [x1, 14540]
-.L4:
 	add	x0, sp, 65536
 	ldr	w1, [x0, 14540]
 	ldr	w0, [sp, 36]
@@ -105,6 +81,7 @@ topKFrequent:
 	ldrsw	x0, [x0, 14536]
 	lsl	x0, x0, 3
 	bl	malloc
+	sxtw	x0, w0
 	add	x1, sp, 65536
 	str	x0, [x1, 14528]
 	add	x0, sp, 65536
@@ -120,7 +97,6 @@ topKFrequent:
 	add	x0, sp, 65536
 	str	wzr, [x0, 14540]
 	b	.L7
-.L9:
 	add	x0, sp, 65536
 	ldrsw	x0, [x0, 14540]
 	lsl	x0, x0, 2
@@ -156,13 +132,11 @@ topKFrequent:
 	add	w0, w0, 1
 	add	x1, sp, 65536
 	str	w0, [x1, 14536]
-.L8:
 	add	x0, sp, 65536
 	ldr	w0, [x0, 14540]
 	add	w0, w0, 1
 	add	x1, sp, 65536
 	str	w0, [x1, 14540]
-.L7:
 	add	x0, sp, 65536
 	ldr	w1, [x0, 14540]
 	mov	w0, 20000
@@ -181,12 +155,12 @@ topKFrequent:
 	ldrsw	x0, [sp, 32]
 	lsl	x0, x0, 2
 	bl	malloc
+	sxtw	x0, w0
 	add	x1, sp, 65536
 	str	x0, [x1, 14520]
 	add	x0, sp, 65536
 	str	wzr, [x0, 14540]
 	b	.L10
-.L11:
 	add	x0, sp, 65536
 	ldrsw	x0, [x0, 14540]
 	lsl	x0, x0, 3
@@ -210,7 +184,6 @@ topKFrequent:
 	add	w0, w0, 1
 	add	x1, sp, 65536
 	str	w0, [x1, 14540]
-.L10:
 	add	x0, sp, 65536
 	ldr	w1, [x0, 14540]
 	ldr	w0, [sp, 32]
@@ -223,15 +196,6 @@ topKFrequent:
 	add	x0, sp, 65536
 	ldr	x0, [x0, 14520]
 	ldp	x29, x30, [sp]
-	.cfi_restore 29
-	.cfi_restore 30
 	add	sp, sp, 2256
-	.cfi_def_cfa_offset 77824
 	add	sp, sp, 77824
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	topKFrequent, .-topKFrequent
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

@@ -1,16 +1,5 @@
-	.arch armv8-a
-	.file	"0981-time-based-key-value-store.c"
-	.text
-	.align	2
-	.global	timeMapCreate
-	.type	timeMapCreate, %function
 timeMapCreate:
-.LFB6:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	mov	x0, 32
 	bl	malloc
@@ -25,26 +14,11 @@ timeMapCreate:
 	str	wzr, [x0, 24]
 	ldr	x0, [sp, 24]
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE6:
-	.size	timeMapCreate, .-timeMapCreate
-	.align	2
-	.global	timeMapSet
-	.type	timeMapSet, %function
 timeMapSet:
-.LFB7:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -64
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
 	str	x2, [sp, 40]
@@ -62,7 +36,6 @@ timeMapSet:
 	str	w0, [sp, 76]
 	str	wzr, [sp, 72]
 	b	.L7
-.L10:
 	ldr	x0, [sp, 56]
 	ldr	x1, [x0]
 	ldrsw	x0, [sp, 72]
@@ -77,17 +50,14 @@ timeMapSet:
 	ldr	w0, [sp, 72]
 	str	w0, [sp, 76]
 	b	.L9
-.L8:
 	ldr	w0, [sp, 72]
 	add	w0, w0, 1
 	str	w0, [sp, 72]
-.L7:
 	ldr	x0, [sp, 56]
 	ldr	w0, [x0, 24]
 	ldr	w1, [sp, 72]
 	cmp	w1, w0
 	blt	.L10
-.L9:
 	ldr	w0, [sp, 76]
 	cmn	w0, #1
 	bne	.L11
@@ -158,7 +128,6 @@ timeMapSet:
 	mov	w1, 1
 	str	w1, [x0]
 	b	.L12
-.L11:
 	ldr	x0, [sp, 56]
 	ldr	x1, [x0, 8]
 	ldrsw	x0, [sp, 76]
@@ -213,7 +182,6 @@ timeMapSet:
 	mov	x0, x2
 	bl	realloc
 	str	x0, [x19]
-.L12:
 	ldr	x0, [sp, 56]
 	ldr	x1, [x0]
 	ldrsw	x0, [sp, 76]
@@ -255,34 +223,12 @@ timeMapSet:
 	add	w1, w1, 1
 	str	w1, [x0]
 	b	.L3
-.L13:
 	nop
-.L3:
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE7:
-	.size	timeMapSet, .-timeMapSet
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	""
-	.text
-	.align	2
-	.global	timeMapGet
-	.type	timeMapGet, %function
 timeMapGet:
-.LFB8:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	x1, [sp, 32]
@@ -297,14 +243,11 @@ timeMapGet:
 	ldr	w0, [x0, 24]
 	cmp	w0, 0
 	bne	.L16
-.L15:
 	adrp	x0, .LC0
 	add	x0, x0, :lo12:.LC0
 	b	.L17
-.L16:
 	str	wzr, [sp, 76]
 	b	.L18
-.L23:
 	ldr	x0, [sp, 40]
 	ldr	x1, [x0]
 	ldrsw	x0, [sp, 76]
@@ -335,7 +278,6 @@ timeMapGet:
 	mov	w0, -1
 	str	w0, [sp, 64]
 	b	.L20
-.L22:
 	ldr	w1, [sp, 68]
 	ldr	w0, [sp, 72]
 	sub	w0, w1, w0
@@ -364,11 +306,9 @@ timeMapGet:
 	add	w0, w0, 1
 	str	w0, [sp, 72]
 	b	.L20
-.L21:
 	ldr	w0, [sp, 52]
 	sub	w0, w0, #1
 	str	w0, [sp, 68]
-.L20:
 	ldr	w1, [sp, 72]
 	ldr	w0, [sp, 68]
 	cmp	w1, w0
@@ -386,11 +326,9 @@ timeMapGet:
 	add	x0, x0, x1
 	ldr	x0, [x0, 8]
 	b	.L17
-.L19:
 	ldr	w0, [sp, 76]
 	add	w0, w0, 1
 	str	w0, [sp, 76]
-.L18:
 	ldr	x0, [sp, 40]
 	ldr	w0, [x0, 24]
 	ldr	w1, [sp, 76]
@@ -398,25 +336,10 @@ timeMapGet:
 	blt	.L23
 	adrp	x0, .LC0
 	add	x0, x0, :lo12:.LC0
-.L17:
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE8:
-	.size	timeMapGet, .-timeMapGet
-	.align	2
-	.global	timeMapFree
-	.type	timeMapFree, %function
 timeMapFree:
-.LFB9:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	ldr	x0, [sp, 24]
@@ -424,10 +347,8 @@ timeMapFree:
 	beq	.L31
 	str	wzr, [sp, 44]
 	b	.L27
-.L30:
 	str	wzr, [sp, 40]
 	b	.L28
-.L29:
 	ldr	x0, [sp, 24]
 	ldr	x1, [x0]
 	ldrsw	x0, [sp, 44]
@@ -459,7 +380,6 @@ timeMapFree:
 	ldr	w0, [sp, 40]
 	add	w0, w0, 1
 	str	w0, [sp, 40]
-.L28:
 	ldr	x0, [sp, 24]
 	ldr	x1, [x0, 8]
 	ldrsw	x0, [sp, 44]
@@ -479,7 +399,6 @@ timeMapFree:
 	ldr	w0, [sp, 44]
 	add	w0, w0, 1
 	str	w0, [sp, 44]
-.L27:
 	ldr	x0, [sp, 24]
 	ldr	w0, [x0, 24]
 	ldr	w1, [sp, 44]
@@ -497,16 +416,6 @@ timeMapFree:
 	ldr	x0, [sp, 24]
 	bl	free
 	b	.L24
-.L31:
 	nop
-.L24:
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9:
-	.size	timeMapFree, .-timeMapFree
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

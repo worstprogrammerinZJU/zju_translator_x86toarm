@@ -1,30 +1,5 @@
-	.arch armv8-a
-	.file	"1008.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC2:
-	.string	"%d"
-	.align	3
-.LC3:
-	.string	"%d\n"
-	.align	3
-.LC4:
-	.string	"%d. %s %d"
-	.align	3
-.LC5:
-	.string	"%d %s %d\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -368]!
-	.cfi_def_cfa_offset 368
-	.cfi_offset 29, -368
-	.cfi_offset 30, -360
 	mov	x29, sp
 	adrp	x0, .LC0
 	add	x1, x0, :lo12:.LC0
@@ -68,7 +43,6 @@ main:
 	bl	printf
 	str	wzr, [sp, 364]
 	b	.L2
-.L7:
 	add	x2, sp, 344
 	add	x1, sp, 200
 	add	x0, sp, 348
@@ -80,7 +54,6 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 360]
 	b	.L3
-.L6:
 	add	x2, sp, 208
 	ldrsw	x1, [sp, 360]
 	mov	x0, x1
@@ -94,14 +67,11 @@ main:
 	ldr	w0, [sp, 360]
 	add	w0, w0, 1
 	str	w0, [sp, 360]
-.L3:
 	ldr	w0, [sp, 360]
 	cmp	w0, 18
 	ble	.L6
 	b	.L5
-.L9:
 	nop
-.L5:
 	ldr	w1, [sp, 344]
 	mov	w0, 365
 	mul	w2, w1, w0
@@ -173,100 +143,10 @@ main:
 	ldr	w0, [sp, 364]
 	add	w0, w0, 1
 	str	w0, [sp, 364]
-.L2:
 	ldr	w0, [sp, 352]
 	ldr	w1, [sp, 364]
 	cmp	w1, w0
 	blt	.L7
 	mov	w0, 0
 	ldp	x29, x30, [sp], 368
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"pop"
-	.zero	3
-	.string	"no"
-	.zero	4
-	.string	"zip"
-	.zero	3
-	.string	"zotz"
-	.zero	2
-	.string	"tzec"
-	.zero	2
-	.string	"xul"
-	.zero	3
-	.string	"yoxkin"
-	.string	"mol"
-	.zero	3
-	.string	"chen"
-	.zero	2
-	.string	"yax"
-	.zero	3
-	.string	"zac"
-	.zero	3
-	.string	"ceh"
-	.zero	3
-	.string	"mac"
-	.zero	3
-	.string	"kankin"
-	.string	"muan"
-	.zero	2
-	.string	"pax"
-	.zero	3
-	.string	"koyab"
-	.zero	1
-	.string	"cumhu"
-	.zero	1
-	.string	"uayet"
-	.zero	1
-	.align	3
-.LC1:
-	.string	"imix"
-	.zero	4
-	.string	"ik"
-	.zero	6
-	.string	"akbal"
-	.zero	3
-	.string	"kan"
-	.zero	5
-	.string	"chicchan"
-	.string	"cimi"
-	.zero	4
-	.string	"manik"
-	.zero	3
-	.string	"lamat"
-	.zero	3
-	.string	"muluk"
-	.zero	3
-	.string	"ok"
-	.zero	6
-	.string	"chuen"
-	.zero	3
-	.string	"eb"
-	.zero	6
-	.string	"ben"
-	.zero	5
-	.string	"ix"
-	.zero	6
-	.string	"mem"
-	.zero	5
-	.string	"cib"
-	.zero	5
-	.string	"caban"
-	.zero	3
-	.string	"eznab"
-	.zero	3
-	.string	"canac"
-	.zero	3
-	.string	"ahau"
-	.zero	4
-	.text
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

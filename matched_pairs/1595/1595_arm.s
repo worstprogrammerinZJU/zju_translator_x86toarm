@@ -1,31 +1,6 @@
-	.arch armv8-a
-	.file	"1595.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%d %d:"
-	.align	3
-.LC1:
-	.string	" %d"
-	.align	3
-.LC2:
-	.string	"\n"
-	.align	3
-.LC3:
-	.string	"%d%d"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #720
-	.cfi_def_cfa_offset 720
 	stp	x29, x30, [sp]
-	.cfi_offset 29, -720
-	.cfi_offset 30, -712
 	mov	x29, sp
 	add	x0, sp, 32
 	mov	x1, 676
@@ -43,11 +18,9 @@ main:
 	mov	w0, 3
 	str	w0, [sp, 708]
 	b	.L2
-.L8:
 	mov	w0, 2
 	str	w0, [sp, 712]
 	b	.L3
-.L6:
 	ldrsw	x0, [sp, 712]
 	lsl	x0, x0, 2
 	add	x1, sp, 32
@@ -61,7 +34,6 @@ main:
 	ldr	w0, [sp, 712]
 	add	w0, w0, 1
 	str	w0, [sp, 712]
-.L3:
 	ldrsw	x0, [sp, 712]
 	lsl	x0, x0, 2
 	add	x1, sp, 32
@@ -71,9 +43,7 @@ main:
 	cmp	w1, w0
 	bgt	.L6
 	b	.L5
-.L23:
 	nop
-.L5:
 	ldrsw	x0, [sp, 712]
 	lsl	x0, x0, 2
 	add	x1, sp, 32
@@ -90,16 +60,13 @@ main:
 	add	x1, sp, 32
 	ldr	w2, [sp, 716]
 	str	w2, [x1, x0]
-.L7:
 	ldr	w0, [sp, 716]
 	add	w0, w0, 2
 	str	w0, [sp, 716]
-.L2:
 	ldr	w0, [sp, 716]
 	cmp	w0, 999
 	ble	.L8
 	b	.L9
-.L21:
 	ldr	w0, [sp, 28]
 	ldr	w1, [sp, 24]
 	mov	w2, w1
@@ -112,7 +79,6 @@ main:
 	sub	w0, w0, #1
 	str	w0, [sp, 712]
 	b	.L10
-.L14:
 	ldr	w1, [sp, 716]
 	ldr	w0, [sp, 712]
 	add	w0, w1, w0
@@ -135,7 +101,6 @@ main:
 	sub	w0, w0, #1
 	str	w0, [sp, 712]
 	b	.L10
-.L11:
 	ldr	w1, [sp, 716]
 	ldr	w0, [sp, 712]
 	add	w0, w1, w0
@@ -158,7 +123,6 @@ main:
 	add	w0, w0, 1
 	str	w0, [sp, 716]
 	b	.L10
-.L12:
 	ldr	w1, [sp, 716]
 	ldr	w0, [sp, 712]
 	add	w0, w1, w0
@@ -167,12 +131,10 @@ main:
 	asr	w0, w0, 1
 	str	w0, [sp, 716]
 	b	.L13
-.L10:
 	ldr	w1, [sp, 716]
 	ldr	w0, [sp, 712]
 	cmp	w1, w0
 	blt	.L14
-.L13:
 	ldrsw	x0, [sp, 716]
 	lsl	x0, x0, 2
 	add	x1, sp, 32
@@ -183,7 +145,6 @@ main:
 	ldr	w0, [sp, 716]
 	sub	w0, w0, #1
 	str	w0, [sp, 716]
-.L15:
 	ldr	w0, [sp, 24]
 	lsl	w1, w0, 1
 	ldr	w0, [sp, 716]
@@ -207,14 +168,11 @@ main:
 	add	w0, w1, w0
 	asr	w0, w0, 1
 	b	.L17
-.L16:
 	mov	w0, 0
-.L17:
 	str	w0, [sp, 712]
 	ldr	w0, [sp, 712]
 	str	w0, [sp, 716]
 	b	.L18
-.L20:
 	ldrsw	x0, [sp, 716]
 	lsl	x0, x0, 2
 	add	x1, sp, 32
@@ -226,7 +184,6 @@ main:
 	ldr	w0, [sp, 716]
 	add	w0, w0, 1
 	str	w0, [sp, 716]
-.L18:
 	ldr	w1, [sp, 24]
 	ldr	w0, [sp, 712]
 	add	w0, w1, w0
@@ -240,11 +197,9 @@ main:
 	ldr	w0, [sp, 28]
 	cmp	w1, w0
 	ble	.L20
-.L19:
 	adrp	x0, .LC2
 	add	x0, x0, :lo12:.LC2
-	bl	puts
-.L9:
+	bl	printf
 	add	x1, sp, 24
 	add	x0, sp, 28
 	mov	x2, x1
@@ -257,12 +212,4 @@ main:
 	mov	w0, 0
 	ldp	x29, x30, [sp]
 	add	sp, sp, 720
-	.cfi_restore 29
-	.cfi_restore 30
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

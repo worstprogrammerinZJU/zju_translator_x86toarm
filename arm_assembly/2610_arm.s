@@ -1,52 +1,11 @@
-	.arch armv8-a
-	.file	"2610.c"
-	.text
-	.global	gx
-	.bss
-	.align	3
-	.type	gx, %object
-	.size	gx, 8
 gx:
-	.zero	8
-	.global	gy
-	.align	3
-	.type	gy, %object
-	.size	gy, 8
 gy:
-	.zero	8
-	.global	dx
-	.align	3
-	.type	dx, %object
-	.size	dx, 8
 dx:
-	.zero	8
-	.global	dy
-	.align	3
-	.type	dy, %object
-	.size	dy, 8
 dy:
-	.zero	8
-	.global	x
-	.align	3
-	.type	x, %object
-	.size	x, 8
 x:
-	.zero	8
-	.global	y
-	.align	3
-	.type	y, %object
-	.size	y, 8
 y:
-	.zero	8
-	.text
-	.align	2
-	.global	dist
-	.type	dist, %function
 dist:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	d0, [sp, 24]
 	str	d1, [sp, 16]
 	str	d2, [sp, 8]
@@ -67,35 +26,9 @@ dist:
 	fmul	d0, d2, d0
 	fadd	d0, d1, d0
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	dist, .-dist
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%lf%lf%lf%lf"
-	.align	3
-.LC1:
-	.string	"%lf%lf"
-	.align	3
-.LC2:
-	.string	"The gopher cannot escape."
-	.align	3
-.LC3:
-	.string	"The gopher can escape through the hole at (%.3lf,%.3lf).\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	wzr, [sp, 44]
 	adrp	x0, dy
@@ -110,7 +43,6 @@ main:
 	add	x0, x0, :lo12:.LC0
 	bl	__isoc99_scanf
 	b	.L4
-.L6:
 	ldr	w0, [sp, 44]
 	cmp	w0, 0
 	bne	.L4
@@ -153,7 +85,6 @@ main:
 	fcmpe	d1, d0
 	bmi	.L10
 	b	.L4
-.L10:
 	mov	w0, 1
 	str	w0, [sp, 44]
 	adrp	x0, x
@@ -164,7 +95,6 @@ main:
 	add	x0, x0, :lo12:y
 	ldr	d0, [x0]
 	str	d0, [sp, 24]
-.L4:
 	adrp	x0, y
 	add	x2, x0, :lo12:y
 	adrp	x0, x
@@ -179,28 +109,13 @@ main:
 	bne	.L7
 	adrp	x0, .LC2
 	add	x0, x0, :lo12:.LC2
-	bl	puts
+	bl	printf
 	b	.L8
-.L7:
 	ldr	d1, [sp, 24]
 	ldr	d0, [sp, 32]
 	adrp	x0, .LC3
 	add	x0, x0, :lo12:.LC3
 	bl	printf
-.L8:
 	mov	w0, 0
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	main, .-main
-	.section	.rodata
-	.align	3
-.LC4:
-	.word	-1698910392
-	.word	1048238066
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

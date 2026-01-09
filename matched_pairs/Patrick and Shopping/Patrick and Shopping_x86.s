@@ -1,194 +1,67 @@
-	.file	"Patrick and Shopping.cpp"
-	.intel_syntax noprefix
-	.text
-	.section	.text._ZN9__gnu_cxx5__ops16__iter_less_iterEv,"axG",@progbits,_ZN9__gnu_cxx5__ops16__iter_less_iterEv,comdat
-	.weak	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
-	.type	_ZN9__gnu_cxx5__ops16__iter_less_iterEv, @function
-_ZN9__gnu_cxx5__ops16__iter_less_iterEv:
-.LFB280:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	nop
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE280:
-	.size	_ZN9__gnu_cxx5__ops16__iter_less_iterEv, .-_ZN9__gnu_cxx5__ops16__iter_less_iterEv
-	.local	_ZStL8__ioinit
-	.comm	_ZStL8__ioinit,1,1
-	.section	.rodata
-	.type	_ZN6__pstl9execution2v1L3seqE, @object
-	.size	_ZN6__pstl9execution2v1L3seqE, 1
-_ZN6__pstl9execution2v1L3seqE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L3parE, @object
-	.size	_ZN6__pstl9execution2v1L3parE, 1
-_ZN6__pstl9execution2v1L3parE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L9par_unseqE, @object
-	.size	_ZN6__pstl9execution2v1L9par_unseqE, 1
-_ZN6__pstl9execution2v1L9par_unseqE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L5unseqE, @object
-	.size	_ZN6__pstl9execution2v1L5unseqE, 1
-_ZN6__pstl9execution2v1L5unseqE:
-	.zero	1
-	.align 4
-	.type	_ZN9__gnu_cxxL21__default_lock_policyE, @object
-	.size	_ZN9__gnu_cxxL21__default_lock_policyE, 4
-_ZN9__gnu_cxxL21__default_lock_policyE:
-	.long	2
-	.align 4
-	.type	_ZNSt15regex_constantsL13error_collateE, @object
-	.size	_ZNSt15regex_constantsL13error_collateE, 4
-_ZNSt15regex_constantsL13error_collateE:
-	.zero	4
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_ctypeE, @object
-	.size	_ZNSt15regex_constantsL11error_ctypeE, 4
-_ZNSt15regex_constantsL11error_ctypeE:
-	.long	1
-	.align 4
-	.type	_ZNSt15regex_constantsL12error_escapeE, @object
-	.size	_ZNSt15regex_constantsL12error_escapeE, 4
-_ZNSt15regex_constantsL12error_escapeE:
-	.long	2
-	.align 4
-	.type	_ZNSt15regex_constantsL13error_backrefE, @object
-	.size	_ZNSt15regex_constantsL13error_backrefE, 4
-_ZNSt15regex_constantsL13error_backrefE:
-	.long	3
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_brackE, @object
-	.size	_ZNSt15regex_constantsL11error_brackE, 4
-_ZNSt15regex_constantsL11error_brackE:
-	.long	4
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_parenE, @object
-	.size	_ZNSt15regex_constantsL11error_parenE, 4
-_ZNSt15regex_constantsL11error_parenE:
-	.long	5
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_braceE, @object
-	.size	_ZNSt15regex_constantsL11error_braceE, 4
-_ZNSt15regex_constantsL11error_braceE:
-	.long	6
-	.align 4
-	.type	_ZNSt15regex_constantsL14error_badbraceE, @object
-	.size	_ZNSt15regex_constantsL14error_badbraceE, 4
-_ZNSt15regex_constantsL14error_badbraceE:
-	.long	7
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_rangeE, @object
-	.size	_ZNSt15regex_constantsL11error_rangeE, 4
-_ZNSt15regex_constantsL11error_rangeE:
-	.long	8
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_spaceE, @object
-	.size	_ZNSt15regex_constantsL11error_spaceE, 4
-_ZNSt15regex_constantsL11error_spaceE:
-	.long	9
-	.align 4
-	.type	_ZNSt15regex_constantsL15error_badrepeatE, @object
-	.size	_ZNSt15regex_constantsL15error_badrepeatE, 4
-_ZNSt15regex_constantsL15error_badrepeatE:
-	.long	10
-	.align 4
-	.type	_ZNSt15regex_constantsL16error_complexityE, @object
-	.size	_ZNSt15regex_constantsL16error_complexityE, 4
-_ZNSt15regex_constantsL16error_complexityE:
-	.long	11
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_stackE, @object
-	.size	_ZNSt15regex_constantsL11error_stackE, 4
-_ZNSt15regex_constantsL11error_stackE:
-	.long	12
-	.align 8
-	.type	_ZNSt8__detailL19_S_invalid_state_idE, @object
-	.size	_ZNSt8__detailL19_S_invalid_state_idE, 8
-_ZNSt8__detailL19_S_invalid_state_idE:
-	.quad	-1
-	.text
-	.globl	main
-	.type	main, @function
 main:
-.LFB9704:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	push	r13
 	push	r12
 	push	rbx
 	sub	rsp, 56
-	.cfi_offset 13, -24
-	.cfi_offset 12, -32
-	.cfi_offset 3, -40
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -40[rbp], rax
-	xor	eax, eax
 	mov	edi, 0
-	call	_ZNSt8ios_base15sync_with_stdioEb@PLT
 	mov	esi, 0
 	lea	rax, _ZSt3cin[rip+16]
 	mov	rdi, rax
-	call	_ZNSt9basic_iosIcSt11char_traitsIcEE3tieEPSo@PLT
 	mov	esi, 0
 	lea	rax, _ZSt4cout[rip+8]
 	mov	rdi, rax
-	call	_ZNSt9basic_iosIcSt11char_traitsIcEE3tieEPSo@PLT
-	mov	DWORD PTR -68[rbp], 0
-	lea	rax, -80[rbp]
+	mov	DWORD PTR -36[rbp], 0
+	lea	rax, -68[rbp]
 	mov	rsi, rax
 	lea	rax, _ZSt3cin[rip]
 	mov	rdi, rax
-	call	_ZNSirsERi@PLT
-	mov	rdx, rax
-	lea	rax, -76[rbp]
-	mov	rsi, rax
-	mov	rdi, rdx
 	call	_ZNSirsERi@PLT
 	mov	rdx, rax
 	lea	rax, -72[rbp]
 	mov	rsi, rax
 	mov	rdi, rdx
 	call	_ZNSirsERi@PLT
-	mov	edx, DWORD PTR -80[rbp]
-	mov	eax, DWORD PTR -76[rbp]
-	add	edx, eax
+	mov	rdx, rax
+	lea	rax, -76[rbp]
+	mov	rsi, rax
+	mov	rdi, rdx
+	call	_ZNSirsERi@PLT
+	mov	edx, DWORD PTR -68[rbp]
 	mov	eax, DWORD PTR -72[rbp]
+	add	edx, eax
+	mov	eax, DWORD PTR -76[rbp]
 	add	eax, edx
 	mov	DWORD PTR -64[rbp], eax
-	mov	edx, DWORD PTR -76[rbp]
-	mov	eax, DWORD PTR -80[rbp]
+	mov	edx, DWORD PTR -72[rbp]
+	mov	eax, DWORD PTR -68[rbp]
 	add	edx, eax
-	mov	eax, DWORD PTR -80[rbp]
+	mov	eax, DWORD PTR -68[rbp]
 	add	edx, eax
-	mov	eax, DWORD PTR -76[rbp]
+	mov	eax, DWORD PTR -72[rbp]
 	add	eax, edx
 	mov	DWORD PTR -60[rbp], eax
-	mov	edx, DWORD PTR -72[rbp]
-	mov	eax, DWORD PTR -76[rbp]
-	add	edx, eax
-	mov	eax, DWORD PTR -76[rbp]
+	mov	edx, DWORD PTR -76[rbp]
+	mov	eax, DWORD PTR -72[rbp]
 	add	edx, eax
 	mov	eax, DWORD PTR -72[rbp]
+	add	edx, eax
+	mov	eax, DWORD PTR -76[rbp]
 	add	eax, edx
 	mov	DWORD PTR -56[rbp], eax
-	mov	eax, DWORD PTR -80[rbp]
+	mov	eax, DWORD PTR -68[rbp]
 	lea	edx, [rax+rax]
-	mov	eax, DWORD PTR -72[rbp]
+	mov	eax, DWORD PTR -76[rbp]
 	add	edx, eax
-	mov	eax, DWORD PTR -72[rbp]
+	mov	eax, DWORD PTR -76[rbp]
 	add	eax, edx
 	mov	DWORD PTR -52[rbp], eax
 	lea	rax, -64[rbp]
@@ -201,44 +74,24 @@ main:
 	mov	rax, rdx
 	mov	rdi, rcx
 	mov	rsi, rax
-	call	_ZSt3minIiET_St16initializer_listIS0_E
-	add	DWORD PTR -68[rbp], eax
-	mov	eax, DWORD PTR -68[rbp]
+	add	DWORD PTR -36[rbp], eax
+	mov	eax, DWORD PTR -36[rbp]
 	mov	esi, eax
 	lea	rax, _ZSt4cout[rip]
 	mov	rdi, rax
 	call	_ZNSolsEi@PLT
 	mov	eax, 0
-	mov	rdx, QWORD PTR -40[rbp]
-	sub	rdx, QWORD PTR fs:40
-	je	.L5
-	call	__stack_chk_fail@PLT
-.L5:
 	add	rsp, 56
 	pop	rbx
 	pop	r12
 	pop	r13
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE9704:
-	.size	main, .-main
-	.section	.text._ZSt3minIiET_St16initializer_listIS0_E,"axG",@progbits,_ZSt3minIiET_St16initializer_listIS0_E,comdat
-	.weak	_ZSt3minIiET_St16initializer_listIS0_E
-	.type	_ZSt3minIiET_St16initializer_listIS0_E, @function
-_ZSt3minIiET_St16initializer_listIS0_E:
-.LFB10393:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	push	rbx
 	sub	rsp, 24
-	.cfi_offset 3, -24
 	mov	rax, rdi
 	mov	rcx, rsi
 	mov	rdx, rcx
@@ -246,139 +99,62 @@ _ZSt3minIiET_St16initializer_listIS0_E:
 	mov	QWORD PTR -24[rbp], rdx
 	lea	rax, -32[rbp]
 	mov	rdi, rax
-	call	_ZNKSt16initializer_listIiE3endEv
 	mov	rbx, rax
 	lea	rax, -32[rbp]
 	mov	rdi, rax
-	call	_ZNKSt16initializer_listIiE5beginEv
 	mov	rsi, rbx
 	mov	rdi, rax
-	call	_ZSt11min_elementIPKiET_S2_S2_
 	mov	eax, DWORD PTR [rax]
 	mov	rbx, QWORD PTR -8[rbp]
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE10393:
-	.size	_ZSt3minIiET_St16initializer_listIS0_E, .-_ZSt3minIiET_St16initializer_listIS0_E
-	.section	.text._ZNKSt16initializer_listIiE5beginEv,"axG",@progbits,_ZNKSt16initializer_listIiE5beginEv,comdat
-	.align 2
-	.weak	_ZNKSt16initializer_listIiE5beginEv
-	.type	_ZNKSt16initializer_listIiE5beginEv, @function
-_ZNKSt16initializer_listIiE5beginEv:
-.LFB10785:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rax, QWORD PTR [rax]
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE10785:
-	.size	_ZNKSt16initializer_listIiE5beginEv, .-_ZNKSt16initializer_listIiE5beginEv
-	.section	.text._ZNKSt16initializer_listIiE3endEv,"axG",@progbits,_ZNKSt16initializer_listIiE3endEv,comdat
-	.align 2
-	.weak	_ZNKSt16initializer_listIiE3endEv
-	.type	_ZNKSt16initializer_listIiE3endEv, @function
-_ZNKSt16initializer_listIiE3endEv:
-.LFB10786:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	push	rbx
 	sub	rsp, 24
-	.cfi_offset 3, -24
 	mov	QWORD PTR -24[rbp], rdi
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZNKSt16initializer_listIiE5beginEv
 	mov	rbx, rax
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZNKSt16initializer_listIiE4sizeEv
 	sal	rax, 2
 	add	rax, rbx
 	mov	rbx, QWORD PTR -8[rbp]
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE10786:
-	.size	_ZNKSt16initializer_listIiE3endEv, .-_ZNKSt16initializer_listIiE3endEv
-	.section	.text._ZSt11min_elementIPKiET_S2_S2_,"axG",@progbits,_ZSt11min_elementIPKiET_S2_S2_,comdat
-	.weak	_ZSt11min_elementIPKiET_S2_S2_
-	.type	_ZSt11min_elementIPKiET_S2_S2_, @function
-_ZSt11min_elementIPKiET_S2_S2_:
-.LFB10787:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 16
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
-	call	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
 	mov	rdx, QWORD PTR -16[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt13__min_elementIPKiN9__gnu_cxx5__ops15_Iter_less_iterEET_S5_S5_T0_
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE10787:
-	.size	_ZSt11min_elementIPKiET_S2_S2_, .-_ZSt11min_elementIPKiET_S2_S2_
-	.section	.text._ZNKSt16initializer_listIiE4sizeEv,"axG",@progbits,_ZNKSt16initializer_listIiE4sizeEv,comdat
-	.align 2
-	.weak	_ZNKSt16initializer_listIiE4sizeEv
-	.type	_ZNKSt16initializer_listIiE4sizeEv, @function
-_ZNKSt16initializer_listIiE4sizeEv:
-.LFB10984:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rax, QWORD PTR 8[rax]
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE10984:
-	.size	_ZNKSt16initializer_listIiE4sizeEv, .-_ZNKSt16initializer_listIiE4sizeEv
-	.section	.text._ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_,comdat
-	.align 2
-	.weak	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_
-	.type	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_, @function
-_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_:
-.LFB10986:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	QWORD PTR -24[rbp], rdx
@@ -389,135 +165,68 @@ _ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_:
 	cmp	edx, eax
 	setl	al
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE10986:
-	.size	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_, .-_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_
-	.section	.text._ZSt13__min_elementIPKiN9__gnu_cxx5__ops15_Iter_less_iterEET_S5_S5_T0_,"axG",@progbits,_ZSt13__min_elementIPKiN9__gnu_cxx5__ops15_Iter_less_iterEET_S5_S5_T0_,comdat
-	.weak	_ZSt13__min_elementIPKiN9__gnu_cxx5__ops15_Iter_less_iterEET_S5_S5_T0_
-	.type	_ZSt13__min_elementIPKiN9__gnu_cxx5__ops15_Iter_less_iterEET_S5_S5_T0_, @function
-_ZSt13__min_elementIPKiN9__gnu_cxx5__ops15_Iter_less_iterEET_S5_S5_T0_:
-.LFB10985:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 48
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
 	mov	rax, QWORD PTR -24[rbp]
 	cmp	rax, QWORD PTR -32[rbp]
-	jne	.L19
+	jne	.L18
 	mov	rax, QWORD PTR -24[rbp]
-	jmp	.L20
-.L19:
+	jmp	.L19
 	mov	rax, QWORD PTR -24[rbp]
 	mov	QWORD PTR -8[rbp], rax
-	jmp	.L21
-.L22:
+	jmp	.L20
 	mov	rdx, QWORD PTR -8[rbp]
 	mov	rcx, QWORD PTR -24[rbp]
 	lea	rax, -33[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPKiS4_EEbT_T0_
 	test	al, al
-	je	.L21
+	je	.L20
 	mov	rax, QWORD PTR -24[rbp]
 	mov	QWORD PTR -8[rbp], rax
-.L21:
 	add	QWORD PTR -24[rbp], 4
 	mov	rax, QWORD PTR -24[rbp]
 	cmp	rax, QWORD PTR -32[rbp]
 	setne	al
 	test	al, al
-	jne	.L22
+	jne	.L21
 	mov	rax, QWORD PTR -8[rbp]
-.L20:
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE10985:
-	.size	_ZSt13__min_elementIPKiN9__gnu_cxx5__ops15_Iter_less_iterEET_S5_S5_T0_, .-_ZSt13__min_elementIPKiN9__gnu_cxx5__ops15_Iter_less_iterEET_S5_S5_T0_
-	.text
-	.type	_Z41__static_initialization_and_destruction_0ii, @function
-_Z41__static_initialization_and_destruction_0ii:
-.LFB11460:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 16
 	mov	DWORD PTR -4[rbp], edi
 	mov	DWORD PTR -8[rbp], esi
 	cmp	DWORD PTR -4[rbp], 1
-	jne	.L25
+	jne	.L24
 	cmp	DWORD PTR -8[rbp], 65535
-	jne	.L25
+	jne	.L24
 	lea	rax, _ZStL8__ioinit[rip]
 	mov	rdi, rax
-	call	_ZNSt8ios_base4InitC1Ev@PLT
-	lea	rax, __dso_handle[rip]
 	mov	rdx, rax
 	lea	rax, _ZStL8__ioinit[rip]
 	mov	rsi, rax
-	mov	rax, QWORD PTR _ZNSt8ios_base4InitD1Ev@GOTPCREL[rip]
 	mov	rdi, rax
 	call	__cxa_atexit@PLT
-.L25:
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE11460:
-	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
-	.type	_GLOBAL__sub_I_main, @function
-_GLOBAL__sub_I_main:
-.LFB11483:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	esi, 65535
 	mov	edi, 1
-	call	_Z41__static_initialization_and_destruction_0ii
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE11483:
-	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
-	.section	.init_array,"aw"
-	.align 8
-	.quad	_GLOBAL__sub_I_main
-	.hidden	__dso_handle
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

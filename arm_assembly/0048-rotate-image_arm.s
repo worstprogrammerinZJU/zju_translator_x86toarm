@@ -1,14 +1,5 @@
-	.arch armv8-a
-	.file	"0048-rotate-image.c"
-	.text
-	.align	2
-	.global	rotate
-	.type	rotate, %function
 rotate:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #64
-	.cfi_def_cfa_offset 64
 	str	x0, [sp, 24]
 	str	w1, [sp, 20]
 	str	x2, [sp, 8]
@@ -17,10 +8,8 @@ rotate:
 	sub	w0, w0, #1
 	str	w0, [sp, 56]
 	b	.L2
-.L5:
 	str	wzr, [sp, 52]
 	b	.L3
-.L4:
 	ldr	w0, [sp, 60]
 	str	w0, [sp, 48]
 	ldr	w0, [sp, 56]
@@ -126,7 +115,6 @@ rotate:
 	ldr	w0, [sp, 52]
 	add	w0, w0, 1
 	str	w0, [sp, 52]
-.L3:
 	ldr	w1, [sp, 56]
 	ldr	w0, [sp, 60]
 	sub	w0, w1, w0
@@ -139,7 +127,6 @@ rotate:
 	ldr	w0, [sp, 60]
 	add	w0, w0, 1
 	str	w0, [sp, 60]
-.L2:
 	ldr	w1, [sp, 60]
 	ldr	w0, [sp, 56]
 	cmp	w1, w0
@@ -147,10 +134,4 @@ rotate:
 	nop
 	nop
 	add	sp, sp, 64
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	rotate, .-rotate
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

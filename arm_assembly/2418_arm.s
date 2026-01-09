@@ -1,61 +1,13 @@
-	.arch armv8-a
-	.file	"2418.c"
-	.text
-	.global	link
-	.bss
-	.align	3
-	.type	link, %object
-	.size	link, 80056
 link:
-	.zero	80056
-	.global	num
-	.align	3
-	.type	num, %object
-	.size	num, 40000
 num:
-	.zero	40000
-	.global	posi
-	.align	3
-	.type	posi, %object
-	.size	posi, 40000
 posi:
-	.zero	40000
-	.global	n
-	.align	2
-	.type	n, %object
-	.size	n, 4
 n:
-	.zero	4
-	.global	m
-	.align	2
-	.type	m, %object
-	.size	m, 4
 m:
-	.zero	4
-	.global	tree
-	.align	3
-	.type	tree, %object
-	.size	tree, 310000
 tree:
-	.zero	310000
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%s %.4lf\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB6:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	b	.L2
-.L9:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -74,7 +26,6 @@ main:
 	ldr	x0, [x0, x1, lsl 3]
 	str	x0, [sp, 32]
 	b	.L3
-.L6:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -102,14 +53,11 @@ main:
 	ldr	x0, [sp, 32]
 	ldr	x0, [x0, 8]
 	str	x0, [sp, 32]
-.L3:
 	ldr	x0, [sp, 32]
 	cmp	x0, 0
 	bne	.L6
 	b	.L5
-.L13:
 	nop
-.L5:
 	ldr	x0, [sp, 32]
 	cmp	x0, 0
 	bne	.L7
@@ -158,7 +106,6 @@ main:
 	add	x0, x0, :lo12:n
 	str	w1, [x0]
 	b	.L8
-.L7:
 	ldr	x0, [sp, 32]
 	ldr	w3, [x0]
 	adrp	x0, num
@@ -170,7 +117,6 @@ main:
 	add	x0, x0, :lo12:num
 	sxtw	x1, w3
 	str	w2, [x0, x1, lsl 2]
-.L8:
 	adrp	x0, m
 	add	x0, x0, :lo12:m
 	ldr	w0, [x0]
@@ -178,7 +124,6 @@ main:
 	adrp	x0, m
 	add	x0, x0, :lo12:m
 	str	w1, [x0]
-.L2:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -204,7 +149,6 @@ main:
 	bl	qsort
 	str	wzr, [sp, 44]
 	b	.L10
-.L11:
 	adrp	x0, posi
 	add	x0, x0, :lo12:posi
 	ldrsw	x1, [sp, 44]
@@ -240,7 +184,6 @@ main:
 	ldr	w0, [sp, 44]
 	add	w0, w0, 1
 	str	w0, [sp, 44]
-.L10:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -249,25 +192,12 @@ main:
 	blt	.L11
 	mov	w0, 0
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE6:
-	.size	main, .-main
-	.align	2
-	.global	ELFhash
-	.type	ELFhash, %function
 ELFhash:
-.LFB7:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	x0, [sp, 8]
 	str	xzr, [sp, 24]
 	b	.L15
-.L17:
 	ldr	x0, [sp, 24]
 	lsl	x1, x0, 4
 	ldr	x0, [sp, 8]
@@ -288,13 +218,11 @@ ELFhash:
 	ldr	x1, [sp, 24]
 	eor	x0, x1, x0
 	str	x0, [sp, 24]
-.L16:
 	ldr	x0, [sp, 16]
 	mvn	x0, x0
 	ldr	x1, [sp, 24]
 	and	x0, x1, x0
 	str	x0, [sp, 24]
-.L15:
 	ldr	x0, [sp, 8]
 	ldrb	w0, [x0]
 	cmp	w0, 0
@@ -314,21 +242,9 @@ ELFhash:
 	sub	x1, x0, x1
 	mov	w0, w1
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE7:
-	.size	ELFhash, .-ELFhash
-	.align	2
-	.global	cmp
-	.type	cmp, %function
 cmp:
-.LFB8:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
@@ -356,12 +272,4 @@ cmp:
 	mov	x0, x2
 	bl	strcmp
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE8:
-	.size	cmp, .-cmp
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

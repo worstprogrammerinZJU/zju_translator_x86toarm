@@ -1,43 +1,18 @@
-	.arch armv8-a
-	.file	"2546.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"0.000"
-	.align	3
-.LC1:
-	.string	"%.3lf\n"
-	.align	3
-.LC2:
-	.string	"%lf%lf%lf%lf%lf%lf"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -112]!
-	.cfi_def_cfa_offset 112
-	.cfi_offset 29, -112
-	.cfi_offset 30, -104
 	mov	x29, sp
 	b	.L2
-.L9:
 	ldr	d1, [sp, 48]
 	ldr	d0, [sp, 24]
 	fcmpe	d1, d0
 	bmi	.L11
 	b	.L3
-.L11:
 	ldr	d0, [sp, 48]
 	str	d0, [sp, 104]
 	ldr	d0, [sp, 24]
 	str	d0, [sp, 48]
 	ldr	d0, [sp, 104]
 	str	d0, [sp, 24]
-.L3:
 	ldr	d1, [sp, 64]
 	ldr	d0, [sp, 40]
 	fsub	d1, d1, d0
@@ -62,12 +37,10 @@ main:
 	fcmpe	d1, d0
 	bge	.L12
 	b	.L14
-.L12:
 	adrp	x0, .LC0
 	add	x0, x0, :lo12:.LC0
-	bl	puts
+	bl	printf
 	b	.L2
-.L14:
 	ldr	d1, [sp, 48]
 	ldr	d0, [sp, 24]
 	fsub	d0, d1, d0
@@ -75,7 +48,6 @@ main:
 	fcmpe	d1, d0
 	bls	.L13
 	b	.L15
-.L13:
 	ldr	d0, [sp, 24]
 	adrp	x0, .LC3
 	ldr	d1, [x0, #:lo12:.LC3]
@@ -86,7 +58,6 @@ main:
 	add	x0, x0, :lo12:.LC1
 	bl	printf
 	b	.L2
-.L15:
 	ldr	d1, [sp, 24]
 	ldr	d0, [sp, 24]
 	fmul	d1, d1, d0
@@ -165,7 +136,6 @@ main:
 	adrp	x0, .LC1
 	add	x0, x0, :lo12:.LC1
 	bl	printf
-.L2:
 	add	x5, sp, 24
 	add	x4, sp, 32
 	add	x3, sp, 40
@@ -185,17 +155,4 @@ main:
 	bne	.L9
 	mov	w0, 0
 	ldp	x29, x30, [sp], 112
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.section	.rodata
-	.align	3
-.LC3:
-	.word	1293080650
-	.word	1074340347
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

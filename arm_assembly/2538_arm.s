@@ -1,16 +1,5 @@
-	.arch armv8-a
-	.file	"2538.c"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -256]!
-	.cfi_def_cfa_offset 256
-	.cfi_offset 29, -256
-	.cfi_offset 30, -248
 	mov	x29, sp
 	stp	xzr, xzr, [sp, 120]
 	add	x0, sp, 136
@@ -106,10 +95,8 @@ main:
 	mov	w0, 46
 	strb	w0, [sp, 167]
 	b	.L2
-.L7:
 	str	wzr, [sp, 252]
 	b	.L3
-.L6:
 	ldrsw	x0, [sp, 252]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
@@ -121,41 +108,36 @@ main:
 	ldrsw	x0, [sp, 252]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
-	bl	putchar
+	mov	w1, w0
+	adrp	x0, .LC0
+	add	x0, x0, :lo12:.LC0
+	bl	printf
 	b	.L5
-.L4:
 	ldrsw	x0, [sp, 252]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
 	sxtw	x0, w0
 	add	x1, sp, 120
 	ldrb	w0, [x1, x0]
-	bl	putchar
-.L5:
+	mov	w1, w0
+	adrp	x0, .LC0
+	add	x0, x0, :lo12:.LC0
+	bl	printf
 	ldr	w0, [sp, 252]
 	add	w0, w0, 1
 	str	w0, [sp, 252]
-.L3:
 	ldrsw	x0, [sp, 252]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
 	cmp	w0, 0
 	bne	.L6
-	mov	w0, 10
-	bl	putchar
-.L2:
+	adrp	x0, .LC1
+	add	x0, x0, :lo12:.LC1
+	bl	printf
 	add	x0, sp, 16
 	bl	gets
 	cmp	w0, 0
 	bne	.L7
 	mov	w0, 0
 	ldp	x29, x30, [sp], 256
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

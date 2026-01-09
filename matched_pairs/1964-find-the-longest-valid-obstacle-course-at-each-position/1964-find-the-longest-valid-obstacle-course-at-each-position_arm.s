@@ -1,14 +1,5 @@
-	.arch armv8-a
-	.file	"1964-find-the-longest-valid-obstacle-course-at-each-position.c"
-	.text
-	.align	2
-	.global	upperBound
-	.type	upperBound, %function
 upperBound:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	x0, [sp, 8]
 	str	w1, [sp, 4]
 	str	w2, [sp]
@@ -17,7 +8,6 @@ upperBound:
 	sub	w0, w0, #1
 	str	w0, [sp, 24]
 	b	.L2
-.L4:
 	ldr	w1, [sp, 24]
 	ldr	w0, [sp, 28]
 	sub	w0, w1, w0
@@ -40,32 +30,17 @@ upperBound:
 	add	w0, w0, 1
 	str	w0, [sp, 28]
 	b	.L2
-.L3:
 	ldr	w0, [sp, 20]
 	sub	w0, w0, #1
 	str	w0, [sp, 24]
-.L2:
 	ldr	w1, [sp, 28]
 	ldr	w0, [sp, 24]
 	cmp	w1, w0
 	ble	.L4
 	ldr	w0, [sp, 28]
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	upperBound, .-upperBound
-	.align	2
-	.global	longestObstacleCourseAtEachPosition
-	.type	longestObstacleCourseAtEachPosition, %function
-longestObstacleCourseAtEachPosition:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	w1, [sp, 36]
@@ -73,10 +48,12 @@ longestObstacleCourseAtEachPosition:
 	ldrsw	x0, [sp, 36]
 	lsl	x0, x0, 2
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 64]
 	ldrsw	x0, [sp, 36]
 	lsl	x0, x0, 2
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 56]
 	ldr	x0, [sp, 24]
 	ldr	w1, [sp, 36]
@@ -84,7 +61,6 @@ longestObstacleCourseAtEachPosition:
 	str	wzr, [sp, 76]
 	str	wzr, [sp, 72]
 	b	.L7
-.L11:
 	ldrsw	x0, [sp, 72]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 40]
@@ -103,7 +79,6 @@ longestObstacleCourseAtEachPosition:
 	ldr	w1, [sp, 52]
 	cmp	w1, w0
 	blt	.L9
-.L8:
 	ldrsw	x0, [sp, 76]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 64]
@@ -121,7 +96,6 @@ longestObstacleCourseAtEachPosition:
 	add	w0, w0, 1
 	str	w0, [sp, 76]
 	b	.L10
-.L9:
 	ldr	w2, [sp, 52]
 	ldr	w1, [sp, 76]
 	ldr	x0, [sp, 64]
@@ -140,11 +114,9 @@ longestObstacleCourseAtEachPosition:
 	ldr	w1, [sp, 48]
 	add	w1, w1, 1
 	str	w1, [x0]
-.L10:
 	ldr	w0, [sp, 72]
 	add	w0, w0, 1
 	str	w0, [sp, 72]
-.L7:
 	ldr	w1, [sp, 72]
 	ldr	w0, [sp, 36]
 	cmp	w1, w0
@@ -153,12 +125,4 @@ longestObstacleCourseAtEachPosition:
 	bl	free
 	ldr	x0, [sp, 56]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	longestObstacleCourseAtEachPosition, .-longestObstacleCourseAtEachPosition
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

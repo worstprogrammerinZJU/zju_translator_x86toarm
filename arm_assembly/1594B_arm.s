@@ -1,126 +1,7 @@
-	.arch armv8-a
-	.file	"1594B.cpp"
-	.text
-	.section	.rodata
-	.align	3
-	.type	_ZN6__pstl9execution2v1L3seqE, %object
-	.size	_ZN6__pstl9execution2v1L3seqE, 1
-_ZN6__pstl9execution2v1L3seqE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L3parE, %object
-	.size	_ZN6__pstl9execution2v1L3parE, 1
-_ZN6__pstl9execution2v1L3parE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L9par_unseqE, %object
-	.size	_ZN6__pstl9execution2v1L9par_unseqE, 1
-_ZN6__pstl9execution2v1L9par_unseqE:
-	.zero	1
-	.align	3
-	.type	_ZN6__pstl9execution2v1L5unseqE, %object
-	.size	_ZN6__pstl9execution2v1L5unseqE, 1
-_ZN6__pstl9execution2v1L5unseqE:
-	.zero	1
-	.local	_ZStL8__ioinit
-	.comm	_ZStL8__ioinit,1,8
-	.align	2
-	.type	_ZN9__gnu_cxxL21__default_lock_policyE, %object
-	.size	_ZN9__gnu_cxxL21__default_lock_policyE, 4
-_ZN9__gnu_cxxL21__default_lock_policyE:
-	.word	2
-	.align	2
-	.type	_ZNSt15regex_constantsL13error_collateE, %object
-	.size	_ZNSt15regex_constantsL13error_collateE, 4
-_ZNSt15regex_constantsL13error_collateE:
-	.zero	4
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_ctypeE, %object
-	.size	_ZNSt15regex_constantsL11error_ctypeE, 4
-_ZNSt15regex_constantsL11error_ctypeE:
-	.word	1
-	.align	2
-	.type	_ZNSt15regex_constantsL12error_escapeE, %object
-	.size	_ZNSt15regex_constantsL12error_escapeE, 4
-_ZNSt15regex_constantsL12error_escapeE:
-	.word	2
-	.align	2
-	.type	_ZNSt15regex_constantsL13error_backrefE, %object
-	.size	_ZNSt15regex_constantsL13error_backrefE, 4
-_ZNSt15regex_constantsL13error_backrefE:
-	.word	3
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_brackE, %object
-	.size	_ZNSt15regex_constantsL11error_brackE, 4
-_ZNSt15regex_constantsL11error_brackE:
-	.word	4
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_parenE, %object
-	.size	_ZNSt15regex_constantsL11error_parenE, 4
-_ZNSt15regex_constantsL11error_parenE:
-	.word	5
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_braceE, %object
-	.size	_ZNSt15regex_constantsL11error_braceE, 4
-_ZNSt15regex_constantsL11error_braceE:
-	.word	6
-	.align	2
-	.type	_ZNSt15regex_constantsL14error_badbraceE, %object
-	.size	_ZNSt15regex_constantsL14error_badbraceE, 4
-_ZNSt15regex_constantsL14error_badbraceE:
-	.word	7
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_rangeE, %object
-	.size	_ZNSt15regex_constantsL11error_rangeE, 4
-_ZNSt15regex_constantsL11error_rangeE:
-	.word	8
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_spaceE, %object
-	.size	_ZNSt15regex_constantsL11error_spaceE, 4
-_ZNSt15regex_constantsL11error_spaceE:
-	.word	9
-	.align	2
-	.type	_ZNSt15regex_constantsL15error_badrepeatE, %object
-	.size	_ZNSt15regex_constantsL15error_badrepeatE, 4
-_ZNSt15regex_constantsL15error_badrepeatE:
-	.word	10
-	.align	2
-	.type	_ZNSt15regex_constantsL16error_complexityE, %object
-	.size	_ZNSt15regex_constantsL16error_complexityE, 4
-_ZNSt15regex_constantsL16error_complexityE:
-	.word	11
-	.align	2
-	.type	_ZNSt15regex_constantsL11error_stackE, %object
-	.size	_ZNSt15regex_constantsL11error_stackE, 4
-_ZNSt15regex_constantsL11error_stackE:
-	.word	12
-	.align	3
-	.type	_ZNSt8__detailL19_S_invalid_state_idE, %object
-	.size	_ZNSt8__detailL19_S_invalid_state_idE, 8
-_ZNSt8__detailL19_S_invalid_state_idE:
-	.xword	-1
-	.global	MOD
-	.data
-	.align	3
-	.type	MOD, %object
-	.size	MOD, 8
 MOD:
-	.xword	1000000007
-	.section	.rodata
-	.align	3
-	.type	_ZL3INF, %object
-	.size	_ZL3INF, 8
 _ZL3INF:
-	.xword	2000000000000000000
-	.text
-	.align	2
-	.global	_Z5mypowyy
-	.type	_Z5mypowyy, %function
 _Z5mypowyy:
-.LFB9696:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	mov	x0, 1
@@ -128,7 +9,6 @@ _Z5mypowyy:
 	ldr	x0, [sp, 8]
 	str	x0, [sp, 16]
 	b	.L2
-.L3:
 	adrp	x0, MOD
 	add	x0, x0, :lo12:MOD
 	ldr	x0, [x0]
@@ -146,7 +26,6 @@ _Z5mypowyy:
 	mul	x1, x2, x1
 	sub	x0, x0, x1
 	str	x0, [sp, 24]
-.L2:
 	ldr	x0, [sp]
 	sub	x1, x0, #1
 	str	x1, [sp]
@@ -164,24 +43,13 @@ _Z5mypowyy:
 	mul	x1, x2, x1
 	sub	x0, x0, x1
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9696:
-	.size	_Z5mypowyy, .-_Z5mypowyy
-	.align	2
-	.global	_Z6binaryPyy
-	.type	_Z6binaryPyy, %function
 _Z6binaryPyy:
-.LFB9697:
-	.cfi_startproc
 	sub	sp, sp, #32
-	.cfi_def_cfa_offset 32
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	str	xzr, [sp, 24]
 	b	.L6
-.L7:
 	ldr	x0, [sp, 24]
 	lsl	x0, x0, 3
 	ldr	x1, [sp, 8]
@@ -195,46 +63,27 @@ _Z6binaryPyy:
 	ldr	x0, [sp, 24]
 	add	x0, x0, 1
 	str	x0, [sp, 24]
-.L6:
 	ldr	x0, [sp]
 	cmp	x0, 0
 	bne	.L7
 	ldr	x0, [sp, 24]
 	add	sp, sp, 32
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9697:
-	.size	_Z6binaryPyy, .-_Z6binaryPyy
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB9698:
-	.cfi_startproc
 	stp	x29, x30, [sp, -320]!
-	.cfi_def_cfa_offset 320
-	.cfi_offset 29, -320
-	.cfi_offset 30, -312
 	mov	x29, sp
 	mov	w0, 0
-	bl	_ZNSt8ios_base15sync_with_stdioEb
 	mov	x1, 0
 	adrp	x0, :got:_ZSt3cin
-	ldr	x0, [x0, #:got_lo12:_ZSt3cin]
 	add	x0, x0, 16
-	bl	_ZNSt9basic_iosIcSt11char_traitsIcEE3tieEPSo
 	add	x0, sp, 292
 	mov	x1, x0
 	adrp	x0, :got:_ZSt3cin
-	ldr	x0, [x0, #:got_lo12:_ZSt3cin]
 	bl	_ZNSirsERi
 	b	.L10
-.L14:
 	add	x0, sp, 280
 	mov	x1, x0
 	adrp	x0, :got:_ZSt3cin
-	ldr	x0, [x0, #:got_lo12:_ZSt3cin]
 	bl	_ZNSirsERy
 	mov	x2, x0
 	add	x0, sp, 272
@@ -248,7 +97,6 @@ main:
 	str	x0, [sp, 296]
 	str	xzr, [sp, 304]
 	b	.L11
-.L13:
 	ldr	x0, [sp, 304]
 	lsl	x0, x0, 3
 	add	x1, sp, 16
@@ -267,11 +115,9 @@ main:
 	ldr	x1, [sp, 312]
 	add	x0, x1, x0
 	str	x0, [sp, 312]
-.L12:
 	ldr	x0, [sp, 304]
 	add	x0, x0, 1
 	str	x0, [sp, 304]
-.L11:
 	ldr	x1, [sp, 304]
 	ldr	x0, [sp, 296]
 	cmp	x1, x0
@@ -286,14 +132,10 @@ main:
 	sub	x0, x0, x1
 	mov	x1, x0
 	adrp	x0, :got:_ZSt4cout
-	ldr	x0, [x0, #:got_lo12:_ZSt4cout]
 	bl	_ZNSolsEy
 	mov	x2, x0
-	adrp	x0, :got:_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
-	ldr	x1, [x0, #:got_lo12:_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_]
 	mov	x0, x2
 	bl	_ZNSolsEPFRSoS_E
-.L10:
 	ldr	w0, [sp, 292]
 	sub	w1, w0, #1
 	str	w1, [sp, 292]
@@ -304,22 +146,8 @@ main:
 	bne	.L14
 	mov	w0, 0
 	ldp	x29, x30, [sp], 320
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9698:
-	.size	main, .-main
-	.align	2
-	.type	_Z41__static_initialization_and_destruction_0ii, %function
-_Z41__static_initialization_and_destruction_0ii:
-.LFB11454:
-	.cfi_startproc
 	stp	x29, x30, [sp, -32]!
-	.cfi_def_cfa_offset 32
-	.cfi_offset 29, -32
-	.cfi_offset 30, -24
 	mov	x29, sp
 	str	w0, [sp, 28]
 	str	w1, [sp, 24]
@@ -331,49 +159,15 @@ _Z41__static_initialization_and_destruction_0ii:
 	cmp	w1, w0
 	bne	.L18
 	adrp	x0, _ZStL8__ioinit
-	add	x0, x0, :lo12:_ZStL8__ioinit
 	bl	_ZNSt8ios_base4InitC1Ev
-	adrp	x0, __dso_handle
-	add	x2, x0, :lo12:__dso_handle
 	adrp	x0, _ZStL8__ioinit
-	add	x1, x0, :lo12:_ZStL8__ioinit
-	adrp	x0, :got:_ZNSt8ios_base4InitD1Ev
-	ldr	x0, [x0, #:got_lo12:_ZNSt8ios_base4InitD1Ev]
 	bl	__cxa_atexit
-.L18:
 	nop
 	ldp	x29, x30, [sp], 32
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11454:
-	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
-	.align	2
-	.type	_GLOBAL__sub_I_MOD, %function
-_GLOBAL__sub_I_MOD:
-.LFB11477:
-	.cfi_startproc
 	stp	x29, x30, [sp, -16]!
-	.cfi_def_cfa_offset 16
-	.cfi_offset 29, -16
-	.cfi_offset 30, -8
 	mov	x29, sp
 	mov	w1, 65535
 	mov	w0, 1
-	bl	_Z41__static_initialization_and_destruction_0ii
 	ldp	x29, x30, [sp], 16
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE11477:
-	.size	_GLOBAL__sub_I_MOD, .-_GLOBAL__sub_I_MOD
-	.section	.init_array,"aw",%init_array
-	.align	3
-	.xword	_GLOBAL__sub_I_MOD
-	.hidden	__dso_handle
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

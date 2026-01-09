@@ -1,28 +1,6 @@
-	.arch armv8-a
-	.file	"2969.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%s"
-	.align	3
-.LC1:
-	.string	"impossible"
-	.align	3
-.LC2:
-	.string	"%d"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #1088
-	.cfi_def_cfa_offset 1088
 	stp	x29, x30, [sp]
-	.cfi_offset 29, -1088
-	.cfi_offset 30, -1080
 	mov	x29, sp
 	add	x0, sp, 1024
 	stp	xzr, xzr, [x0]
@@ -38,7 +16,6 @@ main:
 	bl	__isoc99_scanf
 	str	wzr, [sp, 1076]
 	b	.L2
-.L3:
 	ldrsw	x0, [sp, 1076]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
@@ -55,7 +32,6 @@ main:
 	ldr	w0, [sp, 1076]
 	add	w0, w0, 1
 	str	w0, [sp, 1076]
-.L2:
 	ldrsw	x0, [sp, 1076]
 	add	x1, sp, 16
 	ldrb	w0, [x1, x0]
@@ -71,7 +47,6 @@ main:
 	add	x0, x0, :lo12:.LC1
 	bl	printf
 	b	.L5
-.L4:
 	ldr	w1, [sp, 1028]
 	ldr	w0, [sp, 1032]
 	lsl	w0, w0, 1
@@ -126,14 +101,12 @@ main:
 	bne	.L6
 	mov	w0, 1
 	str	w0, [sp, 1084]
-.L6:
 	ldr	w0, [sp, 1064]
 	cmp	w0, 1
 	bne	.L7
 	mov	w0, 1
 	str	w0, [sp, 1076]
 	b	.L8
-.L11:
 	ldrsw	x0, [sp, 1076]
 	lsl	x0, x0, 2
 	add	x1, sp, 1024
@@ -150,15 +123,12 @@ main:
 	add	x1, sp, 1024
 	str	w2, [x1, x0]
 	b	.L10
-.L9:
 	ldr	w0, [sp, 1076]
 	add	w0, w0, 3
 	str	w0, [sp, 1076]
-.L8:
 	ldr	w0, [sp, 1076]
 	cmp	w0, 8
 	ble	.L11
-.L10:
 	ldr	w0, [sp, 1076]
 	cmp	w0, 9
 	ble	.L12
@@ -169,7 +139,6 @@ main:
 	sub	w0, w0, #2
 	str	w0, [sp, 1032]
 	b	.L12
-.L13:
 	ldr	w0, [sp, 1032]
 	cmp	w0, 0
 	ble	.L14
@@ -184,7 +153,6 @@ main:
 	sub	w0, w0, #1
 	str	w0, [sp, 1044]
 	b	.L12
-.L15:
 	ldr	w0, [sp, 1056]
 	cmp	w0, 0
 	ble	.L16
@@ -192,11 +160,9 @@ main:
 	sub	w0, w0, #1
 	str	w0, [sp, 1056]
 	b	.L12
-.L16:
 	mov	w0, 1
 	str	w0, [sp, 1080]
 	b	.L12
-.L14:
 	ldr	w1, [sp, 1044]
 	ldr	w0, [sp, 1084]
 	add	w0, w0, 1
@@ -206,7 +172,6 @@ main:
 	sub	w0, w0, #2
 	str	w0, [sp, 1044]
 	b	.L12
-.L17:
 	ldr	w0, [sp, 1044]
 	ldr	w1, [sp, 1084]
 	cmp	w1, w0
@@ -221,11 +186,9 @@ main:
 	sub	w0, w0, #1
 	str	w0, [sp, 1056]
 	b	.L12
-.L19:
 	mov	w0, 1
 	str	w0, [sp, 1080]
 	b	.L12
-.L18:
 	ldr	w0, [sp, 1056]
 	cmp	w0, 1
 	ble	.L20
@@ -233,11 +196,9 @@ main:
 	sub	w0, w0, #2
 	str	w0, [sp, 1056]
 	b	.L12
-.L20:
 	mov	w0, 1
 	str	w0, [sp, 1080]
 	b	.L12
-.L7:
 	ldr	w0, [sp, 1064]
 	cmp	w0, 2
 	bne	.L12
@@ -248,7 +209,6 @@ main:
 	sub	w0, w0, #1
 	str	w0, [sp, 1032]
 	b	.L12
-.L21:
 	ldr	w0, [sp, 1044]
 	ldr	w1, [sp, 1084]
 	cmp	w1, w0
@@ -257,7 +217,6 @@ main:
 	sub	w0, w0, #1
 	str	w0, [sp, 1044]
 	b	.L12
-.L22:
 	ldr	w0, [sp, 1056]
 	cmp	w0, 0
 	ble	.L23
@@ -265,13 +224,11 @@ main:
 	sub	w0, w0, #1
 	str	w0, [sp, 1056]
 	b	.L12
-.L23:
 	mov	w0, 1
 	str	w0, [sp, 1076]
 	mov	w0, 2
 	str	w0, [sp, 1072]
 	b	.L24
-.L27:
 	ldrsw	x0, [sp, 1076]
 	lsl	x0, x0, 2
 	add	x1, sp, 1024
@@ -287,7 +244,6 @@ main:
 	ldr	w0, [sp, 1072]
 	cmp	w0, 0
 	beq	.L37
-.L25:
 	ldrsw	x0, [sp, 1076]
 	lsl	x0, x0, 2
 	add	x1, sp, 1024
@@ -295,26 +251,21 @@ main:
 	cmp	w0, 0
 	bgt	.L27
 	b	.L26
-.L37:
 	nop
-.L26:
 	ldr	w0, [sp, 1076]
 	add	w0, w0, 3
 	str	w0, [sp, 1076]
-.L24:
 	ldr	w0, [sp, 1072]
 	cmp	w0, 0
 	ble	.L28
 	ldr	w0, [sp, 1076]
 	cmp	w0, 8
 	ble	.L25
-.L28:
 	ldr	w0, [sp, 1072]
 	cmp	w0, 0
 	ble	.L12
 	mov	w0, 1
 	str	w0, [sp, 1080]
-.L12:
 	ldr	w0, [sp, 1080]
 	cmp	w0, 1
 	bne	.L30
@@ -322,7 +273,6 @@ main:
 	add	x0, x0, :lo12:.LC1
 	bl	printf
 	b	.L5
-.L30:
 	ldr	w1, [sp, 1028]
 	ldr	w0, [sp, 1032]
 	add	w1, w1, w0
@@ -342,10 +292,10 @@ main:
 	add	w0, w1, w0
 	cmp	w0, 0
 	bne	.L31
-	mov	w0, 48
-	bl	putchar
+	adrp	x0, .LC2
+	add	x0, x0, :lo12:.LC2
+	bl	printf
 	b	.L5
-.L31:
 	ldr	w1, [sp, 1044]
 	ldr	w0, [sp, 1084]
 	sub	w0, w1, w0
@@ -353,49 +303,38 @@ main:
 	mov	w0, 9
 	str	w0, [sp, 1076]
 	b	.L32
-.L35:
 	ldrsw	x0, [sp, 1076]
 	lsl	x0, x0, 2
 	add	x1, sp, 1024
 	ldr	w0, [x1, x0]
 	str	w0, [sp, 1072]
 	b	.L33
-.L34:
 	ldr	w1, [sp, 1076]
-	adrp	x0, .LC2
-	add	x0, x0, :lo12:.LC2
+	adrp	x0, .LC3
+	add	x0, x0, :lo12:.LC3
 	bl	printf
 	ldr	w0, [sp, 1072]
 	sub	w0, w0, #1
 	str	w0, [sp, 1072]
-.L33:
 	ldr	w0, [sp, 1072]
 	cmp	w0, 0
 	bgt	.L34
 	ldr	w0, [sp, 1076]
 	sub	w0, w0, #1
 	str	w0, [sp, 1076]
-.L32:
 	ldr	w0, [sp, 1076]
 	cmp	w0, 0
 	bge	.L35
 	ldr	w0, [sp, 1084]
 	cmp	w0, 1
 	bne	.L5
-	mov	w0, 53
-	bl	putchar
-.L5:
-	mov	w0, 10
-	bl	putchar
+	adrp	x0, .LC4
+	add	x0, x0, :lo12:.LC4
+	bl	printf
+	adrp	x0, .LC5
+	add	x0, x0, :lo12:.LC5
+	bl	printf
 	mov	w0, 0
 	ldp	x29, x30, [sp]
 	add	sp, sp, 1088
-	.cfi_restore 29
-	.cfi_restore 30
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

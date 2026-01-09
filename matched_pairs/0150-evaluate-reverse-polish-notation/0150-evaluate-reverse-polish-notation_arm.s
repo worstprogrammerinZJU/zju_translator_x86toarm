@@ -1,35 +1,8 @@
-	.arch armv8-a
-	.file	"0150-evaluate-reverse-polish-notation.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"+"
-	.align	3
-.LC1:
-	.string	"-"
-	.align	3
-.LC2:
-	.string	"*"
-	.align	3
-.LC3:
-	.string	"/"
-	.text
-	.align	2
-	.global	evalRPN
-	.type	evalRPN, %function
 evalRPN:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -112]!
-	.cfi_def_cfa_offset 112
-	.cfi_offset 29, -112
-	.cfi_offset 30, -104
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	str	x19, [sp, 16]
 	sub	sp, sp, #16
-	.cfi_offset 19, -96
 	str	x0, [x29, 40]
 	str	w1, [x29, 36]
 	mov	x0, sp
@@ -59,13 +32,11 @@ evalRPN:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L2:
 	cmp	sp, x1
 	beq	.L3
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L2
-.L3:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -73,7 +44,6 @@ evalRPN:
 	cmp	x0, 1024
 	bcc	.L4
 	str	xzr, [sp, 1024]
-.L4:
 	add	x0, sp, 16
 	add	x0, x0, 7
 	lsr	x0, x0, 3
@@ -83,7 +53,6 @@ evalRPN:
 	str	w0, [x29, 108]
 	str	wzr, [x29, 104]
 	b	.L5
-.L11:
 	ldrsw	x0, [x29, 104]
 	lsl	x0, x0, 3
 	ldr	x1, [x29, 40]
@@ -114,7 +83,6 @@ evalRPN:
 	ldrsw	x1, [x29, 108]
 	str	x2, [x0, x1, lsl 3]
 	b	.L7
-.L6:
 	ldrsw	x0, [x29, 104]
 	lsl	x0, x0, 3
 	ldr	x1, [x29, 40]
@@ -145,7 +113,6 @@ evalRPN:
 	ldrsw	x1, [x29, 108]
 	str	x2, [x0, x1, lsl 3]
 	b	.L7
-.L8:
 	ldrsw	x0, [x29, 104]
 	lsl	x0, x0, 3
 	ldr	x1, [x29, 40]
@@ -175,7 +142,6 @@ evalRPN:
 	ldrsw	x1, [x29, 108]
 	str	x2, [x0, x1, lsl 3]
 	b	.L7
-.L9:
 	ldrsw	x0, [x29, 104]
 	lsl	x0, x0, 3
 	ldr	x1, [x29, 40]
@@ -206,7 +172,6 @@ evalRPN:
 	ldrsw	x1, [x29, 108]
 	str	x2, [x0, x1, lsl 3]
 	b	.L7
-.L10:
 	ldr	w0, [x29, 108]
 	add	w0, w0, 1
 	str	w0, [x29, 108]
@@ -220,11 +185,9 @@ evalRPN:
 	ldr	x0, [x29, 88]
 	ldrsw	x1, [x29, 108]
 	str	x2, [x0, x1, lsl 3]
-.L7:
 	ldr	w0, [x29, 104]
 	add	w0, w0, 1
 	str	w0, [x29, 104]
-.L5:
 	ldr	w1, [x29, 104]
 	ldr	w0, [x29, 36]
 	cmp	w1, w0
@@ -236,13 +199,4 @@ evalRPN:
 	mov	sp, x29
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 112
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	evalRPN, .-evalRPN
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

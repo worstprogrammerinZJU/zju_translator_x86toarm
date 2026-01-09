@@ -1,24 +1,5 @@
-	.arch armv8-a
-	.file	"2641.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%d%d%d%d%d"
-	.align	3
-.LC1:
-	.string	"%.2lf %.2lf\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	add	x4, sp, 28
 	add	x3, sp, 32
@@ -34,7 +15,6 @@ main:
 	add	x0, x0, :lo12:.LC0
 	bl	__isoc99_scanf
 	b	.L2
-.L3:
 	ldr	w0, [sp, 44]
 	scvtf	d1, w0
 	ldr	w0, [sp, 32]
@@ -88,7 +68,6 @@ main:
 	adrp	x0, .LC0
 	add	x0, x0, :lo12:.LC0
 	bl	__isoc99_scanf
-.L2:
 	ldr	w0, [sp, 44]
 	cmp	w0, 0
 	bne	.L3
@@ -106,17 +85,4 @@ main:
 	bne	.L3
 	mov	w0, 0
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.section	.rodata
-	.align	3
-.LC2:
-	.word	1413732084
-	.word	1074340347
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

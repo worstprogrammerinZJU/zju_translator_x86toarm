@@ -1,16 +1,4 @@
-	.file	"0022-generate-parentheses.c"
-	.intel_syntax noprefix
-	.text
-	.globl	DefStr
-	.bss
-	.align 16
-	.type	DefStr, @object
-	.size	DefStr, 16
 DefStr:
-	.zero	16
-	.text
-	.globl	push_back
-	.type	push_back, @function
 push_back:
 	endbr64
 	push	rbp
@@ -36,14 +24,9 @@ push_back:
 	movzx	eax, BYTE PTR -12[rbp]
 	mov	BYTE PTR [rdx], al
 	jmp	.L1
-.L4:
 	nop
-.L1:
 	pop	rbp
 	ret
-	.size	push_back, .-push_back
-	.globl	pop_back
-	.type	pop_back, @function
 pop_back:
 	endbr64
 	push	rbp
@@ -64,14 +47,9 @@ pop_back:
 	add	rax, rsi
 	mov	BYTE PTR [rax], 0
 	jmp	.L5
-.L8:
 	nop
-.L5:
 	pop	rbp
 	ret
-	.size	pop_back, .-pop_back
-	.globl	backtrack
-	.type	backtrack, @function
 backtrack:
 	endbr64
 	push	rbp
@@ -129,7 +107,6 @@ backtrack:
 	mov	rax, QWORD PTR -56[rbp]
 	mov	DWORD PTR [rax], edx
 	jmp	.L9
-.L12:
 	mov	eax, DWORD PTR -32[rbp]
 	cmp	eax, DWORD PTR -28[rbp]
 	jge	.L13
@@ -153,7 +130,6 @@ backtrack:
 	mov	rax, QWORD PTR -48[rbp]
 	mov	rdi, rax
 	call	pop_back
-.L13:
 	mov	eax, DWORD PTR -36[rbp]
 	cmp	eax, DWORD PTR -28[rbp]
 	jge	.L9
@@ -176,26 +152,18 @@ backtrack:
 	mov	rdi, rax
 	call	pop_back
 	jmp	.L9
-.L14:
 	nop
-.L9:
 	mov	rbx, QWORD PTR -8[rbp]
 	leave
 	ret
-	.size	backtrack, .-backtrack
-	.globl	generateParenthesis
-	.type	generateParenthesis, @function
 generateParenthesis:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
-	sub	rsp, 64
-	mov	DWORD PTR -52[rbp], edi
-	mov	QWORD PTR -64[rbp], rsi
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
-	mov	eax, DWORD PTR -52[rbp]
+	sub	rsp, 48
+	mov	DWORD PTR -36[rbp], edi
+	mov	QWORD PTR -48[rbp], rsi
+	mov	eax, DWORD PTR -36[rbp]
 	add	eax, eax
 	pxor	xmm0, xmm0
 	cvtsi2sd	xmm0, eax
@@ -209,19 +177,17 @@ generateParenthesis:
 	jnb	.L16
 	cvttsd2si	rax, xmm0
 	jmp	.L17
-.L16:
 	movsd	xmm1, QWORD PTR .LC2[rip]
 	subsd	xmm0, xmm1
 	cvttsd2si	rax, xmm0
 	movabs	rdx, -9223372036854775808
 	xor	rax, rdx
-.L17:
 	mov	rdi, rax
 	call	malloc@PLT
-	mov	QWORD PTR -40[rbp], rax
+	mov	QWORD PTR -8[rbp], rax
 	mov	QWORD PTR -32[rbp], 0
 	mov	QWORD PTR -24[rbp], 0
-	mov	eax, DWORD PTR -52[rbp]
+	mov	eax, DWORD PTR -36[rbp]
 	add	eax, eax
 	add	eax, 1
 	cdqe
@@ -229,15 +195,15 @@ generateParenthesis:
 	mov	rdi, rax
 	call	calloc@PLT
 	mov	QWORD PTR -32[rbp], rax
-	mov	eax, DWORD PTR -52[rbp]
+	mov	eax, DWORD PTR -36[rbp]
 	add	eax, eax
 	mov	DWORD PTR -24[rbp], eax
-	mov	rax, QWORD PTR -64[rbp]
+	mov	rax, QWORD PTR -48[rbp]
 	mov	DWORD PTR [rax], 0
-	mov	rcx, QWORD PTR -64[rbp]
+	mov	rcx, QWORD PTR -48[rbp]
 	lea	rdx, -32[rbp]
-	mov	esi, DWORD PTR -52[rbp]
-	mov	rax, QWORD PTR -40[rbp]
+	mov	esi, DWORD PTR -36[rbp]
+	mov	rax, QWORD PTR -8[rbp]
 	mov	r9, rcx
 	mov	r8, rdx
 	mov	ecx, 0
@@ -247,43 +213,11 @@ generateParenthesis:
 	mov	rax, QWORD PTR -32[rbp]
 	mov	rdi, rax
 	call	free@PLT
-	mov	rax, QWORD PTR -40[rbp]
-	mov	rdx, QWORD PTR -8[rbp]
-	sub	rdx, QWORD PTR fs:40
-	je	.L19
-	call	__stack_chk_fail@PLT
-.L19:
+	mov	rax, QWORD PTR -8[rbp]
 	leave
 	ret
-	.size	generateParenthesis, .-generateParenthesis
-	.section	.rodata
-	.align 8
-.LC0:
-	.long	0
-	.long	1073741824
-	.align 8
-.LC1:
-	.long	0
-	.long	1075838976
-	.align 8
-.LC2:
-	.long	0
-	.long	1138753536
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

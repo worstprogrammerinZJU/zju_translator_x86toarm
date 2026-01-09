@@ -1,16 +1,5 @@
-	.arch armv8-a
-	.file	"0989-add-to-array-form-of-integer.c"
-	.text
-	.align	2
-	.global	addToArrayForm
-	.type	addToArrayForm, %function
 addToArrayForm:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -96]!
-	.cfi_def_cfa_offset 96
-	.cfi_offset 29, -96
-	.cfi_offset 30, -88
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	w1, [sp, 36]
@@ -26,6 +15,7 @@ addToArrayForm:
 	ldrsw	x0, [sp, 68]
 	lsl	x0, x0, 2
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 56]
 	str	wzr, [sp, 92]
 	ldr	w0, [sp, 36]
@@ -33,7 +23,6 @@ addToArrayForm:
 	str	w0, [sp, 88]
 	str	wzr, [sp, 84]
 	b	.L2
-.L5:
 	ldr	w0, [sp, 92]
 	str	w0, [sp, 80]
 	ldr	w0, [sp, 88]
@@ -50,7 +39,6 @@ addToArrayForm:
 	ldr	w0, [sp, 88]
 	sub	w0, w0, #1
 	str	w0, [sp, 88]
-.L3:
 	ldr	w0, [sp, 32]
 	cmp	w0, 0
 	ble	.L4
@@ -79,7 +67,6 @@ addToArrayForm:
 	asr	w0, w0, 31
 	sub	w0, w1, w0
 	str	w0, [sp, 32]
-.L4:
 	ldrsw	x0, [sp, 84]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 56]
@@ -110,7 +97,6 @@ addToArrayForm:
 	ldr	w0, [sp, 84]
 	add	w0, w0, 1
 	str	w0, [sp, 84]
-.L2:
 	ldr	w0, [sp, 88]
 	cmp	w0, 0
 	bge	.L5
@@ -125,7 +111,6 @@ addToArrayForm:
 	sub	w0, w0, #1
 	str	w0, [sp, 72]
 	b	.L6
-.L7:
 	ldrsw	x0, [sp, 76]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 56]
@@ -154,7 +139,6 @@ addToArrayForm:
 	ldr	w0, [sp, 72]
 	sub	w0, w0, #1
 	str	w0, [sp, 72]
-.L6:
 	ldr	w1, [sp, 76]
 	ldr	w0, [sp, 72]
 	cmp	w1, w0
@@ -164,12 +148,4 @@ addToArrayForm:
 	str	w1, [x0]
 	ldr	x0, [sp, 56]
 	ldp	x29, x30, [sp], 96
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	addToArrayForm, .-addToArrayForm
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

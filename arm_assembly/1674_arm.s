@@ -1,26 +1,7 @@
-	.arch armv8-a
-	.file	"1674.c"
-	.text
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%d"
-	.align	3
-.LC1:
-	.string	"%d\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	mov	x12, 40048
 	sub	sp, sp, x12
-	.cfi_def_cfa_offset 40048
 	stp	x29, x30, [sp]
-	.cfi_offset 29, -40048
-	.cfi_offset 30, -40040
 	mov	x29, sp
 	add	x0, sp, 36864
 	add	x0, x0, 3168
@@ -31,7 +12,6 @@ main:
 	add	x0, sp, 32768
 	str	wzr, [x0, 7276]
 	b	.L2
-.L8:
 	add	x0, sp, 36864
 	add	x0, x0, 3164
 	mov	x1, x0
@@ -42,7 +22,6 @@ main:
 	add	x1, sp, 32768
 	str	w0, [x1, 7272]
 	b	.L3
-.L4:
 	add	x1, sp, 16384
 	add	x1, x1, 3640
 	add	x0, sp, 32768
@@ -72,7 +51,6 @@ main:
 	add	w0, w0, 1
 	add	x1, sp, 32768
 	str	w0, [x1, 7272]
-.L3:
 	add	x0, sp, 32768
 	ldr	w0, [x0, 7260]
 	add	x1, sp, 32768
@@ -85,7 +63,6 @@ main:
 	add	x1, sp, 32768
 	str	w0, [x1, 7272]
 	b	.L5
-.L7:
 	add	x0, sp, 32768
 	ldrsw	x0, [x0, 7272]
 	lsl	x0, x0, 1
@@ -135,13 +112,11 @@ main:
 	lsl	x0, x0, 1
 	add	x1, sp, 16
 	strh	w2, [x1, x0]
-.L6:
 	add	x0, sp, 32768
 	ldr	w0, [x0, 7272]
 	add	w0, w0, 1
 	add	x1, sp, 32768
 	str	w0, [x1, 7272]
-.L5:
 	add	x0, sp, 32768
 	ldr	w0, [x0, 7260]
 	add	x1, sp, 32768
@@ -158,7 +133,6 @@ main:
 	add	w0, w0, 1
 	add	x1, sp, 32768
 	str	w0, [x1, 7276]
-.L2:
 	add	x0, sp, 32768
 	ldr	w0, [x0, 7264]
 	add	x1, sp, 32768
@@ -169,12 +143,4 @@ main:
 	ldp	x29, x30, [sp]
 	mov	x12, 40048
 	add	sp, sp, x12
-	.cfi_restore 29
-	.cfi_restore 30
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

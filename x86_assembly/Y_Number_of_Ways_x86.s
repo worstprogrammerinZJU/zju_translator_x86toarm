@@ -1,130 +1,14 @@
-	.file	"Y_Number_of_Ways.cpp"
-	.intel_syntax noprefix
-	.text
-	.section	.rodata
-	.type	_ZN6__pstl9execution2v1L3seqE, @object
-	.size	_ZN6__pstl9execution2v1L3seqE, 1
-_ZN6__pstl9execution2v1L3seqE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L3parE, @object
-	.size	_ZN6__pstl9execution2v1L3parE, 1
-_ZN6__pstl9execution2v1L3parE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L9par_unseqE, @object
-	.size	_ZN6__pstl9execution2v1L9par_unseqE, 1
-_ZN6__pstl9execution2v1L9par_unseqE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L5unseqE, @object
-	.size	_ZN6__pstl9execution2v1L5unseqE, 1
-_ZN6__pstl9execution2v1L5unseqE:
-	.zero	1
-	.local	_ZStL8__ioinit
-	.comm	_ZStL8__ioinit,1,1
-	.align 4
-	.type	_ZN9__gnu_cxxL21__default_lock_policyE, @object
-	.size	_ZN9__gnu_cxxL21__default_lock_policyE, 4
-_ZN9__gnu_cxxL21__default_lock_policyE:
-	.long	2
-	.align 4
-	.type	_ZNSt15regex_constantsL13error_collateE, @object
-	.size	_ZNSt15regex_constantsL13error_collateE, 4
-_ZNSt15regex_constantsL13error_collateE:
-	.zero	4
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_ctypeE, @object
-	.size	_ZNSt15regex_constantsL11error_ctypeE, 4
-_ZNSt15regex_constantsL11error_ctypeE:
-	.long	1
-	.align 4
-	.type	_ZNSt15regex_constantsL12error_escapeE, @object
-	.size	_ZNSt15regex_constantsL12error_escapeE, 4
-_ZNSt15regex_constantsL12error_escapeE:
-	.long	2
-	.align 4
-	.type	_ZNSt15regex_constantsL13error_backrefE, @object
-	.size	_ZNSt15regex_constantsL13error_backrefE, 4
-_ZNSt15regex_constantsL13error_backrefE:
-	.long	3
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_brackE, @object
-	.size	_ZNSt15regex_constantsL11error_brackE, 4
-_ZNSt15regex_constantsL11error_brackE:
-	.long	4
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_parenE, @object
-	.size	_ZNSt15regex_constantsL11error_parenE, 4
-_ZNSt15regex_constantsL11error_parenE:
-	.long	5
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_braceE, @object
-	.size	_ZNSt15regex_constantsL11error_braceE, 4
-_ZNSt15regex_constantsL11error_braceE:
-	.long	6
-	.align 4
-	.type	_ZNSt15regex_constantsL14error_badbraceE, @object
-	.size	_ZNSt15regex_constantsL14error_badbraceE, 4
-_ZNSt15regex_constantsL14error_badbraceE:
-	.long	7
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_rangeE, @object
-	.size	_ZNSt15regex_constantsL11error_rangeE, 4
-_ZNSt15regex_constantsL11error_rangeE:
-	.long	8
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_spaceE, @object
-	.size	_ZNSt15regex_constantsL11error_spaceE, 4
-_ZNSt15regex_constantsL11error_spaceE:
-	.long	9
-	.align 4
-	.type	_ZNSt15regex_constantsL15error_badrepeatE, @object
-	.size	_ZNSt15regex_constantsL15error_badrepeatE, 4
-_ZNSt15regex_constantsL15error_badrepeatE:
-	.long	10
-	.align 4
-	.type	_ZNSt15regex_constantsL16error_complexityE, @object
-	.size	_ZNSt15regex_constantsL16error_complexityE, 4
-_ZNSt15regex_constantsL16error_complexityE:
-	.long	11
-	.align 4
-	.type	_ZNSt15regex_constantsL11error_stackE, @object
-	.size	_ZNSt15regex_constantsL11error_stackE, 4
-_ZNSt15regex_constantsL11error_stackE:
-	.long	12
-	.align 8
-	.type	_ZNSt8__detailL19_S_invalid_state_idE, @object
-	.size	_ZNSt8__detailL19_S_invalid_state_idE, 8
-_ZNSt8__detailL19_S_invalid_state_idE:
-	.quad	-1
-.LC0:
-	.string	"r"
-.LC1:
-	.string	"input.txt"
-.LC2:
-	.string	"w"
-.LC3:
-	.string	"output.txt"
-	.text
-	.globl	_Z5setupv
-	.type	_Z5setupv, @function
 _Z5setupv:
-.LFB9704:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	edi, 0
-	call	_ZNSt8ios_base15sync_with_stdioEb@PLT
 	mov	esi, 0
 	lea	rax, _ZSt3cin[rip+16]
 	mov	rdi, rax
-	call	_ZNSt9basic_iosIcSt11char_traitsIcEE3tieEPSo@PLT
 	mov	esi, 0
 	lea	rax, _ZSt4cout[rip+8]
 	mov	rdi, rax
-	call	_ZNSt9basic_iosIcSt11char_traitsIcEE3tieEPSo@PLT
 	mov	rax, QWORD PTR stdin[rip]
 	mov	rdx, rax
 	lea	rax, .LC0[rip]
@@ -141,51 +25,17 @@ _Z5setupv:
 	call	freopen@PLT
 	nop
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE9704:
-	.size	_Z5setupv, .-_Z5setupv
-	.globl	n
-	.bss
-	.align 4
-	.type	n, @object
-	.size	n, 4
 n:
-	.zero	4
-	.globl	m
-	.align 4
-	.type	m, @object
-	.size	m, 4
 m:
-	.zero	4
-	.globl	ans
-	.align 4
-	.type	ans, @object
-	.size	ans, 4
 ans:
-	.zero	4
-	.globl	dp
-	.align 32
-	.type	dp, @object
-	.size	dp, 20000
 dp:
-	.zero	20000
-	.text
-	.globl	_Z3soli
-	.type	_Z3soli, @function
 _Z3soli:
-.LFB9705:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	push	rbx
 	sub	rsp, 24
-	.cfi_offset 3, -24
 	mov	DWORD PTR -20[rbp], edi
 	mov	eax, DWORD PTR -20[rbp]
 	cdqe
@@ -200,19 +50,16 @@ _Z3soli:
 	lea	rax, dp[rip]
 	mov	eax, DWORD PTR [rdx+rax]
 	jmp	.L4
-.L3:
 	mov	eax, DWORD PTR m[rip]
 	cmp	DWORD PTR -20[rbp], eax
 	jne	.L5
 	mov	eax, 1
 	jmp	.L4
-.L5:
 	mov	eax, DWORD PTR m[rip]
 	cmp	DWORD PTR -20[rbp], eax
 	jle	.L6
 	mov	eax, 0
 	jmp	.L4
-.L6:
 	mov	eax, DWORD PTR -20[rbp]
 	add	eax, 1
 	mov	edx, DWORD PTR -20[rbp]
@@ -263,25 +110,13 @@ _Z3soli:
 	lea	rax, dp[rip]
 	mov	eax, DWORD PTR [rdx+rax]
 	add	eax, ecx
-.L4:
 	mov	rbx, QWORD PTR -8[rbp]
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE9705:
-	.size	_Z3soli, .-_Z3soli
-	.globl	main
-	.type	main, @function
 main:
-.LFB9706:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	call	_Z5setupv
 	lea	rax, n[rip]
 	mov	rsi, rax
@@ -309,24 +144,12 @@ main:
 	call	_ZNSolsEi@PLT
 	mov	esi, 10
 	mov	rdi, rax
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c@PLT
 	mov	eax, 0
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE9706:
-	.size	main, .-main
-	.type	_Z41__static_initialization_and_destruction_0ii, @function
-_Z41__static_initialization_and_destruction_0ii:
-.LFB11456:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 16
 	mov	DWORD PTR -4[rbp], edi
 	mov	DWORD PTR -8[rbp], esi
@@ -336,60 +159,23 @@ _Z41__static_initialization_and_destruction_0ii:
 	jne	.L11
 	lea	rax, _ZStL8__ioinit[rip]
 	mov	rdi, rax
-	call	_ZNSt8ios_base4InitC1Ev@PLT
-	lea	rax, __dso_handle[rip]
 	mov	rdx, rax
 	lea	rax, _ZStL8__ioinit[rip]
 	mov	rsi, rax
-	mov	rax, QWORD PTR _ZNSt8ios_base4InitD1Ev@GOTPCREL[rip]
 	mov	rdi, rax
 	call	__cxa_atexit@PLT
-.L11:
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE11456:
-	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
-	.type	_GLOBAL__sub_I__Z5setupv, @function
-_GLOBAL__sub_I__Z5setupv:
-.LFB11479:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	esi, 65535
 	mov	edi, 1
-	call	_Z41__static_initialization_and_destruction_0ii
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE11479:
-	.size	_GLOBAL__sub_I__Z5setupv, .-_GLOBAL__sub_I__Z5setupv
-	.section	.init_array,"aw"
-	.align 8
-	.quad	_GLOBAL__sub_I__Z5setupv
-	.hidden	__dso_handle
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

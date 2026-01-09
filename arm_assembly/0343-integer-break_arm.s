@@ -1,21 +1,8 @@
-	.arch armv8-a
-	.file	"0343-integer-break.c"
-	.text
-	.align	2
-	.global	integerBreak
-	.type	integerBreak, %function
 integerBreak:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	str	x19, [sp, 16]
 	sub	sp, sp, #16
-	.cfi_offset 19, -64
 	str	w0, [x29, 44]
 	mov	x0, sp
 	mov	x19, x0
@@ -24,7 +11,6 @@ integerBreak:
 	bgt	.L2
 	mov	w0, 1
 	b	.L3
-.L2:
 	ldr	w0, [x29, 44]
 	add	w0, w0, 1
 	sxtw	x1, w0
@@ -51,13 +37,11 @@ integerBreak:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L4:
 	cmp	sp, x1
 	beq	.L5
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L4
-.L5:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -65,7 +49,6 @@ integerBreak:
 	cmp	x0, 1024
 	bcc	.L6
 	str	xzr, [sp, 1024]
-.L6:
 	add	x0, sp, 16
 	add	x0, x0, 3
 	lsr	x0, x0, 2
@@ -81,33 +64,30 @@ integerBreak:
 	mov	w0, 3
 	str	w0, [x29, 76]
 	b	.L7
-.L10:
 	ldr	x0, [x29, 56]
 	ldrsw	x1, [x29, 76]
 	str	wzr, [x0, x1, lsl 2]
 	mov	w0, 1
 	str	w0, [x29, 72]
 	b	.L8
-.L9:
 	ldr	x0, [x29, 56]
 	ldrsw	x1, [x29, 76]
-	ldr	w0, [x0, x1, lsl 2]
-	scvtf	d0, w0
+	ldr	w2, [x0, x1, lsl 2]
 	ldr	w1, [x29, 76]
 	ldr	w0, [x29, 72]
 	sub	w1, w1, w0
 	ldr	w0, [x29, 72]
 	mul	w0, w1, w0
-	scvtf	d1, w0
+	mov	w1, w0
+	mov	w0, w2
 	bl	fmax
-	fcvtzs	w2, d0
+	mov	w2, w0
 	ldr	x0, [x29, 56]
 	ldrsw	x1, [x29, 76]
 	str	w2, [x0, x1, lsl 2]
 	ldr	x0, [x29, 56]
 	ldrsw	x1, [x29, 76]
-	ldr	w0, [x0, x1, lsl 2]
-	scvtf	d0, w0
+	ldr	w2, [x0, x1, lsl 2]
 	ldr	w1, [x29, 76]
 	ldr	w0, [x29, 72]
 	sub	w1, w1, w0
@@ -116,16 +96,16 @@ integerBreak:
 	ldr	w1, [x0, x1, lsl 2]
 	ldr	w0, [x29, 72]
 	mul	w0, w1, w0
-	scvtf	d1, w0
+	mov	w1, w0
+	mov	w0, w2
 	bl	fmax
-	fcvtzs	w2, d0
+	mov	w2, w0
 	ldr	x0, [x29, 56]
 	ldrsw	x1, [x29, 76]
 	str	w2, [x0, x1, lsl 2]
 	ldr	w0, [x29, 72]
 	add	w0, w0, 1
 	str	w0, [x29, 72]
-.L8:
 	ldr	w0, [x29, 76]
 	lsr	w1, w0, 31
 	add	w0, w1, w0
@@ -137,7 +117,6 @@ integerBreak:
 	ldr	w0, [x29, 76]
 	add	w0, w0, 1
 	str	w0, [x29, 76]
-.L7:
 	ldr	w1, [x29, 76]
 	ldr	w0, [x29, 44]
 	cmp	w1, w0
@@ -145,18 +124,8 @@ integerBreak:
 	ldr	x0, [x29, 56]
 	ldrsw	x1, [x29, 44]
 	ldr	w0, [x0, x1, lsl 2]
-.L3:
 	mov	sp, x19
 	mov	sp, x29
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	integerBreak, .-integerBreak
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

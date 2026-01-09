@@ -1,33 +1,11 @@
-	.arch armv8-a
-	.file	"1143-longest-common-subsequence.c"
-	.text
-	.align	2
-	.global	longestCommonSubsequence
-	.type	longestCommonSubsequence, %function
-longestCommonSubsequence:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -256]!
-	.cfi_def_cfa_offset 256
-	.cfi_offset 29, -256
-	.cfi_offset 30, -248
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	stp	x19, x20, [sp, 16]
 	stp	x21, x22, [sp, 32]
 	stp	x23, x24, [sp, 48]
 	stp	x25, x26, [sp, 64]
 	str	x27, [sp, 80]
 	sub	sp, sp, #16
-	.cfi_offset 19, -240
-	.cfi_offset 20, -232
-	.cfi_offset 21, -224
-	.cfi_offset 22, -216
-	.cfi_offset 23, -208
-	.cfi_offset 24, -200
-	.cfi_offset 25, -192
-	.cfi_offset 26, -184
-	.cfi_offset 27, -176
 	str	x0, [x29, 200]
 	str	x1, [x29, 192]
 	mov	x0, sp
@@ -122,13 +100,11 @@ longestCommonSubsequence:
 	lsl	x1, x1, 4
 	and	x2, x1, -65536
 	sub	x2, sp, x2
-.L2:
 	cmp	sp, x2
 	beq	.L3
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L2
-.L3:
 	and	x2, x1, 65535
 	sub	sp, sp, x2
 	str	xzr, [sp]
@@ -136,7 +112,6 @@ longestCommonSubsequence:
 	cmp	x1, 1024
 	bcc	.L4
 	str	xzr, [sp, 1024]
-.L4:
 	add	x1, sp, 16
 	add	x1, x1, 3
 	lsr	x1, x1, 2
@@ -144,7 +119,6 @@ longestCommonSubsequence:
 	str	x1, [x29, 208]
 	str	wzr, [x29, 252]
 	b	.L5
-.L6:
 	lsr	x2, x0, 2
 	ldr	x1, [x29, 208]
 	ldrsw	x3, [x29, 252]
@@ -153,21 +127,18 @@ longestCommonSubsequence:
 	ldr	w1, [x29, 252]
 	add	w1, w1, 1
 	str	w1, [x29, 252]
-.L5:
 	ldr	w2, [x29, 252]
 	ldr	w1, [x29, 236]
 	cmp	w2, w1
 	ble	.L6
 	str	wzr, [x29, 248]
 	b	.L7
-.L8:
 	ldr	x1, [x29, 208]
 	ldrsw	x2, [x29, 248]
 	str	wzr, [x1, x2, lsl 2]
 	ldr	w1, [x29, 248]
 	add	w1, w1, 1
 	str	w1, [x29, 248]
-.L7:
 	ldr	w2, [x29, 248]
 	ldr	w1, [x29, 232]
 	cmp	w2, w1
@@ -175,11 +146,9 @@ longestCommonSubsequence:
 	mov	w1, 1
 	str	w1, [x29, 244]
 	b	.L9
-.L14:
 	mov	w1, 1
 	str	w1, [x29, 240]
 	b	.L10
-.L13:
 	ldrsw	x1, [x29, 244]
 	sub	x1, x1, #1
 	ldr	x2, [x29, 200]
@@ -212,7 +181,6 @@ longestCommonSubsequence:
 	add	x2, x4, x2
 	str	w3, [x1, x2, lsl 2]
 	b	.L12
-.L11:
 	lsr	x2, x0, 2
 	ldr	w1, [x29, 240]
 	sub	w3, w1, #1
@@ -240,11 +208,9 @@ longestCommonSubsequence:
 	mul	x2, x2, x5
 	add	x2, x4, x2
 	str	w3, [x1, x2, lsl 2]
-.L12:
 	ldr	w1, [x29, 240]
 	add	w1, w1, 1
 	str	w1, [x29, 240]
-.L10:
 	ldr	w2, [x29, 240]
 	ldr	w1, [x29, 232]
 	cmp	w2, w1
@@ -252,7 +218,6 @@ longestCommonSubsequence:
 	ldr	w1, [x29, 244]
 	add	w1, w1, 1
 	str	w1, [x29, 244]
-.L9:
 	ldr	w2, [x29, 244]
 	ldr	w1, [x29, 236]
 	cmp	w2, w1
@@ -272,21 +237,4 @@ longestCommonSubsequence:
 	ldp	x25, x26, [sp, 64]
 	ldr	x27, [sp, 80]
 	ldp	x29, x30, [sp], 256
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 27
-	.cfi_restore 25
-	.cfi_restore 26
-	.cfi_restore 23
-	.cfi_restore 24
-	.cfi_restore 21
-	.cfi_restore 22
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	longestCommonSubsequence, .-longestCommonSubsequence
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

@@ -1,79 +1,26 @@
-	.file	"Gravity Flip.cpp"
-	.intel_syntax noprefix
-	.text
-	.section	.text._ZN9__gnu_cxx5__ops16__iter_less_iterEv,"axG",@progbits,_ZN9__gnu_cxx5__ops16__iter_less_iterEv,comdat
-	.weak	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
-	.type	_ZN9__gnu_cxx5__ops16__iter_less_iterEv, @function
-_ZN9__gnu_cxx5__ops16__iter_less_iterEv:
-.LFB280:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	nop
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE280:
-	.size	_ZN9__gnu_cxx5__ops16__iter_less_iterEv, .-_ZN9__gnu_cxx5__ops16__iter_less_iterEv
-	.section	.text._ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE,"axG",@progbits,_ZN9__gnu_cxx5__ops14_Iter_less_valC5ENS0_15_Iter_less_iterE,comdat
-	.align 2
-	.weak	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.type	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE, @function
-_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE:
-.LFB282:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	nop
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE282:
-	.size	_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE, .-_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.weak	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE
-	.set	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE,_ZN9__gnu_cxx5__ops14_Iter_less_valC2ENS0_15_Iter_less_iterE
-	.section	.text._ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE,"axG",@progbits,_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE,comdat
-	.weak	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
-	.type	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE, @function
-_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE:
-.LFB292:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	nop
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE292:
-	.size	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE, .-_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
-	.section	.text._ZSt4__lgl,"axG",@progbits,_ZSt4__lgl,comdat
-	.weak	_ZSt4__lgl
-	.type	_ZSt4__lgl, @function
 _ZSt4__lgl:
-.LFB405:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	rax, QWORD PTR -8[rbp]
 	bsr	rax, rax
@@ -83,58 +30,21 @@ _ZSt4__lgl:
 	sub	eax, edx
 	cdqe
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE405:
-	.size	_ZSt4__lgl, .-_ZSt4__lgl
-	.local	_ZStL8__ioinit
-	.comm	_ZStL8__ioinit,1,1
-	.section	.rodata
-	.type	_ZN6__pstl9execution2v1L3seqE, @object
-	.size	_ZN6__pstl9execution2v1L3seqE, 1
-_ZN6__pstl9execution2v1L3seqE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L3parE, @object
-	.size	_ZN6__pstl9execution2v1L3parE, 1
-_ZN6__pstl9execution2v1L3parE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L9par_unseqE, @object
-	.size	_ZN6__pstl9execution2v1L9par_unseqE, 1
-_ZN6__pstl9execution2v1L9par_unseqE:
-	.zero	1
-	.type	_ZN6__pstl9execution2v1L5unseqE, @object
-	.size	_ZN6__pstl9execution2v1L5unseqE, 1
-_ZN6__pstl9execution2v1L5unseqE:
-	.zero	1
-.LC0:
-	.string	" "
-	.text
-	.globl	main
-	.type	main, @function
 main:
-.LFB3186:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
-	sub	rsp, 448
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
-	lea	rax, -444[rbp]
+	sub	rsp, 432
+	lea	rax, -12[rbp]
 	mov	rsi, rax
 	lea	rax, _ZSt3cin[rip]
 	mov	rdi, rax
 	call	_ZNSirsERi@PLT
-	mov	DWORD PTR -440[rbp], 0
+	mov	DWORD PTR -4[rbp], 0
 	jmp	.L9
-.L10:
 	lea	rdx, -432[rbp]
-	mov	eax, DWORD PTR -440[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
 	sal	rax, 2
 	add	rax, rdx
@@ -142,12 +52,11 @@ main:
 	lea	rax, _ZSt3cin[rip]
 	mov	rdi, rax
 	call	_ZNSirsERi@PLT
-	add	DWORD PTR -440[rbp], 1
-.L9:
-	mov	eax, DWORD PTR -444[rbp]
-	cmp	DWORD PTR -440[rbp], eax
+	add	DWORD PTR -4[rbp], 1
+	mov	eax, DWORD PTR -12[rbp]
+	cmp	DWORD PTR -4[rbp], eax
 	jl	.L10
-	mov	eax, DWORD PTR -444[rbp]
+	mov	eax, DWORD PTR -12[rbp]
 	cdqe
 	lea	rdx, 0[0+rax*4]
 	lea	rax, -432[rbp]
@@ -156,10 +65,9 @@ main:
 	mov	rsi, rdx
 	mov	rdi, rax
 	call	_ZSt4sortIPiEvT_S1_
-	mov	DWORD PTR -436[rbp], 0
+	mov	DWORD PTR -8[rbp], 0
 	jmp	.L11
-.L12:
-	mov	eax, DWORD PTR -436[rbp]
+	mov	eax, DWORD PTR -8[rbp]
 	cdqe
 	mov	eax, DWORD PTR -432[rbp+rax*4]
 	mov	esi, eax
@@ -170,70 +78,36 @@ main:
 	lea	rax, .LC0[rip]
 	mov	rsi, rax
 	mov	rdi, rdx
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	add	DWORD PTR -436[rbp], 1
-.L11:
-	mov	eax, DWORD PTR -444[rbp]
-	cmp	DWORD PTR -436[rbp], eax
+	add	DWORD PTR -8[rbp], 1
+	mov	eax, DWORD PTR -12[rbp]
+	cmp	DWORD PTR -8[rbp], eax
 	jl	.L12
 	mov	eax, 0
-	mov	rdx, QWORD PTR -8[rbp]
-	sub	rdx, QWORD PTR fs:40
-	je	.L14
-	call	__stack_chk_fail@PLT
-.L14:
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3186:
-	.size	main, .-main
-	.section	.text._ZSt4sortIPiEvT_S1_,"axG",@progbits,_ZSt4sortIPiEvT_S1_,comdat
-	.weak	_ZSt4sortIPiEvT_S1_
-	.type	_ZSt4sortIPiEvT_S1_, @function
 _ZSt4sortIPiEvT_S1_:
-.LFB3455:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 16
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
-	call	_ZN9__gnu_cxx5__ops16__iter_less_iterEv
 	mov	rdx, QWORD PTR -16[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3455:
-	.size	_ZSt4sortIPiEvT_S1_, .-_ZSt4sortIPiEvT_S1_
-	.section	.text._ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,"axG",@progbits,_ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,comdat
-	.weak	_ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.type	_ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, @function
-_ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
-.LFB3536:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 32
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	rax, QWORD PTR -8[rbp]
 	cmp	rax, QWORD PTR -16[rbp]
-	je	.L18
+	je	.L17
 	mov	rax, QWORD PTR -16[rbp]
 	sub	rax, QWORD PTR -8[rbp]
 	sar	rax, 2
@@ -244,133 +118,79 @@ _ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_
 	mov	rdx, QWORD PTR -16[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt22__final_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-.L18:
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3536:
-	.size	_ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, .-_ZSt6__sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.section	.text._ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_,"axG",@progbits,_ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_,comdat
-	.weak	_ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_
-	.type	_ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_, @function
-_ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_:
-.LFB3572:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 48
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
 	mov	QWORD PTR -40[rbp], rdx
-	jmp	.L20
-.L23:
+	jmp	.L19
 	cmp	QWORD PTR -40[rbp], 0
-	jne	.L21
+	jne	.L20
 	mov	rdx, QWORD PTR -32[rbp]
 	mov	rcx, QWORD PTR -32[rbp]
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	jmp	.L19
-.L21:
+	jmp	.L18
 	sub	QWORD PTR -40[rbp], 1
 	mov	rdx, QWORD PTR -32[rbp]
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_
 	mov	QWORD PTR -8[rbp], rax
 	mov	rdx, QWORD PTR -40[rbp]
 	mov	rcx, QWORD PTR -32[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_
 	mov	rax, QWORD PTR -8[rbp]
 	mov	QWORD PTR -32[rbp], rax
-.L20:
 	mov	rax, QWORD PTR -32[rbp]
 	sub	rax, QWORD PTR -24[rbp]
 	cmp	rax, 64
-	jg	.L23
-.L19:
+	jg	.L22
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3572:
-	.size	_ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_, .-_ZSt16__introsort_loopIPilN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_
-	.section	.text._ZSt22__final_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,"axG",@progbits,_ZSt22__final_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,comdat
-	.weak	_ZSt22__final_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.type	_ZSt22__final_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, @function
-_ZSt22__final_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
-.LFB3573:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 32
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	rax, QWORD PTR -16[rbp]
 	sub	rax, QWORD PTR -8[rbp]
 	cmp	rax, 64
-	jle	.L25
+	jle	.L24
 	mov	rax, QWORD PTR -8[rbp]
 	lea	rdx, 64[rax]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
 	mov	rax, QWORD PTR -8[rbp]
 	lea	rdx, 64[rax]
 	mov	rax, QWORD PTR -16[rbp]
 	mov	rsi, rax
 	mov	rdi, rdx
-	call	_ZSt26__unguarded_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	jmp	.L27
-.L25:
+	jmp	.L26
 	mov	rdx, QWORD PTR -16[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-.L27:
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3573:
-	.size	_ZSt22__final_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, .-_ZSt22__final_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.section	.text._ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_,"axG",@progbits,_ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_,comdat
-	.weak	_ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	.type	_ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_, @function
-_ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
-.LFB3616:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 32
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
@@ -380,32 +200,17 @@ _ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
 	lea	rdx, -25[rbp]
 	mov	rcx, QWORD PTR -16[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZSt11__sort_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3616:
-	.size	_ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_, .-_ZSt14__partial_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	.section	.text._ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_,"axG",@progbits,_ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_,comdat
-	.weak	_ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_
-	.type	_ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_, @function
-_ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_:
-.LFB3617:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 48
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
@@ -427,147 +232,82 @@ _ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_
 	mov	rdx, QWORD PTR -8[rbp]
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_
 	mov	rax, QWORD PTR -24[rbp]
 	lea	rcx, 4[rax]
 	mov	rdx, QWORD PTR -24[rbp]
 	mov	rax, QWORD PTR -32[rbp]
 	mov	rsi, rax
 	mov	rdi, rcx
-	call	_ZSt21__unguarded_partitionIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3617:
-	.size	_ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_, .-_ZSt27__unguarded_partition_pivotIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_T0_
-	.section	.text._ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,"axG",@progbits,_ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,comdat
-	.weak	_ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.type	_ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, @function
-_ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
-.LFB3618:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
-	sub	rsp, 64
-	mov	QWORD PTR -40[rbp], rdi
-	mov	QWORD PTR -48[rbp], rsi
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
-	mov	rax, QWORD PTR -40[rbp]
-	cmp	rax, QWORD PTR -48[rbp]
-	je	.L39
-	mov	rax, QWORD PTR -40[rbp]
+	sub	rsp, 48
+	mov	QWORD PTR -24[rbp], rdi
+	mov	QWORD PTR -32[rbp], rsi
+	mov	rax, QWORD PTR -24[rbp]
+	cmp	rax, QWORD PTR -32[rbp]
+	je	.L37
+	mov	rax, QWORD PTR -24[rbp]
 	add	rax, 4
-	mov	QWORD PTR -16[rbp], rax
-	jmp	.L34
-.L37:
-	mov	rdx, QWORD PTR -40[rbp]
-	mov	rcx, QWORD PTR -16[rbp]
-	lea	rax, -49[rbp]
+	mov	QWORD PTR -8[rbp], rax
+	jmp	.L33
+	mov	rdx, QWORD PTR -24[rbp]
+	mov	rcx, QWORD PTR -8[rbp]
+	lea	rax, -33[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
 	test	al, al
-	je	.L35
-	mov	rax, QWORD PTR -16[rbp]
+	je	.L34
+	mov	rax, QWORD PTR -8[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	eax, DWORD PTR [rax]
-	mov	DWORD PTR -20[rbp], eax
-	mov	rax, QWORD PTR -16[rbp]
+	mov	DWORD PTR -12[rbp], eax
+	mov	rax, QWORD PTR -8[rbp]
 	lea	rdx, 4[rax]
-	mov	rcx, QWORD PTR -16[rbp]
-	mov	rax, QWORD PTR -40[rbp]
+	mov	rcx, QWORD PTR -8[rbp]
+	mov	rax, QWORD PTR -24[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZSt13move_backwardIPiS0_ET0_T_S2_S1_
-	lea	rax, -20[rbp]
+	lea	rax, -12[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	edx, DWORD PTR [rax]
-	mov	rax, QWORD PTR -40[rbp]
+	mov	rax, QWORD PTR -24[rbp]
 	mov	DWORD PTR [rax], edx
-	jmp	.L36
-.L35:
-	call	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
-	mov	rax, QWORD PTR -16[rbp]
-	mov	rdi, rax
-	call	_ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_
-.L36:
-	add	QWORD PTR -16[rbp], 4
-.L34:
-	mov	rax, QWORD PTR -16[rbp]
-	cmp	rax, QWORD PTR -48[rbp]
-	jne	.L37
-	jmp	.L31
-.L39:
-	nop
-.L31:
+	jmp	.L35
 	mov	rax, QWORD PTR -8[rbp]
-	sub	rax, QWORD PTR fs:40
-	je	.L38
-	call	__stack_chk_fail@PLT
-.L38:
+	mov	rdi, rax
+	add	QWORD PTR -8[rbp], 4
+	mov	rax, QWORD PTR -8[rbp]
+	cmp	rax, QWORD PTR -32[rbp]
+	jne	.L36
+	jmp	.L30
+	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3618:
-	.size	_ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, .-_ZSt16__insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.section	.text._ZSt26__unguarded_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,"axG",@progbits,_ZSt26__unguarded_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_,comdat
-	.weak	_ZSt26__unguarded_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.type	_ZSt26__unguarded_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, @function
-_ZSt26__unguarded_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_:
-.LFB3619:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 48
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
 	mov	rax, QWORD PTR -24[rbp]
 	mov	QWORD PTR -8[rbp], rax
-	jmp	.L41
-.L42:
-	call	_ZN9__gnu_cxx5__ops15__val_comp_iterENS0_15_Iter_less_iterE
+	jmp	.L39
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rdi, rax
-	call	_ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_
 	add	QWORD PTR -8[rbp], 4
-.L41:
 	mov	rax, QWORD PTR -8[rbp]
 	cmp	rax, QWORD PTR -32[rbp]
-	jne	.L42
+	jne	.L40
 	nop
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3619:
-	.size	_ZSt26__unguarded_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_, .-_ZSt26__unguarded_insertion_sortIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_
-	.section	.text._ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_,"axG",@progbits,_ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_,comdat
-	.weak	_ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	.type	_ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_, @function
-_ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
-.LFB3664:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 48
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
@@ -577,90 +317,54 @@ _ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_:
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
 	mov	rax, QWORD PTR -32[rbp]
 	mov	QWORD PTR -8[rbp], rax
-	jmp	.L44
-.L46:
+	jmp	.L42
 	mov	rdx, QWORD PTR -24[rbp]
 	mov	rcx, QWORD PTR -8[rbp]
 	lea	rax, -41[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
 	test	al, al
-	je	.L45
+	je	.L43
 	lea	rcx, -41[rbp]
 	mov	rdx, QWORD PTR -8[rbp]
 	mov	rsi, QWORD PTR -32[rbp]
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_
-.L45:
 	add	QWORD PTR -8[rbp], 4
-.L44:
 	mov	rax, QWORD PTR -8[rbp]
 	cmp	rax, QWORD PTR -40[rbp]
-	jb	.L46
+	jb	.L44
 	nop
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3664:
-	.size	_ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_, .-_ZSt13__heap_selectIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_T0_
-	.section	.text._ZSt11__sort_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_,"axG",@progbits,_ZSt11__sort_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_,comdat
-	.weak	_ZSt11__sort_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
-	.type	_ZSt11__sort_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_, @function
-_ZSt11__sort_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
-.LFB3665:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 32
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	QWORD PTR -24[rbp], rdx
-	jmp	.L48
-.L49:
+	jmp	.L46
 	sub	QWORD PTR -16[rbp], 4
 	mov	rcx, QWORD PTR -24[rbp]
 	mov	rdx, QWORD PTR -16[rbp]
 	mov	rsi, QWORD PTR -16[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rdi, rax
-	call	_ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_
-.L48:
 	mov	rax, QWORD PTR -16[rbp]
 	sub	rax, QWORD PTR -8[rbp]
 	cmp	rax, 4
-	jg	.L49
+	jg	.L47
 	nop
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3665:
-	.size	_ZSt11__sort_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_, .-_ZSt11__sort_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
-	.section	.text._ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_,comdat
-	.align 2
-	.weak	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
-	.type	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_, @function
-_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_:
-.LFB3667:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	QWORD PTR -24[rbp], rdx
@@ -671,23 +375,10 @@ _ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_:
 	cmp	edx, eax
 	setl	al
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3667:
-	.size	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_, .-_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
-	.section	.text._ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_,"axG",@progbits,_ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_,comdat
-	.weak	_ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_
-	.type	_ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_, @function
-_ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_:
-.LFB3666:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 48
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
@@ -698,294 +389,182 @@ _ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T
 	lea	rax, -33[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
 	test	al, al
-	je	.L53
+	je	.L51
 	mov	rdx, QWORD PTR -32[rbp]
 	mov	rcx, QWORD PTR -24[rbp]
 	lea	rax, -33[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
 	test	al, al
-	je	.L54
+	je	.L52
 	mov	rdx, QWORD PTR -24[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt9iter_swapIPiS0_EvT_T0_
-	jmp	.L59
-.L54:
+	jmp	.L57
 	mov	rdx, QWORD PTR -32[rbp]
 	mov	rcx, QWORD PTR -16[rbp]
 	lea	rax, -33[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
+	test	al, al
+	je	.L54
+	mov	rdx, QWORD PTR -32[rbp]
+	mov	rax, QWORD PTR -8[rbp]
+	mov	rsi, rdx
+	mov	rdi, rax
+	jmp	.L57
+	mov	rdx, QWORD PTR -16[rbp]
+	mov	rax, QWORD PTR -8[rbp]
+	mov	rsi, rdx
+	mov	rdi, rax
+	jmp	.L57
+	mov	rdx, QWORD PTR -32[rbp]
+	mov	rcx, QWORD PTR -16[rbp]
+	lea	rax, -33[rbp]
+	mov	rsi, rcx
+	mov	rdi, rax
+	test	al, al
+	je	.L55
+	mov	rdx, QWORD PTR -16[rbp]
+	mov	rax, QWORD PTR -8[rbp]
+	mov	rsi, rdx
+	mov	rdi, rax
+	jmp	.L57
+	mov	rdx, QWORD PTR -32[rbp]
+	mov	rcx, QWORD PTR -24[rbp]
+	lea	rax, -33[rbp]
+	mov	rsi, rcx
+	mov	rdi, rax
 	test	al, al
 	je	.L56
 	mov	rdx, QWORD PTR -32[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt9iter_swapIPiS0_EvT_T0_
-	jmp	.L59
-.L56:
-	mov	rdx, QWORD PTR -16[rbp]
-	mov	rax, QWORD PTR -8[rbp]
-	mov	rsi, rdx
-	mov	rdi, rax
-	call	_ZSt9iter_swapIPiS0_EvT_T0_
-	jmp	.L59
-.L53:
-	mov	rdx, QWORD PTR -32[rbp]
-	mov	rcx, QWORD PTR -16[rbp]
-	lea	rax, -33[rbp]
-	mov	rsi, rcx
-	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
-	test	al, al
-	je	.L57
-	mov	rdx, QWORD PTR -16[rbp]
-	mov	rax, QWORD PTR -8[rbp]
-	mov	rsi, rdx
-	mov	rdi, rax
-	call	_ZSt9iter_swapIPiS0_EvT_T0_
-	jmp	.L59
-.L57:
-	mov	rdx, QWORD PTR -32[rbp]
-	mov	rcx, QWORD PTR -24[rbp]
-	lea	rax, -33[rbp]
-	mov	rsi, rcx
-	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
-	test	al, al
-	je	.L58
-	mov	rdx, QWORD PTR -32[rbp]
-	mov	rax, QWORD PTR -8[rbp]
-	mov	rsi, rdx
-	mov	rdi, rax
-	call	_ZSt9iter_swapIPiS0_EvT_T0_
-	jmp	.L59
-.L58:
+	jmp	.L57
 	mov	rdx, QWORD PTR -24[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt9iter_swapIPiS0_EvT_T0_
-.L59:
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3666:
-	.size	_ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_, .-_ZSt22__move_median_to_firstIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_S4_T0_
-	.section	.text._ZSt21__unguarded_partitionIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_,"axG",@progbits,_ZSt21__unguarded_partitionIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_,comdat
-	.weak	_ZSt21__unguarded_partitionIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
-	.type	_ZSt21__unguarded_partitionIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_, @function
-_ZSt21__unguarded_partitionIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_:
-.LFB3668:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 32
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	QWORD PTR -24[rbp], rdx
-	jmp	.L61
-.L62:
+	jmp	.L59
 	add	QWORD PTR -8[rbp], 4
-.L61:
 	mov	rdx, QWORD PTR -24[rbp]
 	mov	rcx, QWORD PTR -8[rbp]
 	lea	rax, -25[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
 	test	al, al
-	jne	.L62
+	jne	.L60
 	sub	QWORD PTR -16[rbp], 4
-	jmp	.L63
-.L64:
+	jmp	.L61
 	sub	QWORD PTR -16[rbp], 4
-.L63:
 	mov	rdx, QWORD PTR -16[rbp]
 	mov	rcx, QWORD PTR -24[rbp]
 	lea	rax, -25[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
 	test	al, al
-	jne	.L64
+	jne	.L62
 	mov	rax, QWORD PTR -8[rbp]
 	cmp	rax, QWORD PTR -16[rbp]
-	jb	.L65
+	jb	.L63
 	mov	rax, QWORD PTR -8[rbp]
-	jmp	.L68
-.L65:
+	jmp	.L66
 	mov	rdx, QWORD PTR -16[rbp]
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt9iter_swapIPiS0_EvT_T0_
 	add	QWORD PTR -8[rbp], 4
-	jmp	.L61
-.L68:
+	jmp	.L59
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3668:
-	.size	_ZSt21__unguarded_partitionIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_, .-_ZSt21__unguarded_partitionIPiN9__gnu_cxx5__ops15_Iter_less_iterEET_S4_S4_S4_T0_
-	.section	.text._ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_,"axG",@progbits,_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_,comdat
-	.weak	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
-	.type	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_, @function
-_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_:
-.LFB3669:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	rax, QWORD PTR -8[rbp]
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3669:
-	.size	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_, .-_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
-	.section	.text._ZSt13move_backwardIPiS0_ET0_T_S2_S1_,"axG",@progbits,_ZSt13move_backwardIPiS0_ET0_T_S2_S1_,comdat
-	.weak	_ZSt13move_backwardIPiS0_ET0_T_S2_S1_
-	.type	_ZSt13move_backwardIPiS0_ET0_T_S2_S1_, @function
-_ZSt13move_backwardIPiS0_ET0_T_S2_S1_:
-.LFB3670:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	push	rbx
 	sub	rsp, 40
-	.cfi_offset 3, -24
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
 	mov	QWORD PTR -40[rbp], rdx
 	mov	rax, QWORD PTR -32[rbp]
 	mov	rdi, rax
-	call	_ZSt12__miter_baseIPiET_S1_
 	mov	rbx, rax
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZSt12__miter_baseIPiET_S1_
 	mov	rcx, rax
 	mov	rax, QWORD PTR -40[rbp]
 	mov	rdx, rax
 	mov	rsi, rbx
 	mov	rdi, rcx
-	call	_ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_
 	mov	rbx, QWORD PTR -8[rbp]
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3670:
-	.size	_ZSt13move_backwardIPiS0_ET0_T_S2_S1_, .-_ZSt13move_backwardIPiS0_ET0_T_S2_S1_
-	.section	.text._ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_,"axG",@progbits,_ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_,comdat
-	.weak	_ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_
-	.type	_ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_, @function
-_ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_:
-.LFB3671:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
-	sub	rsp, 48
-	mov	QWORD PTR -40[rbp], rdi
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
-	mov	rax, QWORD PTR -40[rbp]
+	sub	rsp, 32
+	mov	QWORD PTR -24[rbp], rdi
+	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	eax, DWORD PTR [rax]
-	mov	DWORD PTR -20[rbp], eax
-	mov	rax, QWORD PTR -40[rbp]
-	mov	QWORD PTR -16[rbp], rax
-	sub	QWORD PTR -16[rbp], 4
-	jmp	.L74
-.L75:
-	mov	rax, QWORD PTR -16[rbp]
+	mov	DWORD PTR -12[rbp], eax
+	mov	rax, QWORD PTR -24[rbp]
+	mov	QWORD PTR -8[rbp], rax
+	sub	QWORD PTR -8[rbp], 4
+	jmp	.L72
+	mov	rax, QWORD PTR -8[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	edx, DWORD PTR [rax]
-	mov	rax, QWORD PTR -40[rbp]
+	mov	rax, QWORD PTR -24[rbp]
 	mov	DWORD PTR [rax], edx
-	mov	rax, QWORD PTR -16[rbp]
-	mov	QWORD PTR -40[rbp], rax
-	sub	QWORD PTR -16[rbp], 4
-.L74:
-	mov	rdx, QWORD PTR -16[rbp]
-	lea	rcx, -20[rbp]
-	lea	rax, -41[rbp]
+	mov	rax, QWORD PTR -8[rbp]
+	mov	QWORD PTR -24[rbp], rax
+	sub	QWORD PTR -8[rbp], 4
+	mov	rdx, QWORD PTR -8[rbp]
+	lea	rcx, -12[rbp]
+	lea	rax, -25[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_
 	test	al, al
-	jne	.L75
-	lea	rax, -20[rbp]
+	jne	.L73
+	lea	rax, -12[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	edx, DWORD PTR [rax]
-	mov	rax, QWORD PTR -40[rbp]
+	mov	rax, QWORD PTR -24[rbp]
 	mov	DWORD PTR [rax], edx
 	nop
-	mov	rax, QWORD PTR -8[rbp]
-	sub	rax, QWORD PTR fs:40
-	je	.L76
-	call	__stack_chk_fail@PLT
-.L76:
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3671:
-	.size	_ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_, .-_ZSt25__unguarded_linear_insertIPiN9__gnu_cxx5__ops14_Val_less_iterEEvT_T0_
-	.section	.text._ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_,"axG",@progbits,_ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_,comdat
-	.weak	_ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
-	.type	_ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_, @function
-_ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
-.LFB3696:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 64
 	mov	QWORD PTR -40[rbp], rdi
 	mov	QWORD PTR -48[rbp], rsi
 	mov	QWORD PTR -56[rbp], rdx
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
 	mov	rax, QWORD PTR -48[rbp]
 	sub	rax, QWORD PTR -40[rbp]
 	cmp	rax, 4
-	jle	.L83
+	jle	.L79
 	mov	rax, QWORD PTR -48[rbp]
 	sub	rax, QWORD PTR -40[rbp]
 	sar	rax, 2
@@ -996,80 +575,49 @@ _ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_:
 	shr	rdx, 63
 	add	rax, rdx
 	sar	rax
-	mov	QWORD PTR -24[rbp], rax
-.L81:
-	mov	rax, QWORD PTR -24[rbp]
+	mov	QWORD PTR -8[rbp], rax
+	mov	rax, QWORD PTR -8[rbp]
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -40[rbp]
 	add	rax, rdx
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	eax, DWORD PTR [rax]
-	mov	DWORD PTR -28[rbp], eax
-	lea	rax, -28[rbp]
+	mov	DWORD PTR -20[rbp], eax
+	lea	rax, -20[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	ecx, DWORD PTR [rax]
 	mov	rdx, QWORD PTR -16[rbp]
-	mov	rsi, QWORD PTR -24[rbp]
+	mov	rsi, QWORD PTR -8[rbp]
 	mov	rax, QWORD PTR -40[rbp]
 	mov	rdi, rax
-	call	_ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_
-	cmp	QWORD PTR -24[rbp], 0
-	je	.L84
-	sub	QWORD PTR -24[rbp], 1
-	jmp	.L81
-.L83:
+	cmp	QWORD PTR -8[rbp], 0
+	je	.L80
+	sub	QWORD PTR -8[rbp], 1
+	jmp	.L78
 	nop
-	jmp	.L77
-.L84:
+	jmp	.L74
 	nop
-.L77:
-	mov	rax, QWORD PTR -8[rbp]
-	sub	rax, QWORD PTR fs:40
-	je	.L82
-	call	__stack_chk_fail@PLT
-.L82:
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3696:
-	.size	_ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_, .-_ZSt11__make_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_RT0_
-	.section	.text._ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_,"axG",@progbits,_ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_,comdat
-	.weak	_ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_
-	.type	_ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_, @function
-_ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_:
-.LFB3697:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 48
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
 	mov	QWORD PTR -40[rbp], rdx
 	mov	QWORD PTR -48[rbp], rcx
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
 	mov	rax, QWORD PTR -40[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	eax, DWORD PTR [rax]
-	mov	DWORD PTR -12[rbp], eax
+	mov	DWORD PTR -4[rbp], eax
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	edx, DWORD PTR [rax]
 	mov	rax, QWORD PTR -40[rbp]
 	mov	DWORD PTR [rax], edx
-	lea	rax, -12[rbp]
+	lea	rax, -4[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	edx, DWORD PTR [rax]
 	mov	rax, QWORD PTR -32[rbp]
 	sub	rax, QWORD PTR -24[rbp]
@@ -1080,31 +628,12 @@ _ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_:
 	mov	rdx, rsi
 	mov	esi, 0
 	mov	rdi, rax
-	call	_ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_
 	nop
-	mov	rax, QWORD PTR -8[rbp]
-	sub	rax, QWORD PTR fs:40
-	je	.L86
-	call	__stack_chk_fail@PLT
-.L86:
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3697:
-	.size	_ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_, .-_ZSt10__pop_heapIPiN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_S4_RT0_
-	.section	.text._ZSt9iter_swapIPiS0_EvT_T0_,"axG",@progbits,_ZSt9iter_swapIPiS0_EvT_T0_,comdat
-	.weak	_ZSt9iter_swapIPiS0_EvT_T0_
-	.type	_ZSt9iter_swapIPiS0_EvT_T0_, @function
-_ZSt9iter_swapIPiS0_EvT_T0_:
-.LFB3698:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 16
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
@@ -1112,96 +641,48 @@ _ZSt9iter_swapIPiS0_EvT_T0_:
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3698:
-	.size	_ZSt9iter_swapIPiS0_EvT_T0_, .-_ZSt9iter_swapIPiS0_EvT_T0_
-	.section	.text._ZSt12__miter_baseIPiET_S1_,"axG",@progbits,_ZSt12__miter_baseIPiET_S1_,comdat
-	.weak	_ZSt12__miter_baseIPiET_S1_
-	.type	_ZSt12__miter_baseIPiET_S1_, @function
-_ZSt12__miter_baseIPiET_S1_:
-.LFB3700:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	rax, QWORD PTR -8[rbp]
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3700:
-	.size	_ZSt12__miter_baseIPiET_S1_, .-_ZSt12__miter_baseIPiET_S1_
-	.section	.text._ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_,"axG",@progbits,_ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_,comdat
-	.weak	_ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_
-	.type	_ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_, @function
-_ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_:
-.LFB3701:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	push	r12
 	push	rbx
 	sub	rsp, 32
-	.cfi_offset 12, -24
-	.cfi_offset 3, -32
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
 	mov	QWORD PTR -40[rbp], rdx
 	mov	rax, QWORD PTR -40[rbp]
 	mov	rdi, rax
-	call	_ZSt12__niter_baseIPiET_S1_
 	mov	r12, rax
 	mov	rax, QWORD PTR -32[rbp]
 	mov	rdi, rax
-	call	_ZSt12__niter_baseIPiET_S1_
 	mov	rbx, rax
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZSt12__niter_baseIPiET_S1_
 	mov	rdx, r12
 	mov	rsi, rbx
 	mov	rdi, rax
-	call	_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_
 	mov	rdx, rax
 	lea	rax, -40[rbp]
 	mov	rsi, rdx
 	mov	rdi, rax
-	call	_ZSt12__niter_wrapIPiET_RKS1_S1_
 	add	rsp, 32
 	pop	rbx
 	pop	r12
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3701:
-	.size	_ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_, .-_ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_
-	.section	.text._ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_,comdat
-	.align 2
-	.weak	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_
-	.type	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_, @function
-_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_:
-.LFB3703:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	QWORD PTR -24[rbp], rdx
@@ -1212,222 +693,140 @@ _ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_:
 	cmp	edx, eax
 	setl	al
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3703:
-	.size	_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_, .-_ZNK9__gnu_cxx5__ops14_Val_less_iterclIiPiEEbRT_T0_
-	.section	.text._ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_,"axG",@progbits,_ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_,comdat
-	.weak	_ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_
-	.type	_ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_, @function
-_ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_:
-.LFB3716:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 64
 	mov	QWORD PTR -40[rbp], rdi
 	mov	QWORD PTR -48[rbp], rsi
 	mov	QWORD PTR -56[rbp], rdx
 	mov	DWORD PTR -60[rbp], ecx
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
 	mov	rax, QWORD PTR -48[rbp]
 	mov	QWORD PTR -16[rbp], rax
 	mov	rax, QWORD PTR -48[rbp]
-	mov	QWORD PTR -24[rbp], rax
-	jmp	.L95
-.L97:
-	mov	rax, QWORD PTR -24[rbp]
+	mov	QWORD PTR -8[rbp], rax
+	jmp	.L90
+	mov	rax, QWORD PTR -8[rbp]
 	add	rax, 1
 	add	rax, rax
-	mov	QWORD PTR -24[rbp], rax
-	mov	rax, QWORD PTR -24[rbp]
+	mov	QWORD PTR -8[rbp], rax
+	mov	rax, QWORD PTR -8[rbp]
 	sal	rax, 2
 	lea	rdx, -4[rax]
 	mov	rax, QWORD PTR -40[rbp]
 	add	rdx, rax
-	mov	rax, QWORD PTR -24[rbp]
+	mov	rax, QWORD PTR -8[rbp]
 	lea	rcx, 0[0+rax*4]
 	mov	rax, QWORD PTR -40[rbp]
 	add	rcx, rax
 	lea	rax, -61[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops15_Iter_less_iterclIPiS3_EEbT_T0_
 	test	al, al
-	je	.L96
-	sub	QWORD PTR -24[rbp], 1
-.L96:
-	mov	rax, QWORD PTR -24[rbp]
+	je	.L91
+	sub	QWORD PTR -8[rbp], 1
+	mov	rax, QWORD PTR -8[rbp]
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -40[rbp]
 	add	rax, rdx
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	rdx, QWORD PTR -48[rbp]
 	lea	rcx, 0[0+rdx*4]
 	mov	rdx, QWORD PTR -40[rbp]
 	add	rdx, rcx
 	mov	eax, DWORD PTR [rax]
 	mov	DWORD PTR [rdx], eax
-	mov	rax, QWORD PTR -24[rbp]
+	mov	rax, QWORD PTR -8[rbp]
 	mov	QWORD PTR -48[rbp], rax
-.L95:
 	mov	rax, QWORD PTR -56[rbp]
 	sub	rax, 1
 	mov	rdx, rax
 	shr	rdx, 63
 	add	rax, rdx
 	sar	rax
-	cmp	QWORD PTR -24[rbp], rax
-	jl	.L97
+	cmp	QWORD PTR -8[rbp], rax
+	jl	.L92
 	mov	rax, QWORD PTR -56[rbp]
 	and	eax, 1
 	test	rax, rax
-	jne	.L98
+	jne	.L93
 	mov	rax, QWORD PTR -56[rbp]
 	sub	rax, 2
 	mov	rdx, rax
 	shr	rdx, 63
 	add	rax, rdx
 	sar	rax
-	cmp	QWORD PTR -24[rbp], rax
-	jne	.L98
-	mov	rax, QWORD PTR -24[rbp]
+	cmp	QWORD PTR -8[rbp], rax
+	jne	.L93
+	mov	rax, QWORD PTR -8[rbp]
 	add	rax, 1
 	add	rax, rax
-	mov	QWORD PTR -24[rbp], rax
-	mov	rax, QWORD PTR -24[rbp]
+	mov	QWORD PTR -8[rbp], rax
+	mov	rax, QWORD PTR -8[rbp]
 	sal	rax, 2
 	lea	rdx, -4[rax]
 	mov	rax, QWORD PTR -40[rbp]
 	add	rax, rdx
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	rdx, QWORD PTR -48[rbp]
 	lea	rcx, 0[0+rdx*4]
 	mov	rdx, QWORD PTR -40[rbp]
 	add	rdx, rcx
 	mov	eax, DWORD PTR [rax]
 	mov	DWORD PTR [rdx], eax
-	mov	rax, QWORD PTR -24[rbp]
+	mov	rax, QWORD PTR -8[rbp]
 	sub	rax, 1
 	mov	QWORD PTR -48[rbp], rax
-.L98:
 	lea	rax, -61[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
-	lea	rax, -25[rbp]
+	lea	rax, -17[rbp]
 	mov	rdi, rax
-	call	_ZN9__gnu_cxx5__ops14_Iter_less_valC1ENS0_15_Iter_less_iterE
 	lea	rax, -60[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	ecx, DWORD PTR [rax]
-	lea	rdi, -25[rbp]
+	lea	rdi, -17[rbp]
 	mov	rdx, QWORD PTR -16[rbp]
 	mov	rsi, QWORD PTR -48[rbp]
 	mov	rax, QWORD PTR -40[rbp]
 	mov	r8, rdi
 	mov	rdi, rax
-	call	_ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_
 	nop
-	mov	rax, QWORD PTR -8[rbp]
-	sub	rax, QWORD PTR fs:40
-	je	.L99
-	call	__stack_chk_fail@PLT
-.L99:
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3716:
-	.size	_ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_, .-_ZSt13__adjust_heapIPiliN9__gnu_cxx5__ops15_Iter_less_iterEEvT_T0_S5_T1_T2_
-	.section	.text._ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_,"axG",@progbits,_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_,comdat
-	.weak	_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
-	.type	_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_, @function
-_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_:
-.LFB3717:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 32
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
 	mov	rax, QWORD PTR -24[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	eax, DWORD PTR [rax]
-	mov	DWORD PTR -12[rbp], eax
+	mov	DWORD PTR -4[rbp], eax
 	mov	rax, QWORD PTR -32[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	edx, DWORD PTR [rax]
 	mov	rax, QWORD PTR -24[rbp]
 	mov	DWORD PTR [rax], edx
-	lea	rax, -12[rbp]
+	lea	rax, -4[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	edx, DWORD PTR [rax]
 	mov	rax, QWORD PTR -32[rbp]
 	mov	DWORD PTR [rax], edx
 	nop
-	mov	rax, QWORD PTR -8[rbp]
-	sub	rax, QWORD PTR fs:40
-	je	.L101
-	call	__stack_chk_fail@PLT
-.L101:
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3717:
-	.size	_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_, .-_ZSt4swapIiENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS4_ESt18is_move_assignableIS4_EEE5valueEvE4typeERS4_SE_
-	.section	.text._ZSt12__niter_baseIPiET_S1_,"axG",@progbits,_ZSt12__niter_baseIPiET_S1_,comdat
-	.weak	_ZSt12__niter_baseIPiET_S1_
-	.type	_ZSt12__niter_baseIPiET_S1_, @function
-_ZSt12__niter_baseIPiET_S1_:
-.LFB3718:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	rax, QWORD PTR -8[rbp]
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3718:
-	.size	_ZSt12__niter_baseIPiET_S1_, .-_ZSt12__niter_baseIPiET_S1_
-	.section	.text._ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_,"axG",@progbits,_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_,comdat
-	.weak	_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_
-	.type	_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_, @function
-_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_:
-.LFB3719:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 32
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
@@ -1437,66 +836,26 @@ _ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_:
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3719:
-	.size	_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_, .-_ZSt23__copy_move_backward_a1ILb1EPiS0_ET1_T0_S2_S1_
-	.section	.text._ZSt12__niter_wrapIPiET_RKS1_S1_,"axG",@progbits,_ZSt12__niter_wrapIPiET_RKS1_S1_,comdat
-	.weak	_ZSt12__niter_wrapIPiET_RKS1_S1_
-	.type	_ZSt12__niter_wrapIPiET_RKS1_S1_, @function
-_ZSt12__niter_wrapIPiET_RKS1_S1_:
-.LFB3720:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	rax, QWORD PTR -16[rbp]
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3720:
-	.size	_ZSt12__niter_wrapIPiET_RKS1_S1_, .-_ZSt12__niter_wrapIPiET_RKS1_S1_
-	.section	.text._ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_,"axG",@progbits,_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_,comdat
-	.weak	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
-	.type	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_, @function
-_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_:
-.LFB3723:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	rax, QWORD PTR -8[rbp]
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3723:
-	.size	_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_, .-_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_less_iterEEONSt16remove_referenceIT_E4typeEOS5_
-	.section	.text._ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_,"axG",@progbits,_ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_,comdat
-	.weak	_ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_
-	.type	_ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_, @function
-_ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
-.LFB3724:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 64
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
@@ -1510,14 +869,12 @@ _ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
 	add	rax, rdx
 	sar	rax
 	mov	QWORD PTR -8[rbp], rax
-	jmp	.L111
-.L114:
+	jmp	.L104
 	mov	rax, QWORD PTR -8[rbp]
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -24[rbp]
 	add	rax, rdx
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	rdx, QWORD PTR -32[rbp]
 	lea	rcx, 0[0+rdx*4]
 	mov	rdx, QWORD PTR -24[rbp]
@@ -1533,10 +890,9 @@ _ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
 	add	rax, rdx
 	sar	rax
 	mov	QWORD PTR -8[rbp], rax
-.L111:
 	mov	rax, QWORD PTR -32[rbp]
 	cmp	rax, QWORD PTR -40[rbp]
-	jle	.L112
+	jle	.L105
 	mov	rax, QWORD PTR -8[rbp]
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -24[rbp]
@@ -1545,19 +901,15 @@ _ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
 	mov	rax, QWORD PTR -56[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_
 	test	al, al
-	je	.L112
+	je	.L105
 	mov	eax, 1
-	jmp	.L113
-.L112:
+	jmp	.L106
 	mov	eax, 0
-.L113:
 	test	al, al
-	jne	.L114
+	jne	.L107
 	lea	rax, -44[rbp]
 	mov	rdi, rax
-	call	_ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_
 	mov	rdx, QWORD PTR -32[rbp]
 	lea	rcx, 0[0+rdx*4]
 	mov	rdx, QWORD PTR -24[rbp]
@@ -1566,23 +918,10 @@ _ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_:
 	mov	DWORD PTR [rdx], eax
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3724:
-	.size	_ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_, .-_ZSt11__push_heapIPiliN9__gnu_cxx5__ops14_Iter_less_valEEvT_T0_S5_T1_RT2_
-	.section	.text._ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_,"axG",@progbits,_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_,comdat
-	.weak	_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_
-	.type	_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_, @function
-_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_:
-.LFB3725:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 32
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
@@ -1592,26 +931,11 @@ _ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_:
 	mov	rax, QWORD PTR -8[rbp]
 	mov	rsi, rcx
 	mov	rdi, rax
-	call	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3725:
-	.size	_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_, .-_ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_
-	.section	.text._ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_,"axG",@progbits,_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_,comdat
-	.align 2
-	.weak	_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_
-	.type	_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_, @function
-_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_:
-.LFB3726:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	QWORD PTR -8[rbp], rdi
 	mov	QWORD PTR -16[rbp], rsi
 	mov	QWORD PTR -24[rbp], rdx
@@ -1622,23 +946,10 @@ _ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_:
 	cmp	edx, eax
 	setl	al
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3726:
-	.size	_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_, .-_ZNK9__gnu_cxx5__ops14_Iter_less_valclIPiiEEbT_RT0_
-	.section	.text._ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_,"axG",@progbits,_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_,comdat
-	.weak	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_
-	.type	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_, @function
-_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_:
-.LFB3727:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 48
 	mov	QWORD PTR -24[rbp], rdi
 	mov	QWORD PTR -32[rbp], rsi
@@ -1648,7 +959,7 @@ _ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move
 	sar	rax, 2
 	mov	QWORD PTR -8[rbp], rax
 	cmp	QWORD PTR -8[rbp], 0
-	je	.L120
+	je	.L113
 	mov	rax, QWORD PTR -8[rbp]
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -8[rbp]
@@ -1661,7 +972,6 @@ _ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move
 	mov	rsi, rax
 	mov	rdi, rcx
 	call	memmove@PLT
-.L120:
 	mov	rax, QWORD PTR -8[rbp]
 	sal	rax, 2
 	neg	rax
@@ -1669,85 +979,36 @@ _ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move
 	mov	rax, QWORD PTR -40[rbp]
 	add	rax, rdx
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3727:
-	.size	_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_, .-_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_
-	.text
-	.type	_Z41__static_initialization_and_destruction_0ii, @function
-_Z41__static_initialization_and_destruction_0ii:
-.LFB3728:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	sub	rsp, 16
 	mov	DWORD PTR -4[rbp], edi
 	mov	DWORD PTR -8[rbp], esi
 	cmp	DWORD PTR -4[rbp], 1
-	jne	.L124
+	jne	.L117
 	cmp	DWORD PTR -8[rbp], 65535
-	jne	.L124
+	jne	.L117
 	lea	rax, _ZStL8__ioinit[rip]
 	mov	rdi, rax
-	call	_ZNSt8ios_base4InitC1Ev@PLT
-	lea	rax, __dso_handle[rip]
 	mov	rdx, rax
 	lea	rax, _ZStL8__ioinit[rip]
 	mov	rsi, rax
-	mov	rax, QWORD PTR _ZNSt8ios_base4InitD1Ev@GOTPCREL[rip]
 	mov	rdi, rax
 	call	__cxa_atexit@PLT
-.L124:
 	nop
 	leave
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3728:
-	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
-	.type	_GLOBAL__sub_I_main, @function
-_GLOBAL__sub_I_main:
-.LFB3729:
-	.cfi_startproc
 	endbr64
 	push	rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	mov	rbp, rsp
-	.cfi_def_cfa_register 6
 	mov	esi, 65535
 	mov	edi, 1
-	call	_Z41__static_initialization_and_destruction_0ii
 	pop	rbp
-	.cfi_def_cfa 7, 8
 	ret
-	.cfi_endproc
-.LFE3729:
-	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
-	.section	.init_array,"aw"
-	.align 8
-	.quad	_GLOBAL__sub_I_main
-	.hidden	__dso_handle
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

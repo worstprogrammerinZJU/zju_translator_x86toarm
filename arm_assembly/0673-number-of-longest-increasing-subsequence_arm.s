@@ -1,21 +1,8 @@
-	.arch armv8-a
-	.file	"0673-number-of-longest-increasing-subsequence.c"
-	.text
-	.align	2
-	.global	findNumberOfLIS
-	.type	findNumberOfLIS, %function
 findNumberOfLIS:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -112]!
-	.cfi_def_cfa_offset 112
-	.cfi_offset 29, -112
-	.cfi_offset 30, -104
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	str	x19, [sp, 16]
 	sub	sp, sp, #16
-	.cfi_offset 19, -96
 	str	x0, [x29, 40]
 	str	w1, [x29, 36]
 	mov	x0, sp
@@ -25,7 +12,6 @@ findNumberOfLIS:
 	bne	.L2
 	mov	w0, 0
 	b	.L3
-.L2:
 	ldr	w0, [x29, 36]
 	sxtw	x1, w0
 	sub	x1, x1, #1
@@ -51,13 +37,11 @@ findNumberOfLIS:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L4:
 	cmp	sp, x1
 	beq	.L5
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L4
-.L5:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -65,7 +49,6 @@ findNumberOfLIS:
 	cmp	x0, 1024
 	bcc	.L6
 	str	xzr, [sp, 1024]
-.L6:
 	add	x0, sp, 16
 	add	x0, x0, 3
 	lsr	x0, x0, 2
@@ -96,13 +79,11 @@ findNumberOfLIS:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L7:
 	cmp	sp, x1
 	beq	.L8
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L7
-.L8:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -110,7 +91,6 @@ findNumberOfLIS:
 	cmp	x0, 1024
 	bcc	.L9
 	str	xzr, [sp, 1024]
-.L9:
 	add	x0, sp, 16
 	add	x0, x0, 3
 	lsr	x0, x0, 2
@@ -121,7 +101,6 @@ findNumberOfLIS:
 	str	wzr, [x29, 104]
 	str	wzr, [x29, 100]
 	b	.L10
-.L15:
 	ldr	x0, [x29, 72]
 	ldrsw	x1, [x29, 100]
 	mov	w2, 1
@@ -132,7 +111,6 @@ findNumberOfLIS:
 	str	w2, [x0, x1, lsl 2]
 	str	wzr, [x29, 96]
 	b	.L11
-.L14:
 	ldrsw	x0, [x29, 100]
 	lsl	x0, x0, 2
 	ldr	x1, [x29, 40]
@@ -167,7 +145,6 @@ findNumberOfLIS:
 	ldrsw	x1, [x29, 100]
 	str	w2, [x0, x1, lsl 2]
 	b	.L12
-.L13:
 	ldr	x0, [x29, 72]
 	ldrsw	x1, [x29, 96]
 	ldr	w0, [x0, x1, lsl 2]
@@ -187,35 +164,29 @@ findNumberOfLIS:
 	ldr	x0, [x29, 56]
 	ldrsw	x1, [x29, 100]
 	str	w2, [x0, x1, lsl 2]
-.L12:
 	ldr	w0, [x29, 96]
 	add	w0, w0, 1
 	str	w0, [x29, 96]
-.L11:
 	ldr	w1, [x29, 96]
 	ldr	w0, [x29, 100]
 	cmp	w1, w0
 	blt	.L14
-	ldr	w0, [x29, 108]
-	scvtf	d0, w0
 	ldr	x0, [x29, 72]
 	ldrsw	x1, [x29, 100]
 	ldr	w0, [x0, x1, lsl 2]
-	scvtf	d1, w0
+	mov	w1, w0
+	ldr	w0, [x29, 108]
 	bl	fmax
-	fcvtzs	w0, d0
 	str	w0, [x29, 108]
 	ldr	w0, [x29, 100]
 	add	w0, w0, 1
 	str	w0, [x29, 100]
-.L10:
 	ldr	w1, [x29, 100]
 	ldr	w0, [x29, 36]
 	cmp	w1, w0
 	blt	.L15
 	str	wzr, [x29, 92]
 	b	.L16
-.L18:
 	ldr	x0, [x29, 72]
 	ldrsw	x1, [x29, 92]
 	ldr	w0, [x0, x1, lsl 2]
@@ -228,28 +199,16 @@ findNumberOfLIS:
 	ldr	w1, [x29, 104]
 	add	w0, w1, w0
 	str	w0, [x29, 104]
-.L17:
 	ldr	w0, [x29, 92]
 	add	w0, w0, 1
 	str	w0, [x29, 92]
-.L16:
 	ldr	w1, [x29, 92]
 	ldr	w0, [x29, 36]
 	cmp	w1, w0
 	blt	.L18
 	ldr	w0, [x29, 104]
-.L3:
 	mov	sp, x19
 	mov	sp, x29
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 112
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	findNumberOfLIS, .-findNumberOfLIS
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

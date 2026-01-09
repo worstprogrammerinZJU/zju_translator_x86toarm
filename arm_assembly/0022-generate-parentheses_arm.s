@@ -1,22 +1,6 @@
-	.arch armv8-a
-	.file	"0022-generate-parentheses.c"
-	.text
-	.global	DefStr
-	.bss
-	.align	3
-	.type	DefStr, %object
-	.size	DefStr, 16
 DefStr:
-	.zero	16
-	.text
-	.align	2
-	.global	push_back
-	.type	push_back, %function
 push_back:
-.LFB6:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	strb	w1, [sp, 7]
 	ldr	x0, [sp, 8]
@@ -37,23 +21,11 @@ push_back:
 	ldrb	w1, [sp, 7]
 	strb	w1, [x0]
 	b	.L1
-.L4:
 	nop
-.L1:
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE6:
-	.size	push_back, .-push_back
-	.align	2
-	.global	pop_back
-	.type	pop_back, %function
 pop_back:
-.LFB7:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	ldr	x0, [sp, 8]
 	ldr	w0, [x0, 12]
@@ -70,28 +42,13 @@ pop_back:
 	add	x0, x1, x0
 	strb	wzr, [x0]
 	b	.L5
-.L8:
 	nop
-.L5:
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE7:
-	.size	pop_back, .-pop_back
-	.align	2
-	.global	backtrack
-	.type	backtrack, %function
 backtrack:
-.LFB8:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x19, [sp, 16]
-	.cfi_offset 19, -64
 	str	x0, [sp, 72]
 	str	w1, [sp, 68]
 	str	w2, [sp, 64]
@@ -144,7 +101,6 @@ backtrack:
 	ldr	x0, [sp, 40]
 	str	w1, [x0]
 	b	.L9
-.L12:
 	ldr	w1, [sp, 64]
 	ldr	w0, [sp, 68]
 	cmp	w1, w0
@@ -163,7 +119,6 @@ backtrack:
 	bl	backtrack
 	ldr	x0, [sp, 48]
 	bl	pop_back
-.L13:
 	ldr	w1, [sp, 60]
 	ldr	w0, [sp, 68]
 	cmp	w1, w0
@@ -183,29 +138,12 @@ backtrack:
 	ldr	x0, [sp, 48]
 	bl	pop_back
 	b	.L9
-.L14:
 	nop
-.L9:
 	ldr	x19, [sp, 16]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 19
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE8:
-	.size	backtrack, .-backtrack
-	.align	2
-	.global	generateParenthesis
-	.type	generateParenthesis, %function
 generateParenthesis:
-.LFB9:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	w0, [sp, 28]
 	str	x1, [sp, 16]
@@ -246,12 +184,4 @@ generateParenthesis:
 	bl	free
 	ldr	x0, [sp, 56]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE9:
-	.size	generateParenthesis, .-generateParenthesis
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

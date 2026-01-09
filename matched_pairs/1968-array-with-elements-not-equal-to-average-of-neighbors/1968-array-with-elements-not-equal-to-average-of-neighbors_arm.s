@@ -1,14 +1,5 @@
-	.arch armv8-a
-	.file	"1968-array-with-elements-not-equal-to-average-of-neighbors.c"
-	.text
-	.align	2
-	.global	cmp
-	.type	cmp, %function
 cmp:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	x0, [sp, 8]
 	str	x1, [sp]
 	ldr	x0, [sp, 8]
@@ -17,21 +8,9 @@ cmp:
 	ldr	w0, [x0]
 	sub	w0, w1, w0
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	cmp, .-cmp
-	.align	2
-	.global	rearrangeArray
-	.type	rearrangeArray, %function
 rearrangeArray:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	w1, [sp, 36]
@@ -39,6 +18,7 @@ rearrangeArray:
 	ldrsw	x0, [sp, 36]
 	lsl	x0, x0, 2
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 48]
 	ldr	x0, [sp, 24]
 	ldr	w1, [sp, 36]
@@ -53,7 +33,6 @@ rearrangeArray:
 	mov	w0, 1
 	str	w0, [sp, 60]
 	b	.L4
-.L5:
 	ldrsw	x0, [sp, 56]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 40]
@@ -70,14 +49,12 @@ rearrangeArray:
 	ldr	w0, [sp, 60]
 	add	w0, w0, 2
 	str	w0, [sp, 60]
-.L4:
 	ldr	w1, [sp, 60]
 	ldr	w0, [sp, 36]
 	cmp	w1, w0
 	blt	.L5
 	str	wzr, [sp, 60]
 	b	.L6
-.L7:
 	ldrsw	x0, [sp, 56]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 40]
@@ -94,19 +71,10 @@ rearrangeArray:
 	ldr	w0, [sp, 60]
 	add	w0, w0, 2
 	str	w0, [sp, 60]
-.L6:
 	ldr	w1, [sp, 60]
 	ldr	w0, [sp, 36]
 	cmp	w1, w0
 	blt	.L7
 	ldr	x0, [sp, 48]
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	rearrangeArray, .-rearrangeArray
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

@@ -1,14 +1,5 @@
-	.arch armv8-a
-	.file	"0740-delete-and-earn.c"
-	.text
-	.align	2
-	.global	max
-	.type	max, %function
 max:
-.LFB0:
-	.cfi_startproc
 	sub	sp, sp, #16
-	.cfi_def_cfa_offset 16
 	str	w0, [sp, 12]
 	str	w1, [sp, 8]
 	ldr	w0, [sp, 12]
@@ -17,38 +8,16 @@ max:
 	cmp	w2, w0
 	csel	w0, w1, w0, ge
 	add	sp, sp, 16
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	max, .-max
-	.align	2
-	.global	deleteAndEarn
-	.type	deleteAndEarn, %function
 deleteAndEarn:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -240]!
-	.cfi_def_cfa_offset 240
-	.cfi_offset 29, -240
-	.cfi_offset 30, -232
 	mov	x29, sp
-	.cfi_def_cfa_register 29
 	stp	x19, x20, [sp, 16]
 	stp	x21, x22, [sp, 32]
 	stp	x23, x24, [sp, 48]
 	stp	x25, x26, [sp, 64]
 	str	x27, [sp, 80]
 	sub	sp, sp, #16
-	.cfi_offset 19, -224
-	.cfi_offset 20, -216
-	.cfi_offset 21, -208
-	.cfi_offset 22, -200
-	.cfi_offset 23, -192
-	.cfi_offset 24, -184
-	.cfi_offset 25, -176
-	.cfi_offset 26, -168
-	.cfi_offset 27, -160
 	str	x0, [x29, 168]
 	str	w1, [x29, 164]
 	mov	x0, sp
@@ -58,13 +27,11 @@ deleteAndEarn:
 	bne	.L4
 	mov	w0, 0
 	b	.L5
-.L4:
 	ldr	x0, [x29, 168]
 	ldr	w0, [x0]
 	str	w0, [x29, 236]
 	str	wzr, [x29, 232]
 	b	.L6
-.L7:
 	ldrsw	x0, [x29, 232]
 	lsl	x0, x0, 2
 	ldr	x1, [x29, 168]
@@ -77,7 +44,6 @@ deleteAndEarn:
 	ldr	w0, [x29, 232]
 	add	w0, w0, 1
 	str	w0, [x29, 232]
-.L6:
 	ldr	w1, [x29, 232]
 	ldr	w0, [x29, 164]
 	cmp	w1, w0
@@ -116,13 +82,11 @@ deleteAndEarn:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L8:
 	cmp	sp, x1
 	beq	.L9
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L8
-.L9:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -130,7 +94,6 @@ deleteAndEarn:
 	cmp	x0, 1024
 	bcc	.L10
 	str	xzr, [sp, 1024]
-.L10:
 	add	x0, sp, 16
 	add	x0, x0, 3
 	lsr	x0, x0, 2
@@ -138,21 +101,18 @@ deleteAndEarn:
 	str	x0, [x29, 200]
 	str	wzr, [x29, 228]
 	b	.L11
-.L12:
 	ldr	x0, [x29, 200]
 	ldrsw	x1, [x29, 228]
 	str	wzr, [x0, x1, lsl 2]
 	ldr	w0, [x29, 228]
 	add	w0, w0, 1
 	str	w0, [x29, 228]
-.L11:
 	ldr	w1, [x29, 228]
 	ldr	w0, [x29, 236]
 	cmp	w1, w0
 	ble	.L12
 	str	wzr, [x29, 224]
 	b	.L13
-.L14:
 	ldrsw	x0, [x29, 224]
 	lsl	x0, x0, 2
 	ldr	x1, [x29, 168]
@@ -178,7 +138,6 @@ deleteAndEarn:
 	ldr	w0, [x29, 224]
 	add	w0, w0, 1
 	str	w0, [x29, 224]
-.L13:
 	ldr	w1, [x29, 224]
 	ldr	w0, [x29, 164]
 	cmp	w1, w0
@@ -217,13 +176,11 @@ deleteAndEarn:
 	lsl	x0, x0, 4
 	and	x1, x0, -65536
 	sub	x1, sp, x1
-.L15:
 	cmp	sp, x1
 	beq	.L16
 	sub	sp, sp, #65536
 	str	xzr, [sp, 1024]
 	b	.L15
-.L16:
 	and	x1, x0, 65535
 	sub	sp, sp, x1
 	str	xzr, [sp]
@@ -231,7 +188,6 @@ deleteAndEarn:
 	cmp	x0, 1024
 	bcc	.L17
 	str	xzr, [sp, 1024]
-.L17:
 	add	x0, sp, 16
 	add	x0, x0, 3
 	lsr	x0, x0, 2
@@ -246,7 +202,6 @@ deleteAndEarn:
 	mov	w0, 2
 	str	w0, [x29, 220]
 	b	.L18
-.L19:
 	ldr	w0, [x29, 220]
 	sub	w1, w0, #1
 	ldr	x0, [x29, 184]
@@ -271,7 +226,6 @@ deleteAndEarn:
 	ldr	w0, [x29, 220]
 	add	w0, w0, 1
 	str	w0, [x29, 220]
-.L18:
 	ldr	w1, [x29, 220]
 	ldr	w0, [x29, 236]
 	cmp	w1, w0
@@ -279,7 +233,6 @@ deleteAndEarn:
 	ldr	x0, [x29, 184]
 	ldrsw	x1, [x29, 236]
 	ldr	w0, [x0, x1, lsl 2]
-.L5:
 	mov	sp, x19
 	mov	sp, x29
 	ldp	x19, x20, [sp, 16]
@@ -288,21 +241,4 @@ deleteAndEarn:
 	ldp	x25, x26, [sp, 64]
 	ldr	x27, [sp, 80]
 	ldp	x29, x30, [sp], 240
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_restore 27
-	.cfi_restore 25
-	.cfi_restore 26
-	.cfi_restore 23
-	.cfi_restore 24
-	.cfi_restore 21
-	.cfi_restore 22
-	.cfi_restore 19
-	.cfi_restore 20
-	.cfi_def_cfa 31, 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	deleteAndEarn, .-deleteAndEarn
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

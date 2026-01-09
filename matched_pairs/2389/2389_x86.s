@@ -1,130 +1,107 @@
-	.file	"2389.c"
-	.intel_syntax noprefix
-	.text
-	.section	.rodata
-.LC0:
-	.string	"%c"
-.LC1:
-	.string	"%d"
-	.text
-	.globl	main
-	.type	main, @function
 main:
 	endbr64
 	push	rbp
 	mov	rbp, rsp
-	sub	rsp, 224
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -8[rbp], rax
-	xor	eax, eax
-	mov	QWORD PTR -96[rbp], 0
-	mov	QWORD PTR -88[rbp], 0
-	mov	QWORD PTR -80[rbp], 0
-	mov	QWORD PTR -72[rbp], 0
-	mov	QWORD PTR -64[rbp], 0
-	mov	QWORD PTR -56[rbp], 0
-	mov	QWORD PTR -48[rbp], 0
-	mov	QWORD PTR -40[rbp], 0
-	mov	QWORD PTR -32[rbp], 0
-	mov	QWORD PTR -24[rbp], 0
-	mov	BYTE PTR -16[rbp], 0
-	mov	DWORD PTR -208[rbp], 0
+	sub	rsp, 240
+	mov	QWORD PTR -224[rbp], 0
+	mov	QWORD PTR -216[rbp], 0
+	mov	QWORD PTR -208[rbp], 0
+	mov	QWORD PTR -200[rbp], 0
+	mov	QWORD PTR -192[rbp], 0
+	mov	QWORD PTR -184[rbp], 0
+	mov	QWORD PTR -176[rbp], 0
+	mov	QWORD PTR -168[rbp], 0
+	mov	QWORD PTR -160[rbp], 0
+	mov	QWORD PTR -152[rbp], 0
+	mov	BYTE PTR -144[rbp], 0
+	mov	DWORD PTR -12[rbp], 0
 	jmp	.L2
-.L4:
-	lea	rax, -217[rbp]
+	lea	rax, -225[rbp]
 	mov	rsi, rax
 	lea	rax, .LC0[rip]
 	mov	rdi, rax
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
-	movzx	eax, BYTE PTR -217[rbp]
+	movzx	eax, BYTE PTR -225[rbp]
 	cmp	al, 47
 	jle	.L3
-	movzx	eax, BYTE PTR -217[rbp]
+	movzx	eax, BYTE PTR -225[rbp]
 	cmp	al, 57
 	jg	.L3
-	movzx	eax, BYTE PTR -217[rbp]
+	movzx	eax, BYTE PTR -225[rbp]
 	sub	eax, 48
 	mov	edx, eax
-	mov	eax, DWORD PTR -208[rbp]
+	mov	eax, DWORD PTR -12[rbp]
 	cdqe
-	mov	BYTE PTR -192[rbp+rax], dl
-	add	DWORD PTR -208[rbp], 1
-.L2:
-	cmp	DWORD PTR -208[rbp], 40
+	mov	BYTE PTR -80[rbp+rax], dl
+	add	DWORD PTR -12[rbp], 1
+	cmp	DWORD PTR -12[rbp], 40
 	jle	.L4
-.L3:
-	mov	DWORD PTR -204[rbp], 0
+	mov	DWORD PTR -16[rbp], 0
 	jmp	.L5
-.L7:
-	lea	rax, -217[rbp]
+	lea	rax, -225[rbp]
 	mov	rsi, rax
 	lea	rax, .LC0[rip]
 	mov	rdi, rax
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
-	movzx	eax, BYTE PTR -217[rbp]
+	movzx	eax, BYTE PTR -225[rbp]
 	cmp	al, 47
 	jle	.L6
-	movzx	eax, BYTE PTR -217[rbp]
+	movzx	eax, BYTE PTR -225[rbp]
 	cmp	al, 57
 	jg	.L6
-	movzx	eax, BYTE PTR -217[rbp]
+	movzx	eax, BYTE PTR -225[rbp]
 	sub	eax, 48
 	mov	edx, eax
-	mov	eax, DWORD PTR -204[rbp]
+	mov	eax, DWORD PTR -16[rbp]
 	cdqe
-	mov	BYTE PTR -144[rbp+rax], dl
-	add	DWORD PTR -204[rbp], 1
-.L5:
-	cmp	DWORD PTR -204[rbp], 40
+	mov	BYTE PTR -128[rbp+rax], dl
+	add	DWORD PTR -16[rbp], 1
+	cmp	DWORD PTR -16[rbp], 40
 	jle	.L7
-.L6:
-	mov	eax, DWORD PTR -208[rbp]
+	mov	eax, DWORD PTR -12[rbp]
 	sub	eax, 1
-	mov	DWORD PTR -216[rbp], eax
+	mov	DWORD PTR -4[rbp], eax
 	jmp	.L8
-.L13:
-	mov	eax, DWORD PTR -208[rbp]
+	mov	eax, DWORD PTR -12[rbp]
 	sub	eax, 1
-	sub	eax, DWORD PTR -216[rbp]
-	mov	DWORD PTR -200[rbp], eax
-	mov	eax, DWORD PTR -204[rbp]
+	sub	eax, DWORD PTR -4[rbp]
+	mov	DWORD PTR -20[rbp], eax
+	mov	eax, DWORD PTR -16[rbp]
 	sub	eax, 1
-	mov	DWORD PTR -212[rbp], eax
+	mov	DWORD PTR -8[rbp], eax
 	jmp	.L9
-.L12:
-	mov	eax, DWORD PTR -200[rbp]
+	mov	eax, DWORD PTR -20[rbp]
 	cdqe
-	movzx	eax, BYTE PTR -96[rbp+rax]
+	movzx	eax, BYTE PTR -224[rbp+rax]
 	mov	esi, eax
-	mov	eax, DWORD PTR -216[rbp]
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
-	movzx	eax, BYTE PTR -192[rbp+rax]
+	movzx	eax, BYTE PTR -80[rbp+rax]
 	mov	ecx, eax
-	mov	eax, DWORD PTR -212[rbp]
+	mov	eax, DWORD PTR -8[rbp]
 	cdqe
-	movzx	eax, BYTE PTR -144[rbp+rax]
+	movzx	eax, BYTE PTR -128[rbp+rax]
 	mov	edx, eax
 	mov	eax, ecx
 	imul	eax, edx
 	add	eax, esi
 	mov	edx, eax
-	mov	eax, DWORD PTR -200[rbp]
+	mov	eax, DWORD PTR -20[rbp]
 	cdqe
-	mov	BYTE PTR -96[rbp+rax], dl
-	mov	eax, DWORD PTR -200[rbp]
-	mov	DWORD PTR -196[rbp], eax
+	mov	BYTE PTR -224[rbp+rax], dl
+	mov	eax, DWORD PTR -20[rbp]
+	mov	DWORD PTR -24[rbp], eax
 	jmp	.L10
-.L11:
-	mov	eax, DWORD PTR -196[rbp]
+	mov	eax, DWORD PTR -24[rbp]
 	add	eax, 1
 	cdqe
-	movzx	eax, BYTE PTR -96[rbp+rax]
+	movzx	eax, BYTE PTR -224[rbp+rax]
 	mov	esi, eax
-	mov	eax, DWORD PTR -196[rbp]
+	mov	eax, DWORD PTR -24[rbp]
 	cdqe
-	movzx	edx, BYTE PTR -96[rbp+rax]
+	movzx	edx, BYTE PTR -224[rbp+rax]
 	mov	ecx, 103
 	mov	eax, ecx
 	imul	dl
@@ -133,13 +110,13 @@ main:
 	sar	dl, 7
 	sub	eax, edx
 	lea	edx, [rsi+rax]
-	mov	eax, DWORD PTR -196[rbp]
+	mov	eax, DWORD PTR -24[rbp]
 	add	eax, 1
 	cdqe
-	mov	BYTE PTR -96[rbp+rax], dl
-	mov	eax, DWORD PTR -196[rbp]
+	mov	BYTE PTR -224[rbp+rax], dl
+	mov	eax, DWORD PTR -24[rbp]
 	cdqe
-	movzx	edx, BYTE PTR -96[rbp+rax]
+	movzx	edx, BYTE PTR -224[rbp+rax]
 	mov	ecx, 103
 	mov	eax, ecx
 	imul	dl
@@ -155,84 +132,59 @@ main:
 	add	eax, eax
 	mov	ecx, edx
 	sub	ecx, eax
-	mov	eax, DWORD PTR -196[rbp]
+	mov	eax, DWORD PTR -24[rbp]
 	cdqe
-	mov	BYTE PTR -96[rbp+rax], cl
-	add	DWORD PTR -196[rbp], 1
-.L10:
-	mov	eax, DWORD PTR -196[rbp]
+	mov	BYTE PTR -224[rbp+rax], cl
+	add	DWORD PTR -24[rbp], 1
+	mov	eax, DWORD PTR -24[rbp]
 	cdqe
-	movzx	eax, BYTE PTR -96[rbp+rax]
+	movzx	eax, BYTE PTR -224[rbp+rax]
 	cmp	al, 9
 	jg	.L11
-	add	DWORD PTR -200[rbp], 1
-	sub	DWORD PTR -212[rbp], 1
-.L9:
-	cmp	DWORD PTR -212[rbp], 0
+	add	DWORD PTR -20[rbp], 1
+	sub	DWORD PTR -8[rbp], 1
+	cmp	DWORD PTR -8[rbp], 0
 	jns	.L12
-	sub	DWORD PTR -216[rbp], 1
-.L8:
-	cmp	DWORD PTR -216[rbp], 0
+	sub	DWORD PTR -4[rbp], 1
+	cmp	DWORD PTR -4[rbp], 0
 	jns	.L13
-	mov	edx, DWORD PTR -208[rbp]
-	mov	eax, DWORD PTR -204[rbp]
+	mov	edx, DWORD PTR -12[rbp]
+	mov	eax, DWORD PTR -16[rbp]
 	add	eax, edx
-	mov	DWORD PTR -216[rbp], eax
+	mov	DWORD PTR -4[rbp], eax
 	jmp	.L14
-.L16:
-	sub	DWORD PTR -216[rbp], 1
-.L14:
-	mov	eax, DWORD PTR -216[rbp]
+	sub	DWORD PTR -4[rbp], 1
+	mov	eax, DWORD PTR -4[rbp]
 	cdqe
-	movzx	eax, BYTE PTR -96[rbp+rax]
+	movzx	eax, BYTE PTR -224[rbp+rax]
 	test	al, al
 	jne	.L15
-	cmp	DWORD PTR -216[rbp], 0
+	cmp	DWORD PTR -4[rbp], 0
 	jg	.L16
-.L15:
-	mov	eax, DWORD PTR -216[rbp]
-	mov	DWORD PTR -212[rbp], eax
+	mov	eax, DWORD PTR -4[rbp]
+	mov	DWORD PTR -8[rbp], eax
 	jmp	.L17
-.L18:
-	mov	eax, DWORD PTR -212[rbp]
+	mov	eax, DWORD PTR -8[rbp]
 	cdqe
-	movzx	eax, BYTE PTR -96[rbp+rax]
+	movzx	eax, BYTE PTR -224[rbp+rax]
 	movsx	eax, al
 	mov	esi, eax
 	lea	rax, .LC1[rip]
 	mov	rdi, rax
 	mov	eax, 0
 	call	printf@PLT
-	sub	DWORD PTR -212[rbp], 1
-.L17:
-	cmp	DWORD PTR -212[rbp], 0
+	sub	DWORD PTR -8[rbp], 1
+	cmp	DWORD PTR -8[rbp], 0
 	jns	.L18
-	mov	edi, 10
-	call	putchar@PLT
+	lea	rax, .LC2[rip]
+	mov	rdi, rax
 	mov	eax, 0
-	mov	rdx, QWORD PTR -8[rbp]
-	sub	rdx, QWORD PTR fs:40
-	je	.L20
-	call	__stack_chk_fail@PLT
-.L20:
+	call	printf@PLT
+	mov	eax, 0
 	leave
 	ret
-	.size	main, .-main
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
-	.section	.note.gnu.property,"a"
-	.align 8
-	.long	1f - 0f
-	.long	4f - 1f
-	.long	5
 0:
-	.string	"GNU"
 1:
-	.align 8
-	.long	0xc0000002
-	.long	3f - 2f
 2:
-	.long	0x3
 3:
-	.align 8
 4:

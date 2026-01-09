@@ -1,16 +1,5 @@
-	.arch armv8-a
-	.file	"0332-reconstruct-itinerary.c"
-	.text
-	.align	2
-	.global	cmp
-	.type	cmp, %function
 cmp:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -64]!
-	.cfi_def_cfa_offset 64
-	.cfi_offset 29, -64
-	.cfi_offset 30, -56
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
@@ -33,7 +22,6 @@ cmp:
 	beq	.L2
 	ldr	w0, [sp, 44]
 	b	.L3
-.L2:
 	ldr	x0, [sp, 56]
 	add	x0, x0, 8
 	ldr	x2, [x0]
@@ -43,25 +31,10 @@ cmp:
 	mov	x1, x0
 	mov	x0, x2
 	bl	strcmp
-.L3:
 	ldp	x29, x30, [sp], 64
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	cmp, .-cmp
-	.align	2
-	.global	dfs
-	.type	dfs, %function
 dfs:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x0, [sp, 56]
 	str	x1, [sp, 48]
@@ -86,10 +59,8 @@ dfs:
 	str	x1, [x0]
 	mov	w0, 1
 	b	.L6
-.L5:
 	str	wzr, [sp, 76]
 	b	.L7
-.L10:
 	ldrsw	x0, [sp, 76]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 56]
@@ -145,46 +116,23 @@ dfs:
 	beq	.L9
 	mov	w0, 1
 	b	.L6
-.L9:
 	ldrsw	x0, [sp, 76]
 	lsl	x0, x0, 2
 	ldr	x1, [sp, 56]
 	add	x0, x1, x0
 	str	wzr, [x0]
-.L8:
 	ldr	w0, [sp, 76]
 	add	w0, w0, 1
 	str	w0, [sp, 76]
-.L7:
 	ldr	w1, [sp, 76]
 	ldr	w0, [sp, 44]
 	cmp	w1, w0
 	blt	.L10
 	mov	w0, 0
-.L6:
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	dfs, .-dfs
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"JFK"
-	.text
-	.align	2
-	.global	findItinerary
-	.type	findItinerary, %function
 findItinerary:
-.LFB2:
-	.cfi_startproc
 	stp	x29, x30, [sp, -80]!
-	.cfi_def_cfa_offset 80
-	.cfi_offset 29, -80
-	.cfi_offset 30, -72
 	mov	x29, sp
 	str	x0, [sp, 40]
 	str	w1, [sp, 36]
@@ -201,15 +149,16 @@ findItinerary:
 	sxtw	x0, w0
 	lsl	x0, x0, 3
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 64]
-	ldrsw	x0, [sp, 36]
 	mov	x1, 4
+	ldr	w0, [sp, 36]
 	bl	calloc
+	sxtw	x0, w0
 	str	x0, [sp, 56]
 	str	wzr, [sp, 72]
 	str	wzr, [sp, 76]
 	b	.L12
-.L15:
 	ldrsw	x0, [sp, 76]
 	lsl	x0, x0, 3
 	ldr	x1, [sp, 40]
@@ -249,11 +198,9 @@ findItinerary:
 	ldr	x1, [sp, 56]
 	add	x0, x1, x0
 	str	wzr, [x0]
-.L13:
 	ldr	w0, [sp, 76]
 	add	w0, w0, 1
 	str	w0, [sp, 76]
-.L12:
 	ldr	w0, [sp, 72]
 	cmp	w0, 0
 	bne	.L14
@@ -261,7 +208,6 @@ findItinerary:
 	ldr	w0, [sp, 36]
 	cmp	w1, w0
 	blt	.L15
-.L14:
 	ldr	w0, [sp, 36]
 	add	w1, w0, 1
 	ldr	x0, [sp, 24]
@@ -270,12 +216,4 @@ findItinerary:
 	bl	free
 	ldr	x0, [sp, 64]
 	ldp	x29, x30, [sp], 80
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE2:
-	.size	findItinerary, .-findItinerary
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

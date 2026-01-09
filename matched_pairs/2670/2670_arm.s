@@ -1,82 +1,14 @@
-	.arch armv8-a
-	.file	"2670.c"
-	.text
-	.global	stone
-	.bss
-	.align	3
-	.type	stone, %object
-	.size	stone, 30000
 stone:
-	.zero	30000
-	.global	chest
-	.align	3
-	.type	chest, %object
-	.size	chest, 3000
 chest:
-	.zero	3000
-	.global	link
-	.align	3
-	.type	link, %object
-	.size	link, 27000
 link:
-	.zero	27000
-	.global	num
-	.align	3
-	.type	num, %object
-	.size	num, 400
 num:
-	.zero	400
-	.global	n
-	.align	2
-	.type	n, %object
-	.size	n, 4
 n:
-	.zero	4
-	.global	m
-	.align	2
-	.type	m, %object
-	.size	m, 4
 m:
-	.zero	4
-	.global	che
-	.align	2
-	.type	che, %object
-	.size	che, 4
 che:
-	.zero	4
-	.global	flag1
-	.align	3
-	.type	flag1, %object
-	.size	flag1, 400
 flag1:
-	.zero	400
-	.global	flag2
-	.align	3
-	.type	flag2, %object
-	.size	flag2, 400
 flag2:
-	.zero	400
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"%d%d"
-	.align	3
-.LC1:
-	.string	"Sorcerer's Stone"
-	.align	3
-.LC2:
-	.string	"%d\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
 main:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -352]!
-	.cfi_def_cfa_offset 352
-	.cfi_offset 29, -352
-	.cfi_offset 30, -344
 	mov	x29, sp
 	adrp	x0, m
 	add	x2, x0, :lo12:m
@@ -86,12 +18,10 @@ main:
 	add	x0, x0, :lo12:.LC0
 	bl	__isoc99_scanf
 	b	.L2
-.L14:
 	add	x0, sp, 24
 	bl	gets
 	str	wzr, [sp, 348]
 	b	.L3
-.L4:
 	ldrsw	x1, [sp, 348]
 	mov	x0, x1
 	lsl	x0, x0, 4
@@ -104,7 +34,6 @@ main:
 	ldr	w0, [sp, 348]
 	add	w0, w0, 1
 	str	w0, [sp, 348]
-.L3:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -113,14 +42,12 @@ main:
 	blt	.L4
 	str	wzr, [sp, 344]
 	b	.L5
-.L13:
 	add	x0, sp, 24
 	bl	gets
 	str	wzr, [sp, 340]
 	str	wzr, [sp, 336]
 	str	wzr, [sp, 332]
 	b	.L6
-.L9:
 	ldrsw	x0, [sp, 340]
 	add	x1, sp, 24
 	ldrb	w0, [x1, x0]
@@ -153,7 +80,6 @@ main:
 	add	w0, w0, 1
 	str	w0, [sp, 340]
 	b	.L8
-.L7:
 	ldr	w0, [sp, 332]
 	add	w1, w0, 1
 	str	w1, [sp, 332]
@@ -180,11 +106,9 @@ main:
 	add	x0, x0, x3
 	mov	w1, w5
 	strb	w1, [x0]
-.L8:
 	ldr	w0, [sp, 340]
 	add	w0, w0, 1
 	str	w0, [sp, 340]
-.L6:
 	ldrsw	x0, [sp, 340]
 	add	x1, sp, 24
 	ldrb	w0, [x1, x0]
@@ -220,7 +144,6 @@ main:
 	add	w0, w0, 2
 	str	w0, [sp, 340]
 	b	.L10
-.L11:
 	ldr	w0, [sp, 332]
 	add	w1, w0, 1
 	str	w1, [sp, 332]
@@ -242,7 +165,6 @@ main:
 	ldr	w0, [sp, 340]
 	add	w0, w0, 1
 	str	w0, [sp, 340]
-.L10:
 	ldrsw	x0, [sp, 340]
 	add	x1, sp, 24
 	ldrb	w0, [x1, x0]
@@ -275,11 +197,9 @@ main:
 	bne	.L12
 	ldr	w0, [sp, 344]
 	str	w0, [sp, 328]
-.L12:
 	ldr	w0, [sp, 344]
 	add	w0, w0, 1
 	str	w0, [sp, 344]
-.L5:
 	adrp	x0, m
 	add	x0, x0, :lo12:m
 	ldr	w0, [x0]
@@ -323,7 +243,6 @@ main:
 	adrp	x0, .LC0
 	add	x0, x0, :lo12:.LC0
 	bl	__isoc99_scanf
-.L2:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -336,31 +255,15 @@ main:
 	bne	.L14
 	mov	w0, 0
 	ldp	x29, x30, [sp], 352
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.align	2
-	.global	dfs
-	.type	dfs, %function
 dfs:
-.LFB1:
-	.cfi_startproc
 	stp	x29, x30, [sp, -48]!
-	.cfi_def_cfa_offset 48
-	.cfi_offset 29, -48
-	.cfi_offset 30, -40
 	mov	x29, sp
 	str	w0, [sp, 28]
 	str	wzr, [sp, 44]
 	b	.L17
-.L30:
 	str	wzr, [sp, 40]
 	b	.L18
-.L21:
 	ldrsw	x0, [sp, 44]
 	mov	x1, x0
 	lsl	x1, x1, 4
@@ -394,7 +297,6 @@ dfs:
 	ldr	w0, [sp, 40]
 	add	w0, w0, 1
 	str	w0, [sp, 40]
-.L18:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -402,9 +304,7 @@ dfs:
 	cmp	w1, w0
 	blt	.L21
 	b	.L20
-.L31:
 	nop
-.L20:
 	adrp	x0, n
 	add	x0, x0, :lo12:n
 	ldr	w0, [x0]
@@ -413,7 +313,6 @@ dfs:
 	bne	.L22
 	str	wzr, [sp, 40]
 	b	.L23
-.L29:
 	adrp	x0, flag1
 	add	x0, x0, :lo12:flag1
 	ldrsw	x1, [sp, 40]
@@ -461,7 +360,6 @@ dfs:
 	bne	.L25
 	mov	w0, -1
 	b	.L26
-.L25:
 	adrp	x0, flag2
 	add	x0, x0, :lo12:flag2
 	ldrsw	x1, [sp, 40]
@@ -475,7 +373,6 @@ dfs:
 	adrp	x0, che
 	add	x0, x0, :lo12:che
 	str	w1, [x0]
-.L27:
 	adrp	x0, flag2
 	add	x0, x0, :lo12:flag2
 	ldrsw	x1, [sp, 40]
@@ -486,18 +383,15 @@ dfs:
 	ldrsw	x1, [sp, 40]
 	str	wzr, [x0, x1, lsl 2]
 	b	.L28
-.L24:
 	ldr	w0, [sp, 40]
 	add	w0, w0, 1
 	str	w0, [sp, 40]
-.L23:
 	adrp	x0, m
 	add	x0, x0, :lo12:m
 	ldr	w0, [x0]
 	ldr	w1, [sp, 40]
 	cmp	w1, w0
 	blt	.L29
-.L28:
 	adrp	x0, m
 	add	x0, x0, :lo12:m
 	ldr	w0, [x0]
@@ -506,11 +400,9 @@ dfs:
 	bne	.L22
 	mov	w0, -1
 	b	.L26
-.L22:
 	ldr	w0, [sp, 44]
 	add	w0, w0, 1
 	str	w0, [sp, 44]
-.L17:
 	adrp	x0, num
 	add	x0, x0, :lo12:num
 	ldrsw	x1, [sp, 28]
@@ -521,14 +413,5 @@ dfs:
 	adrp	x0, che
 	add	x0, x0, :lo12:che
 	ldr	w0, [x0]
-.L26:
 	ldp	x29, x30, [sp], 48
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE1:
-	.size	dfs, .-dfs
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits

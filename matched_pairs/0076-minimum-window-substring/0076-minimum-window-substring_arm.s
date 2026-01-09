@@ -1,16 +1,5 @@
-	.arch armv8-a
-	.file	"0076-minimum-window-substring.c"
-	.text
-	.align	2
-	.global	minWindow
-	.type	minWindow, %function
 minWindow:
-.LFB0:
-	.cfi_startproc
 	stp	x29, x30, [sp, -320]!
-	.cfi_def_cfa_offset 320
-	.cfi_offset 29, -320
-	.cfi_offset 30, -312
 	mov	x29, sp
 	str	x0, [sp, 24]
 	str	x1, [sp, 16]
@@ -27,7 +16,6 @@ minWindow:
 	str	wzr, [sp, 316]
 	str	wzr, [sp, 312]
 	b	.L2
-.L4:
 	ldrsw	x0, [sp, 312]
 	ldr	x1, [sp, 16]
 	add	x0, x1, x0
@@ -42,7 +30,6 @@ minWindow:
 	ldr	w0, [sp, 316]
 	add	w0, w0, 1
 	str	w0, [sp, 316]
-.L3:
 	ldrsw	x0, [sp, 312]
 	ldr	x1, [sp, 16]
 	add	x0, x1, x0
@@ -60,7 +47,6 @@ minWindow:
 	ldr	w0, [sp, 312]
 	add	w0, w0, 1
 	str	w0, [sp, 312]
-.L2:
 	ldrsw	x0, [sp, 312]
 	ldr	x1, [sp, 16]
 	add	x0, x1, x0
@@ -74,7 +60,6 @@ minWindow:
 	str	wzr, [sp, 300]
 	str	wzr, [sp, 296]
 	b	.L5
-.L10:
 	ldrsw	x0, [sp, 296]
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
@@ -107,7 +92,6 @@ minWindow:
 	cmp	w0, 0
 	bne	.L6
 	b	.L7
-.L8:
 	ldrsw	x0, [sp, 300]
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
@@ -125,7 +109,6 @@ minWindow:
 	ldr	w0, [sp, 300]
 	add	w0, w0, 1
 	str	w0, [sp, 300]
-.L7:
 	ldrsw	x0, [sp, 300]
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
@@ -151,7 +134,6 @@ minWindow:
 	sub	w0, w1, w0
 	add	w0, w0, 1
 	str	w0, [sp, 308]
-.L9:
 	ldrsw	x0, [sp, 300]
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
@@ -172,11 +154,9 @@ minWindow:
 	ldr	w0, [sp, 300]
 	add	w0, w0, 1
 	str	w0, [sp, 300]
-.L6:
 	ldr	w0, [sp, 296]
 	add	w0, w0, 1
 	str	w0, [sp, 296]
-.L5:
 	ldrsw	x0, [sp, 296]
 	ldr	x1, [sp, 24]
 	add	x0, x1, x0
@@ -190,20 +170,20 @@ minWindow:
 	bne	.L11
 	mov	x0, 1
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 272]
 	ldr	x0, [sp, 272]
 	strb	wzr, [x0]
 	ldr	x0, [sp, 272]
 	b	.L15
-.L11:
 	ldr	w0, [sp, 308]
 	add	w0, w0, 1
 	sxtw	x0, w0
 	bl	malloc
+	sxtw	x0, w0
 	str	x0, [sp, 280]
 	str	wzr, [sp, 292]
 	b	.L13
-.L14:
 	ldr	w1, [sp, 292]
 	ldr	w0, [sp, 304]
 	add	w0, w1, w0
@@ -218,7 +198,6 @@ minWindow:
 	ldr	w0, [sp, 292]
 	add	w0, w0, 1
 	str	w0, [sp, 292]
-.L13:
 	ldr	w1, [sp, 292]
 	ldr	w0, [sp, 308]
 	cmp	w1, w0
@@ -228,14 +207,5 @@ minWindow:
 	add	x0, x1, x0
 	strb	wzr, [x0]
 	ldr	x0, [sp, 280]
-.L15:
 	ldp	x29, x30, [sp], 320
-	.cfi_restore 30
-	.cfi_restore 29
-	.cfi_def_cfa_offset 0
 	ret
-	.cfi_endproc
-.LFE0:
-	.size	minWindow, .-minWindow
-	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
-	.section	.note.GNU-stack,"",@progbits
