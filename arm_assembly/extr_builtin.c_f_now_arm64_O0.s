@@ -1,0 +1,27 @@
+	.text
+	.p2align	2                               // -- Begin function f_now
+	.type	f_now,@function
+f_now:                                  // @f_now
+// %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             // 16-byte Folded Spill
+	add	x29, sp, #16
+	str	x0, [sp, #8]
+	str	w1, [sp, #4]
+	ldr	w0, [sp, #4]
+	bl	jv_free
+	mov	x0, xzr
+	bl	time
+	bl	jv_number
+	ldp	x29, x30, [sp, #16]             // 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+.Lfunc_end0:
+	.size	f_now, .Lfunc_end0-f_now
+                                        // -- End function
+	.section	".note.GNU-stack","",@progbits
+	.addrsig
+	.addrsig_sym f_now
+	.addrsig_sym jv_free
+	.addrsig_sym jv_number
+	.addrsig_sym time

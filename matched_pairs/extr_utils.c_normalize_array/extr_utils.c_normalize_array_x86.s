@@ -1,0 +1,60 @@
+	.text
+	.globl	normalize_array                 # -- Begin function normalize_array
+	.p2align	4, 0x90
+normalize_array:                        # @normalize_array
+# %bb.0:
+	pushq	%rbp
+	movq	%rsp, %rbp
+	subq	$32, %rsp
+	movq	%rdi, -8(%rbp)
+	movl	%esi, -12(%rbp)
+	movq	-8(%rbp), %rdi
+	movl	-12(%rbp), %esi
+	callq	mean_array@PLT
+	movss	%xmm0, -20(%rbp)
+	movq	-8(%rbp), %rdi
+	movl	-12(%rbp), %esi
+	callq	variance_array@PLT
+	movl	%eax, %edi
+	callq	sqrt@PLT
+	movss	%xmm0, -24(%rbp)
+	movl	$0, -16(%rbp)
+.LBB0_1:                                # =>This Inner Loop Header: Depth=1
+	movl	-16(%rbp), %eax
+	cmpl	-12(%rbp), %eax
+	jge	.LBB0_4
+# %bb.2:                                #   in Loop: Header=BB0_1 Depth=1
+	movq	-8(%rbp), %rax
+	movslq	-16(%rbp), %rcx
+	movss	(%rax,%rcx,4), %xmm0            # xmm0 = mem[0],zero,zero,zero
+	subss	-20(%rbp), %xmm0
+	divss	-24(%rbp), %xmm0
+	movq	-8(%rbp), %rax
+	movslq	-16(%rbp), %rcx
+	movss	%xmm0, (%rax,%rcx,4)
+# %bb.3:                                #   in Loop: Header=BB0_1 Depth=1
+	movl	-16(%rbp), %eax
+	addl	$1, %eax
+	movl	%eax, -16(%rbp)
+	jmp	.LBB0_1
+.LBB0_4:
+	movq	-8(%rbp), %rdi
+	movl	-12(%rbp), %esi
+	callq	mean_array@PLT
+	movss	%xmm0, -20(%rbp)
+	movq	-8(%rbp), %rdi
+	movl	-12(%rbp), %esi
+	callq	variance_array@PLT
+	movl	%eax, %edi
+	callq	sqrt@PLT
+	movss	%xmm0, -24(%rbp)
+	addq	$32, %rsp
+	popq	%rbp
+	retq
+.Lfunc_end0:
+                                        # -- End function
+	.section	".note.GNU-stack","",@progbits
+	.addrsig
+	.addrsig_sym mean_array
+	.addrsig_sym sqrt
+	.addrsig_sym variance_array
