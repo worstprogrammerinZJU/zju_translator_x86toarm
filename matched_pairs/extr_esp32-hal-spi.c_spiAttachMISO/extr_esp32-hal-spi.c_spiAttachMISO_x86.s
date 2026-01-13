@@ -1,0 +1,85 @@
+	.text
+	.globl	spiAttachMISO                   # -- Begin function spiAttachMISO
+	.p2align	4, 0x90
+spiAttachMISO:                          # @spiAttachMISO
+# %bb.0:
+	pushq	%rbp
+	movq	%rsp, %rbp
+	subq	$16, %rsp
+	movq	%rdi, -8(%rbp)
+	movl	%esi, -12(%rbp)
+	cmpq	$0, -8(%rbp)
+	jne	.LBB0_2
+# %bb.1:
+	jmp	.LBB0_11
+.LBB0_2:
+	cmpl	$0, -12(%rbp)
+	jge	.LBB0_10
+# %bb.3:
+	movq	-8(%rbp), %rax
+	movq	(%rax), %rax
+	cmpq	HSPI(%rip), %rax
+	jne	.LBB0_5
+# %bb.4:
+	movl	$12, -12(%rbp)
+	jmp	.LBB0_9
+.LBB0_5:
+	movq	-8(%rbp), %rax
+	movq	(%rax), %rax
+	cmpq	VSPI(%rip), %rax
+	jne	.LBB0_7
+# %bb.6:
+	movl	$19, -12(%rbp)
+	jmp	.LBB0_8
+.LBB0_7:
+	movl	$7, -12(%rbp)
+.LBB0_8:
+	jmp	.LBB0_9
+.LBB0_9:
+	jmp	.LBB0_10
+.LBB0_10:
+	movb	$0, %al
+	callq	SPI_MUTEX_LOCK@PLT
+	movl	-12(%rbp), %edi
+	movl	INPUT(%rip), %esi
+	callq	pinMode@PLT
+	movl	-12(%rbp), %eax
+	movl	%eax, -16(%rbp)                 # 4-byte Spill
+	movq	-8(%rbp), %rax
+	movq	(%rax), %rdi
+	callq	SPI_MISO_IDX@PLT
+	movl	-16(%rbp), %edi                 # 4-byte Reload
+	movl	%eax, %esi
+	xorl	%edx, %edx
+	callq	pinMatrixInAttach@PLT
+	movb	$0, %al
+	callq	SPI_MUTEX_UNLOCK@PLT
+.LBB0_11:
+	addq	$16, %rsp
+	popq	%rbp
+	retq
+.Lfunc_end0:
+                                        # -- End function
+	.bss
+	.globl	HSPI
+	.p2align	3
+HSPI:
+	.quad	0                               # 0x0
+	.globl	VSPI
+	.p2align	3
+VSPI:
+	.quad	0                               # 0x0
+	.globl	INPUT
+	.p2align	2
+INPUT:
+	.long	0                               # 0x0
+	.section	".note.GNU-stack","",@progbits
+	.addrsig
+	.addrsig_sym SPI_MUTEX_LOCK
+	.addrsig_sym pinMode
+	.addrsig_sym pinMatrixInAttach
+	.addrsig_sym SPI_MISO_IDX
+	.addrsig_sym SPI_MUTEX_UNLOCK
+	.addrsig_sym HSPI
+	.addrsig_sym VSPI
+	.addrsig_sym INPUT

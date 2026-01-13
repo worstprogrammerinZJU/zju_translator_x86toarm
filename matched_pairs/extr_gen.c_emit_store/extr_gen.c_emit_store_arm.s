@@ -1,0 +1,95 @@
+	.text
+	.p2align	2                               // -- Begin function emit_store
+	.type	emit_store,@function
+emit_store:                             // @emit_store
+// %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             // 16-byte Folded Spill
+	add	x29, sp, #16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	w8, [x8]
+	subs	w8, w8, #128
+                                        // kill: def $x8 killed $w8
+	str	x8, [sp]                        // 8-byte Folded Spill
+	subs	x8, x8, #3
+	b.hi	.LBB0_6
+// %bb.1:
+	ldr	x11, [sp]                       // 8-byte Folded Reload
+	adrp	x10, .LJTI0_0
+	add	x10, x10, :lo12:.LJTI0_0
+.Ltmp0:
+	adr	x8, .Ltmp0
+	ldrsw	x9, [x10, x11, lsl #2]
+	add	x8, x8, x9
+	br	x8
+.LBB0_2:
+	ldr	x0, [sp, #8]
+	bl	emit_assign_deref
+	b	.LBB0_7
+.LBB0_3:
+	ldr	x8, [sp, #8]
+	ldr	w0, [x8, #16]
+	ldr	x8, [sp, #8]
+	ldr	w1, [x8, #4]
+	mov	w2, wzr
+	bl	emit_assign_struct_ref
+	b	.LBB0_7
+.LBB0_4:
+	ldr	x0, [sp, #8]
+	bl	ensure_lvar_init
+	ldr	x8, [sp, #8]
+	ldr	w0, [x8, #4]
+	ldr	x8, [sp, #8]
+	ldr	w1, [x8, #12]
+	bl	emit_lsave
+	b	.LBB0_7
+.LBB0_5:
+	ldr	x8, [sp, #8]
+	ldr	w0, [x8, #8]
+	ldr	x8, [sp, #8]
+	ldr	w1, [x8, #4]
+	mov	w2, wzr
+	bl	emit_gsave
+	b	.LBB0_7
+.LBB0_6:
+	adrp	x0, .L.str
+	add	x0, x0, :lo12:.L.str
+	bl	error
+	b	.LBB0_7
+.LBB0_7:
+	ldp	x29, x30, [sp, #16]             // 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+.Lfunc_end0:
+	.size	emit_store, .Lfunc_end0-emit_store
+	.section	.rodata,"a",@progbits
+	.p2align	2
+.LJTI0_0:
+	.word	.LBB0_3-.Ltmp0
+	.word	.LBB0_4-.Ltmp0
+	.word	.LBB0_5-.Ltmp0
+	.word	.LBB0_2-.Ltmp0
+                                        // -- End function
+	.type	SAVE,@object                    // @SAVE
+	.bss
+	.globl	SAVE
+	.p2align	2
+SAVE:
+	.word	0                               // 0x0
+	.size	SAVE, 4
+	.type	.L.str,@object                  // @.str
+	.section	.rodata.str1.1,"aMS",@progbits,1
+.L.str:
+	.asciz	"internal error"
+	.size	.L.str, 15
+	.section	".note.GNU-stack","",@progbits
+	.addrsig
+	.addrsig_sym emit_store
+	.addrsig_sym emit_assign_deref
+	.addrsig_sym emit_assign_struct_ref
+	.addrsig_sym ensure_lvar_init
+	.addrsig_sym emit_lsave
+	.addrsig_sym emit_gsave
+	.addrsig_sym error
+	.addrsig_sym SAVE
