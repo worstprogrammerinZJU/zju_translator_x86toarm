@@ -14,8 +14,8 @@ def extract_matching_pairs():
     output_dir.mkdir(exist_ok=True)
     
     # 定义后缀模式
-    x86_suffix = "_x86_64_O0.s"
-    arm_suffix = "_arm64_O0.s"
+    x86_suffix = "x86.s"
+    arm_suffix = "arm.s"
     
     # 收集x86文件
     x86_files = {}
@@ -75,8 +75,9 @@ def extract_matching_pairs():
         
         # 复制文件
         try:
-            shutil.copy2(x86_files[key], pair_folder / f"{key}_x86.s")
-            shutil.copy2(arm_files[key], pair_folder / f"{key}_arm.s")
+            # 修改这里：去掉下划线
+            shutil.copy2(x86_files[key], pair_folder / f"{key}x86.s")  # 原来是 {key}_x86.s
+            shutil.copy2(arm_files[key], pair_folder / f"{key}arm.s")  # 原来是 {key}_arm.s
             matched_count += 1
             
             if matched_count <= 3:  # 打印前3个成功的例子
@@ -159,9 +160,9 @@ def extract_matching_pairs_flexible():
         # 对于每个优化级别
         for match in matches:
             try:
-                suffix = f"_{match['opt']}"
-                shutil.copy2(match['x86'], pair_folder / f"{key}_x86{suffix}.s")
-                shutil.copy2(match['arm'], pair_folder / f"{key}_arm{suffix}.s")
+                # 修改这里：去掉下划线
+                shutil.copy2(match['x86'], pair_folder / f"{key}x86_{match['opt']}.s")  # 修改
+                shutil.copy2(match['arm'], pair_folder / f"{key}arm_{match['opt']}.s")  # 修改
                 matched_count += 1
                 
             except Exception as e:
@@ -190,8 +191,8 @@ def extract_matching_pairs_flat():
     
     output_dir.mkdir(exist_ok=True)
     
-    x86_suffix = "_x86_64_O0.s"
-    arm_suffix = "_arm64_O0.s"
+    x86_suffix = "x86.s"
+    arm_suffix = "arm.s"
     
     # 收集x86文件
     x86_files = {}
@@ -219,16 +220,17 @@ def extract_matching_pairs_flat():
     # 复制文件
     for key in sorted(common_keys):
         try:
-            shutil.copy2(x86_files[key], output_dir / f"{key}_x86.s")
-            shutil.copy2(arm_files[key], output_dir / f"{key}_arm.s")
+            # 修改这里：去掉下划线
+            shutil.copy2(x86_files[key], output_dir / f"{key}x86.s")  # 原来是 {key}_x86.s
+            shutil.copy2(arm_files[key], output_dir / f"{key}arm.s")  # 原来是 {key}_arm.s
         except Exception as e:
             print(f"错误: 复制文件 {key} 时出错: {e}")
     
     print(f"成功提取了 {len(common_keys)} 对文件到 '{output_dir}' 文件夹")
     print(f"文件结构:")
     print(f"  {output_dir}/")
-    print(f"    ├── [basename]_x86.s")
-    print(f"    └── [basename]_arm.s")
+    print(f"    ├── [basename]x86.s")  # 修改
+    print(f"    └── [basename]arm.s")  # 修改
 
 # 生成配对清单
 def generate_pair_list():
